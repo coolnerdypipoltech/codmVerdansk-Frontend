@@ -1,0 +1,40 @@
+.intro-logo {
+    width: auto;
+    height: 210px;
+    position: relative;
+    z-index: 2;
+}
+.intro-ghost {
+    width: auto;
+    height: 450px;
+    position: relative;
+    z-index: 1;
+
+}
+.intro-banner {
+    width: auto;
+    height: 110px;
+    position: relative;
+    z-index: 2;
+
+}
+.intro-date-banner {
+    width: auto;
+    height: 76px;
+    position: relative;
+    z-index: 2;
+}
+.intro-hashtag {
+    width: auto;
+    height: 60px;
+    position: relative;
+    z-index: 2; 
+}
+
+.intro-description{
+    color: white;
+    font-size: var(--text-size);
+    font-family: var(--font-antonio);
+    text-align: center;
+    margin: 20px 0;
+}

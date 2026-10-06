@@ -1,0 +1,19 @@
+.mascots-title{
+    width: auto;
+    height: 151px;
+}
+
+.mascots-banner{
+    width: auto;
+    height: 383px;
+}
+.rulebook{
+    width: auto;
+    height: 70px;
+}
+    
+.mascots-text{
+    font-size: var(--text-size);
+    font-family: var(--font-monst);
+    color: white;
+}

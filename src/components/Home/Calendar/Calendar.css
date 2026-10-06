@@ -1,0 +1,12 @@
+.calendar-image{
+    width: 95vw;
+    max-width: 600px;
+    height: auto;
+}
+
+.event-button{
+    height: 78px;
+    width: auto;
+    position: relative;
+    bottom: 60px;
+}

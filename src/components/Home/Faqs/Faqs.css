@@ -1,0 +1,7 @@
+.faqs-description{
+    color: var(--yellow);
+    font-size: var(--title-size);
+    font-family: var(--font-antonio);
+    text-align: center;
+    margin: 0px;
+}

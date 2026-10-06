@@ -1,0 +1,19 @@
+.information-banner{
+    width: auto;
+    height: 187px;
+    position: relative;
+    z-index: 2; 
+}
+
+.information-text1{
+    font-size: var(--text-size);
+    font-family: var(--font-monst);
+    margin: 5px;
+}
+
+.information-text2{
+    font-size: var(--text-size);
+    font-family: var(--font-antonio);
+    color: var(--yellow);
+    margin: 5px;
+}

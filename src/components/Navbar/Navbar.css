@@ -1,0 +1,27 @@
+.navbar-container {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+
+  height: 98px;
+  width: 100vw;
+
+}
+
+
+.navbar-logo {
+  height: 55px;
+  width: auto;
+  position: absolute;
+  left: 5vw;
+  top: 10px;
+}
+
+.navbar-menu {
+  height: 55px;
+  width: auto;
+  position: absolute;
+  right: 5vw;
+  top: 10px;
+}
+

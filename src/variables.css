@@ -1,0 +1,10 @@
+#root {
+    --yellow: #D6A92D;
+
+    --text-size: 16px;
+    --title-size: 24px;
+
+    --font-monst: 'Montserrat', sans-serif;
+    --font-antonio: 'Roboto', sans-serif;
+    --font-oswald: 'Roboto', sans-serif;
+}
