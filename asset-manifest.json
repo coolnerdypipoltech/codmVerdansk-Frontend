@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.2e133190.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.e8a68c79.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.9728b917.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.2a204e20.js",
     "static/js/453.b15b3f4e.chunk.js": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js",
     "static/media/Background_Calendario.png": "/codmVerdansk-Frontend/static/media/Background_Calendario.697c403e6ec471c9cc92.png",
-    "static/media/Background_Inicio.png": "/codmVerdansk-Frontend/static/media/Background_Inicio.3341c374c984c648ff7b.png",
+    "static/media/calendar.png": "/codmVerdansk-Frontend/static/media/calendar.83f30e3f33b7b97fb3b3.png",
+    "static/media/Background_Inicio.png": "/codmVerdansk-Frontend/static/media/Background_Inicio.a331c0b3422e7d1e2ee1.png",
     "static/media/Background_5Fases.png": "/codmVerdansk-Frontend/static/media/Background_5Fases.86a7a7e4b72c88c7ec39.png",
     "static/media/Background_Botargas.png": "/codmVerdansk-Frontend/static/media/Background_Botargas.54c7e835deb1aaf1862b.png",
+    "static/media/Background_Video.png": "/codmVerdansk-Frontend/static/media/Background_Video.f6791a6a4010c8974cb3.png",
+    "static/media/Background_Creadores_contenido.png": "/codmVerdansk-Frontend/static/media/Background_Creadores_contenido.1b2fee509310f20b4957.png",
     "static/media/Background_señal.png": "/codmVerdansk-Frontend/static/media/Background_señal.5e076821b09db390d637.png",
-    "static/media/Background_Creadores_contenido.png": "/codmVerdansk-Frontend/static/media/Background_Creadores_contenido.25321f1af161c40a8234.png",
-    "static/media/Background_Video.png": "/codmVerdansk-Frontend/static/media/Background_Video.436e12a6d52ed56207e6.png",
     "static/media/Background_faqs.png": "/codmVerdansk-Frontend/static/media/Background_faqs.883dc7b815400c869f0a.png",
-    "static/media/calendar.png": "/codmVerdansk-Frontend/static/media/calendar.2505919924fc175fb86c.png",
     "static/media/Background_desktop.webp": "/codmVerdansk-Frontend/static/media/Background_desktop.5e5457b025b9282061e4.webp",
     "static/media/mascots-banner.png": "/codmVerdansk-Frontend/static/media/mascots-banner.e67186b88a36cf6cc297.png",
+    "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.7cbb70cb981b4ff1bf92.png",
     "static/media/Background_mobile.webp": "/codmVerdansk-Frontend/static/media/Background_mobile.4ccda0d024106093de87.webp",
-    "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.8537bd264d212f89346a.png",
     "static/media/phase-info-4.png": "/codmVerdansk-Frontend/static/media/phase-info-4.6ede93b4be231e009c7c.png",
     "static/media/phase-info-1.png": "/codmVerdansk-Frontend/static/media/phase-info-1.f439ab64393378bf8495.png",
     "static/media/Header.png": "/codmVerdansk-Frontend/static/media/Header.6b4dbc55a48a947ffa78.png",
@@ -44,12 +44,13 @@
     "static/media/faqsPage-item.png": "/codmVerdansk-Frontend/static/media/faqsPage-item.cc672c92c422b5ae5326.png",
     "static/media/Menu.png": "/codmVerdansk-Frontend/static/media/Menu.d4df3c9e6294d9f631a0.png",
     "index.html": "/codmVerdansk-Frontend/index.html",
-    "main.2e133190.css.map": "/codmVerdansk-Frontend/static/css/main.2e133190.css.map",
-    "main.e8a68c79.js.map": "/codmVerdansk-Frontend/static/js/main.e8a68c79.js.map",
+    "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
+    "main.9728b917.css.map": "/codmVerdansk-Frontend/static/css/main.9728b917.css.map",
+    "main.2a204e20.js.map": "/codmVerdansk-Frontend/static/js/main.2a204e20.js.map",
     "453.b15b3f4e.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e133190.css",
-    "static/js/main.e8a68c79.js"
+    "static/css/main.9728b917.css",
+    "static/js/main.2a204e20.js"
   ]
 }
