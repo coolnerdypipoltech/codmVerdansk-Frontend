@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.d1a99811.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.c605d947.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.2c59823a.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.e8a68c79.js",
     "static/js/453.b15b3f4e.chunk.js": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js",
     "static/media/Background_Calendario.png": "/codmVerdansk-Frontend/static/media/Background_Calendario.697c403e6ec471c9cc92.png",
     "static/media/Background_Inicio.png": "/codmVerdansk-Frontend/static/media/Background_Inicio.3341c374c984c648ff7b.png",
@@ -44,12 +44,12 @@
     "static/media/faqsPage-item.png": "/codmVerdansk-Frontend/static/media/faqsPage-item.cc672c92c422b5ae5326.png",
     "static/media/Menu.png": "/codmVerdansk-Frontend/static/media/Menu.d4df3c9e6294d9f631a0.png",
     "index.html": "/codmVerdansk-Frontend/index.html",
-    "main.d1a99811.css.map": "/codmVerdansk-Frontend/static/css/main.d1a99811.css.map",
-    "main.c605d947.js.map": "/codmVerdansk-Frontend/static/js/main.c605d947.js.map",
+    "main.2c59823a.css.map": "/codmVerdansk-Frontend/static/css/main.2c59823a.css.map",
+    "main.e8a68c79.js.map": "/codmVerdansk-Frontend/static/js/main.e8a68c79.js.map",
     "453.b15b3f4e.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1a99811.css",
-    "static/js/main.c605d947.js"
+    "static/css/main.2c59823a.css",
+    "static/js/main.e8a68c79.js"
   ]
 }
