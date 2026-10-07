@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.f9f0ef58.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.3d0f2285.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.20511785.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.25caee7c.js",
     "static/js/453.b15b3f4e.chunk.js": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js",
     "static/media/Background_Calendario.png": "/codmVerdansk-Frontend/static/media/Background_Calendario.697c403e6ec471c9cc92.png",
     "static/media/calendar.png": "/codmVerdansk-Frontend/static/media/calendar.83f30e3f33b7b97fb3b3.png",
@@ -15,12 +15,13 @@
     "static/media/Background_desktop.webp": "/codmVerdansk-Frontend/static/media/Background_desktop.5e5457b025b9282061e4.webp",
     "static/media/mascots-banner.png": "/codmVerdansk-Frontend/static/media/mascots-banner.e67186b88a36cf6cc297.png",
     "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.7cbb70cb981b4ff1bf92.png",
+    "static/media/phases_sticker.png": "/codmVerdansk-Frontend/static/media/phases_sticker.e9d24a275f8af58fe44f.png",
     "static/media/Background_mobile.webp": "/codmVerdansk-Frontend/static/media/Background_mobile.4ccda0d024106093de87.webp",
-    "static/media/phase-info-4.png": "/codmVerdansk-Frontend/static/media/phase-info-4.6ede93b4be231e009c7c.png",
-    "static/media/phase-info-1.png": "/codmVerdansk-Frontend/static/media/phase-info-1.f439ab64393378bf8495.png",
+    "static/media/phase-info-4.png": "/codmVerdansk-Frontend/static/media/phase-info-4.07f1e835148fb7d3a9bb.png",
+    "static/media/phase-info-3.png": "/codmVerdansk-Frontend/static/media/phase-info-3.c5889a3882dd2b4eeb77.png",
+    "static/media/phase-info-2.png": "/codmVerdansk-Frontend/static/media/phase-info-2.d7a73819e3a1cfbf5604.png",
+    "static/media/phase-info-1.png": "/codmVerdansk-Frontend/static/media/phase-info-1.0c056f4ba88ff2e4628a.png",
     "static/media/Header.png": "/codmVerdansk-Frontend/static/media/Header.6b4dbc55a48a947ffa78.png",
-    "static/media/phase-info-2.png": "/codmVerdansk-Frontend/static/media/phase-info-2.9f0c325869722c2c9862.png",
-    "static/media/phase-info-3.png": "/codmVerdansk-Frontend/static/media/phase-info-3.c7543ad01d7d627a5dae.png",
     "static/media/background_sticker.png": "/codmVerdansk-Frontend/static/media/background_sticker.83d06c145285f8c8440e.png",
     "static/media/footer-bckg.png": "/codmVerdansk-Frontend/static/media/footer-bckg.ee4a1b6003f5ae2d7ccd.png",
     "static/media/home_logo.png": "/codmVerdansk-Frontend/static/media/home_logo.17c8a221add55ca315fc.png",
@@ -29,9 +30,11 @@
     "static/media/info-title.png": "/codmVerdansk-Frontend/static/media/info-title.6a1d2d34aac493c1f1ad.png",
     "static/media/faqsPage-title.png": "/codmVerdansk-Frontend/static/media/faqsPage-title.9e6b0236798fe104775c.png",
     "static/media/creators-title.png": "/codmVerdansk-Frontend/static/media/creators-title.0e85541ef17e590131d9.png",
+    "static/media/creatorsPage_title.png": "/codmVerdansk-Frontend/static/media/creatorsPage_title.4dea9f1263c16d1da2cc.png",
     "static/media/faqs-banner.png": "/codmVerdansk-Frontend/static/media/faqs-banner.4d8691049fd5f1e3758e.png",
     "static/media/mascots-title.png": "/codmVerdansk-Frontend/static/media/mascots-title.501693ae5b9eb1669740.png",
     "static/media/signal_info.png": "/codmVerdansk-Frontend/static/media/signal_info.5cf5910f0c1951d6de76.png",
+    "static/media/intro_sticker1.png": "/codmVerdansk-Frontend/static/media/intro_sticker1.c811976266f558229d31.png",
     "static/media/date_banner.png": "/codmVerdansk-Frontend/static/media/date_banner.127861905ae524a0ffd0.png",
     "static/media/rulebook.png": "/codmVerdansk-Frontend/static/media/rulebook.4a0da61640f3aee84010.png",
     "static/media/creators-button.png": "/codmVerdansk-Frontend/static/media/creators-button.9777d7a6c6018db780ad.png",
@@ -41,16 +44,17 @@
     "static/media/VerdanskLogo.png": "/codmVerdansk-Frontend/static/media/VerdanskLogo.28cd80b7a2803b441f45.png",
     "static/media/faqs-button.png": "/codmVerdansk-Frontend/static/media/faqs-button.8fbe959675f0de9306b0.png",
     "static/media/info_granade.png": "/codmVerdansk-Frontend/static/media/info_granade.926c44dd10778ba854e0.png",
+    "static/media/creator.png": "/codmVerdansk-Frontend/static/media/creator.0cf03dd96189811d4cac.png",
     "static/media/faqsPage-item.png": "/codmVerdansk-Frontend/static/media/faqsPage-item.cc672c92c422b5ae5326.png",
     "static/media/Menu.png": "/codmVerdansk-Frontend/static/media/Menu.d4df3c9e6294d9f631a0.png",
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
-    "main.f9f0ef58.css.map": "/codmVerdansk-Frontend/static/css/main.f9f0ef58.css.map",
-    "main.3d0f2285.js.map": "/codmVerdansk-Frontend/static/js/main.3d0f2285.js.map",
+    "main.20511785.css.map": "/codmVerdansk-Frontend/static/css/main.20511785.css.map",
+    "main.25caee7c.js.map": "/codmVerdansk-Frontend/static/js/main.25caee7c.js.map",
     "453.b15b3f4e.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9f0ef58.css",
-    "static/js/main.3d0f2285.js"
+    "static/css/main.20511785.css",
+    "static/js/main.25caee7c.js"
   ]
 }
