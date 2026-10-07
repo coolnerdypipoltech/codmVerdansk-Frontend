@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.20511785.css",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.c40a3cee.css",
     "main.js": "/codmVerdansk-Frontend/static/js/main.25caee7c.js",
     "static/js/453.b15b3f4e.chunk.js": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js",
     "static/media/Background_Calendario.png": "/codmVerdansk-Frontend/static/media/Background_Calendario.697c403e6ec471c9cc92.png",
@@ -49,12 +49,12 @@
     "static/media/Menu.png": "/codmVerdansk-Frontend/static/media/Menu.d4df3c9e6294d9f631a0.png",
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
-    "main.20511785.css.map": "/codmVerdansk-Frontend/static/css/main.20511785.css.map",
+    "main.c40a3cee.css.map": "/codmVerdansk-Frontend/static/css/main.c40a3cee.css.map",
     "main.25caee7c.js.map": "/codmVerdansk-Frontend/static/js/main.25caee7c.js.map",
     "453.b15b3f4e.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20511785.css",
+    "static/css/main.c40a3cee.css",
     "static/js/main.25caee7c.js"
   ]
 }
