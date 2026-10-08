@@ -4,16 +4,20 @@
 }
 
 .mascots-banner{
-    width: auto;
-    height: 383px;
+    width: 80vw;
+    max-width: 700px;
+    height: auto;
 }
 .rulebook{
     width: auto;
     height: 70px;
+    margin-top: 40px;
 }
     
 .mascots-text{
     font-size: var(--text-size);
     font-family: var(--font-monst);
     color: white;
+    font-weight: 800;
+    text-transform: uppercase;
 }

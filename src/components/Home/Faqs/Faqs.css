@@ -4,4 +4,8 @@
     font-family: var(--font-antonio);
     text-align: center;
     margin: 0px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
+    rotate: -3deg;
 }

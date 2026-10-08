@@ -1,11 +1,14 @@
 .navbar-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 1000;
 
   height: 98px;
   width: 100vw;
-
+  transition: ease-in-out 0.3s;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 
@@ -23,5 +26,46 @@
   position: absolute;
   right: 5vw;
   top: 10px;
+}
+
+.navbar-menu-content{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgb(0, 0, 0); /* Optional: add a semi-transparent background */
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 20px;
+}
+
+.navbar-menu-content p {
+  font-size: var(--title-size);
+  font-weight: bold;
+  font-family: var(--font-oswald);
+  color: white;
+  text-decoration: none;
+  margin:  0px;
+}
+
+@media (min-width: 1000px) {
+
+
+  .navbar-logo {
+    height: 65px;
+    top: 15px;
+  }
+
+  .navbar-menu {
+    height: 65px;
+    top: 15px;
+  }
 }
 

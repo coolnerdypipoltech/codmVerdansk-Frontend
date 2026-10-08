@@ -1,15 +1,15 @@
 
 import './Calendar.css';
 
-import { commonWallpaperD, commonWallpaperM, calendar, EventButton } from '../../../assets/assetsDirectory';
+import { commonWallpaperD, calendar_bckg, calendar, EventButton } from '../../../assets/assetsDirectory';
 import { useViewport } from "../../../context/ViewportContext";
 
 const Calendar = () => {
   const { isMobile } = useViewport();
   return (
-    <div className="general-page" style={{ backgroundImage: `url(${isMobile ? commonWallpaperM : commonWallpaperD})`, minHeight: "714px" }}>
-      <img src={calendar} alt="Calendar" className="calendar-image" />
-      <img src={EventButton} alt="Event Button" className="event-button" />
+    <div className="general-page" style={{ backgroundImage: `url(${isMobile ? calendar_bckg : commonWallpaperD})`, minHeight: "713px", maxHeight: isMobile ? "713px" : undefined }}>
+      <img loading="lazy" src={calendar} alt="Calendar" className="calendar-image" />
+      <img loading="lazy" src={EventButton} alt="Event Button" className="event-button" onClick={()=> window.open("https://maps.app.goo.gl/DH9LjYsT1PjMnSCZ9")}/>
     </div>
   );
 };

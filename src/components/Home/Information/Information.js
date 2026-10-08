@@ -2,8 +2,10 @@ import "./Information.css";
 
 import {
   commonWallpaperD,
-  commonWallpaperM,
   Information_banner,
+  Information_bckg,
+  Information_ghost,
+  Information_granade,  
 } from "../../../assets/assetsDirectory";
 import { useViewport } from "../../../context/ViewportContext";
 
@@ -14,10 +16,11 @@ const Information = () => {
     <div
       className="general-page"
       style={{
-        backgroundImage: `url(${isMobile ? commonWallpaperM : commonWallpaperD})`,
-        minHeight: "714px",
+
+        minHeight: "635px",
+        maxHeight: isMobile ? "635px" : undefined,
         justifyContent: "flex-start",
-        
+        backgroundImage: `url(${isMobile ? Information_bckg : commonWallpaperD})`,
       }}
     >
       <div style={{ height: "50px" }}></div>
@@ -34,6 +37,16 @@ const Information = () => {
         con todo el caos de la <br></br>
         cultura pop latina
       </p>
+      <img
+        src={Information_ghost}
+        alt="Information Ghost"
+        className="information-ghost"
+      />
+      <img
+        src={Information_granade}
+        alt="Information Granade"
+        className="information-granade"
+      />
     </div>
   );
 };

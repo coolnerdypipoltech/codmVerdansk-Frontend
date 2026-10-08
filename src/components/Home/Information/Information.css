@@ -8,12 +8,34 @@
 .information-text1{
     font-size: var(--text-size);
     font-family: var(--font-monst);
-    margin: 5px;
+    margin: 0px;
+    color: white;
 }
 
 .information-text2{
     font-size: var(--text-size);
-    font-family: var(--font-antonio);
+    font-family: var(--font-anton);
     color: var(--yellow);
-    margin: 5px;
+    margin: 2px;
+    line-height: 1.2;
 }
+
+.information-ghost{
+    width: auto;
+    height: 336px;
+    position: absolute;
+    left: 0px;
+    top: 50.5%;
+    z-index: 1;
+}
+
+.information-granade{
+    width: auto;
+    height: 128px;
+    position: absolute;
+    right: 0px;
+    top: 45.5%;
+    z-index: 1;
+}
+
+

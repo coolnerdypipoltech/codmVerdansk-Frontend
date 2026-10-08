@@ -1,0 +1,164 @@
+.phase-title{
+    width: auto;
+    height: 194px;
+    position: relative;
+    z-index: 2;
+}
+
+.phase-text{
+    font-family: var(--font-oswald);
+    font-size: calc(var(--title-size) * 1.1);
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    position: relative;
+    top: 20px;
+}
+
+.phase-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+        width:  90vw;
+    height: auto;
+    max-width: 400px;
+}
+
+
+.phase-info{
+    width:  90vw;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    left: 0px;
+    object-position: center;
+}
+
+.phase-carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.phase-carousel-control-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    left: -40px;
+    top: 15px;
+}
+
+.phase-carousel-control-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    right: -40px;
+    top: 20px;
+}
+
+
+.phase-carousel-control-img{
+    display: block;
+    min-width: 48px;
+    min-height: 48px;
+    object-fit: contain;
+}
+
+.phase-carousel-control:focus-visible,
+.phase-carousel-indicator:focus-visible{
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
+.phase-carousel-indicators{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.phase-carousel-indicator{
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 1px solid var(--yellow);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.phase-carousel-indicator.is-active{
+    background: var(--yellow);
+}
+
+@media (max-width: 720px){
+
+
+    .phase-carousel{
+        grid-template-columns: 32px minmax(0, 1fr) 32px;
+        gap: 8px;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .phase-carousel-control img{
+        max-height: 60px;
+        height: 60px;
+        width: auto;
+    }
+}
+
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%); opacity: 0; scale: 0.5; -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); -ms-transform: translateX(-100%); -o-transform: translateX(-100%); }
+  to   { transform: translateX(0);     opacity: 1; scale: 1; }
+}
+
+@keyframes slideInFromRight {
+  from { transform: translateX(100%);  opacity: 0; scale: 0.5; -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); }
+  to   { transform: translateX(0);     opacity: 1; scale: 1; }
+}
+
+
+.phases-mobil--right-in {
+  animation-name: slideInFromLeft;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.phases-mobil--left-in {
+  animation-name: slideInFromRight;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+    
+
+.phase-sticker{
+    position: absolute;
+    width: auto;
+    height: 198px;
+    left: -220px;
+    top: 5.5%;
+    z-index: 1;
+}
