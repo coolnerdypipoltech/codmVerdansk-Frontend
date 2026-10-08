@@ -1,7 +1,7 @@
 
 import './Navbar.css';
 import { useEffect, useState } from "react";
-import { NavBar_Logo, NavBar_Menu, NavBar_Header, NavBar_bckg, commonWallpaperM, commonWallpaperD, fb_icon, ig_icon, yt_icon,  } from "../../assets/assetsDirectory";
+import { NavBar_Logo, NavBar_Menu, NavBar_Header, NavBar_bckg, commonWallpaperM, commonWallpaperD, fb_icon, ig_icon, yt_icon, phase_left } from "../../assets/assetsDirectory";
 import { useViewport } from "../../context/ViewportContext";
 import { useNavigate, useLocation  } from "react-router-dom";
 const Navbar = () => {
@@ -88,6 +88,18 @@ const Navbar = () => {
     </div>
     {open && (
       <div className="navbar-menu-content"  style={{ backgroundImage: `url(${isMobile ? NavBar_bckg : commonWallpaperD})` }}>
+              <div className="phase-left-container" style={{paddingTop: "5vh", paddingBottom: "10vh"}} onClick={() => setOpen(false)}>
+        <img
+          src={phase_left}
+          alt="back"
+          className="phase-left"
+          onClick={() => {
+            navigate("/");
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }}
+        ></img>
+      </div>
         {Object.values(menuOptions).map((option, index) => (
           <p key={index} onClick={(e) => handleNavigate(e, option.target)}>{option.label}</p>
         ))}

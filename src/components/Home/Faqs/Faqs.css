@@ -9,3 +9,8 @@
     text-transform: uppercase;
     rotate: -3deg;
 }
+
+.faqs-button{
+    width: auto;
+    height: 78px;
+}

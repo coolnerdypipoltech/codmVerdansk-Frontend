@@ -50,7 +50,7 @@ import phase_bckg from "./phases/Background_5Fases.png"
 import phase_sticker from "./phases/phases_sticker.png"
 
 import footer_bckg from "./footer/footer-bckg.png"
-import cod_logo from "./footer/Cod-logo.png"
+import cod_logo from "./footer/Cod-logo.svg"
 import fb_icon from "./footer/fb-icon.png"
 import ig_icon from "./footer/insta-icon.png"
 import yt_icon from "./footer/yt-icon.png"
@@ -62,6 +62,7 @@ import faqsPage_title from "./faqsPage/faqsPage-title.png"
 
 import CreatorsPage_title from "./CreatorsPage/creatorsPage_title.png"
 import commonCreator from "./CreatorsPage/creator.png"
+import CreatorsPage_bckg from "./CreatorsPage/creatorsPage_Bckg.png"
 
 import commonWallpaperM from  "./test/Background_mobile.webp"
 import commonWallpaperD from  "./test/Background_desktop.webp"
@@ -72,5 +73,5 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
     creators_banner, creators_button, creators_title, creators_bckg, faqs_banner, faqs_button, faqs_title, faqs_bckg,
     rulebook, Mascots_bckg, calendar, EventButton, calendar_bckg,
     phase_title, phase_left, phase_right, phase_info_1, phase_info_2, phase_info_3, phase_info_4, phase_bckg, phase_sticker,
-     footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon, 
+     footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon, CreatorsPage_bckg,
      faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, CreatorsPage_title, commonCreator, Intro_bckg2, Intro_ghost_main };

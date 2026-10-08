@@ -1,5 +1,5 @@
 .calendar-image{
-    width: 95vw;
+    width: 110vw;
     max-width: 600px;
     height: auto;
 }
@@ -9,4 +9,5 @@
     width: auto;
     position: relative;
     bottom: 60px;
+    padding-bottom: 20px;
 }

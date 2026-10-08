@@ -83,6 +83,8 @@
     min-width: 48px;
     min-height: 48px;
     object-fit: contain;
+    max-width: 48px;
+    max-height: 48px;
 }
 
 .phase-carousel-control:focus-visible,

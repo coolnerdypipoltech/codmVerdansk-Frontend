@@ -25,7 +25,7 @@ const FaqsPage = () => {
         paddingTop: "100px",
         justifyContent: "flex-start",
         backgroundRepeat: "repeat-y",
-
+                backgroundSize: " 100% 100%",
       }}
     >
       <div className="phase-left-container">

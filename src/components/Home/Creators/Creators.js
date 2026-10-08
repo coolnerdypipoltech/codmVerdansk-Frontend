@@ -10,7 +10,7 @@ const Creators = () => {
   const navigate = useNavigate();
   return (
     <div className="general-page" style={{ backgroundImage: `url(${isMobile ? creators_bckg : commonWallpaperD})`, minHeight: "768px", maxHeight: isMobile ? "768px" : undefined, gap: "20px", justifyContent: "flex-start" }}>
-      <div style={{height: "20px"}}></div>
+
       <img loading="lazy" src={creators_title} alt="Creators Title" className="creators-title" />
       <img loading="lazy" src={creators_banner} alt="Creators Banner" className="creators-banner" />
       <img loading="lazy" src={creators_button} alt="Creators Button" className="creators-button" onClick={() => { navigate("/creators"); window.scrollTo(0, 0); }} />

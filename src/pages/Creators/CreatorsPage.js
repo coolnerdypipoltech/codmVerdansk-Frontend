@@ -5,11 +5,10 @@ import { useNavigate } from "react-router-dom";
 import {
 
   phase_left,
-  faqs_bckg,
   commonWallpaperD,
   CreatorsPage_title,
   commonCreator,
-  
+  CreatorsPage_bckg,
 } from "../../assets/assetsDirectory";
 
 const items = [
@@ -48,13 +47,13 @@ const CreatorsPage = () => {
     <div
       className="general-page"
       style={{
-        backgroundImage: `url(${isMobile ? faqs_bckg : commonWallpaperD})`,
+        backgroundImage: `url(${isMobile ? CreatorsPage_bckg : commonWallpaperD})`,
         minHeight: "648px",
         marginTop: "0px",
         paddingTop: "120px",
         justifyContent: "flex-start",
         backgroundRepeat: "repeat-y",
-
+        backgroundSize: "contain",
       }}
     >
       <div className="phase-left-container">
