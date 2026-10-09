@@ -82,7 +82,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="navbar-container" style={{ backgroundImage: `url(${NavBar_Header})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: showInfinixBar ? 1 : 0 }}>
+    <div className="navbar-container" style={{ backgroundImage: `url(${NavBar_Header})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: "repeat-x", opacity: showInfinixBar ? 1 : 0 }}>
       <img loading="lazy" src={NavBar_Logo} alt="Navbar Logo" className="navbar-logo" onClick={() => {navigate("/"); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}></img>
       <img loading="lazy" src={NavBar_Menu} alt="Navbar Menu" className="navbar-menu" onClick={() => setOpen(!open)}></img>
     </div>

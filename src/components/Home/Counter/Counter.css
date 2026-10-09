@@ -37,3 +37,24 @@
     font-size: 16px;
     margin-bottom: 8px !important;
 }
+
+@media (min-width: 720px) {
+
+  .counter-container {
+    height: 12vw;
+    min-height: 120px;
+
+    width: 40vw;
+    max-width: 50vw;
+    gap: 5vw;
+  }
+
+  .counter-number {
+    font-size: 5vw;
+  }
+
+  .counter-label {
+    font-size: 2vw;
+  }
+
+}

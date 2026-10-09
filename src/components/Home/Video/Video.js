@@ -1,7 +1,7 @@
 
 import './Video.css';
 
-import { commonWallpaperD, vide_bckg } from '../../../assets/assetsDirectory';
+import { vide_bckg, desktop_3 } from '../../../assets/assetsDirectory';
 import { useViewport } from "../../../context/ViewportContext";
 
 const Video = () => {
@@ -10,7 +10,7 @@ const Video = () => {
     <div
       className="general-page"
       style={{
-        backgroundImage: `url(${isMobile ? vide_bckg : commonWallpaperD})`,
+        backgroundImage: `url(${isMobile ? vide_bckg : desktop_3})`,
         minHeight: "647px",
         maxHeight: isMobile ? "647px" : undefined,
       }}

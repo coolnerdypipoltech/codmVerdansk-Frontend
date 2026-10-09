@@ -13,3 +13,18 @@
     width: auto;
 
 }
+
+
+.creators-desktop-holder{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 720px){
+    .creators-button{
+            height: auto;
+            width: 30vw;
+    }
+}

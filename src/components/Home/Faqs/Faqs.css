@@ -14,3 +14,18 @@
     width: auto;
     height: 78px;
 }
+
+
+.faqs-desktop-holder{
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 720px){
+    .faqs-button{
+            height: auto;
+            width: 30vw;
+    }
+}

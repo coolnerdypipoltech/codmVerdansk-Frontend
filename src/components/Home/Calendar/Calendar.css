@@ -11,3 +11,18 @@
     bottom: 60px;
     padding-bottom: 20px;
 }
+
+
+.calendar-desktop-holder{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 720px){
+    .event-button{
+            height: auto;
+            width: 30vw;
+    }
+}

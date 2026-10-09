@@ -67,8 +67,23 @@ import CreatorsPage_bckg from "./CreatorsPage/creatorsPage_Bckg.png"
 import commonWallpaperM from  "./test/Background_mobile.webp"
 import commonWallpaperD from  "./test/Background_desktop.webp"
 
+import desktop_1 from "./desktop/desktop-1.png"
+import desktop_2 from "./desktop/desktop-2.png"
+import desktop_3 from "./desktop/desktop-3.png"
+import desktop_4 from "./desktop/desktop-4.png"
+import desktop_5 from "./desktop/desktop-5.png"
+import desktop_6 from "./desktop/desktop-6.png"
+import desktop_7 from "./desktop/desktop-7.png"
+import desktop_8 from "./desktop/desktop-8.png"
+import desktop_9 from "./desktop/desktop-9.png"
+import desktop_10 from "./desktop/desktop-10.png"
+import desktop_11 from "./desktop/desktop-11.png"
+import desktop_12 from "./desktop/desktop-12.png"
+
+
 
 export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM, commonWallpaperD, Intro_date_banner, 
+    desktop_1, desktop_2, desktop_3, desktop_4, desktop_5, desktop_6, desktop_7, desktop_8, desktop_9, desktop_10, desktop_11, desktop_12,
     Intro_ghost, Intro_hashtag, Intro_logo, Intro_banner, Intro_bckg, Intro_sticker1, vide_bckg, Information_banner, Information_bckg, Mascots_title, Mascots_banner, 
     creators_banner, creators_button, creators_title, creators_bckg, faqs_banner, faqs_button, faqs_title, faqs_bckg,
     rulebook, Mascots_bckg, calendar, EventButton, calendar_bckg,

@@ -68,5 +68,9 @@
     height: 65px;
     top: 15px;
   }
+
+  .navbar-container{
+    height: 120px;
+  }
 }
 

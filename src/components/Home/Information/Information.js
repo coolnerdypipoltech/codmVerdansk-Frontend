@@ -1,11 +1,12 @@
 import "./Information.css";
 
 import {
-  commonWallpaperD,
   Information_banner,
   Information_bckg,
   Information_ghost,
   Information_granade,  
+  desktop_4,
+  desktop_5
 } from "../../../assets/assetsDirectory";
 import { useViewport } from "../../../context/ViewportContext";
 
@@ -13,14 +14,14 @@ const Information = () => {
   const { isMobile } = useViewport();
 
   return (
-    <div
+    <>{isMobile ? (<div
       className="general-page"
       style={{
 
         minHeight: "635px",
         maxHeight: isMobile ? "635px" : undefined,
         justifyContent: "flex-start",
-        backgroundImage: `url(${isMobile ? Information_bckg : commonWallpaperD})`,
+        backgroundImage: `url(${isMobile ? Information_bckg : desktop_4})`,
       }}
     >
       <div style={{ height: "50px" }}></div>
@@ -47,7 +48,25 @@ const Information = () => {
         alt="Information Granade"
         className="information-granade"
       />
-    </div>
+    </div>) : (
+      <div
+        className="general-page-desktop"
+        style={{
+        }}
+      >
+        <img
+          src={desktop_4}
+          alt="Information Background"
+          className="bckg-desktop"
+        />
+         <img
+          src={desktop_5}
+          alt="Information Background"
+          className="bckg-desktop"
+        />
+
+      </div>
+    ) } </>
   );
 };
 

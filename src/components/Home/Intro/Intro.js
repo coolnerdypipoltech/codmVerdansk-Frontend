@@ -2,7 +2,6 @@ import "./Intro.css";
 import Counter from "../Counter/Counter";
 
 import {
-  commonWallpaperD,
   Intro_date_banner,
   Intro_hashtag,
   Intro_logo,
@@ -10,7 +9,9 @@ import {
   Intro_bckg,
   Intro_ghost,
   Intro_sticker1,
-  Intro_bckg2, Intro_ghost_main
+  Intro_bckg2, Intro_ghost_main,
+  desktop_1,
+  desktop_2
 } from "../../../assets/assetsDirectory";
 
 import { useViewport } from "../../../context/ViewportContext";
@@ -19,11 +20,11 @@ const Intro = () => {
   const { isMobile } = useViewport();
 
   return (
-    <div
+    <>{isMobile ? (<div
       className="general-page"
       style={{
         minHeight: "800px",
-        maxHeight: isMobile ? "768px" : undefined,
+        maxHeight: "768px",
         marginTop: "75px",
         paddingTop: "0px",
         top: "2px",
@@ -32,7 +33,7 @@ const Intro = () => {
     >
       <img
         loading="lazy"
-        src={isMobile ? Intro_bckg : commonWallpaperD}
+        src={Intro_bckg}
         alt="Intro Background"
         className="intro-bckg"
       />
@@ -93,7 +94,26 @@ const Intro = () => {
         alt="Intro Sticker 1"
         className="intro-sticker1"
       />
-    </div>
+    </div>) : (<div
+      className="general-page-desktop"
+    >
+      <img
+        loading="lazy"
+        src={desktop_1}
+        alt="Intro Background"
+        className="bckg-desktop"
+        style={{marginTop: "90px"}}
+      />
+      <div className="counter-desktop">
+        <Counter></Counter>
+      </div>
+      <img
+        loading="lazy"
+        src={desktop_2}
+        alt="Intro Background 2"
+        className="bckg-desktop"
+      />
+    </div>)  } </>
   );
 };
 
