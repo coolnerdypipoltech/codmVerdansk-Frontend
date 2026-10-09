@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.95b3f933.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.7170aea6.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.7df3ffc5.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.164db1ba.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/Background_Calendario.png": "/codmVerdansk-Frontend/static/media/Background_Calendario.697c403e6ec471c9cc92.png",
     "static/media/calendar.png": "/codmVerdansk-Frontend/static/media/calendar.83f30e3f33b7b97fb3b3.png",
@@ -69,12 +69,12 @@
     "static/media/Cod-logo.svg": "/codmVerdansk-Frontend/static/media/Cod-logo.fe3a1bfdea9872c48b8414fbaf24decb.svg",
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
-    "main.95b3f933.css.map": "/codmVerdansk-Frontend/static/css/main.95b3f933.css.map",
-    "main.7170aea6.js.map": "/codmVerdansk-Frontend/static/js/main.7170aea6.js.map",
+    "main.7df3ffc5.css.map": "/codmVerdansk-Frontend/static/css/main.7df3ffc5.css.map",
+    "main.164db1ba.js.map": "/codmVerdansk-Frontend/static/js/main.164db1ba.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95b3f933.css",
-    "static/js/main.7170aea6.js"
+    "static/css/main.7df3ffc5.css",
+    "static/js/main.164db1ba.js"
   ]
 }
