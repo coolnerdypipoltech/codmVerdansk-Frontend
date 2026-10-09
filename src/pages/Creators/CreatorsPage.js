@@ -53,7 +53,9 @@ const CreatorsPage = () => {
         paddingTop: "120px",
         justifyContent: "flex-start",
         backgroundRepeat: "repeat-y",
-        backgroundSize: "contain",
+
+                backgroundPosition: "top",
+        backgroundSize: "100% auto",
       }}
     >
       <div className="phase-left-container">

@@ -1,8 +1,8 @@
 {
   "name": "codmVerdansk",
   "version": "0.1.0",
-  "homepage": "http://157.230.72.221/",
-  "homepage2": "https://coolnerdypipoltech.github.io/codmVerdansk-Frontend/",
+  "homepage2": "http://157.230.72.221/",
+  "homepage": "https://coolnerdypipoltech.github.io/codmVerdansk-Frontend/",
 
   "private": true,
   "dependencies": {

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import {
   faqsPage_title,
   phase_left,
-  faqs_bckg,
+  faqsPage_bckg,
   commonWallpaperD,
   
 } from "../../assets/assetsDirectory";
@@ -19,13 +19,14 @@ const FaqsPage = () => {
     <div
       className="general-page"
       style={{
-        backgroundImage: `url(${isMobile ? faqs_bckg : commonWallpaperD})`,
+        backgroundImage: `url(${isMobile ? faqsPage_bckg : commonWallpaperD})`,
         minHeight: "648px",
         marginTop: "0px",
         paddingTop: "100px",
         justifyContent: "flex-start",
         backgroundRepeat: "repeat-y",
-                backgroundSize: " 100% 100%",
+        backgroundPosition: "top",
+        backgroundSize: "100% auto",
       }}
     >
       <div className="phase-left-container">

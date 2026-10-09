@@ -39,6 +39,8 @@ import faqs_button from "./faqs/faqs-button.png"
 import faqs_title from "./faqs/faqs-title.png"
 import faqs_bckg from "./faqs/Background_faqs.png"
 
+
+
 import phase_title from "./phases/phases-title.png"
 import phase_left from "./phases/phases-left.png"
 import phase_right from "./phases/phases-right.png"
@@ -59,6 +61,9 @@ import faqs_arrow from "./faqsPage/faqs-arrow.svg"
 import faqsPage_item from "./faqsPage/faqsPage-item.png"
 import faqsPage_num from "./faqsPage/faqsPage-num.png"
 import faqsPage_title from "./faqsPage/faqsPage-title.png"
+import faqsPage_bckg from "./faqsPage/faqsPage-background.png"
+
+
 
 import CreatorsPage_title from "./CreatorsPage/creatorsPage_title.png"
 import commonCreator from "./CreatorsPage/creator.png"
@@ -88,5 +93,5 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
     creators_banner, creators_button, creators_title, creators_bckg, faqs_banner, faqs_button, faqs_title, faqs_bckg,
     rulebook, Mascots_bckg, calendar, EventButton, calendar_bckg,
     phase_title, phase_left, phase_right, phase_info_1, phase_info_2, phase_info_3, phase_info_4, phase_bckg, phase_sticker,
-     footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon, CreatorsPage_bckg,
+     footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon, CreatorsPage_bckg, faqsPage_bckg,
      faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, CreatorsPage_title, commonCreator, Intro_bckg2, Intro_ghost_main };
