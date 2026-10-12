@@ -1,21 +1,13 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.1e0f3531.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.6c7e8da2.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.f1630291.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.4515028c.js",
     "static/js/453.b15b3f4e.chunk.js": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js",
-    "static/media/desktop-1.png": "/codmVerdansk-Frontend/static/media/desktop-1.8fd35178ad7966413041.png",
-    "static/media/desktop-4.png": "/codmVerdansk-Frontend/static/media/desktop-4.2f6ed1825b3789ce4fd8.png",
-    "static/media/desktop-5.png": "/codmVerdansk-Frontend/static/media/desktop-5.a07c96840f90546aa15a.png",
-    "static/media/desktop-7.png": "/codmVerdansk-Frontend/static/media/desktop-7.b7499ba9eb5260203065.png",
-    "static/media/desktop-8.png": "/codmVerdansk-Frontend/static/media/desktop-8.7d96c14f03da9288dc2e.png",
-    "static/media/desktop-9.png": "/codmVerdansk-Frontend/static/media/desktop-9.2dc5f76b617b64bd5995.png",
-    "static/media/desktop-3.png": "/codmVerdansk-Frontend/static/media/desktop-3.af02990640b86e3f00a1.png",
-    "static/media/desktop-6.png": "/codmVerdansk-Frontend/static/media/desktop-6.a01708b8c1d7c275306b.png",
-    "static/media/desktop-2.png": "/codmVerdansk-Frontend/static/media/desktop-2.a0bc37b8a097c13a9373.png",
     "static/media/Background_desktop.webp": "/codmVerdansk-Frontend/static/media/Background_desktop.5e5457b025b9282061e4.webp",
     "static/media/Background_mobile.webp": "/codmVerdansk-Frontend/static/media/Background_mobile.4ccda0d024106093de87.webp",
     "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.d75fc9fcbd01041c008e.png",
     "static/media/Header.png": "/codmVerdansk-Frontend/static/media/Header.16ca7975ecb930488186.png",
+    "static/media/desktop-ghost-banner.png": "/codmVerdansk-Frontend/static/media/desktop-ghost-banner.a0d1ce4efbbd9c0c5832.png",
     "static/media/home_logo.png": "/codmVerdansk-Frontend/static/media/home_logo.69d4c6dfddf772dbf154.png",
     "static/media/background_sticker.png": "/codmVerdansk-Frontend/static/media/background_sticker.e3179f922c30fbf1453d.png",
     "static/media/info-title.png": "/codmVerdansk-Frontend/static/media/info-title.9f7e0c205bf7643be902.png",
@@ -25,6 +17,7 @@
     "static/media/creatorsPage_title.png": "/codmVerdansk-Frontend/static/media/creatorsPage_title.8700af174145a6e1cd9c.png",
     "static/media/signal_info.png": "/codmVerdansk-Frontend/static/media/signal_info.a558955d7f79ae0e527e.png",
     "static/media/creators-title.png": "/codmVerdansk-Frontend/static/media/creators-title.a39c7bdd2b49ca6fde4d.png",
+    "static/media/desktop-info.png": "/codmVerdansk-Frontend/static/media/desktop-info.c38f78219723d7853cf7.png",
     "static/media/mascots-title.png": "/codmVerdansk-Frontend/static/media/mascots-title.4c20e2583a115061f5f4.png",
     "static/media/intro_sticker1.png": "/codmVerdansk-Frontend/static/media/intro_sticker1.3f21569e6e79735d54df.png",
     "static/media/rulebook.png": "/codmVerdansk-Frontend/static/media/rulebook.b9944cf312248411463f.png",
@@ -38,12 +31,12 @@
     "static/media/Cod-logo.svg": "/codmVerdansk-Frontend/static/media/Cod-logo.fe3a1bfdea9872c48b8414fbaf24decb.svg",
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
-    "main.1e0f3531.css.map": "/codmVerdansk-Frontend/static/css/main.1e0f3531.css.map",
-    "main.6c7e8da2.js.map": "/codmVerdansk-Frontend/static/js/main.6c7e8da2.js.map",
+    "main.f1630291.css.map": "/codmVerdansk-Frontend/static/css/main.f1630291.css.map",
+    "main.4515028c.js.map": "/codmVerdansk-Frontend/static/js/main.4515028c.js.map",
     "453.b15b3f4e.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e0f3531.css",
-    "static/js/main.6c7e8da2.js"
+    "static/css/main.f1630291.css",
+    "static/js/main.4515028c.js"
   ]
 }
