@@ -13,6 +13,10 @@
     height: 70px;
     margin-top: 40px;
 }
+
+.rulebook:hover{
+    animation: classic-scale 1s ease-in-out;
+}
     
 .mascots-text{
     font-size: var(--text-size);
@@ -20,4 +24,51 @@
     color: white;
     font-weight: 800;
     text-transform: uppercase;
+}
+
+
+
+.mascots-title-desktop{
+    width: auto;
+    height: 151px;
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mascots-banner-desktop{
+    width: 30vw;
+    height: auto;
+        position:absolute;
+    top: 15%;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.rulebook-desktop{
+    height: auto;
+            width: 20vw;
+    margin-top: 40px;
+        position:absolute;
+    top: 45%;
+    left: 60%;
+
+}
+
+.rulebook-desktop:hover{
+    animation: classic-scale 1s ease-in-out;
+
+}
+    
+.mascots-text-desktop{
+    font-size: var(--text-desktop-size);
+    font-family: var(--font-monst);
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+        position:absolute;
+        width: 40vw;
+    top: 40%;
+    left: 70%;
+    transform: translateX(-50%);
 }

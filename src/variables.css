@@ -85,6 +85,8 @@
 
     --text-size: 16px;
     --title-size: 24px;
+    --text-desktop-size: 1.3vw;
+    --title-desktop-size: 2vw;
 
     --font-monst: "Montserrat", sans-serif;
     --font-antonio: "Antonio", sans-serif;

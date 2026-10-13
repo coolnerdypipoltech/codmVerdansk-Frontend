@@ -5,11 +5,12 @@ import { useNavigate } from "react-router-dom";
 import {
 
   phase_left,
-  commonWallpaperD,
+  desktop_tile_1,
   CreatorsPage_title,
   commonCreator,
   CreatorsPage_bckg,
 } from "../../assets/assetsDirectory";
+import Reveal from "../../components/Reveal/Reveal";
 
 const items = [
   commonCreator,
@@ -47,7 +48,7 @@ const CreatorsPage = () => {
     <div
       className="general-page"
       style={{
-        backgroundImage: `url(${isMobile ? CreatorsPage_bckg : commonWallpaperD})`,
+        backgroundImage: `url(${isMobile ? CreatorsPage_bckg : desktop_tile_1})`,
         minHeight: "648px",
         marginTop: "0px",
         paddingTop: "120px",
@@ -59,7 +60,7 @@ const CreatorsPage = () => {
       }}
     >
       <div className="phase-left-container">
-        <img
+        <Reveal><img
           src={phase_left}
           alt="back"
           className="phase-left"
@@ -68,12 +69,12 @@ const CreatorsPage = () => {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
           }}
-        ></img>
+        ></img></Reveal>
       </div>
-      <img loading="lazy" src={CreatorsPage_title} alt="back" className="CreatorsPage-title"></img>
+      <Reveal><img loading="lazy" src={CreatorsPage_title} alt="back" className="CreatorsPage-title"></img></Reveal>
       <div className="creators-items-container">
           {items.map((item, index) => (
-            <img key={index} src={item} alt={`Creator ${index}`} className="creator-item" />
+            <Reveal key={index}><img src={item} alt={`Creator ${index}`} className="creator-item" /></Reveal>
           ))}
       </div>
     </div>

@@ -41,20 +41,20 @@
 @media (min-width: 720px) {
 
   .counter-container {
-    height: 12vw;
+    height: 6vw;
     min-height: 120px;
 
-    width: 40vw;
+    width: 20vw;
     max-width: 50vw;
-    gap: 5vw;
+    gap: 2vw;
   }
 
   .counter-number {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 
   .counter-label {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
 }

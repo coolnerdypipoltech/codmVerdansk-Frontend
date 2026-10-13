@@ -3,3 +3,14 @@
   border: 0;
   z-index: 2;
 }
+
+.home-video-desktop {
+  width: 75vw;
+  border: 0;
+  z-index: 2;
+  position: absolute;
+  aspect-ratio: 16 / 9;
+  top: 27vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

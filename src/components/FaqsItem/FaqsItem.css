@@ -45,6 +45,8 @@
 }
 
 
+
+
 .faqsItem-num-text{
     font-size: 24px;
     font-family: var(--font-antonio);
@@ -78,4 +80,30 @@
     text-align: left;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+@media (min-width: 720px) {
+    .faqsItem-img{
+        width: 100%;
+        height: auto;
+       
+    }
+
+    .faqsItem-description-container{
+        width: 75vw;
+    }
+
+    .faqsItem-text-container{
+        height: auto;
+
+    }
+
+    .faqsItem-description-text{
+        height: auto;
+        
+    }
+
+    .faqsItem-title-text{
+        top: -5.5vw;
+    }
 }

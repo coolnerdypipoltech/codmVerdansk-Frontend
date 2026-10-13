@@ -1,10 +1,11 @@
 
 import './Creators.css';
 
-import { creators_bckg, creators_banner, creators_button, creators_title, desktop_10  } from '../../../assets/assetsDirectory';
+import { creators_bckg, creators_banner, creators_button, creators_title, desktop_8, desktop_ghost_banner  } from '../../../assets/assetsDirectory';
 import { useViewport } from "../../../context/ViewportContext";
 import {  useNavigate } from 'react-router-dom';
-
+import Reveal from "../../Reveal/Reveal";
+import { trackEvent } from '../../../utils/analytics';
 const Creators = () => {
   const { isMobile } = useViewport();
   const navigate = useNavigate();
@@ -20,20 +21,22 @@ const Creators = () => {
           justifyContent: "flex-start"
         }}
       >
-        <img loading="lazy" src={creators_title} alt="Creators Title" className="creators-title" />
-        <img loading="lazy" src={creators_banner} alt="Creators Banner" className="creators-banner" />
-        <img loading="lazy" src={creators_button} alt="Creators Button" className="creators-button" onClick={() => { navigate("/creators"); window.scrollTo(0, 0); }} />
+        <Reveal><img loading="lazy" src={creators_title} alt="Creators Title" className="creators-title" /></Reveal>
+        <Reveal><img loading="lazy" src={creators_banner} alt="Creators Banner" className="creators-banner" /></Reveal>
+        <Reveal><img loading="lazy" src={creators_button} alt="Creators Button" className="creators-button" onClick={() => { trackEvent('Creators', 'Click', 'Creators Button'); navigate("/creators"); window.scrollTo(0, 0); }} /></Reveal>
       </div>
     ) : (
       <div className="general-page-desktop">
         <img
           loading="lazy"
-          src={desktop_10}
+          src={desktop_8}
           alt="Creators Background"
           className="bckg-desktop"
         />
+        <Reveal><img loading="lazy" src={creators_title} alt="Creators Title" className="creators-title-desktop" /></Reveal>
+        <Reveal><img loading="lazy" src={desktop_ghost_banner} alt="Creators Banner" className="creators-banner-desktop" /></Reveal>
         <div className='creators-desktop-holder'>
-                  <img loading="lazy" src={creators_button} alt="Creators Button" className="creators-button" onClick={() => { navigate("/creators"); window.scrollTo(0, 0); }} />
+                  <Reveal><img loading="lazy" src={creators_button} alt="Creators Button" className="creators-button" onClick={() => { trackEvent('Creators', 'Click', 'Creators Button'); navigate("/creators"); window.scrollTo(0, 0); }} /></Reveal>
         </div>
       </div>
     ) }</>

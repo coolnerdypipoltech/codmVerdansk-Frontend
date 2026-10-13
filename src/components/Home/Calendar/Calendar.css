@@ -12,10 +12,22 @@
     padding-bottom: 20px;
 }
 
+.event-button:hover{
+    animation: classic-scale 1s ease-in-out;
+}
 
+.calendar-image-desktop{
+    width: 58vw;
+
+    height: auto;
+    position:absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .calendar-desktop-holder{
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -23,6 +35,6 @@
 @media (min-width: 720px){
     .event-button{
             height: auto;
-            width: 30vw;
+            width: 20vw;
     }
 }

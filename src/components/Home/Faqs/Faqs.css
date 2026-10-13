@@ -7,7 +7,7 @@
     line-height: 1.2;
     font-weight: bold;
     text-transform: uppercase;
-    rotate: -3deg;
+    rotate: -1deg;
 }
 
 .faqs-button{
@@ -15,17 +15,75 @@
     height: 78px;
 }
 
-
-.faqs-desktop-holder{
-    position: absolute;
-    top: 91%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.faqs-button:hover{
+    animation: classic-scale 1s ease-in-out;
 }
+
+
 
 @media (min-width: 720px){
     .faqs-button{
             height: auto;
-            width: 30vw;
+            width: 20vw;
     }
+}
+
+
+
+.faqs-description-desktop{
+    color: var(--yellow);
+    font-size: var(--title-desktop-size);
+    font-family: var(--font-antonio);
+    text-align: center;
+    margin: 0px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
+    rotate: -1deg;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.faqs-title-desktop{
+    position: absolute;
+    top:    15%;
+    left: 50%;
+    width: 30vw;
+    height: auto;
+
+    transform: translate(-50%, -50%);
+}
+
+.faqs-banner-desktop{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width:  25vw;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.faqs-button-desktop{
+    width: auto;
+    height: 78px;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .faqs-button-desktop:hover{
+        animation: classic-scale 1s ease-in-out;
+    }
+
+
+
+    .faqs-desktop-holder{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

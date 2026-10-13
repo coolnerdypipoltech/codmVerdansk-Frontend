@@ -56,6 +56,7 @@
     right: -50px;
     top: 500px;
     z-index: 1;
+    animation: up-down 3s ease-in-out infinite;
 }
 
 .intro-bckg{
@@ -89,10 +90,96 @@
     z-index: 0;
 }
 
+
+
+
+.intro-ghost-main-desktop{
+    position: absolute;
+    width: auto;
+    height: 40vw;
+    left: 82%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.intro-logo-desktop{
+    width: auto;
+    height: 15vw;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-banner-desktop{
+    width: auto;
+    height: 11vw;
+    position: absolute;
+    z-index: 2;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .counter-desktop{
     position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.intro-description-desktop{
+    color: black;
+    font-size: var(--text-desktop-size);
+    font-family: var(--font-oswald);
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    margin: 5px 0;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 3;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-date-banner-desktop {
+    width: auto;
+    height: 8vw;
+    position: absolute;
+    z-index: 2;
     top: 76%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.intro-hashtag-desktop {
+    width: auto;
+    height: 7vw;
+    position: absolute;
+    z-index: 2; 
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro-sticker1-desktop {
+    width: auto;
+    height: 15vw;
+    position: absolute;
+    z-index: 2;
+    top: 130%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    animation: up-down 3s ease-in-out infinite;
+}
+.intro-ghost-desktop {
+    position: absolute;
+    width: auto;
+    height: 29vw;
+    left: 5%;
+    top: 90%;
     z-index: 2;
 }

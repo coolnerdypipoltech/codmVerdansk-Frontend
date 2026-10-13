@@ -1,7 +1,7 @@
 
 import './Navbar.css';
 import { useEffect, useState } from "react";
-import { NavBar_Logo, NavBar_Menu, NavBar_Header, NavBar_bckg, commonWallpaperM, commonWallpaperD, fb_icon, ig_icon, yt_icon, phase_left } from "../../assets/assetsDirectory";
+import { NavBar_Logo, NavBar_Menu, NavBar_Header, NavBar_bckg, desktop_menu, fb_icon, ig_icon, yt_icon, phase_left } from "../../assets/assetsDirectory";
 import { useViewport } from "../../context/ViewportContext";
 import { useNavigate, useLocation  } from "react-router-dom";
 const Navbar = () => {
@@ -87,8 +87,8 @@ const Navbar = () => {
       <img loading="lazy" src={NavBar_Menu} alt="Navbar Menu" className="navbar-menu" onClick={() => setOpen(!open)}></img>
     </div>
     {open && (
-      <div className="navbar-menu-content"  style={{ backgroundImage: `url(${isMobile ? NavBar_bckg : commonWallpaperD})` }}>
-              <div className="phase-left-container" style={{paddingTop: "5vh", paddingBottom: "10vh"}} onClick={() => setOpen(false)}>
+      <div className="navbar-menu-content"  style={{ backgroundImage: `url(${isMobile ? NavBar_bckg : desktop_menu})` }}>
+              <div className="phase-left-container" style={{position: "absolute", top: "5vh"}} onClick={() => setOpen(false)}>
         <img
           src={phase_left}
           alt="back"

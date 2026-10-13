@@ -27,6 +27,7 @@
     left: 0px;
     top: 50.5%;
     z-index: 1;
+    animation: sway-rotate 10s ease-in-out infinite;
 }
 
 .information-granade{
@@ -36,6 +37,64 @@
     right: 0px;
     top: 45.5%;
     z-index: 1;
+    animation: bob-and-tilt 13s ease-in-out infinite;
 }
 
 
+.information-banner-desktop{
+    width: auto;
+    height: 15vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 2; 
+}
+
+.information-text1-desktop{
+    font-size: var(--text-desktop-size);
+    font-family: var(--font-monst);
+    margin: 0px;
+    color: white;
+        position: absolute;
+    left: 50%;
+    top: 64%;
+    transform: translateX(-50%);
+}
+
+.information-text2-desktop{
+    font-size: var(--title-desktop-size) ;
+    font-family: var(--font-anton);
+    color: var(--yellow);
+    margin: 2px;
+    line-height: 1.2;
+        position: absolute;
+    left: 50%;
+    top: 65.5%;
+    transform: translateX(-50%);
+}
+
+.information-ghost-desktop{
+    width: auto;
+    height: 35vw;
+    position: absolute;
+    top: 55%;
+    z-index: 1;
+        position: absolute;
+    left: 8%;
+    transform: translateX(-50%);
+    animation: sway-rotate 10s ease-in-out infinite;
+}
+
+.information-granade-desktop{
+    width: auto;
+    height: 17vw;
+    position: absolute;
+    right: 0px;
+    top: 72%;
+    z-index: 1;
+        position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    animation: bob-and-tilt 13s ease-in-out infinite;
+}

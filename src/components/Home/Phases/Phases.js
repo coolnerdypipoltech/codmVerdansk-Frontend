@@ -1,6 +1,6 @@
 import "./Phases.css";
 import { useState, useRef } from "react";
-
+import FrameAnimation from "../../FrameAnimation/FrameAnimation";
 import {
   phase_title,
   phase_left,
@@ -10,26 +10,38 @@ import {
   phase_info_3,
   phase_info_4,
   phase_bckg,
-  phase_sticker,
-  desktop_6,
-  desktop_7
+  desktop_5,
+  sticker_truck_1,
+  sticker_truck_2,
+  sticker_truck_3,
+  
 } from "../../../assets/assetsDirectory";
 import { useViewport } from "../../../context/ViewportContext";
-
+import Reveal from "../../Reveal/Reveal";
+import { trackEvent } from '../../../utils/analytics';
 const phaseImages = [phase_info_1, phase_info_2, phase_info_3, phase_info_4];
 
 const Phases = () => {
   const { isMobile } = useViewport();
   const [currentPhase, setCurrentPhase] = useState(0);
+  const [firstTime, setFirstTime] = useState(true);
   const direction = useRef("back"); 
 
   const showPreviousPhase = () => {
     direction.current = "back";
+    if(firstTime) {
+      setFirstTime(false);
+      trackEvent('Phases', 'Click', 'Phases');
+    }
     setCurrentPhase((current) => (current - 1 + phaseImages.length) % phaseImages.length);
   };
 
   const showNextPhase = () => {
     direction.current = "forward";
+    if(firstTime) {
+      setFirstTime(false);
+      trackEvent('Phases', 'Click', 'Phases');
+    }
     setCurrentPhase((current) => (current + 1) % phaseImages.length);
   };
 
@@ -37,15 +49,15 @@ const Phases = () => {
     <>{isMobile ? (<><div
       className="general-page"
       style={{
-        backgroundImage: `url(${isMobile ? phase_bckg : desktop_6})`,
+        backgroundImage: `url(${isMobile ? phase_bckg : desktop_5})`,
         minHeight: "832px",
         maxHeight: isMobile ? "832px" : undefined,
       }}
     >
-      <img loading="lazy" src={phase_title} alt="Phase Title" className="phase-title" />
-      <p className="phase-text">
+      <Reveal><img loading="lazy" src={phase_title} alt="Phase Title" className="phase-title" /></Reveal>
+      <Reveal><p className="phase-text">
         ponte verdansk <br></br>y domina el mapa
-      </p>
+      </p></Reveal>
 
       <div className="phase-carousel" aria-label="Fases de Verdansk">
         <button
@@ -85,16 +97,24 @@ const Phases = () => {
           />
         ))}
       </div>
-      <img loading="lazy" src={phase_sticker} alt="Phase Sticker" className="phase-sticker" />
+      <Reveal><div className="phase-sticker-trigger" aria-hidden="true"></div></Reveal>
+      <FrameAnimation loading="lazy" fps={6} frames={[sticker_truck_1, sticker_truck_2, sticker_truck_3]} alt="Phase Sticker" className="phase-sticker" />
     </div></>) : (<><div
       className="general-page-desktop"
     >
       <img
         loading="lazy"
-        src={desktop_6}
+        src={desktop_5}
         alt="Intro Background"
         className="bckg-desktop"
       />
+
+      <Reveal><img loading="lazy" src={phase_title} alt="Phase Title" className="phase-title-desktop" /></Reveal>
+      <Reveal><p className="phase-text-desktop">
+        ponte verdansk <br></br>y domina el mapa
+      </p></Reveal>
+
+
       <div className="phases-information-desktop">
         <div className="phase-carousel" aria-label="Fases de Verdansk">
         <button
@@ -135,13 +155,9 @@ const Phases = () => {
         ))}
       </div>
       </div>
+              <FrameAnimation loading="lazy" fps={6} frames={[sticker_truck_1, sticker_truck_2, sticker_truck_3]} alt="Phase Sticker" className="phase-sticker-desktop" />
+   
 
-      <img
-        loading="lazy"
-        src={desktop_7}
-        alt="Intro Background 2"
-        className="bckg-desktop"
-      />
     </div></>) }</>
     
   );

@@ -14,10 +14,14 @@
 
 }
 
+.creators-button:hover{
+    animation: classic-scale 1s ease-in-out;
+}
+
 
 .creators-desktop-holder{
     position: absolute;
-    top: 85%;
+    top: 72%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -25,6 +29,26 @@
 @media (min-width: 720px){
     .creators-button{
             height: auto;
-            width: 30vw;
+            width: 20vw;
     }
+}
+
+
+.creators-title-desktop{
+    height: auto;
+    width: 30vw;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.creators-banner-desktop{
+    height: 25vw;
+    width: auto;
+
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

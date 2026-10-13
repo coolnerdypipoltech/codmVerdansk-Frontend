@@ -18,14 +18,16 @@ const HomePage = () => {
   return (
     <div className="home-page" >
       <div id="inicio"><Intro /></div>
-      <Video></Video>
+
+              <Video></Video>
       <div id="informacion"><Information></Information></div>
+
       <div id="fases"><Phases></Phases></div>
       <div id="botargas"><Mascots></Mascots></div>
       <div id="calendario"><Calendar></Calendar></div>
       <div id="creadores"><Creators></Creators></div>
-      <div id="faqs"><Faqs></Faqs></div>
-    </div>
+      <div id="faqs"><Faqs></Faqs></div></div>
+
   );
 };
 

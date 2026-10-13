@@ -1,57 +1,68 @@
 import NavBar_Header from "./navbar/Header.png"
 import NavBar_Menu from "./navbar/Menu.png"
 import NavBar_Logo from "./navbar/VerdanskLogo.png"
-import NavBar_bckg from "./navbar/menu-background.png"
+//import NavBar_bckg from "./navbar/menu-background.png"
+
+
 
 import Intro_date_banner from "./intro/date_banner.png"
 import Intro_ghost from "./intro/background_sticker.png"
 import Intro_hashtag from "./intro/hashtag.png"
 import Intro_logo from "./intro/home_logo.png"
 import Intro_banner from "./intro/signal_info.png"
-import Intro_bckg from "./intro/Background_Inicio.png"
-import Intro_bckg2 from "./intro/Background_Inicio2.png"
-import Intro_ghost_main from "./intro/Ghost_Inicio.png"
+//import Intro_bckg from "./intro/Background_Inicio.png"
+//import Intro_bckg2 from "./intro/Background_Inicio2.png"
+//import Intro_ghost_main from "./intro/Ghost_Inicio.png"
+
 import Intro_sticker1 from "./intro/intro_sticker1.png"
 
-import vide_bckg from "./video/Background_Video.png"
+//import vide_bckg from "./video/Background_Video.png"
 
 import Information_banner from "./info/info-title.png"
-import Information_bckg from "./info/Background_señal.png"
+//import Information_bckg from "./info/Background_señal.png"
 import Information_ghost from "./info/info_ghost.png"
 import Information_granade from "./info/info_granade.png"
 
 import Mascots_title from "./mascots/mascots-title.png"
-import Mascots_banner from "./mascots/mascots-banner.png"
+//import Mascots_banner from "./mascots/mascots-banner.png"
 import rulebook from "./mascots/rulebook.png"
-import Mascots_bckg from "./mascots/Background_Botargas.png"
+//import Mascots_bckg from "./mascots/Background_Botargas.png"
 
-import calendar from "./calendar/calendar.png"
+
+
+
+//import calendar from "./calendar/calendar.png"
+
 import EventButton from "./calendar/event-button.png"
-import calendar_bckg from "./calendar/Background_Calendario.png"
+//import calendar_bckg from "./calendar/Background_Calendario.png"
 
 import creators_banner from "./creators/creators-banner.png"
 import creators_button from "./creators/creators-button.png"
 import creators_title from "./creators/creators-title.png"  
-import creators_bckg from "./creators/Background_Creadores_contenido.png"
+
+//import creators_bckg from "./creators/Background_Creadores_contenido.png"
 
 import faqs_banner from "./faqs/faqs-banner.png"
 import faqs_button from "./faqs/faqs-button.png"
 import faqs_title from "./faqs/faqs-title.png"
-import faqs_bckg from "./faqs/Background_faqs.png"
+//import faqs_bckg from "./faqs/Background_faqs.png"
 
 
 
 import phase_title from "./phases/phases-title.png"
 import phase_left from "./phases/phases-left.png"
 import phase_right from "./phases/phases-right.png"
-import phase_info_1 from "./phases/phase-info-1.png"
-import phase_info_2 from "./phases/phase-info-2.png"
-import phase_info_3 from "./phases/phase-info-3.png"
-import phase_info_4 from "./phases/phase-info-4.png"
-import phase_bckg from "./phases/Background_5Fases.png"
-import phase_sticker from "./phases/phases_sticker.png"
 
-import footer_bckg from "./footer/footer-bckg.png"
+//import phase_info_1 from "./phases/phase-info-1.png"
+//import phase_info_2 from "./phases/phase-info-2.png"
+//import phase_info_3 from "./phases/phase-info-3.png"
+//import phase_info_4 from "./phases/phase-info-4.png"
+
+//import phase_bckg from "./phases/Background_5Fases.png"
+//import phase_sticker from "./phases/phases_sticker.png"
+
+//import footer_bckg from "./footer/footer-bckg.png"
+
 import cod_logo from "./footer/Cod-logo.svg"
 import fb_icon from "./footer/fb-icon.png"
 import ig_icon from "./footer/insta-icon.png"
@@ -60,38 +71,93 @@ import yt_icon from "./footer/yt-icon.png"
 import faqs_arrow from "./faqsPage/faqs-arrow.svg"
 import faqsPage_item from "./faqsPage/faqsPage-item.png"
 import faqsPage_num from "./faqsPage/faqsPage-num.png"
-import faqsPage_title from "./faqsPage/faqsPage-title.png"
-import faqsPage_bckg from "./faqsPage/faqsPage-background.png"
+
+//import faqsPage_title from "./faqsPage/faqsPage-title.png"
 
 
+//import faqsPage_bckg from "./faqsPage/faqsPage-background.png"
+
+
+import desktop_ghost_banner from "./desktop/desktop-ghost-banner.png"
+import desktop_info from "./desktop/desktop-info.png"
 
 import CreatorsPage_title from "./CreatorsPage/creatorsPage_title.png"
 import commonCreator from "./CreatorsPage/creator.png"
-import CreatorsPage_bckg from "./CreatorsPage/creatorsPage_Bckg.png"
+//import CreatorsPage_bckg from "./CreatorsPage/creatorsPage_Bckg.png"
+
 
 import commonWallpaperM from  "./test/Background_mobile.webp"
 import commonWallpaperD from  "./test/Background_desktop.webp"
 
-import desktop_1 from "./desktop/desktop-1.png"
-import desktop_2 from "./desktop/desktop-2.png"
-import desktop_3 from "./desktop/desktop-3.png"
-import desktop_4 from "./desktop/desktop-4.png"
-import desktop_5 from "./desktop/desktop-5.png"
-import desktop_6 from "./desktop/desktop-6.png"
-import desktop_7 from "./desktop/desktop-7.png"
-import desktop_8 from "./desktop/desktop-8.png"
-import desktop_9 from "./desktop/desktop-9.png"
-import desktop_10 from "./desktop/desktop-10.png"
-import desktop_11 from "./desktop/desktop-11.png"
-import desktop_12 from "./desktop/desktop-12.png"
+import desktop_menu from "./desktop/desktop-menu.png"
+import desktop_tile_1 from "./desktop/desktop-tile-1.png"
+import desktop_tile_2 from "./desktop/desktop-tile-2.png"
+import desktop_faq_item from "./desktop/desktop-faq-item.png"
+
+import sticker_granade_1 from "./stickers-ani/sticker-granade-1.png"
+import sticker_granade_2 from "./stickers-ani/sticker-granade-2.png"
+
+import sticker_truck_1 from "./stickers-ani/sticker-truck-1.png"
+import sticker_truck_2 from "./stickers-ani/sticker-truck-2.png"
+import sticker_truck_3 from "./stickers-ani/sticker-truck-3.png"
+
+import sticker_walkt_1 from "./stickers-ani/sticker-walkt-1.png"
+import sticker_walkt_2 from "./stickers-ani/sticker-walkt-2.png"
+
+const calendar = "https://verdanskcodm.com/calendar/calendar.png";
+const calendar_bckg = "https://verdanskcodm.com/calendar/Background_Calendario.png";
+
+const creators_bckg = "https://verdanskcodm.com/creators/Background_Creadores_contenido.png";
+
+const NavBar_bckg = "https://verdanskcodm.com/navbar/menu-background.png";
+
+const Intro_bckg = "https://verdanskcodm.com/intro/Background_Inicio.png";
+const Intro_bckg2 = "https://verdanskcodm.com/intro/Background_Inicio2.png";
+const Intro_ghost_main = "https://verdanskcodm.com/intro/Ghost_Inicio.png"; 
+const vide_bckg = "https://verdanskcodm.com/video/Background_Video.png";
+const Information_bckg = "https://verdanskcodm.com/info/Background_señal.png";
+
+const Mascots_bckg = "https://verdanskcodm.com/mascots/Background_Botargas.png";
+const Mascots_banner = "https://verdanskcodm.com/mascots/mascots-banner.png";
+const phase_bckg = "https://verdanskcodm.com/phases/Background_5Fases.png";
+const phase_sticker = "https://verdanskcodm.com/phases/phases_sticker.png";
+
+const faqs_bckg = "https://verdanskcodm.com/faqs/Background_faqs.png";
+const footer_bckg = "https://verdanskcodm.com/footer/footer-bckg.png";
+
+const faqsPage_title = "https://verdanskcodm.com/faqsPage/faqsPage-title.png";
+const faqsPage_bckg = "https://verdanskcodm.com/faqsPage/faqsPage-background.png";
+
+const CreatorsPage_bckg = "https://verdanskcodm.com/CreatorsPage/creatorsPage_Bckg.png";
+
+const phase_info_1 = "https://verdanskcodm.com/phases/phase-info-1.png";
+const phase_info_2 = "https://verdanskcodm.com/phases/phase-info-2.png";
+const phase_info_3 = "https://verdanskcodm.com/phases/phase-info-3.png";
+const phase_info_4 = "https://verdanskcodm.com/phases/phase-info-4.png";
 
 
+const desktop_1 = "https://verdanskcodm.com/desktop/desktop-1.1.png";
+const desktop_2 = "https://verdanskcodm.com/desktop/desktop-2.png";
+const desktop_3 = "https://verdanskcodm.com/desktop/desktop-3.png";
+const desktop_4 = "https://verdanskcodm.com/desktop/desktop-4.png";
+const desktop_5 = "https://verdanskcodm.com/desktop/desktop-5.png";
+const desktop_6 = "https://verdanskcodm.com/desktop/desktop-6.png";
+const desktop_7 = "https://verdanskcodm.com/desktop/desktop-7.png";
+const desktop_8 = "https://verdanskcodm.com/desktop/desktop-8.png";
+const desktop_9 = "https://verdanskcodm.com/desktop/desktop-9.png";
 
-export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM, commonWallpaperD, Intro_date_banner, 
-    desktop_1, desktop_2, desktop_3, desktop_4, desktop_5, desktop_6, desktop_7, desktop_8, desktop_9, desktop_10, desktop_11, desktop_12,
+const desktop_calendar = "https://verdanskcodm.com/desktop/desktop-calendar1.1.png";
+
+const videoMobile = "https://verdanskcodm.com/videos/SV_LOGO_Loop_A.mp4";
+const videoDesktop = "https://verdanskcodm.com/videos/SV_LOGO_Loop_Aweb.mp4";
+
+export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM, commonWallpaperD, Intro_date_banner, desktop_calendar, desktop_ghost_banner, desktop_info,
+    desktop_1, desktop_2, desktop_3, desktop_4, desktop_5, desktop_6, desktop_7, desktop_8, desktop_9, 
     Intro_ghost, Intro_hashtag, Intro_logo, Intro_banner, Intro_bckg, Intro_sticker1, vide_bckg, Information_banner, Information_bckg, Mascots_title, Mascots_banner, 
     creators_banner, creators_button, creators_title, creators_bckg, faqs_banner, faqs_button, faqs_title, faqs_bckg,
-    rulebook, Mascots_bckg, calendar, EventButton, calendar_bckg,
+    rulebook, Mascots_bckg, calendar, EventButton, calendar_bckg, desktop_menu,
     phase_title, phase_left, phase_right, phase_info_1, phase_info_2, phase_info_3, phase_info_4, phase_bckg, phase_sticker,
      footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon, CreatorsPage_bckg, faqsPage_bckg,
+     desktop_tile_1, desktop_tile_2, desktop_faq_item, videoMobile, videoDesktop,
+     sticker_granade_1, sticker_granade_2, sticker_truck_1, sticker_truck_2, sticker_truck_3, sticker_walkt_1, sticker_walkt_2, 
      faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, CreatorsPage_title, commonCreator, Intro_bckg2, Intro_ghost_main };

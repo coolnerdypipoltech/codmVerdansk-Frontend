@@ -87,6 +87,10 @@
     max-height: 48px;
 }
 
+.phase-carousel-control-img:hover {
+    animation: pulse-soft 1s ease-in-out;
+}
+
 .phase-carousel-control:focus-visible,
 .phase-carousel-indicator:focus-visible{
     outline: 2px solid currentColor;
@@ -97,7 +101,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 18px;
+    margin-top: 0px;
 }
 
 .phase-carousel-indicator{
@@ -155,6 +159,20 @@
   animation-timing-function: ease-in-out;
 }
     
+.phase-sticker-desktop{
+    position: absolute;
+    width: auto;
+    height: 20vw;
+    left: 10%;
+    top: 5.5%;
+    z-index: 1;
+    animation: drift-left-right 5s ease-in-out infinite;
+    /* Entrada de izquierda a derecha: anima "margin-left" (no "left" ni "transform")
+       para no pelearse con drift-left-right de arriba, que sí usa transform, y para
+       no mover la posición que IntersectionObserver necesita medir. */
+    margin-left: -300px;
+    transition: margin-left 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
 
 .phase-sticker{
     position: absolute;
@@ -163,29 +181,46 @@
     left: -220px;
     top: 5.5%;
     z-index: 1;
+    animation: drift-left-right 5s ease-in-out infinite;
+    /* Entrada de izquierda a derecha: anima "margin-left" (no "left" ni "transform")
+       para no pelearse con drift-left-right de arriba, que sí usa transform, y para
+       no mover la posición que IntersectionObserver necesita medir. */
+    margin-left: -300px;
+    transition: margin-left 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.phases-information-desktop{
+/* Sensor invisible del tamaño de la sección: como el sticker arranca fuera de
+   pantalla (y .App tiene overflow:hidden), observarlo a él directamente nunca
+   "intersecta". En su lugar observamos este sensor, que sí se queda dentro del
+   viewport, y el sticker reacciona por CSS a su estado (son hermanos en el DOM). */
+.phase-sticker-trigger{
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
 }
+
+.phase-sticker-trigger.reveal-visible ~ .phase-sticker{
+    margin-left: 0;
+}
+
 
 @media (min-width: 720px){
 .phase-info-container{
 
     width: 100%;
-        width:  40vw;
+        width:  30vw;
     height: auto;
     max-width: 800px;
+    
 }
 
 
 .phase-info{
-    width:  40vw;
+    width:  30vw;
     height: auto;
     max-width: 800px;
+    
 
 }
 
@@ -220,12 +255,43 @@
 
 .phase-carousel-control-img{
     display: block;
-    min-width: 7vw;
-    min-height: 7vw;
+    min-width: 1vw;
+    min-height: 1vw;
     object-fit: contain;
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 
+}
+
+
+.phase-title-desktop{
+    width: auto;
+    height: 15vw;
+
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.phase-text-desktop{
+        font-family: var(--font-oswald);
+    font-size: calc(var(--title-desktop-size));
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+        position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.phases-information-desktop{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
