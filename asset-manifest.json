@@ -1,11 +1,17 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.f10ed111.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.c1bc2a9f.js",
-    "static/js/453.b15b3f4e.chunk.js": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.20836de9.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.f77cb997.js",
+    "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
+    "static/media/Ghost_F1.png": "/codmVerdansk-Frontend/static/media/Ghost_F1.ebd5ebe3ca433b0793cd.png",
+    "static/media/Ghost_F2.png": "/codmVerdansk-Frontend/static/media/Ghost_F2.78b852ab33d10eeb5a8e.png",
+    "static/media/Ghost_F3.png": "/codmVerdansk-Frontend/static/media/Ghost_F3.cbc5a3afc44bfef8176c.png",
+    "static/media/Creadores_F2.png": "/codmVerdansk-Frontend/static/media/Creadores_F2.4cfedc8f8d6087be77ab.png",
+    "static/media/Creadores_F3.png": "/codmVerdansk-Frontend/static/media/Creadores_F3.9b0bf7144d194ade0f83.png",
     "static/media/Web_calendario_f2.png": "/codmVerdansk-Frontend/static/media/Web_calendario_f2.b91baa13af3683c6cfb4.png",
+    "static/media/Creadores_F1.png": "/codmVerdansk-Frontend/static/media/Creadores_F1.e5eb58424aebeb6c4e16.png",
     "static/media/radio_verdanks.riv": "/codmVerdansk-Frontend/static/media/radio_verdanks.db248972a817e951fcea.riv",
     "static/media/Background_desktop.webp": "/codmVerdansk-Frontend/static/media/Background_desktop.5e5457b025b9282061e4.webp",
     "static/media/desktop-tile-1.png": "/codmVerdansk-Frontend/static/media/desktop-tile-1.b7948caebd45eb001ead.png",
@@ -50,12 +56,12 @@
     "static/media/Cod-logo.svg": "/codmVerdansk-Frontend/static/media/Cod-logo.fe3a1bfdea9872c48b8414fbaf24decb.svg",
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
-    "main.f10ed111.css.map": "/codmVerdansk-Frontend/static/css/main.f10ed111.css.map",
-    "main.c1bc2a9f.js.map": "/codmVerdansk-Frontend/static/js/main.c1bc2a9f.js.map",
-    "453.b15b3f4e.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js.map"
+    "main.20836de9.css.map": "/codmVerdansk-Frontend/static/css/main.20836de9.css.map",
+    "main.f77cb997.js.map": "/codmVerdansk-Frontend/static/js/main.f77cb997.js.map",
+    "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f10ed111.css",
-    "static/js/main.c1bc2a9f.js"
+    "static/css/main.20836de9.css",
+    "static/js/main.f77cb997.js"
   ]
 }
