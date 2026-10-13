@@ -1,13 +1,20 @@
 {
   "files": {
     "main.css": "/codmVerdansk-Frontend/static/css/main.b87f72cc.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.c208bbbe.js",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.4061082f.js",
     "static/js/453.b15b3f4e.chunk.js": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js",
+    "static/media/sticker-truck-2.png": "/codmVerdansk-Frontend/static/media/sticker-truck-2.dc5d0ec3200c65f3687e.png",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
+    "static/media/sticker-truck-1.png": "/codmVerdansk-Frontend/static/media/sticker-truck-1.acb4147fb4f35f18b37a.png",
+    "static/media/sticker-truck-3.png": "/codmVerdansk-Frontend/static/media/sticker-truck-3.07790b76e4f50b4e0c95.png",
     "static/media/Background_desktop.webp": "/codmVerdansk-Frontend/static/media/Background_desktop.5e5457b025b9282061e4.webp",
     "static/media/desktop-tile-1.png": "/codmVerdansk-Frontend/static/media/desktop-tile-1.b7948caebd45eb001ead.png",
     "static/media/Background_mobile.webp": "/codmVerdansk-Frontend/static/media/Background_mobile.4ccda0d024106093de87.webp",
+    "static/media/sticker-granade-2.png": "/codmVerdansk-Frontend/static/media/sticker-granade-2.93d87d8a613ee3e47505.png",
+    "static/media/sticker-granade-1.png": "/codmVerdansk-Frontend/static/media/sticker-granade-1.3b1b1f0dd9d43ade64f2.png",
+    "static/media/sticker-walkt-1.png": "/codmVerdansk-Frontend/static/media/sticker-walkt-1.f5876d52b0490be7a744.png",
+    "static/media/sticker-walkt-2.png": "/codmVerdansk-Frontend/static/media/sticker-walkt-2.f2630e7a300bf78002fc.png",
     "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.d75fc9fcbd01041c008e.png",
     "static/media/Header.png": "/codmVerdansk-Frontend/static/media/Header.16ca7975ecb930488186.png",
     "static/media/desktop-ghost-banner.png": "/codmVerdansk-Frontend/static/media/desktop-ghost-banner.a0d1ce4efbbd9c0c5832.png",
@@ -36,11 +43,11 @@
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
     "main.b87f72cc.css.map": "/codmVerdansk-Frontend/static/css/main.b87f72cc.css.map",
-    "main.c208bbbe.js.map": "/codmVerdansk-Frontend/static/js/main.c208bbbe.js.map",
+    "main.4061082f.js.map": "/codmVerdansk-Frontend/static/js/main.4061082f.js.map",
     "453.b15b3f4e.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.b15b3f4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b87f72cc.css",
-    "static/js/main.c208bbbe.js"
+    "static/js/main.4061082f.js"
   ]
 }
