@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.55bbaa80.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.00f00c7d.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.5fc3c3b2.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.92ae0797.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -26,6 +26,7 @@
     "static/media/sticker-truck-2.png": "/codmVerdansk-Frontend/static/media/sticker-truck-2.2a3ba1cba7be276a43ab.png",
     "static/media/calendario_f2.png": "/codmVerdansk-Frontend/static/media/calendario_f2.0b8352cb1f226c9de409.png",
     "static/media/calendario_f1.png": "/codmVerdansk-Frontend/static/media/calendario_f1.9d9a9b4aa3c54fa64f0e.png",
+    "static/media/video-marco-desktop.jpeg": "/codmVerdansk-Frontend/static/media/video-marco-desktop.2cc8c2e47952aa36391a.jpeg",
     "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.d75fc9fcbd01041c008e.png",
     "static/media/video-marco-mobil.png": "/codmVerdansk-Frontend/static/media/video-marco-mobil.8d6c8d472b9806932c74.png",
     "static/media/Disparo_f2.png": "/codmVerdansk-Frontend/static/media/Disparo_f2.66eba88740bdce266e27.png",
@@ -67,12 +68,12 @@
     "static/media/Cod-logo.svg": "/codmVerdansk-Frontend/static/media/Cod-logo.fe3a1bfdea9872c48b8414fbaf24decb.svg",
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
-    "main.55bbaa80.css.map": "/codmVerdansk-Frontend/static/css/main.55bbaa80.css.map",
-    "main.00f00c7d.js.map": "/codmVerdansk-Frontend/static/js/main.00f00c7d.js.map",
+    "main.5fc3c3b2.css.map": "/codmVerdansk-Frontend/static/css/main.5fc3c3b2.css.map",
+    "main.92ae0797.js.map": "/codmVerdansk-Frontend/static/js/main.92ae0797.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55bbaa80.css",
-    "static/js/main.00f00c7d.js"
+    "static/css/main.5fc3c3b2.css",
+    "static/js/main.92ae0797.js"
   ]
 }
