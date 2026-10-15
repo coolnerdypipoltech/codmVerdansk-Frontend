@@ -1,7 +1,7 @@
 
 import './Video.css';
 
-import { vide_bckg, desktop_3 } from '../../../assets/assetsDirectory';
+import { vide_bckg, desktop_3, video_marco_mobil, video_marco_desktop } from '../../../assets/assetsDirectory';
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
 import { trackEvent } from '../../../utils/analytics';
@@ -17,6 +17,10 @@ const Video = () => {
         maxHeight: isMobile ? "647px" : undefined,
       }}
     >
+
+      
+      <img src={video_marco_mobil} alt="Video Marco Mobil" className="video-marco-mobil" />
+
       <Reveal><iframe
         className="home-video"
         style={{ height: "627px" }}
@@ -33,6 +37,9 @@ const Video = () => {
       }}
       onClick={() => trackEvent('Video', 'Click', 'Home Video')}
     >
+
+      <img src={video_marco_mobil} alt="Video Marco Mobil" className="video-marco-desktop" />
+
       <Reveal><iframe
         className="home-video-desktop "
         src="https://www.youtube.com/embed/DLzxrickFCyOs?si=4SfLygFOsMbj7bZl"

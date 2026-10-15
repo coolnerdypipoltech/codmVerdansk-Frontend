@@ -9,10 +9,13 @@ import {
   Intro_banner,
   Intro_bckg,
   
-  Intro_bckg2, Intro_ghost_main,
+  Intro_bckg2,
   desktop_1,
   desktop_2,
   desktop_info,
+  sticker_ghost_main_f1,
+  sticker_ghost_main_f2,
+  sticker_ghost_main_f3,
   sticker_Disparo_f1,
   sticker_Disparo_f2,
   sticker_Disparo_f3,
@@ -85,12 +88,14 @@ const Intro = () => {
         alt="Intro Background 2"
         className="intro-bckg2"
       /></Reveal>
-      <Reveal><img
+      <Reveal><div className="intro-ghost-main">
+        <FrameAnimation
         loading="lazy"
-        src={Intro_ghost_main}
+        frames={[sticker_ghost_main_f1, sticker_ghost_main_f2, sticker_ghost_main_f3]}
         alt="Intro Ghost Main"
+        fps={2}
         className="intro-ghost-main"
-      /></Reveal>
+      /></div></Reveal>
 
       <Reveal><img
         loading="lazy"
@@ -199,12 +204,14 @@ const Intro = () => {
         />
       </div>
 
-            <Reveal><img
+            <Reveal>        <div className="intro-ghost-main-desktop">
+              <FrameAnimation
         loading="lazy"
-        src={Intro_ghost_main}
+        frames={[sticker_ghost_main_f1, sticker_ghost_main_f2, sticker_ghost_main_f3]}
+        fps={2}
         alt="Intro Ghost Main"
         className="intro-ghost-main-desktop"
-      /></Reveal>
+      /></div></Reveal>
 
             <Reveal><img
         loading="lazy"

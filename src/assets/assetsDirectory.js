@@ -47,7 +47,8 @@ import faqs_button from "./faqs/faqs-button.png"
 import faqs_title from "./faqs/faqs-title.png"
 //import faqs_bckg from "./faqs/Background_faqs.png"
 
-
+import video_marco_mobil from "./video/video-marco-mobil.png"
+import video_marco_desktop from "./video/video-marco-desktop.jpeg"
 
 import phase_title from "./phases/phases-title.png"
 import phase_left from "./phases/phases-left.png"
@@ -144,6 +145,10 @@ import sticker_paracaidasBlanco_f2 from "./stickers-ani/paracaidasBlanco_f2.png"
 import sticker_paracaidasBlanco_flip_f1 from "./stickers-ani/paracaidasBlancoflip_f1.png"
 import sticker_paracaidasBlanco_flip_f2 from "./stickers-ani/paracaidasBlancoflip_f2.png"
 
+import sticker_ghost_main_f1 from "./stickers-ani/ghost_main_f1.png"
+import sticker_ghost_main_f2 from "./stickers-ani/ghost_main_f2.png"
+import sticker_ghost_main_f3 from "./stickers-ani/ghost_main_f3.png"
+
 const calendar = "https://verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://verdanskcodm.com/calendar/Background_Calendario.png";
 
@@ -208,7 +213,8 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
      sticker_paracaidasBlanco_flip_f2,
-     faqsPage_itemL,
+     faqsPage_itemL, video_marco_mobil, video_marco_desktop,
+     sticker_ghost_main_f1, sticker_ghost_main_f2, sticker_ghost_main_f3,
      sticker_paracaidasBlanco_f2, sticker_paracaidas_flip_2, sticker_Disparo_f1, sticker_Disparo_f2, sticker_Disparo_f3,
      sticker_paracaidas_1, sticker_paracaidas_2,
      sticker_creadores_F1, sticker_creadores_F2, sticker_creadores_F3,

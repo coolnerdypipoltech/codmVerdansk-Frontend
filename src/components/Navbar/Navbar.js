@@ -13,7 +13,7 @@ const Navbar = () => {
   const menuOptions = {
     option1: { label: "INICIO", target: "inicio" },
     option2: { label: "¿QUÉ ES SEÑAL VERDANSK?", target: "informacion" },
-    option3: { label: "5 FASES", target: "fases" },
+    option3: { label: "4 FASES", target: "fases" },
     option4: { label: "BOTARGAS", target: "botargas" },
     option5: { label: "CALENDARIO", target: "calendario" },
     option6: { label: "CREADORES", target: "creadores" },

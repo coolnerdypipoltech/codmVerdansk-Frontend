@@ -1,16 +1,35 @@
 .home-video {
-  width: 90vw;
+  width: 70vw;
+  max-height: 700px;
   border: 0;
-  z-index: 2;
+  z-index: 4;
 }
 
 .home-video-desktop {
-  width: 75vw;
+  height: 40vw;
   border: 0;
   z-index: 2;
   position: absolute;
-  aspect-ratio: 16 / 9;
-  top: 27vw;
+  aspect-ratio: 9 / 17;
+  top: 26vw;
   left: 50%;
+  z-index: 3;
   transform: translate(-50%, -50%);
+}
+
+.video-marco-mobil{
+  width: 90vw;
+  position: absolute;
+  height: auto;
+  z-index: 3;
+  max-height: 750px;
+}
+
+.video-marco-desktop{
+  height: 50vw;
+  aspect-ratio: 9 / 16;
+  position: absolute;
+  width: auto;
+  z-index: 2;
+  top: 5vh;
 }

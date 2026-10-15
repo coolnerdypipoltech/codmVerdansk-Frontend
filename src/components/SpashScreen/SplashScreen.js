@@ -37,7 +37,7 @@ function SplashScreen({ children }) {
   }, [phase]);
 
   const handleVideoEnd = () => setPhase("done");
-  const handleSkip = () => setPhase("done");
+
   const handleUnmute = () => {
     if (muted) {
       setMuted(false);

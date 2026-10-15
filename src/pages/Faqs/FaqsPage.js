@@ -25,7 +25,7 @@ const FaqsPage = () => {
         backgroundImage: `url(${isMobile ? faqsPage_bckg : desktop_tile_2})`,
         minHeight: "648px",
         marginTop: "0px",
-        paddingTop: "100px",
+        paddingTop: isMobile ? "100px" : "150px",
         justifyContent: "flex-start",
         backgroundRepeat: "repeat-y",
         backgroundPosition: "top",

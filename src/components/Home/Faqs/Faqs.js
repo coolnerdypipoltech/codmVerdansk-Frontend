@@ -1,15 +1,11 @@
 import "./Faqs.css";
-import FrameAnimation from "../../FrameAnimation/FrameAnimation";
+
 
 import {
   faqs_bckg,
   faqs_button,
   faqs_title,
   desktop_9,
-  sticker_paracaidasBlanco_f1,
-  sticker_paracaidasBlanco_f2,
-  sticker_paracaidasBlanco_flip_f1,
-  sticker_paracaidasBlanco_flip_f2,
 } from "../../../assets/assetsDirectory";
 import { useViewport } from "../../../context/ViewportContext";
 import { useNavigate } from "react-router-dom";
@@ -54,48 +50,7 @@ const Faqs = () => {
             </div>
           </Reveal>
 
-          <div
-            className="intro-sticker-paracaidas-container"
-            style={{
-              top: "5300px",
-              left: "19%",
-              height: "10vw",
-              zIndex: 0,
-            }}
-          >
-            <FrameAnimation
-              loading="lazy"
-              frames={[
-                sticker_paracaidasBlanco_f1,
-                sticker_paracaidasBlanco_f2,
-              ]}
-              alt="Intro Sticker Paracaidas"
-              fps={2}
-              className="intro-sticker-paracaidas"
-            />
-          </div>
 
-          <div
-            className="intro-sticker-paracaidas-container"
-            style={{
-              top: "5300px",
-              left: "89%",
-              height: "10vw",
-              zIndex: 0,
-              animationDelay: "5s",
-            }}
-          >
-            <FrameAnimation
-              loading="lazy"
-              frames={[
-                sticker_paracaidasBlanco_f1,
-                sticker_paracaidasBlanco_f2,
-              ]}
-              alt="Intro Sticker Paracaidas"
-              fps={2}
-              className="intro-sticker-paracaidas"
-            />
-          </div>
 
           <Reveal>
             <img
@@ -141,50 +96,7 @@ const Faqs = () => {
             </div>
           </Reveal>
 
-          <>
-            <div
-              className="intro-sticker-paracaidas-container"
-              style={{
-                top: "5%",
-                left: "19%",
-                height: "5vw",
-                zIndex: 0,
-              }}
-            >
-              <FrameAnimation
-                loading="lazy"
-                frames={[
-                  sticker_paracaidasBlanco_f1,
-                  sticker_paracaidasBlanco_f2,
-                ]}
-                alt="Intro Sticker Paracaidas"
-                fps={2}
-                className="intro-sticker-paracaidas"
-              />
-            </div>
 
-            <div
-              className="intro-sticker-paracaidas-container"
-              style={{
-                top: "5%",
-                left: "89%",
-                height: "5vw",
-                zIndex: 0,
-                animationDelay: "5s",
-              }}
-            >
-              <FrameAnimation
-                loading="lazy"
-                frames={[
-                  sticker_paracaidasBlanco_flip_f1,
-                  sticker_paracaidasBlanco_flip_f2,
-                ]}
-                alt="Intro Sticker Paracaidas"
-                fps={2}
-                className="intro-sticker-paracaidas"
-              />
-            </div>
-          </>
 
           <div className="faqs-desktop-holder">
             <Reveal>
@@ -202,6 +114,10 @@ const Faqs = () => {
               />
             </Reveal>
           </div>
+
+  
+
+
         </div>
       )}
     </>

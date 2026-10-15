@@ -6,7 +6,6 @@ import {
   faqsPage_item,
   faqsPage_num,
   desktop_faq_item,
-  faqsPage_itemL,
 } from "../../assets/assetsDirectory";
 
 const FaqsItem = forwardRef(

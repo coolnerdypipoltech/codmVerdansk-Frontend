@@ -7,7 +7,7 @@ export const faqsData = [
       {
         title: "¿Cómo puedo participar en el torneo?",
         description:
-          "Debes ingresar al registro en https://codmverdansk.com/register. Regístrate durante el periodo de reclutamiento del 23 al 31 de octubre 6pm [CST -6].",
+          "Debes ingresar al registro en https://verdanskcodm.com/register. Regístrate durante el periodo de reclutamiento del 23 al 31 de octubre 6pm [CST -6].",
       },
       {
         title: "¿Tiene algún costo registrarse?",

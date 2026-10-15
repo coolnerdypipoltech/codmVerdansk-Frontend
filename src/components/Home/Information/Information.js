@@ -44,7 +44,7 @@ const Information = () => {
         con todo el caos de la <br></br>
         cultura pop latina
       </p></Reveal>
-      <Reveal><div>
+      <Reveal><div className="information-ghost" style={{ top: "50%" }}>
         <FrameAnimation
         alt="Information Ghost"
         className="information-ghost"
@@ -90,7 +90,7 @@ const Information = () => {
         con todo el caos de la 
         cultura  <br></br> pop latina
       </p></Reveal>
-      <Reveal><div className="information-ghost-desktop">
+      <Reveal><div className="information-ghost-desktop" style={{ top:"67%"}}>
         <FrameAnimation
         alt="Information Ghost"
         className="information-ghost-desktop"
