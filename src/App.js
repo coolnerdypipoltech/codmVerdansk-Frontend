@@ -19,7 +19,7 @@ function App() {
             <Route path="/faqs" element={<FaqsPage  />} />
             <Route path="/creators" element={<CreatorsPage  />} />
 
-            {/* <Route path="*" element={<HomePage  />} /> */}
+            <Route path="*" element={<HomePage  />} />
             
           </Routes>
         </main>
