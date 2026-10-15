@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.ca3828e4.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.056e056a.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.55bbaa80.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.00f00c7d.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -27,6 +27,7 @@
     "static/media/calendario_f2.png": "/codmVerdansk-Frontend/static/media/calendario_f2.0b8352cb1f226c9de409.png",
     "static/media/calendario_f1.png": "/codmVerdansk-Frontend/static/media/calendario_f1.9d9a9b4aa3c54fa64f0e.png",
     "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.d75fc9fcbd01041c008e.png",
+    "static/media/video-marco-mobil.png": "/codmVerdansk-Frontend/static/media/video-marco-mobil.8d6c8d472b9806932c74.png",
     "static/media/Disparo_f2.png": "/codmVerdansk-Frontend/static/media/Disparo_f2.66eba88740bdce266e27.png",
     "static/media/sticker-ghost-1.png": "/codmVerdansk-Frontend/static/media/sticker-ghost-1.c7a5076a47f8745b0f92.png",
     "static/media/Disparo_f3.png": "/codmVerdansk-Frontend/static/media/Disparo_f3.f64bcd87e18ec26d2124.png",
@@ -61,16 +62,17 @@
     "static/media/date_banner.png": "/codmVerdansk-Frontend/static/media/date_banner.ced5d91d6becc1a3ddc0.png",
     "static/media/faqs-title.png": "/codmVerdansk-Frontend/static/media/faqs-title.d247275067b1e5d86316.png",
     "static/media/hashtag.png": "/codmVerdansk-Frontend/static/media/hashtag.bd02c5af6b375706b8f0.png",
+    "static/media/creator.png": "/codmVerdansk-Frontend/static/media/creator.a2dafffd0b4fccf1d6a8.png",
     "static/media/Rayos_f2.png": "/codmVerdansk-Frontend/static/media/Rayos_f2.524d265c726596c10431.png",
     "static/media/Cod-logo.svg": "/codmVerdansk-Frontend/static/media/Cod-logo.fe3a1bfdea9872c48b8414fbaf24decb.svg",
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
-    "main.ca3828e4.css.map": "/codmVerdansk-Frontend/static/css/main.ca3828e4.css.map",
-    "main.056e056a.js.map": "/codmVerdansk-Frontend/static/js/main.056e056a.js.map",
+    "main.55bbaa80.css.map": "/codmVerdansk-Frontend/static/css/main.55bbaa80.css.map",
+    "main.00f00c7d.js.map": "/codmVerdansk-Frontend/static/js/main.00f00c7d.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca3828e4.css",
-    "static/js/main.056e056a.js"
+    "static/css/main.55bbaa80.css",
+    "static/js/main.00f00c7d.js"
   ]
 }
