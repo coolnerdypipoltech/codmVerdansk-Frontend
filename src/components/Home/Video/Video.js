@@ -19,16 +19,10 @@ const Video = () => {
     >
 
       
-      <img src={video_marco_mobil} alt="Video Marco Mobil" className="video-marco-mobil" />
+      <Reveal>
+        <img src={video_marco_mobil} alt="Video Marco Mobil" className="video-marco-mobil" />
+      </Reveal>
 
-      <Reveal><iframe
-        className="home-video"
-        style={{ height: "627px" }}
-        src="https://www.youtube.com/embed/DLzxrickFCyOs?si=4SfLygFOsMbj7bZl"
-        title="Video de Verdansk"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      /></Reveal>
     </div>) : (<div
       className="general-page"
       style={{
@@ -38,15 +32,10 @@ const Video = () => {
       onClick={() => trackEvent('Video', 'Click', 'Home Video')}
     >
 
-      <img src={video_marco_mobil} alt="Video Marco Mobil" className="video-marco-desktop" />
+            <Reveal>
+              <img src={video_marco_mobil} alt="Video Marco Mobil" className="video-marco-desktop" />
+            </Reveal>
 
-      <Reveal><iframe
-        className="home-video-desktop "
-        src="https://www.youtube.com/embed/DLzxrickFCyOs?si=4SfLygFOsMbj7bZl"
-        title="Video de Verdansk"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      /></Reveal>
     </div>)} </>
   );
 };

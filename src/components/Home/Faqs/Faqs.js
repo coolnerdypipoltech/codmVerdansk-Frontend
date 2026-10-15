@@ -12,20 +12,23 @@ import { useNavigate } from "react-router-dom";
 import Reveal from "../../Reveal/Reveal";
 import { trackEvent } from "../../../utils/analytics";
 import Rive from "@rive-app/react-canvas";
+import useNearViewport from "../../../hooks/useNearViewport";
 
 import rive_ani from "../../../assets/faqs/radio_verdanks.riv";
 const Faqs = () => {
   const { isMobile } = useViewport();
   const navigate = useNavigate();
+  const [bgRef, bgNear] = useNearViewport();
   return (
     <>
       {isMobile ? (
         <div
+          ref={bgRef}
           className="general-page"
           style={{
             minHeight: "688px",
             maxHeight: isMobile ? "688px" : undefined,
-            backgroundImage: `url(${faqs_bckg})`,
+            backgroundImage: bgNear ? `url(${faqs_bckg})` : "none",
             gap: "20px",
             position: "inherit",
           }}
@@ -46,7 +49,7 @@ const Faqs = () => {
           </Reveal>
           <Reveal>
             <div className="faqs-banner">
-              <Rive src={rive_ani} style={{ width: "100%", height: "100%" }} />
+              {bgNear && <Rive src={rive_ani} style={{ width: "100%", height: "100%" }} />}
             </div>
           </Reveal>
 
@@ -68,7 +71,7 @@ const Faqs = () => {
           </Reveal>
         </div>
       ) : (
-        <div className="general-page-desktop">
+        <div className="general-page-desktop" ref={bgRef}>
           <img
             loading="lazy"
             src={desktop_9}
@@ -92,7 +95,7 @@ const Faqs = () => {
           </Reveal>
           <Reveal>
             <div className="faqs-banner-desktop">
-              <Rive src={rive_ani} style={{ width: "100%", height: "100%" }} />
+              {bgNear && <Rive src={rive_ani} style={{ width: "100%", height: "100%" }} />}
             </div>
           </Reveal>
 

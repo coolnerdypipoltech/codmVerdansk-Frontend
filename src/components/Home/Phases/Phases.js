@@ -1,6 +1,7 @@
 import "./Phases.css";
 import { useState, useRef } from "react";
 import FrameAnimation from "../../FrameAnimation/FrameAnimation";
+import useNearViewport from "../../../hooks/useNearViewport";
 import {
   phase_title,
   phase_left,
@@ -25,7 +26,8 @@ const Phases = () => {
   const { isMobile } = useViewport();
   const [currentPhase, setCurrentPhase] = useState(0);
   const [firstTime, setFirstTime] = useState(true);
-  const direction = useRef("back"); 
+  const direction = useRef("back");
+  const [bgRef, bgNear] = useNearViewport();
 
   const showPreviousPhase = () => {
     direction.current = "back";
@@ -47,9 +49,10 @@ const Phases = () => {
 
   return (
     <>{isMobile ? (<><div
+      ref={bgRef}
       className="general-page"
       style={{
-        backgroundImage: `url(${isMobile ? phase_bckg : desktop_5})`,
+        backgroundImage: bgNear ? `url(${phase_bckg})` : "none",
         minHeight: "832px",
         maxHeight: isMobile ? "832px" : undefined,
       }}

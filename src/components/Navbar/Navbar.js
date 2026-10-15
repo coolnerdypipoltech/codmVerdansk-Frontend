@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { NavBar_Logo, NavBar_Menu, NavBar_Header, NavBar_bckg, desktop_menu, fb_icon, ig_icon, yt_icon, phase_left } from "../../assets/assetsDirectory";
 import { useViewport } from "../../context/ViewportContext";
 import { useNavigate, useLocation  } from "react-router-dom";
+import { trackEvent } from "../../utils/analytics";
 const Navbar = () => {
 
   const [open, setOpen] = useState(false);
@@ -116,9 +117,9 @@ const Navbar = () => {
           <p key={index} onClick={(e) => handleNavigate(e, option.target)}>{option.label}</p>
         ))}
               <div className="footer-icons">
-        <img loading="lazy" src={fb_icon} alt="Facebook Icon" className="footer-icon" />
-        <img loading="lazy" src={ig_icon} alt="Instagram Icon" className="footer-icon" />
-        <img loading="lazy" src={yt_icon} alt="YouTube Icon" className="footer-icon" />
+        <img loading="lazy" src={fb_icon} onClick={() => { window.open("https://www.facebook.com/LATAMCallOfDutyMobile", "_blank"); trackEvent("Social Media", "Click", "Facebook"); }} alt="Facebook Icon" className="footer-icon" />
+        <img loading="lazy" src={ig_icon} onClick={() => { window.open("https://www.instagram.com/callofdutymobilelatam/", "_blank"); trackEvent("Social Media", "Click", "Instagram"); }} alt="Instagram Icon" className="footer-icon" />
+        <img loading="lazy" src={yt_icon} onClick={() => { window.open("https://www.youtube.com/@LATAMCallOfDutyMobile", "_blank"); trackEvent("Social Media", "Click", "YouTube"); }} alt="YouTube Icon" className="footer-icon" />
       </div>
 
       </div>

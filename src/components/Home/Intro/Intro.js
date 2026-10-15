@@ -47,7 +47,8 @@ const Intro = () => {
       }}
     >
       <Reveal><img
-        loading="lazy"
+        loading="eager"
+        fetchPriority="high"
         src={Intro_bckg}
         alt="Intro Background"
         className="intro-bckg"
@@ -152,7 +153,8 @@ const Intro = () => {
       className="general-page-desktop"
     >
       <img
-        loading="lazy"
+        loading="eager"
+        fetchPriority="high"
         src={desktop_1}
         alt="Intro Background"
         className="bckg-desktop"

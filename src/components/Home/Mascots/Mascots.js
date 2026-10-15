@@ -5,16 +5,19 @@ import { desktop_6, Mascots_bckg, Mascots_title, Mascots_banner, rulebook } from
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
 import { trackEvent } from '../../../utils/analytics';
+import useNearViewport from "../../../hooks/useNearViewport";
 const Mascots = () => {
   const { isMobile } = useViewport();
+  const [bgRef, bgNear] = useNearViewport();
   return (
     <>{isMobile ? (
       <div
+        ref={bgRef}
         className="general-page"
         style={{
           minHeight: "776px",
           maxHeight: isMobile ? "1000px" : undefined,
-          backgroundImage: `url(${Mascots_bckg})`,
+          backgroundImage: bgNear ? `url(${Mascots_bckg})` : "none",
         }}
       >
         <Reveal><img loading="lazy" src={Mascots_title} alt="Mascots Title" className="mascots-title" /></Reveal>

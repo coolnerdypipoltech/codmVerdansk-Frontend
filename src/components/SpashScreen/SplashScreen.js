@@ -12,12 +12,13 @@ function SplashScreen({ children }) {
   const { isMobile } = useViewport();
   const videoRef = useRef(null);
   const videoFinal = isMobile ? videoMobile : videoDesktop;
+  const basePath = process.env.PUBLIC_URL || "";
   const isHome =
     location.pathname === "/" ||
-    location.pathname === "/codmFrontend" ||
-    location.pathname === "/codmFrontend/";
+    location.pathname === basePath ||
+    location.pathname === `${basePath}/`;
 
-  const [phase, setPhase] = useState(isHome && !introShown ? "splash" : "done");
+  const [phase, setPhase] = useState(isHome && !introShown ? "video" : "done");
   const [splashFading, setSplashFading] = useState(false);
   const [muted, setMuted] = useState(true);
 
@@ -25,7 +26,7 @@ function SplashScreen({ children }) {
   useEffect(() => {
     if (phase !== "splash") return;
     introShown = true;
-    const fadeTimer = setTimeout(() => setSplashFading(true), 4500);
+    const fadeTimer = setTimeout(() => setSplashFading(true), 3000);
     const switchTimer = setTimeout(() => {
       setSplashFading(false);
       setPhase("video");
@@ -46,57 +47,11 @@ function SplashScreen({ children }) {
   };
 
   if (phase === "done") return children;
-
+console.log(phase);
   return (
     <>
-      {/* Preload video silently during splash so it's ready instantly */}
-      {phase === "splash" && (
-        <video
-          src={videoFinal}
-          preload="auto"
-          muted
-          playsInline
-          style={{ display: "none" }}
-        />
-      )}
 
-      {/* Splash overlay */}
-      {phase === "splash" && (
-        <div
-          className={`splash-screen${splashFading ? " splash-fading" : ""}`}
-          style={{
-            backgroundPosition: "center",
-            backgroundSize: "auto 100%",
-          }}
-        >
-          <div
-            style={{
-              width: "100%",
-              minHeight: "100px",
-              position: "absolute",
-              bottom: "100px",
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <p
-              className="guild-font loading-text"
-              style={{
-                position: "absolute",
-                bottom: "20px",
-                color: "white",
-                fontSize: "20px",
-              }}
-            >
-              CARGANDO
-            </p>
-          </div>
-        </div>
-      )}
-
-      {/* Video intro overlay */}
-      {phase === "video" && (
-        <div className="video-intro" onClick={handleUnmute}>
+<div className="video-intro" onClick={handleUnmute}>
           <video
             ref={videoRef}
             className="video-intro__player"
@@ -109,7 +64,6 @@ function SplashScreen({ children }) {
           </video>
 
         </div>
-      )}
     </>
   );
 }

@@ -7,17 +7,20 @@ import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
 
 import FrameAnimation from "../../FrameAnimation/FrameAnimation";
+import useNearViewport from "../../../hooks/useNearViewport";
 
 const Calendar = () => {
   const { isMobile } = useViewport();
+  const [bgRef, bgNear] = useNearViewport();
   return (
     <>{isMobile ? (
       <div
+        ref={bgRef}
         className="general-page"
         style={{
           minHeight: "713px",
           maxHeight: isMobile ? "950px" : undefined,
-          backgroundImage: `url(${calendar_bckg})`,
+          backgroundImage: bgNear ? `url(${calendar_bckg})` : "none",
         }}
       >
         <Reveal className="reveal-handler"><div className="calendar-image" >

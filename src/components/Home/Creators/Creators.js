@@ -19,18 +19,21 @@ import { useNavigate } from "react-router-dom";
 import Reveal from "../../Reveal/Reveal";
 import FrameAnimation from "../../FrameAnimation/FrameAnimation";
 import { trackEvent } from "../../../utils/analytics";
+import useNearViewport from "../../../hooks/useNearViewport";
 const Creators = () => {
   const { isMobile } = useViewport();
   const navigate = useNavigate();
+  const [bgRef, bgNear] = useNearViewport();
   return (
     <>
       {isMobile ? (
         <div
+          ref={bgRef}
           className="general-page"
           style={{
             minHeight: "768px",
             maxHeight: isMobile ? "768px" : undefined,
-            backgroundImage: `url(${creators_bckg})`,
+            backgroundImage: bgNear ? `url(${creators_bckg})` : "none",
             gap: "20px",
             justifyContent: "flex-start",
           }}
