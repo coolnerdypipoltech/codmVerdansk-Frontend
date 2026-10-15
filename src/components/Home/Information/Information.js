@@ -3,11 +3,13 @@ import "./Information.css";
 import {
   Information_banner,
   Information_bckg,
-  Information_ghost,
+  sticker_ghost_1,
+  sticker_ghost_2,
   desktop_3,
   desktop_4,
   sticker_granade_1,
-  sticker_granade_2
+  sticker_granade_2,
+  sticker_granade_3,
 } from "../../../assets/assetsDirectory";
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
@@ -29,6 +31,7 @@ const Information = () => {
     >
       <div style={{ height: "50px" }}></div>
       <Reveal><img
+        id="informacion"
         src={Information_banner}
         alt="Information Banner"
         className="information-banner"
@@ -41,18 +44,22 @@ const Information = () => {
         con todo el caos de la <br></br>
         cultura pop latina
       </p></Reveal>
-      <Reveal><img
-        src={Information_ghost}
+      <Reveal><div>
+        <FrameAnimation
         alt="Information Ghost"
         className="information-ghost"
-      /></Reveal>
-      <Reveal><FrameAnimation
+        loading="lazy"
+        fps={2}
+        frames={[sticker_ghost_1, sticker_ghost_2]}
+      /></div></Reveal>
+      <Reveal><div>
+        <FrameAnimation
         loading="lazy"
         fps={4}
-        frames={[sticker_granade_1, sticker_granade_2]}
+        frames={[sticker_granade_1, sticker_granade_2, sticker_granade_3]}
         alt="Information Granade Sticker"
         className="information-granade"
-      /></Reveal>
+      /></div></Reveal>
     </div>) : (
       <div
         className="general-page-desktop"
@@ -70,6 +77,7 @@ const Information = () => {
 
 
               <Reveal><img
+              id="informacion"
         src={Information_banner}
         alt="Information Banner"
         className="information-banner-desktop"
@@ -82,18 +90,22 @@ const Information = () => {
         con todo el caos de la 
         cultura  <br></br> pop latina
       </p></Reveal>
-      <Reveal><img
-        src={Information_ghost}
+      <Reveal><div className="information-ghost-desktop">
+        <FrameAnimation
         alt="Information Ghost"
         className="information-ghost-desktop"
-      /></Reveal>
-      <Reveal><FrameAnimation
+        loading="lazy"
+        fps={2}
+        frames={[sticker_ghost_1, sticker_ghost_2]}
+      /></div></Reveal>
+      <Reveal><div style={{ position: "absolute", left: "80%", top: "70%", height: "300px" }}>
+        <FrameAnimation
         loading="lazy"
         fps={4}
-        frames={[sticker_granade_1, sticker_granade_2]}
+        frames={[sticker_granade_1, sticker_granade_2, sticker_granade_3]}
         alt="Information Granade Sticker"
         className="information-granade-desktop"
-      /></Reveal>
+      /></div></Reveal>
 
 
         <img

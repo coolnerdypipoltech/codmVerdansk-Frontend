@@ -24,7 +24,7 @@ import Information_ghost from "./info/info_ghost.png"
 import Information_granade from "./info/info_granade.png"
 
 import Mascots_title from "./mascots/mascots-title.png"
-//import Mascots_banner from "./mascots/mascots-banner.png"
+import Mascots_banner from "./mascots/mascots-banner.png"
 import rulebook from "./mascots/rulebook.png"
 //import Mascots_bckg from "./mascots/Background_Botargas.png"
 
@@ -72,6 +72,9 @@ import faqs_arrow from "./faqsPage/faqs-arrow.svg"
 import faqsPage_item from "./faqsPage/faqsPage-item.png"
 import faqsPage_num from "./faqsPage/faqsPage-num.png"
 
+import faqsPage_itemL from "./faqsPage/faqsPage-item-desktop.png"
+
+
 //import faqsPage_title from "./faqsPage/faqsPage-title.png"
 
 
@@ -96,6 +99,7 @@ import desktop_faq_item from "./desktop/desktop-faq-item.png"
 
 import sticker_granade_1 from "./stickers-ani/sticker-granade-1.png"
 import sticker_granade_2 from "./stickers-ani/sticker-granade-2.png"
+import sticker_granade_3 from "./stickers-ani/sticker-granade-3.png"
 
 import sticker_truck_1 from "./stickers-ani/sticker-truck-1.png"
 import sticker_truck_2 from "./stickers-ani/sticker-truck-2.png"
@@ -104,25 +108,61 @@ import sticker_truck_3 from "./stickers-ani/sticker-truck-3.png"
 import sticker_walkt_1 from "./stickers-ani/sticker-walkt-1.png"
 import sticker_walkt_2 from "./stickers-ani/sticker-walkt-2.png"
 
+import sticker_calendario_f1 from "./stickers-ani/calendario_f1.png"
+import sticker_calendario_f2 from "./stickers-ani/calendario_f2.png"
+
+import sticker_web_calendario_f1 from "./stickers-ani/Web_calendario_f1.png"
+import sticker_web_calendario_f2 from "./stickers-ani/Web_calendario_f2.png"
+
+import sticker_rayos_f1 from "./stickers-ani/Rayos_f1.png"
+import sticker_rayos_f2 from "./stickers-ani/Rayos_f2.png"
+
+import sticker_ghost_1 from "./stickers-ani/sticker-ghost-1.png"
+import sticker_ghost_2 from "./stickers-ani/sticker-ghost-2.png"
+
+import sticker_ghost_F1 from "./stickers-ani/Ghost_F1.png"
+import sticker_ghost_F2 from "./stickers-ani/Ghost_F2.png"
+import sticker_ghost_F3 from "./stickers-ani/Ghost_F3.png"
+
+import sticker_creadores_F1 from "./stickers-ani/Creadores_F1.png"
+import sticker_creadores_F2 from "./stickers-ani/Creadores_F2.png"
+import sticker_creadores_F3 from "./stickers-ani/Creadores_F3.png"
+
+import sticker_paracaidas_1 from "./stickers-ani/paracaidas_f1.png"
+import sticker_paracaidas_2 from "./stickers-ani/paracaidas_f2.png"
+
+import sticker_paracaidas_flip_1 from "./stickers-ani/paracaidas_f1_flip.png"
+import sticker_paracaidas_flip_2 from "./stickers-ani/paracaidas_f2_flip.png"
+
+import sticker_Disparo_f1 from "./stickers-ani/Disparo_f1.png"
+import sticker_Disparo_f2 from "./stickers-ani/Disparo_f2.png"
+import sticker_Disparo_f3 from "./stickers-ani/Disparo_f3.png"
+
+import sticker_paracaidasBlanco_f1 from "./stickers-ani/paracaidasBlanco_f1.png"
+import sticker_paracaidasBlanco_f2 from "./stickers-ani/paracaidasBlanco_f2.png"
+
+import sticker_paracaidasBlanco_flip_f1 from "./stickers-ani/paracaidasBlancoflip_f1.png"
+import sticker_paracaidasBlanco_flip_f2 from "./stickers-ani/paracaidasBlancoflip_f2.png"
+
 const calendar = "https://verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://verdanskcodm.com/calendar/Background_Calendario.png";
 
-const creators_bckg = "https://verdanskcodm.com/creators/Background_Creadores_contenido.png";
+const creators_bckg = "https://verdanskcodm.com/creators/Background_Creadores_contenido1.2.png";
 
 const NavBar_bckg = "https://verdanskcodm.com/navbar/menu-background.png";
 
-const Intro_bckg = "https://verdanskcodm.com/intro/Background_Inicio.png";
+const Intro_bckg = "https://verdanskcodm.com/intro/Background_Inicio1.2.png";
 const Intro_bckg2 = "https://verdanskcodm.com/intro/Background_Inicio2.png";
 const Intro_ghost_main = "https://verdanskcodm.com/intro/Ghost_Inicio.png"; 
 const vide_bckg = "https://verdanskcodm.com/video/Background_Video.png";
 const Information_bckg = "https://verdanskcodm.com/info/Background_señal.png";
 
 const Mascots_bckg = "https://verdanskcodm.com/mascots/Background_Botargas.png";
-const Mascots_banner = "https://verdanskcodm.com/mascots/mascots-banner.png";
+//const Mascots_banner = "https://verdanskcodm.com/mascots/mascots-banner.png";
 const phase_bckg = "https://verdanskcodm.com/phases/Background_5Fases.png";
 const phase_sticker = "https://verdanskcodm.com/phases/phases_sticker.png";
 
-const faqs_bckg = "https://verdanskcodm.com/faqs/Background_faqs.png";
+const faqs_bckg = "https://verdanskcodm.com/faqs/Background_faqs1.0.png";
 const footer_bckg = "https://verdanskcodm.com/footer/footer-bckg.png";
 
 const faqsPage_title = "https://verdanskcodm.com/faqsPage/faqsPage-title.png";
@@ -136,15 +176,15 @@ const phase_info_3 = "https://verdanskcodm.com/phases/phase-info-3.png";
 const phase_info_4 = "https://verdanskcodm.com/phases/phase-info-4.png";
 
 
-const desktop_1 = "https://verdanskcodm.com/desktop/desktop-1.1.png";
+const desktop_1 = "https://verdanskcodm.com/desktop/desktop-1.3.png";
 const desktop_2 = "https://verdanskcodm.com/desktop/desktop-2.png";
-const desktop_3 = "https://verdanskcodm.com/desktop/desktop-3.png";
-const desktop_4 = "https://verdanskcodm.com/desktop/desktop-4.png";
+const desktop_3 = "https://verdanskcodm.com/desktop/desktop-3.1.png";
+const desktop_4 = "https://verdanskcodm.com/desktop/desktop-4.1.png";
 const desktop_5 = "https://verdanskcodm.com/desktop/desktop-5.png";
 const desktop_6 = "https://verdanskcodm.com/desktop/desktop-6.png";
 const desktop_7 = "https://verdanskcodm.com/desktop/desktop-7.png";
-const desktop_8 = "https://verdanskcodm.com/desktop/desktop-8.png";
-const desktop_9 = "https://verdanskcodm.com/desktop/desktop-9.png";
+const desktop_8 = "https://verdanskcodm.com/desktop/desktop-8.1.png";
+const desktop_9 = "https://verdanskcodm.com/desktop/desktop-9.1.png";
 
 const desktop_calendar = "https://verdanskcodm.com/desktop/desktop-calendar1.1.png";
 
@@ -159,5 +199,17 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
     phase_title, phase_left, phase_right, phase_info_1, phase_info_2, phase_info_3, phase_info_4, phase_bckg, phase_sticker,
      footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon, CreatorsPage_bckg, faqsPage_bckg,
      desktop_tile_1, desktop_tile_2, desktop_faq_item, videoMobile, videoDesktop,
+     sticker_calendario_f1, sticker_calendario_f2, sticker_web_calendario_f1, sticker_web_calendario_f2, sticker_rayos_f1, sticker_rayos_f2,
      sticker_granade_1, sticker_granade_2, sticker_truck_1, sticker_truck_2, sticker_truck_3, sticker_walkt_1, sticker_walkt_2, 
+     sticker_ghost_1, sticker_ghost_2,
+     sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
+     sticker_granade_3,
+     sticker_paracaidas_flip_1,
+     sticker_paracaidasBlanco_f1,
+     sticker_paracaidasBlanco_flip_f1,
+     sticker_paracaidasBlanco_flip_f2,
+     faqsPage_itemL,
+     sticker_paracaidasBlanco_f2, sticker_paracaidas_flip_2, sticker_Disparo_f1, sticker_Disparo_f2, sticker_Disparo_f3,
+     sticker_paracaidas_1, sticker_paracaidas_2,
+     sticker_creadores_F1, sticker_creadores_F2, sticker_creadores_F3,
      faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, CreatorsPage_title, commonCreator, Intro_bckg2, Intro_ghost_main };

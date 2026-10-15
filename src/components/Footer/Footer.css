@@ -56,3 +56,8 @@
     flex-direction: row;
     margin-bottom: 30px;
 }
+
+.footer-icons img:active {
+    cursor: pointer;
+    transform: scale(1.1);
+}

@@ -87,8 +87,9 @@
     max-height: 48px;
 }
 
-.phase-carousel-control-img:hover {
-    animation: pulse-soft 1s ease-in-out;
+     .phase-carousel-control-img:active {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .phase-carousel-control:focus-visible,
@@ -163,14 +164,12 @@
     position: absolute;
     width: auto;
     height: 20vw;
-    left: 10%;
-    top: 5.5%;
     z-index: 1;
     animation: drift-left-right 5s ease-in-out infinite;
     /* Entrada de izquierda a derecha: anima "margin-left" (no "left" ni "transform")
        para no pelearse con drift-left-right de arriba, que sí usa transform, y para
        no mover la posición que IntersectionObserver necesita medir. */
-    margin-left: -300px;
+    
     transition: margin-left 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -178,15 +177,23 @@
     position: absolute;
     width: auto;
     height: 198px;
-    left: -220px;
-    top: 5.5%;
+    left: -130px;
+    margin-left: -300px;
     z-index: 1;
-    animation: drift-left-right 5s ease-in-out infinite;
+
     /* Entrada de izquierda a derecha: anima "margin-left" (no "left" ni "transform")
        para no pelearse con drift-left-right de arriba, que sí usa transform, y para
        no mover la posición que IntersectionObserver necesita medir. */
     margin-left: -300px;
-    transition: margin-left 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+
+}
+
+.phase-sticker-container{
+    position: absolute;
+    margin-left: -300px;
+    top: 5.5%;
+    animation: drift-left-right 5s ease-in-out infinite;
+    transition: margin-left 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* Sensor invisible del tamaño de la sección: como el sticker arranca fuera de
@@ -200,19 +207,31 @@
     z-index: -1;
 }
 
-.phase-sticker-trigger.reveal-visible ~ .phase-sticker{
+.phase-sticker-trigger.reveal-visible ~ .phase-sticker-container{
+    
     margin-left: 0;
 }
 
 
 @media (min-width: 720px){
+
+.phase-sticker-container{
+    position: absolute;
+    margin-left: -300px;
+    left: 10%;
+    top: 5.5%;
+    animation: drift-left-right 5s ease-in-out infinite;
+    transition: margin-left 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
 .phase-info-container{
 
     width: 100%;
         width:  30vw;
     height: auto;
     max-width: 800px;
-    
+    min-width: 30vw;
 }
 
 

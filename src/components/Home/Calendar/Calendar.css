@@ -12,8 +12,9 @@
     padding-bottom: 20px;
 }
 
-.event-button:hover{
-    animation: classic-scale 1s ease-in-out;
+.event-button:active {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .calendar-image-desktop{
@@ -32,9 +33,18 @@
     transform: translate(-50%, -50%);
 }
 
+@media (min-width: 720px) and (max-width: 950px){
+    .calendar-image-desktop{
+            top: 5%;
+    }
+}
+
+
 @media (min-width: 720px){
     .event-button{
             height: auto;
             width: 20vw;
     }
 }
+
+

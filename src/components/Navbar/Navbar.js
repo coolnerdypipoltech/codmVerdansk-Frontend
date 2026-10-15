@@ -43,40 +43,52 @@ const Navbar = () => {
   }, [open]);
 
   const [showInfinixBar, setShowInfinixBar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
+    // lastScrollY vive en una ref (no en state): así leerla/escribirla en
+    // cada scroll no dispara un re-render, y este efecto no necesita
+    // reinstalar el listener en cada tick (antes dependía de lastScrollY
+    // como state, así que CADA evento de scroll quitaba y volvía a poner
+    // el listener de scroll entero — eso es lo que trababa el scroll).
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    const update = () => {
+      ticking = false;
       const currentScrollY = window.scrollY;
-      
+
       // Si estamos en la página de registro, siempre ocultar la barra de Infinix
       if (location.pathname.includes("registro")) {
         setShowInfinixBar(false);
-        setLastScrollY(currentScrollY);
+        lastScrollY = currentScrollY;
         return;
       }
-      
-      if(currentScrollY < 400) {
-        if(!showInfinixBar){
-          setShowInfinixBar(true);
-          return;
-        }
-      }
 
-      if (currentScrollY > lastScrollY) {
+      if (currentScrollY < 400) {
+        setShowInfinixBar(true);
+      } else if (currentScrollY > lastScrollY) {
         // Scrolling down
         setShowInfinixBar(false);
-      } else {
+      } else if (currentScrollY < lastScrollY) {
         // Scrolling up
         setShowInfinixBar(true);
       }
-      
-      setLastScrollY(currentScrollY);
+
+      lastScrollY = currentScrollY;
+    };
+
+    // El evento "scroll" puede disparar muchas veces por frame; con esto
+    // solo hacemos el trabajo (y el posible setState) una vez por frame.
+    const handleScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY, location.pathname]);
+  }, [location.pathname]);
 
 
 

@@ -17,9 +17,31 @@
   max-width: 48px;
 }
 
+  .phase-left-container img:active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .faqs-items-container{
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 40px;
+}
+
+.faqs-category{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqs-category-title{
+  color: var(--yellow);
+  font-family: var(--font-antonio);
+  font-size: var(--title-size);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0;
 }

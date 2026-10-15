@@ -20,7 +20,7 @@ const HomePage = () => {
       <div id="inicio"><Intro /></div>
 
               <Video></Video>
-      <div id="informacion"><Information></Information></div>
+      <div ><Information></Information></div>
 
       <div id="fases"><Phases></Phases></div>
       <div id="botargas"><Mascots></Mascots></div>

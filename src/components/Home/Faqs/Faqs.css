@@ -8,15 +8,20 @@
     font-weight: bold;
     text-transform: uppercase;
     rotate: -1deg;
+    z-index: 5;
+    position: relative;
 }
 
 .faqs-button{
     width: auto;
     height: 78px;
+    position: relative;
+    top: -30px;
 }
 
-.faqs-button:hover{
-    animation: classic-scale 1s ease-in-out;
+.faqs-button:active {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 
@@ -25,6 +30,7 @@
     .faqs-button{
             height: auto;
             width: 20vw;
+            top: 0px;
     }
 }
 
@@ -41,11 +47,16 @@
     text-transform: uppercase;
     rotate: -1deg;
     position: absolute;
-    top: 33%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 5;
 }
 
+.faqs-title{
+    position: relative;
+    z-index: 2;
+}
 
 .faqs-title-desktop{
     position: absolute;
@@ -53,16 +64,23 @@
     left: 50%;
     width: 30vw;
     height: auto;
-
+    z-index: 2;
     transform: translate(-50%, -50%);
+}
+
+.faqs-banner{
+    height:  60vw;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    z-index: 2;
 }
 
 .faqs-banner-desktop{
     position: absolute;
-    top: 55%;
+    top: 56%;
     left: 50%;
     width:  25vw;
-    height: auto;
+    aspect-ratio: 1 / 1;
     transform: translate(-50%, -50%);
 }
 
@@ -75,8 +93,9 @@
     transform: translate(-50%, -50%);
 }
 
-    .faqs-button-desktop:hover{
-        animation: classic-scale 1s ease-in-out;
+    .faqs-button-desktop:active {
+        cursor: pointer;
+        transform: scale(1.1);
     }
 
 

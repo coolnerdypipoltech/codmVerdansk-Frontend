@@ -1,11 +1,11 @@
 {
   "name": "codmVerdansk",
   "version": "0.1.0",
-  "homepage2": "http://157.230.72.221/",
-  "homepage": "https://coolnerdypipoltech.github.io/codmVerdansk-Frontend/",
-
+  "homepage1": "http://157.230.72.221/",
+  "homepage2": "https://coolnerdypipoltech.github.io/codmVerdansk-Frontend/",
   "private": true,
   "dependencies": {
+    "@rive-app/react-canvas": "^4.36.0",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.3",

@@ -44,9 +44,18 @@
     position: absolute;
     width: auto;
     height: 292px;
-    left: -100px;
-    top: 680px;
+    left: -50px;
+    top: -50px;
+    transform: scaleX(-1);
     z-index: 1;
+}
+
+.intro-ghost-container{
+    position: absolute;
+        left: 0px;
+    top: 750px;
+    height: 200px;
+    width: 50px;
 }
 
 .intro-sticker1{
@@ -54,7 +63,7 @@
     width: auto;
     height: 167px;
     right: -50px;
-    top: 500px;
+    
     z-index: 1;
     animation: up-down 3s ease-in-out infinite;
 }
@@ -131,6 +140,17 @@
     z-index: 3;
 }
 
+.intro-sticker2{
+    position: absolute;
+    width: auto;
+    height: 15vw;
+    z-index: 2;
+    top: 5%;
+    left: -4%;
+    transform: translate(-50%, );
+    
+}
+
 .intro-description-desktop{
     color: black;
     font-size: var(--text-desktop-size);
@@ -170,7 +190,7 @@
     height: 15vw;
     position: absolute;
     z-index: 2;
-    top: 130%;
+    top: 10%;
     left: 85%;
     transform: translate(-50%, -50%);
     animation: up-down 3s ease-in-out infinite;
@@ -179,7 +199,88 @@
     position: absolute;
     width: auto;
     height: 29vw;
-    left: 5%;
-    top: 90%;
+    left: 0%;
+    top: 0%;
+    transform: scaleX(-1);
     z-index: 2;
 }
+
+.intro-ghost-desktop-container{
+    position: absolute;
+    width: auto;
+    height: 29vw;
+    z-index: 2;
+    top: 90%;
+    height: 200px;
+    width: 20px;
+    left: 5%;
+}
+
+
+.intro-sticker2-desktop{
+    position: absolute;
+    width: auto;
+    height: 10vw;
+    z-index: 2;
+    top: 35%;
+    left: -1.5%;
+    transform: translate(-50%, -50%);
+    animation: up-down 3s ease-in-out infinite;
+}
+
+.intro-sticker-paracaidas-container{
+    position: absolute;
+    width: auto;
+    height: 5vw;
+    z-index: 2;
+    top: 20%;
+    left: 65%;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+    animation: fall-fade 7s linear infinite;
+}
+
+.intro-sticker-paracaidas{
+    height: 100%;
+    width: auto;
+}
+
+/* Cae, se desvanece antes de llegar abajo, y reaparece arriba (invisible en
+   el salto) para volver a caer. El transform de cada paso arrastra el
+   translate(-50%,-50%) del contenedor para no perder el centrado. */
+@keyframes fall-fade {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(55vh);
+    opacity: 0;
+  }
+}
+
+
+@keyframes fall-fade2 {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(55vh);
+    opacity: 0;
+  }
+}
+
+

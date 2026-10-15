@@ -30,6 +30,16 @@
   top: 10px;
 }
 
+   .navbar-logo:active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+ .navbar-menu:active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .navbar-menu-content{
   position: absolute;
   top: 0px;
@@ -56,6 +66,10 @@
   color: white;
   text-decoration: none;
   margin:  0px;
+}
+ .navbar-menu-content p:active {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 @media (min-width: 1000px) {

@@ -137,7 +137,7 @@
   transition: background 0.2s, border-color 0.2s;
 }
 
-.video-intro__skip:hover {
+.video-intro__skip:hover, .video-intro__skip:active {
   background: rgba(255, 255, 255, 0.2);
   border-color: #fff;
 }

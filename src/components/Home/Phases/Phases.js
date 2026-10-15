@@ -98,8 +98,11 @@ const Phases = () => {
         ))}
       </div>
       <Reveal><div className="phase-sticker-trigger" aria-hidden="true"></div></Reveal>
-      <FrameAnimation loading="lazy" fps={6} frames={[sticker_truck_1, sticker_truck_2, sticker_truck_3]} alt="Phase Sticker" className="phase-sticker" />
-    </div></>) : (<><div
+      <div className="phase-sticker-container">
+        <FrameAnimation loading="lazy" fps={6} frames={[sticker_truck_1, sticker_truck_2, sticker_truck_3]} alt="Phase Sticker" className="phase-sticker" />
+   
+      </div>
+ </div></>) : (<><div
       className="general-page-desktop"
     >
       <img
@@ -155,9 +158,10 @@ const Phases = () => {
         ))}
       </div>
       </div>
-              <FrameAnimation loading="lazy" fps={6} frames={[sticker_truck_1, sticker_truck_2, sticker_truck_3]} alt="Phase Sticker" className="phase-sticker-desktop" />
+      <div className="phase-sticker-container">
+        <FrameAnimation loading="lazy" fps={6} frames={[sticker_truck_1, sticker_truck_2, sticker_truck_3]} alt="Phase Sticker" className="phase-sticker-desktop" />
    
-
+      </div>
     </div></>) }</>
     
   );

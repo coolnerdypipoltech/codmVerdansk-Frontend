@@ -12,6 +12,7 @@ import {
 } from "../../assets/assetsDirectory";
 import FaqsItem from "../../components/FaqsItem/FaqsItem";
 import Reveal from "../../components/Reveal/Reveal";
+import { faqsData } from "../../utils/faqsData";
 
 const FaqsPage = () => {
   const { isMobile } = useViewport();
@@ -45,53 +46,26 @@ const FaqsPage = () => {
         ></img></Reveal>
       </div>
       <Reveal><img loading="lazy" src={faqsPage_title} alt="back" className="faqsPage-title"></img></Reveal>
-      <div className="faqs-items-container">
-        <Reveal><FaqsItem
-          number={1}
-          title="What is Verdansk?"
-          description="Verdansk is a fictional city used in the Call of Duty series."
-        ></FaqsItem></Reveal>
-        <Reveal><FaqsItem
-          number={2}
-          title="How to play?"
-          description="You can play Verdansk by joining a match in Call of Duty."
-        ></FaqsItem></Reveal>
-        <Reveal><FaqsItem
-          number={3}
-          title="What is Verdansk?"
-          description="Verdansk is a fictional city used in the Call of Duty series."
-        ></FaqsItem></Reveal>
-        <Reveal><FaqsItem
-          number={4}
-          title="How to play?"
-          description="You can play Verdansk by joining a match in Call of Duty."
-        ></FaqsItem></Reveal>
-        <Reveal><FaqsItem
-          number={5}
-          title="What is Verdansk?"
-          description="Verdansk is a fictional city used in the Call of Duty series."
-        ></FaqsItem></Reveal>
-        <Reveal><FaqsItem
-          number={6}
-          title="How to play?"
-          description="You can play Verdansk by joining a match in Call of Duty."
-        ></FaqsItem></Reveal>
-        <Reveal><FaqsItem
-          number={7}
-          title="What is Verdansk?"
-          description="Verdansk is a fictional city used in the Call of Duty series."
-        ></FaqsItem></Reveal>
-        <Reveal><FaqsItem
-          number={8}
-          title="How to play?"
-          description="You can play Verdansk by joining a match in Call of Duty."
-        ></FaqsItem></Reveal>
-        <Reveal><FaqsItem
-          number={9}
-          title="What is Verdansk?"
-          description="Verdansk is a fictional city used in the Call of Duty series."
-        ></FaqsItem></Reveal>
-      </div>
+      {(() => {
+        let itemNumber = 0;
+        return faqsData.map((group) => (
+          <div key={group.category} className="faqs-category">
+            <Reveal><p className="faqs-category-title">{group.category}</p></Reveal>
+            <div className="faqs-items-container">
+              {group.items.map((item) => {
+                itemNumber += 1;
+                return (
+                  <Reveal key={item.title}><FaqsItem
+                    number={itemNumber}
+                    title={item.title}
+                    description={item.description}
+                  ></FaqsItem></Reveal>
+                );
+              })}
+            </div>
+          </div>
+        ));
+      })()}
     </div>
   );
 };

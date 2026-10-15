@@ -14,8 +14,9 @@
 
 }
 
-.creators-button:hover{
-    animation: classic-scale 1s ease-in-out;
+.creators-button:active {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 
@@ -46,9 +47,43 @@
 .creators-banner-desktop{
     height: 25vw;
     width: auto;
-
+    max-height: 25vw;
     position: absolute;
-    top: 43%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.creator-rayos{
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    height: 15vw;
+}
+
+.creator-rayos2{
+    position: absolute;
+    top: 35%;
+    left: 99%;
+    transform: translate(-50%, -50%);
+    height: 15vw;
+}
+
+
+.creator-rayos-desktop{
+    position: absolute;
+    top: 17%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    height: 12vw;
+}
+
+.creator-rayos2-desktop{
+    position: absolute;
+    top: 28%;
+    left: 94.5%;
+    transform: translate(-50%, -50%);
+    height: 12vw;
 }
