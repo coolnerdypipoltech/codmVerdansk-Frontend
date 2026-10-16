@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.c24797dc.css",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.8885ea71.css",
     "main.js": "/codmVerdansk-Frontend/static/js/main.12d4db21.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
@@ -68,12 +68,12 @@
     "static/media/Cod-logo.svg": "/codmVerdansk-Frontend/static/media/Cod-logo.fe3a1bfdea9872c48b8414fbaf24decb.svg",
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
-    "main.c24797dc.css.map": "/codmVerdansk-Frontend/static/css/main.c24797dc.css.map",
+    "main.8885ea71.css.map": "/codmVerdansk-Frontend/static/css/main.8885ea71.css.map",
     "main.12d4db21.js.map": "/codmVerdansk-Frontend/static/js/main.12d4db21.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c24797dc.css",
+    "static/css/main.8885ea71.css",
     "static/js/main.12d4db21.js"
   ]
 }
