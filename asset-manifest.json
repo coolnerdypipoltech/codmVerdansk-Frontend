@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/codmVerdansk-Frontend/static/css/main.f3eb5e91.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.5eae0e28.js",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.2c749bad.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -30,6 +30,7 @@
     "static/media/calendario_f2.png": "/codmVerdansk-Frontend/static/media/calendario_f2.0b8352cb1f226c9de409.png",
     "static/media/calendario_f1.png": "/codmVerdansk-Frontend/static/media/calendario_f1.9d9a9b4aa3c54fa64f0e.png",
     "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.d75fc9fcbd01041c008e.png",
+    "static/media/Reglamento Oficial Versión Simplificada Señal Verdansk.pdf": "/codmVerdansk-Frontend/static/media/Reglamento Oficial Versión Simplificada Señal Verdansk.7233f97f787fee0e908d.pdf",
     "static/media/Disparo_f2.png": "/codmVerdansk-Frontend/static/media/Disparo_f2.66eba88740bdce266e27.png",
     "static/media/sticker-ghost-1.png": "/codmVerdansk-Frontend/static/media/sticker-ghost-1.c7a5076a47f8745b0f92.png",
     "static/media/Disparo_f3.png": "/codmVerdansk-Frontend/static/media/Disparo_f3.f64bcd87e18ec26d2124.png",
@@ -70,11 +71,11 @@
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
     "main.f3eb5e91.css.map": "/codmVerdansk-Frontend/static/css/main.f3eb5e91.css.map",
-    "main.5eae0e28.js.map": "/codmVerdansk-Frontend/static/js/main.5eae0e28.js.map",
+    "main.2c749bad.js.map": "/codmVerdansk-Frontend/static/js/main.2c749bad.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f3eb5e91.css",
-    "static/js/main.5eae0e28.js"
+    "static/js/main.2c749bad.js"
   ]
 }
