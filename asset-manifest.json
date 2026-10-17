@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/codmVerdansk-Frontend/static/css/main.7104196b.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.b9b96444.js",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.8cbf150d.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -12,12 +12,15 @@
     "static/media/ghost_main_f3.png": "/codmVerdansk-Frontend/static/media/ghost_main_f3.9cbb83e06a560aee7db3.png",
     "static/media/Creadores_F2.png": "/codmVerdansk-Frontend/static/media/Creadores_F2.4cfedc8f8d6087be77ab.png",
     "static/media/Creadores_F3.png": "/codmVerdansk-Frontend/static/media/Creadores_F3.9b0bf7144d194ade0f83.png",
-    "static/media/Web_calendario_f2.png": "/codmVerdansk-Frontend/static/media/Web_calendario_f2.b91baa13af3683c6cfb4.png",
+    "static/media/Web_calendario_f1.png": "/codmVerdansk-Frontend/static/media/Web_calendario_f1.fadca383037221354f5c.png",
+    "static/media/Web_calendario_f2.png": "/codmVerdansk-Frontend/static/media/Web_calendario_f2.c0577e8e60dc5f77f021.png",
     "static/media/ghost_main_f1.png": "/codmVerdansk-Frontend/static/media/ghost_main_f1.5c39a13f903ed112692a.png",
     "static/media/Creadores_F1.png": "/codmVerdansk-Frontend/static/media/Creadores_F1.e5eb58424aebeb6c4e16.png",
     "static/media/ghost_main_f2.png": "/codmVerdansk-Frontend/static/media/ghost_main_f2.9325b61f1dd72aad6d8a.png",
     "static/media/radio_verdanks.riv": "/codmVerdansk-Frontend/static/media/radio_verdanks.5d1d54d1380471b7956c.riv",
     "static/media/video-marco-desktop-right.png": "/codmVerdansk-Frontend/static/media/video-marco-desktop-right.c935360549fc76670416.png",
+    "static/media/calendario_f1.png": "/codmVerdansk-Frontend/static/media/calendario_f1.0b9ef0d70a80a1dbbd22.png",
+    "static/media/calendario_f2.png": "/codmVerdansk-Frontend/static/media/calendario_f2.ffe0fc8f441727b6c70a.png",
     "static/media/mascots-banner.png": "/codmVerdansk-Frontend/static/media/mascots-banner.bad32fd39f250e6715d6.png",
     "static/media/Background_desktop.webp": "/codmVerdansk-Frontend/static/media/Background_desktop.5e5457b025b9282061e4.webp",
     "static/media/desktop-tile-1.png": "/codmVerdansk-Frontend/static/media/desktop-tile-1.b7948caebd45eb001ead.png",
@@ -25,10 +28,7 @@
     "static/media/sticker-truck-1.png": "/codmVerdansk-Frontend/static/media/sticker-truck-1.830b02363a5bd50054c8.png",
     "static/media/video-marco-mobil.png": "/codmVerdansk-Frontend/static/media/video-marco-mobil.f41ed000bab18d982811.png",
     "static/media/sticker-truck-3.png": "/codmVerdansk-Frontend/static/media/sticker-truck-3.e7e0d5a91adac2b43930.png",
-    "static/media/Web_calendario_f1.png": "/codmVerdansk-Frontend/static/media/Web_calendario_f1.cf216a14b992fee2c60b.png",
     "static/media/sticker-truck-2.png": "/codmVerdansk-Frontend/static/media/sticker-truck-2.2a3ba1cba7be276a43ab.png",
-    "static/media/calendario_f2.png": "/codmVerdansk-Frontend/static/media/calendario_f2.0b8352cb1f226c9de409.png",
-    "static/media/calendario_f1.png": "/codmVerdansk-Frontend/static/media/calendario_f1.9d9a9b4aa3c54fa64f0e.png",
     "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.d75fc9fcbd01041c008e.png",
     "static/media/Reglamento Oficial Versión Simplificada Señal Verdansk.pdf": "/codmVerdansk-Frontend/static/media/Reglamento Oficial Versión Simplificada Señal Verdansk.7233f97f787fee0e908d.pdf",
     "static/media/Disparo_f2.png": "/codmVerdansk-Frontend/static/media/Disparo_f2.66eba88740bdce266e27.png",
@@ -43,7 +43,6 @@
     "static/media/desktop-faq-item.png": "/codmVerdansk-Frontend/static/media/desktop-faq-item.d09807e870a04243aea3.png",
     "static/media/home_logo.png": "/codmVerdansk-Frontend/static/media/home_logo.69d4c6dfddf772dbf154.png",
     "static/media/background_sticker.png": "/codmVerdansk-Frontend/static/media/background_sticker.e3179f922c30fbf1453d.png",
-    "static/media/info-title.png": "/codmVerdansk-Frontend/static/media/info-title.9f7e0c205bf7643be902.png",
     "static/media/phases-title.png": "/codmVerdansk-Frontend/static/media/phases-title.180e74587826a281b17b.png",
     "static/media/info_ghost.png": "/codmVerdansk-Frontend/static/media/info_ghost.e5ac6aaecb9bdad59d35.png",
     "static/media/faqs-banner.png": "/codmVerdansk-Frontend/static/media/faqs-banner.5617c47dda6fb356084e.png",
@@ -51,6 +50,7 @@
     "static/media/signal_info.png": "/codmVerdansk-Frontend/static/media/signal_info.a558955d7f79ae0e527e.png",
     "static/media/sticker-walkt-2.png": "/codmVerdansk-Frontend/static/media/sticker-walkt-2.f59e6718dfaf666221dd.png",
     "static/media/creators-title.png": "/codmVerdansk-Frontend/static/media/creators-title.a39c7bdd2b49ca6fde4d.png",
+    "static/media/info-title.png": "/codmVerdansk-Frontend/static/media/info-title.db0ede5b1fc46801c999.png",
     "static/media/desktop-info.png": "/codmVerdansk-Frontend/static/media/desktop-info.c38f78219723d7853cf7.png",
     "static/media/mascots-title.png": "/codmVerdansk-Frontend/static/media/mascots-title.4c20e2583a115061f5f4.png",
     "static/media/creatorsPage_title.png": "/codmVerdansk-Frontend/static/media/creatorsPage_title.c038928a33694deec6a7.png",
@@ -71,11 +71,11 @@
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
     "main.7104196b.css.map": "/codmVerdansk-Frontend/static/css/main.7104196b.css.map",
-    "main.b9b96444.js.map": "/codmVerdansk-Frontend/static/js/main.b9b96444.js.map",
+    "main.8cbf150d.js.map": "/codmVerdansk-Frontend/static/js/main.8cbf150d.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7104196b.css",
-    "static/js/main.b9b96444.js"
+    "static/js/main.8cbf150d.js"
   ]
 }
