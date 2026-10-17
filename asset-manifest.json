@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/codmVerdansk-Frontend/static/css/main.7104196b.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.edba4a46.js",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.0a12b82a.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -21,8 +21,8 @@
     "static/media/video-marco-desktop-right.png": "/codmVerdansk-Frontend/static/media/video-marco-desktop-right.c935360549fc76670416.png",
     "static/media/calendario_f1.png": "/codmVerdansk-Frontend/static/media/calendario_f1.0b9ef0d70a80a1dbbd22.png",
     "static/media/calendario_f2.png": "/codmVerdansk-Frontend/static/media/calendario_f2.ffe0fc8f441727b6c70a.png",
-    "static/media/mascots-banner.png": "/codmVerdansk-Frontend/static/media/mascots-banner.d9a93505fbc2fa040ee3.png",
     "static/media/Background_desktop.webp": "/codmVerdansk-Frontend/static/media/Background_desktop.5e5457b025b9282061e4.webp",
+    "static/media/mascots-banner.png": "/codmVerdansk-Frontend/static/media/mascots-banner.956deab24bf5fe32feea.png",
     "static/media/desktop-tile-1.png": "/codmVerdansk-Frontend/static/media/desktop-tile-1.b7948caebd45eb001ead.png",
     "static/media/Background_mobile.webp": "/codmVerdansk-Frontend/static/media/Background_mobile.4ccda0d024106093de87.webp",
     "static/media/sticker-truck-1.png": "/codmVerdansk-Frontend/static/media/sticker-truck-1.830b02363a5bd50054c8.png",
@@ -71,11 +71,11 @@
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
     "main.7104196b.css.map": "/codmVerdansk-Frontend/static/css/main.7104196b.css.map",
-    "main.edba4a46.js.map": "/codmVerdansk-Frontend/static/js/main.edba4a46.js.map",
+    "main.0a12b82a.js.map": "/codmVerdansk-Frontend/static/js/main.0a12b82a.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7104196b.css",
-    "static/js/main.edba4a46.js"
+    "static/js/main.0a12b82a.js"
   ]
 }
