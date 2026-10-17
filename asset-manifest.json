@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/codmVerdansk-Frontend/static/css/main.7104196b.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.8cbf150d.js",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.edba4a46.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -21,7 +21,7 @@
     "static/media/video-marco-desktop-right.png": "/codmVerdansk-Frontend/static/media/video-marco-desktop-right.c935360549fc76670416.png",
     "static/media/calendario_f1.png": "/codmVerdansk-Frontend/static/media/calendario_f1.0b9ef0d70a80a1dbbd22.png",
     "static/media/calendario_f2.png": "/codmVerdansk-Frontend/static/media/calendario_f2.ffe0fc8f441727b6c70a.png",
-    "static/media/mascots-banner.png": "/codmVerdansk-Frontend/static/media/mascots-banner.bad32fd39f250e6715d6.png",
+    "static/media/mascots-banner.png": "/codmVerdansk-Frontend/static/media/mascots-banner.d9a93505fbc2fa040ee3.png",
     "static/media/Background_desktop.webp": "/codmVerdansk-Frontend/static/media/Background_desktop.5e5457b025b9282061e4.webp",
     "static/media/desktop-tile-1.png": "/codmVerdansk-Frontend/static/media/desktop-tile-1.b7948caebd45eb001ead.png",
     "static/media/Background_mobile.webp": "/codmVerdansk-Frontend/static/media/Background_mobile.4ccda0d024106093de87.webp",
@@ -30,7 +30,7 @@
     "static/media/sticker-truck-3.png": "/codmVerdansk-Frontend/static/media/sticker-truck-3.e7e0d5a91adac2b43930.png",
     "static/media/sticker-truck-2.png": "/codmVerdansk-Frontend/static/media/sticker-truck-2.2a3ba1cba7be276a43ab.png",
     "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.d75fc9fcbd01041c008e.png",
-    "static/media/Reglamento Oficial Versión Simplificada Señal Verdansk.pdf": "/codmVerdansk-Frontend/static/media/Reglamento Oficial Versión Simplificada Señal Verdansk.7233f97f787fee0e908d.pdf",
+    "static/media/ReglamentoOficial.pdf": "/codmVerdansk-Frontend/static/media/ReglamentoOficial.7233f97f787fee0e908d.pdf",
     "static/media/Disparo_f2.png": "/codmVerdansk-Frontend/static/media/Disparo_f2.66eba88740bdce266e27.png",
     "static/media/sticker-ghost-1.png": "/codmVerdansk-Frontend/static/media/sticker-ghost-1.c7a5076a47f8745b0f92.png",
     "static/media/Disparo_f3.png": "/codmVerdansk-Frontend/static/media/Disparo_f3.f64bcd87e18ec26d2124.png",
@@ -71,11 +71,11 @@
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
     "main.7104196b.css.map": "/codmVerdansk-Frontend/static/css/main.7104196b.css.map",
-    "main.8cbf150d.js.map": "/codmVerdansk-Frontend/static/js/main.8cbf150d.js.map",
+    "main.edba4a46.js.map": "/codmVerdansk-Frontend/static/js/main.edba4a46.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7104196b.css",
-    "static/js/main.8cbf150d.js"
+    "static/js/main.edba4a46.js"
   ]
 }
