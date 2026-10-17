@@ -97,7 +97,7 @@ export const faqsData = [
       },
       {
         title:
-          "¿Si quedo seleccionado para La Gran Final, necesito estar presencialmente en el Venue de la Ciudad de México?",
+          "¿Si quedo seleccionado para La Gran Final, necesito estar presencialmente en el Venue de la CDMX?",
         description:
           "No, aunque el evento es presencial todos los jugadores participarán de forma remota.",
       },

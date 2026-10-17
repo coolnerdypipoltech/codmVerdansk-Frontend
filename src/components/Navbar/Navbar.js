@@ -18,7 +18,7 @@ const Navbar = () => {
     option4: { label: "BOTARGAS", target: "botargas" },
     option5: { label: "CALENDARIO", target: "calendario" },
     option6: { label: "CREADORES", target: "creadores" },
-    option7: { label: "PREGUNTAS FRECUENTES", target: "faqs" }
+    option7: { label: "PREGUNTAS FRECUENTES", target: "faqs2" }
   }
 
   const handleNavigate = (event, target) => {

@@ -22,6 +22,17 @@ function SplashScreen({ children }) {
   const [splashFading, setSplashFading] = useState(false);
   const [muted, setMuted] = useState(true);
 
+
+  useEffect(() => {
+    setTimeout(() => {
+      handleVideoEnd();
+    }, 4000);
+
+    setTimeout(() => {
+      videoRef.current && videoRef.current.play();
+    }, 2000);
+  }, []);
+
   // Splash phase: fade out at 3.5s, switch to video at 4s
   useEffect(() => {
     if (phase !== "splash") return;

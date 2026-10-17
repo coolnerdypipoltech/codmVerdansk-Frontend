@@ -1,5 +1,5 @@
 import "./Phases.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import FrameAnimation from "../../FrameAnimation/FrameAnimation";
 import useNearViewport from "../../../hooks/useNearViewport";
 import {
@@ -28,6 +28,33 @@ const Phases = () => {
   const [firstTime, setFirstTime] = useState(true);
   const direction = useRef("back");
   const [bgRef, bgNear] = useNearViewport();
+  const autoAdvanceTimeoutRef = useRef(null);
+  const resumeTimeoutRef = useRef(null);
+
+  const scheduleAutoAdvance = () => {
+    clearTimeout(autoAdvanceTimeoutRef.current);
+    autoAdvanceTimeoutRef.current = setTimeout(() => {
+      direction.current = "forward";
+      setCurrentPhase((current) => (current + 1) % phaseImages.length);
+      scheduleAutoAdvance();
+    }, 10000);
+  };
+
+  // Al interactuar manualmente se detiene el auto-avance por 20s antes de retomarlo.
+  const pauseAutoAdvance = () => {
+    clearTimeout(autoAdvanceTimeoutRef.current);
+    clearTimeout(resumeTimeoutRef.current);
+    resumeTimeoutRef.current = setTimeout(scheduleAutoAdvance, 20000);
+  };
+
+  useEffect(() => {
+    scheduleAutoAdvance();
+    return () => {
+      clearTimeout(autoAdvanceTimeoutRef.current);
+      clearTimeout(resumeTimeoutRef.current);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const showPreviousPhase = () => {
     direction.current = "back";
@@ -36,6 +63,7 @@ const Phases = () => {
       trackEvent('Phases', 'Click', 'Phases');
     }
     setCurrentPhase((current) => (current - 1 + phaseImages.length) % phaseImages.length);
+    pauseAutoAdvance();
   };
 
   const showNextPhase = () => {
@@ -45,7 +73,10 @@ const Phases = () => {
       trackEvent('Phases', 'Click', 'Phases');
     }
     setCurrentPhase((current) => (current + 1) % phaseImages.length);
+    pauseAutoAdvance();
   };
+
+
 
   return (
     <>{isMobile ? (<><div

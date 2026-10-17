@@ -11,11 +11,11 @@
 .creators-button{
     height: 78px;
     width: auto;
-
+    cursor: pointer;
 }
 
-.creators-button:active {
-    cursor: pointer;
+.creators-button:active, .creators-button:hover {
+    
     transform: scale(1.1);
 }
 

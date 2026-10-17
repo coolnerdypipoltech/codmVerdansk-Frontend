@@ -55,6 +55,11 @@
     justify-content: center;
     flex-direction: row;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
 }
 
 .footer-icons img:active {

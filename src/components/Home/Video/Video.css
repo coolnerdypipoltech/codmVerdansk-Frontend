@@ -23,13 +23,54 @@
   height: auto;
   z-index: 3;
   max-height: 750px;
+  max-width: 477px;
+  pointer-events: none;
 }
 
 .video-marco-desktop{
-  height: 50vw;
-  aspect-ratio: 9 / 16;
+  width: 32vw;
+  
   position: absolute;
-  width: auto;
+  height: auto;
   z-index: 2;
   top: 5vh;
+  pointer-events: none;
 }
+
+
+.actual-video-desktop {
+  position:absolute;
+  width: 24vw;
+  height: auto;
+  top: 7vh;
+  margin-left: -0.5vw;
+  z-index: 2;
+}
+
+.actual-video-mobil{
+    position:absolute;
+  width: calc(90vw - 20vw);
+  height: auto;
+  margin-bottom: 29px;
+  margin-left: -0.5vw;
+  z-index: 2;
+  max-height: 630px;
+  max-width: 370px;
+}
+
+
+@media (min-width: 475px) {
+  .actual-video-mobil {
+    margin-bottom: 9vw;
+  }
+}
+
+@media (min-width: 530px) {
+  .actual-video-mobil {
+    margin-bottom: 12vw;
+    width: calc(90vw - 20vw);
+    object-fit: cover;
+  }
+}
+
+

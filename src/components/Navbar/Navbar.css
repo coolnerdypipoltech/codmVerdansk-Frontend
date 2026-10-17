@@ -20,6 +20,7 @@
   position: absolute;
   left: 5vw;
   top: 10px;
+  cursor: pointer;
 }
 
 .navbar-menu {
@@ -28,20 +29,21 @@
   position: absolute;
   right: 5vw;
   top: 10px;
+  cursor: pointer;
 }
 
-   .navbar-logo:active {
+   .navbar-logo:active, .navbar-logo:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
- .navbar-menu:active {
+ .navbar-menu:active, .navbar-menu:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
 .navbar-menu-content{
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
@@ -66,8 +68,15 @@
   color: white;
   text-decoration: none;
   margin:  0px;
+  cursor: pointer;
 }
- .navbar-menu-content p:active {
+
+ .navbar-menu-content p:hover {
+  color: #D6A92D;
+  transform: scale(1.1);
+}
+
+ .navbar-menu-content p:active, .navbar-menu-content p:hover {
   cursor: pointer;
   transform: scale(1.1);
 }

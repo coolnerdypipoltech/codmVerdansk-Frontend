@@ -88,7 +88,7 @@
     max-height: 48px;
 }
 
-     .phase-carousel-control-img:active {
+     .phase-carousel-control-img:active, .phase-carousel-control-img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }

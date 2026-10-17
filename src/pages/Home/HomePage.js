@@ -33,7 +33,7 @@ const HomePage = () => {
       <div id="botargas"><Mascots></Mascots></div>
       <div id="calendario"><Calendar></Calendar></div>
       <div id="creadores"><Creators></Creators></div>
-      <div id="faqs"><Faqs></Faqs></div>
+      <div id="faqs2"><Faqs></Faqs></div>
       
       
                 <div

@@ -94,7 +94,7 @@
     width: auto;
     height: 452px;
     left: 50%;
-    top: 55%;
+    top: 52%;
     transform: translate(-50%, -50%);
     z-index: 0;
 }
@@ -181,7 +181,7 @@
     height: 7vw;
     position: absolute;
     z-index: 2; 
-    top: 100%;
+    top: 98%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

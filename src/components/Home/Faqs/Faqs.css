@@ -17,10 +17,11 @@
     height: 78px;
     position: relative;
     top: -30px;
+    cursor: pointer;
 }
 
-.faqs-button:active {
-    cursor: pointer;
+.faqs-button:active, .faqs-button:hover {
+    
     transform: scale(1.1);
 }
 
@@ -93,7 +94,7 @@
     transform: translate(-50%, -50%);
 }
 
-    .faqs-button-desktop:active {
+    .faqs-button-desktop:active, .faqs-button-desktop:hover {
         cursor: pointer;
         transform: scale(1.1);
     }

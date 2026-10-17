@@ -10,10 +10,11 @@
     position: relative;
     bottom: 60px;
     padding-bottom: 20px;
+cursor: pointer;
 }
 
-.event-button:active {
-    cursor: pointer;
+.event-button:active, .event-button:hover {
+    
     transform: scale(1.1);
 }
 
