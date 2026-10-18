@@ -1,5 +1,5 @@
 import "./FaqsItem.css";
-import { forwardRef, useState, useRef, useLayoutEffect, useEffect } from "react";
+import { forwardRef, useState, useRef, useLayoutEffect } from "react";
 import { useViewport } from "../../context/ViewportContext";
 import {
   faqs_arrow,
@@ -8,12 +8,21 @@ import {
   faqsPage_itemL,
 } from "../../assets/assetsDirectory";
 
+// Inserta puntos de quiebre invisibles (zero-width space) después de cada
+// "/" en URLs largas, para que el navegador pueda partirlas en pantallas
+// angostas sin desbordar el contenedor. A diferencia de insertar un espacio
+// normal, esto no altera visualmente la URL.
+const addUrlBreakOpportunities = (text) =>
+  typeof text === "string"
+    ? text.replace(/(https?:\/\/\S{20,})/g, (url) => url.replace(/\//g, "/​"))
+    : text;
+
 const FaqsItem = forwardRef(
   ({ number, title, description, className = "", style }, ref) => {
     const [isOpen, setIsOpen] = useState(false);
     const { isMobile } = useViewport();
     const titleRef = useRef(null);
-    const [isSingleLine, setIsSingleLine] = useState(false);
+    const [titleLines, setTitleLines] = useState(2);
 
     useLayoutEffect(() => {
       const el = titleRef.current;
@@ -28,8 +37,7 @@ const FaqsItem = forwardRef(
         range.selectNodeContents(el);
         const lines = range.getClientRects().length;
         if (!lines) return;
-        setIsSingleLine(lines <= 1);
-        
+        setTitleLines(lines);
       };
 
       measure();
@@ -54,33 +62,8 @@ const FaqsItem = forwardRef(
       return () => window.removeEventListener("resize", handleResize);
     }, [title, isMobile]);
 
-    const [helper17, setHelper17] = useState(description);
-    const [helper1, setHelper1] = useState(description);
-
-    useEffect(() => {
-      const update = () => {
-        const width = window.innerWidth;
-        setHelper17(
-          width > 670
-            ? description
-            : "No te preocupes, envíanos un mensaje por nuestro Instagram oficial: https://www.instagram.com/ callofdutymobilelatam",
-        );
-        setHelper1(
-          width > 460
-            ? description
-            : "Debes ingresar al registro en https://verdanskcodm.com/ register. Regístrate durante el periodo de reclutamiento del 23 al 31 de octubre 6pm [CST -6]. ",
-        );
-      };
-
-      update();
-      window.addEventListener("resize", update);
-      return () => window.removeEventListener("resize", update);
-    }, [description]);
-
-    const isTripleLine = isMobile && number === 16;
-    const imgMinHeight = isTripleLine ? "120px" : isSingleLine ? "50px" : "70px";
-    const titleTop = isTripleLine ? "-110px" : isSingleLine ? "-49px" : "-63px";
-
+    const imgMinHeight = titleLines >= 3 ? "120px" : titleLines <= 1 ? "50px" : "70px";
+    const titleTop = titleLines >= 3 ? "-110px" : titleLines <= 1 ? "-49px" : "-63px";
 
     return (
       <div
@@ -130,7 +113,7 @@ const FaqsItem = forwardRef(
         </div>
         {isOpen && (
           <div className="faqsItem-description-container">
-            <p className="faqsItem-description-text" style={{ marginTop: isMobile && number === 16 ? "60px" : "20px" }}>{number === 17 ? helper17 : number === 1 ? helper1 : description}</p>
+            <p className="faqsItem-description-text" style={{ marginTop: titleLines >= 3 ? "60px" : "10px" }}>{addUrlBreakOpportunities(description)}</p>
           </div>
         )}
       </div>

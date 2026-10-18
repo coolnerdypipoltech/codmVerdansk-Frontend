@@ -7,26 +7,30 @@ export const faqsData = [
       {
         title: "¿Cómo puedo participar en el torneo?",
         description:
-          "Debes ingresar al registro en https://verdanskcodm.com/register. Regístrate durante el periodo de reclutamiento del 23 al 31 de octubre 6pm [CST -6].",
+          "Debes ingresar al registro en https://www.verdanskcodm.com. Regístrate durante el periodo de reclutamiento del 23 de octubre 12 PM [CST-6] al 31 de octubre 6 PM [CST-6].",
       },
       {
         title: "¿Tiene algún costo registrarse?",
         description: "No. El registro es completamente gratuito.",
       },
       {
+        title: "¿Hay alguna restricción de edad para participar?",
+        description: "Debes ser mayor de 18 años para participar en el torneo.",
+      },
+      {
         title: "¿Cómo sabré si fui seleccionado?",
         description:
-          "Si eres seleccionado, recibirás un correo electrónico en la dirección que utilizaste durante tu registro.",
+          "Para cada fase, los jugadores seleccionados serán notificados por medio de los canales en el servidor oficial de Discord de CODM Señal Verdansk.",
       },
       {
         title: "¿Necesito tener una cuenta de Discord para participar?",
         description:
-          "No es necesario para completar tu registro. En caso de ser seleccionado para avanzar en el torneo, será obligatorio contar con una cuenta de Discord.",
+          "No es necesario tener una cuenta de Discord para completar tu registro. Sin embargo, en caso de ser seleccionado para avanzar en el torneo, será obligatorio contar con una cuenta de Discord ya que la información de seleccionados e indicaciones serán compartidas por este medio.",
       },
       {
         title: "¿Dónde puedo consultar el reglamento?",
         description:
-          "En los Términos y Condiciones del evento podrás encontrar todos los requisitos de participación y la información necesaria a considerar para competir. Puedes consultarlo directamente aquí.",
+          "Puedes consultar el reglamento oficial aquí: https://www.verdanskcodm.com/rules",
       },
     ],
   },
@@ -43,9 +47,14 @@ export const faqsData = [
           "Se seleccionarán 1,500 jugadores para participar en las Offline Qualifiers.",
       },
       {
+        title: "¿Cómo se seleccionarán los jugadores?",
+        description:
+          "Los jugadores serán seleccionados al azar entre quienes hayan completado correctamente su registro, incluyendo el ingreso correcto de su usuario de Discord.",
+      },
+      {
         title: "¿Cómo sabré si fui seleccionado para las Offline Qualifiers?",
         description:
-          "Recibirás un correo electrónico en el mail registrado en la etapa de reclutamiento con la información correspondiente.",
+          "Todos los jugadores seleccionados serán notificados por medio de los canales en el servidor oficial de Discord de CODM Señal Verdansk.",
       },
       {
         title: "¿Cuántos jugadores pasarán a la siguiente etapa?",
@@ -68,7 +77,7 @@ export const faqsData = [
       {
         title: "¿Cómo se determinará quién avanza?",
         description:
-          "Los 25 mejores jugadores de cada bloque avanzarán a la siguiente etapa. Mediante una selección de Kills y desempate mediante criterios de Activision.",
+          "Los 25 mejores jugadores de cada bloque avanzarán a la siguiente etapa, mediante una selección de kills y desempate según criterios de Activision.",
       },
     ],
   },
@@ -76,9 +85,9 @@ export const faqsData = [
     category: "Etapa de draft",
     items: [
       {
-        title: "¿Cómo estará formado cada squad del Draft?",
+        title: "¿Qué es el Draft?",
         description:
-          "Cada squad estará formado por 1 capitán, 3 jugadores y 1 jugador de banca.",
+          "Es la etapa en la que 25 creadores de contenido seleccionarán a 3 jugadores principales y 1 de banca para formar parte de su squad. Esta etapa está incluida al final de los Online Qualifiers y no será transmitida en línea.",
       },
     ],
   },
@@ -91,15 +100,10 @@ export const faqsData = [
           "La Gran Final se realizará el 14 de noviembre en la Ciudad de México.",
       },
       {
-        title: "¿La final será presencial o en línea?",
-        description:
-          "Habrá un evento presencial, pero también se podrá ver la transmisión por distintas plataformas online oficiales de la marca.",
-      },
-      {
         title:
-          "¿Si quedo seleccionado para La Gran Final, necesito estar presencialmente en el Venue de la CDMX?",
+          "¿Si quedo seleccionado para La Gran Final, necesito estar presencialmente en el Venue de la Ciudad de México?",
         description:
-          "No, aunque el evento es presencial todos los jugadores participarán de forma remota.",
+          "No, aunque el evento es presencial, todos los jugadores participarán de forma remota.",
       },
     ],
   },

@@ -6,6 +6,13 @@ import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
 import { trackEvent } from '../../../utils/analytics';
 import useNearViewport from "../../../hooks/useNearViewport";
+import rulebookPdf from '../../../assets/files/ReglamentoOficial.pdf';
+
+const openRulebook = () => {
+  trackEvent('Rulebook', 'Click', 'Mascots Rulebook');
+  window.open(rulebookPdf, '_blank', 'noopener,noreferrer');
+};
+
 const Mascots = () => {
   const { isMobile } = useViewport();
   const [bgRef, bgNear] = useNearViewport();
@@ -24,7 +31,7 @@ const Mascots = () => {
         <Reveal><p className="mascots-text">No preguntes como llegaron <br></br>
         al mapa, tú solo disfruta</p></Reveal>
         <Reveal><img loading="lazy" src={Mascots_banner} alt="Mascots Banner" className="mascots-banner" /></Reveal>
-        <Reveal><img loading="lazy" src={rulebook} alt="Rulebook" className="rulebook" onClick={() => trackEvent('Rulebook', 'Click', 'Mascots Rulebook')} /></Reveal>
+        <Reveal><img loading="lazy" src={rulebook} alt="Rulebook" className="rulebook" onClick={openRulebook} /></Reveal>
       </div>
     ) : (
       <div className="general-page-desktop">
@@ -39,7 +46,7 @@ const Mascots = () => {
         <Reveal><p className="mascots-text-desktop">No preguntes como llegaron <br></br>
         al mapa, tú solo disfruta</p></Reveal>
         <Reveal><img loading="lazy" src={Mascots_banner} alt="Mascots Banner" className="mascots-banner-desktop" /></Reveal>
-        <Reveal><img loading="lazy" src={rulebook} alt="Rulebook" className="rulebook-desktop" onClick={() => trackEvent('Rulebook', 'Click', 'Mascots Rulebook')} /></Reveal>
+        <Reveal><img loading="lazy" src={rulebook} alt="Rulebook" className="rulebook-desktop" onClick={openRulebook} /></Reveal>
      
 
 

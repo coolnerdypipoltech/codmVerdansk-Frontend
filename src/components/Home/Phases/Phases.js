@@ -37,7 +37,7 @@ const Phases = () => {
       direction.current = "forward";
       setCurrentPhase((current) => (current + 1) % phaseImages.length);
       scheduleAutoAdvance();
-    }, 10000);
+    }, 8000);
   };
 
   // Al interactuar manualmente se detiene el auto-avance por 20s antes de retomarlo.
