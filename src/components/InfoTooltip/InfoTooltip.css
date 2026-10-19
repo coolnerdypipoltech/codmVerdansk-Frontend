@@ -1,0 +1,77 @@
+.tooltipImage{
+
+  padding-right: 0px;
+  height: 12px;
+}
+
+.toolTipText{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  font-size: 12px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 5px);
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: #1f2937;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transform: translateX(0%) translateY(10px);
+  -webkit-transform: translateX(0%) translateY(10px);
+  -moz-transform: translateX(0%) translateY(10px);
+  -ms-transform: translateX(0%) translateY(10px);
+  -o-transform: translateX(0%) translateY(10px);
+}
+
+
+.tooltip-tip{
+  background-color: rgb(255, 255, 255);
+  height: 10px;
+  width: 10px;
+  position: relative;
+  bottom: 0px;
+  top: 15px;
+  right: 48%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.tooltip-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-left: 10px;
+
+}
+
+/* Tooltip arrow */
+
+
+.tooltip-container:hover .tooltip,
+.help-button:focus + .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0%) translateY(0);
+  -webkit-transform: translateX(0%) translateY(0);
+  -moz-transform: translateX(0%) translateY(0);
+  -ms-transform: translateX(0%) translateY(0);
+  -o-transform: translateX(0%) translateY(0);
+}

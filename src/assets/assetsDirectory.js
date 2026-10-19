@@ -150,6 +150,21 @@ import sticker_ghost_main_f1 from "./stickers-ani/ghost_main_f1.png"
 import sticker_ghost_main_f2 from "./stickers-ani/ghost_main_f2.png"
 import sticker_ghost_main_f3 from "./stickers-ani/ghost_main_f3.png"
 
+import registerPage_button from "./registerPage/registerPage-button.png"
+import registerPage_check_down from "./registerPage/registerPage-check-down.png"
+import registerPage_check_up from "./registerPage/registerPage-check-up.png"
+import registerPage_title from "./registerPage/registerPage-title.png"
+import registerPage_accept_button from "./registerPage/registerPage-accept-button.png"
+import registerPage_background from "./registerPage/registerPage-background.png"
+import registerPage_background_popUp from "./registerPage/registerPage-background-popUp.png"
+import registerPage_close from "./registerPage/registerPage-close.png"
+import registerPage_continue_button from "./registerPage/registerPage-continue-button.png"
+import registerPage_create_button from "./registerPage/registerPage-create-button.png"
+import registerPage_join_button from "./registerPage/registerPage-join-button.png"
+
+import registerPage_title_completed from "./registerPage/registerPage-title-completed.png"
+import registerPage_title_locate from "./registerPage/registerPage-title-locate.png"
+
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
 
@@ -206,6 +221,10 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
      sticker_paracaidasBlanco_flip_f2,
+     registerPage_button,
+     registerPage_check_down,
+     registerPage_check_up,
+     registerPage_title, registerPage_title_completed, registerPage_title_locate, registerPage_accept_button, registerPage_background, registerPage_background_popUp, registerPage_close, registerPage_continue_button, registerPage_create_button, registerPage_join_button, 
      faqsPage_itemL, video_marco_mobil, video_marco_desktop_left, video_marco_desktop_right, 
      sticker_ghost_main_f1, sticker_ghost_main_f2, sticker_ghost_main_f3,
      sticker_paracaidasBlanco_f2, sticker_paracaidas_flip_2, sticker_Disparo_f1, sticker_Disparo_f2, sticker_Disparo_f3,

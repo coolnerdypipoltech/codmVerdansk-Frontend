@@ -1,0 +1,17 @@
+.register-page{
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: 100dvh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.registerPage-title{
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+}
