@@ -70,6 +70,7 @@ console.log(phase);
             playsInline
             muted
             onEnded={handleVideoEnd}
+            loading= "eager"
           >
             <source src={videoFinal} type="video/mp4" />
           </video>
