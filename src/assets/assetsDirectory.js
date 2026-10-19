@@ -55,15 +55,15 @@ import phase_title from "./phases/phases-title.png"
 import phase_left from "./phases/phases-left.png"
 import phase_right from "./phases/phases-right.png"
 
-//import phase_info_1 from "./phases/phase-info-1.png"
-//import phase_info_2 from "./phases/phase-info-2.png"
-//import phase_info_3 from "./phases/phase-info-3.png"
-//import phase_info_4 from "./phases/phase-info-4.png"
+import phase_info_1 from "./phases/phase-info-1.png"
+import phase_info_2 from "./phases/phase-info-2.png"
+import phase_info_3 from "./phases/phase-info-3.png"
+import phase_info_4 from "./phases/phase-info-4.png"
 
 //import phase_bckg from "./phases/Background_5Fases.png"
 //import phase_sticker from "./phases/phases_sticker.png"
 
-//import footer_bckg from "./footer/footer-bckg.png"
+import footer_bckg from "./footer/footer-bckg.png"
 
 import cod_logo from "./footer/Cod-logo.svg"
 import fb_icon from "./footer/fb-icon.png"
@@ -77,10 +77,10 @@ import faqsPage_num from "./faqsPage/faqsPage-num.png"
 import faqsPage_itemL from "./faqsPage/faqsPage-item-desktop.png"
 
 
-//import faqsPage_title from "./faqsPage/faqsPage-title.png"
+import faqsPage_title from "./faqsPage/faqsPage-title.png"
 
 
-//import faqsPage_bckg from "./faqsPage/faqsPage-background.png"
+import faqsPage_bckg from "./faqsPage/faqsPage-background.png"
 
 
 import desktop_ghost_banner from "./desktop/desktop-ghost-banner.png"
@@ -169,17 +169,9 @@ const phase_bckg = "https://file.verdanskcodm.com/phases/Background_5Fases.png";
 const phase_sticker = "https://file.verdanskcodm.com/phases/phases_sticker.png";
 
 const faqs_bckg = "https://file.verdanskcodm.com/faqs/Background_faqs1.0.png";
-const footer_bckg = "https://file.verdanskcodm.com/footer/footer-bckg.png";
 
-const faqsPage_title = "https://file.verdanskcodm.com/faqsPage/faqsPage-title.png";
-const faqsPage_bckg = "https://file.verdanskcodm.com/faqsPage/faqsPage-background.png";
 
 const CreatorsPage_bckg = "https://file.verdanskcodm.com/CreatorsPage/creatorsPage_Bckg.png";
-
-const phase_info_1 = "https://file.verdanskcodm.com/phases/phase-info-1.png";
-const phase_info_2 = "https://file.verdanskcodm.com/phases/phase-info-2.png";
-const phase_info_3 = "https://file.verdanskcodm.com/phases/phase-info-3.png";
-const phase_info_4 = "https://file.verdanskcodm.com/phases/phase-info-4.png";
 
 
 const desktop_1 = "https://file.verdanskcodm.com/desktop/desktop-1.3.png";
