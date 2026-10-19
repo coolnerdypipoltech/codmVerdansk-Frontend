@@ -10,7 +10,7 @@ const Video = () => {
   const { isMobile } = useViewport();
   const videoRef = useRef(null);
 
-  const link = "https://verdanskcodm.com/videos/SV_01_Teaser_OK_v1.webm";
+  const link = "https://file.verdanskcodm.com/videos/SV_01_Teaser_OK_v1.webm";
 
   useEffect(() => {
     const el = videoRef.current;
