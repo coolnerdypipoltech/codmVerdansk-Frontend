@@ -1,5 +1,12 @@
 // Contenido de Preguntas Frecuentes de la página /faqs, agrupado por categoría.
 // FaqsPage.js numera los items de forma continua a través de todas las categorías.
+//
+// Para poner un link dentro de una description, usá la sintaxis [texto](url):
+// FaqsItem.js la detecta y la convierte en un <a> real. Una URL suelta
+// (sin corchetes) también se vuelve clickeable automáticamente.
+
+import rulebookPdf from "../assets/files/ReglamentoOficial.pdf";
+
 export const faqsData = [
   {
     category: "Registro y participación",
@@ -7,7 +14,7 @@ export const faqsData = [
       {
         title: "¿Cómo puedo participar en el torneo?",
         description:
-          "Debes ingresar al registro en https://www.verdanskcodm.com. Regístrate durante el periodo de reclutamiento del 23 de octubre 12 PM [CST-6] al 31 de octubre 6 PM [CST-6].",
+          "Debes ingresar al [registro](https://www.verdanskcodm.com/register). Regístrate durante el periodo de reclutamiento del 23 de octubre 12 PM [CST-6] al 31 de octubre 6 PM [CST-6].",
       },
       {
         title: "¿Tiene algún costo registrarse?",
@@ -29,8 +36,7 @@ export const faqsData = [
       },
       {
         title: "¿Dónde puedo consultar el reglamento?",
-        description:
-          "Puedes consultar el reglamento oficial aquí: https://www.verdanskcodm.com/rules",
+        description: `Puedes consultar el reglamento oficial directamente [aquí](${rulebookPdf}).`,
       },
     ],
   },
@@ -113,7 +119,7 @@ export const faqsData = [
       {
         title: "¿Aún tienes dudas?",
         description:
-          "No te preocupes, envíanos un mensaje por nuestro Instagram oficial: https://www.instagram.com/callofdutymobilelatam",
+          "No te preocupes, envíanos un mensaje por nuestro [Instagram oficial](https://www.instagram.com/callofdutymobilelatam).",
       },
     ],
   },

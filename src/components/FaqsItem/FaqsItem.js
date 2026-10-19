@@ -17,6 +17,53 @@ const addUrlBreakOpportunities = (text) =>
     ? text.replace(/(https?:\/\/\S{20,})/g, (url) => url.replace(/\//g, "/​"))
     : text;
 
+// Convierte los links escritos en faqsData.js con sintaxis [texto](url) en
+// <a> reales, y además detecta URLs sueltas (sin corchetes) y las vuelve
+// clickeables automáticamente. Así el contenido se edita como texto simple
+// en faqsData.js sin necesitar JSX ni HTML crudo (que React escapa y
+// muestra tal cual, en vez de renderizarlo).
+const LINK_PATTERN = /\[([^\]]+)\]\((\S+?)\)|(https?:\/\/\S+)/g;
+
+const renderWithLinks = (text) => {
+  if (typeof text !== "string") return text;
+
+  const nodes = [];
+  let lastIndex = 0;
+  let match;
+  let key = 0;
+
+  LINK_PATTERN.lastIndex = 0;
+  while ((match = LINK_PATTERN.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      nodes.push(text.slice(lastIndex, match.index));
+    }
+
+    const [full, linkLabel, linkHref, bareUrl] = match;
+    const href = linkHref || bareUrl;
+    const label = linkLabel || bareUrl;
+
+    nodes.push(
+      <a
+        key={`faq-link-${key++}`}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="faqsItem-link"
+      >
+        {addUrlBreakOpportunities(label)}
+      </a>,
+    );
+
+    lastIndex = match.index + full.length;
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push(text.slice(lastIndex));
+  }
+
+  return nodes;
+};
+
 const FaqsItem = forwardRef(
   ({ number, title, description, className = "", style }, ref) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -113,7 +160,7 @@ const FaqsItem = forwardRef(
         </div>
         {isOpen && (
           <div className="faqsItem-description-container">
-            <p className="faqsItem-description-text" style={{ marginTop: titleLines >= 3 ? "60px" : "10px" }}>{addUrlBreakOpportunities(description)}</p>
+            <p className="faqsItem-description-text" style={{ marginTop: titleLines >= 3 ? "60px" : "10px" }}>{renderWithLinks(description)}</p>
           </div>
         )}
       </div>
