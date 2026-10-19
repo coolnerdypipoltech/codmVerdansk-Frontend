@@ -150,52 +150,52 @@ import sticker_ghost_main_f1 from "./stickers-ani/ghost_main_f1.png"
 import sticker_ghost_main_f2 from "./stickers-ani/ghost_main_f2.png"
 import sticker_ghost_main_f3 from "./stickers-ani/ghost_main_f3.png"
 
-const calendar = "https://verdanskcodm.com/calendar/calendar.png";
-const calendar_bckg = "https://verdanskcodm.com/calendar/Background_Calendario.png";
+const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
+const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
 
-const creators_bckg = "https://verdanskcodm.com/creators/Background_Creadores_contenido1.2.png";
+const creators_bckg = "https://file.verdanskcodm.com/creators/Background_Creadores_contenido1.2.png";
 
-const NavBar_bckg = "https://verdanskcodm.com/navbar/menu-background.png";
+const NavBar_bckg = "https://file.verdanskcodm.com/navbar/menu-background.png";
 
-const Intro_bckg = "https://verdanskcodm.com/intro/Background_Inicio1.2.png";
-const Intro_bckg2 = "https://verdanskcodm.com/intro/Background_Inicio2.png";
-const Intro_ghost_main = "https://verdanskcodm.com/intro/Ghost_Inicio.png"; 
-const vide_bckg = "https://verdanskcodm.com/video/Background_Video.png";
-const Information_bckg = "https://verdanskcodm.com/info/Background_señal.png";
+const Intro_bckg = "https://file.verdanskcodm.com/intro/Background_Inicio1.2.png";
+const Intro_bckg2 = "https://file.verdanskcodm.com/intro/Background_Inicio2.png";
+const Intro_ghost_main = "https://file.verdanskcodm.com/intro/Ghost_Inicio.png"; 
+const vide_bckg = "https://file.verdanskcodm.com/video/Background_Video.png";
+const Information_bckg = "https://file.verdanskcodm.com/info/Background_señal.png";
 
-const Mascots_bckg = "https://verdanskcodm.com/mascots/Background_Botargas.png";
+const Mascots_bckg = "https://file.verdanskcodm.com/mascots/Background_Botargas.png";
 //const Mascots_banner = "https://verdanskcodm.com/mascots/mascots-banner.png";
-const phase_bckg = "https://verdanskcodm.com/phases/Background_5Fases.png";
-const phase_sticker = "https://verdanskcodm.com/phases/phases_sticker.png";
+const phase_bckg = "https://file.verdanskcodm.com/phases/Background_5Fases.png";
+const phase_sticker = "https://file.verdanskcodm.com/phases/phases_sticker.png";
 
-const faqs_bckg = "https://verdanskcodm.com/faqs/Background_faqs1.0.png";
-const footer_bckg = "https://verdanskcodm.com/footer/footer-bckg.png";
+const faqs_bckg = "https://file.verdanskcodm.com/faqs/Background_faqs1.0.png";
+const footer_bckg = "https://file.verdanskcodm.com/footer/footer-bckg.png";
 
-const faqsPage_title = "https://verdanskcodm.com/faqsPage/faqsPage-title.png";
-const faqsPage_bckg = "https://verdanskcodm.com/faqsPage/faqsPage-background.png";
+const faqsPage_title = "https://file.verdanskcodm.com/faqsPage/faqsPage-title.png";
+const faqsPage_bckg = "https://file.verdanskcodm.com/faqsPage/faqsPage-background.png";
 
-const CreatorsPage_bckg = "https://verdanskcodm.com/CreatorsPage/creatorsPage_Bckg.png";
+const CreatorsPage_bckg = "https://file.verdanskcodm.com/CreatorsPage/creatorsPage_Bckg.png";
 
-const phase_info_1 = "https://verdanskcodm.com/phases/phase-info-1.png";
-const phase_info_2 = "https://verdanskcodm.com/phases/phase-info-2.png";
-const phase_info_3 = "https://verdanskcodm.com/phases/phase-info-3.png";
-const phase_info_4 = "https://verdanskcodm.com/phases/phase-info-4.png";
+const phase_info_1 = "https://file.verdanskcodm.com/phases/phase-info-1.png";
+const phase_info_2 = "https://file.verdanskcodm.com/phases/phase-info-2.png";
+const phase_info_3 = "https://file.verdanskcodm.com/phases/phase-info-3.png";
+const phase_info_4 = "https://file.verdanskcodm.com/phases/phase-info-4.png";
 
 
-const desktop_1 = "https://verdanskcodm.com/desktop/desktop-1.3.png";
-const desktop_2 = "https://verdanskcodm.com/desktop/desktop-2.png";
-const desktop_3 = "https://verdanskcodm.com/desktop/desktop-3.1.png";
-const desktop_4 = "https://verdanskcodm.com/desktop/desktop-4.1.png";
-const desktop_5 = "https://verdanskcodm.com/desktop/desktop-5.png";
-const desktop_6 = "https://verdanskcodm.com/desktop/desktop-6.png";
-const desktop_7 = "https://verdanskcodm.com/desktop/desktop-7.png";
-const desktop_8 = "https://verdanskcodm.com/desktop/desktop-8.1.png";
-const desktop_9 = "https://verdanskcodm.com/desktop/desktop-9.1.png";
+const desktop_1 = "https://file.verdanskcodm.com/desktop/desktop-1.3.png";
+const desktop_2 = "https://file.verdanskcodm.com/desktop/desktop-2.png";
+const desktop_3 = "https://file.verdanskcodm.com/desktop/desktop-3.1.png";
+const desktop_4 = "https://file.verdanskcodm.com/desktop/desktop-4.1.png";
+const desktop_5 = "https://file.verdanskcodm.com/desktop/desktop-5.png";
+const desktop_6 = "https://file.verdanskcodm.com/desktop/desktop-6.png";
+const desktop_7 = "https://file.verdanskcodm.com/desktop/desktop-7.png";
+const desktop_8 = "https://file.verdanskcodm.com/desktop/desktop-8.1.png";
+const desktop_9 = "https://file.verdanskcodm.com/desktop/desktop-9.1.png";
 
-const desktop_calendar = "https://verdanskcodm.com/desktop/desktop-calendar1.1.png";
+const desktop_calendar = "https://file.verdanskcodm.com/desktop/desktop-calendar1.1.png";
 
-const videoMobile = "https://verdanskcodm.com/videos/SV_LOGO_Loop_A.mp4";
-const videoDesktop = "https://verdanskcodm.com/videos/SV_LOGO_Loop_Aweb.mp4";
+const videoMobile = "https://file.verdanskcodm.com/videos/SV_LOGO_Loop_A.mp4";
+const videoDesktop = "https://file.verdanskcodm.com/videos/SV_LOGO_Loop_Aweb.mp4";
 
 export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM, commonWallpaperD, Intro_date_banner, desktop_calendar, desktop_ghost_banner, desktop_info,
     desktop_1, desktop_2, desktop_3, desktop_4, desktop_5, desktop_6, desktop_7, desktop_8, desktop_9, 
