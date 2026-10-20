@@ -10,7 +10,7 @@
 
 .registerPage-background-popUp{
   width: 100%;
-  max-width: 450px;
+  max-width: 450px !important;
   height: 90%;
   top: 7%;
   left: 50%;
@@ -23,7 +23,7 @@
 
 .registerPage-background-popUp2{
   width: 100%;
-  max-width: 450px;
+  max-width: 450px !important;
   height: 72%;
   top: 16%;
   left: 50%;
@@ -179,8 +179,8 @@
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  height: 0;
-  width: 0;
+  left: 5px;
+  z-index: 20;
 }
 
 .checkmark {
@@ -285,10 +285,41 @@
   overflow: scroll;
 }
 
+.form-group-check{
+  font-size: var(--text-size);
+  text-align: left;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
+
+@media (max-height: 800px){
+  .form-group-check{
+    margin-bottom: 3px;
+  }
+  .registerPage-title{
+    margin-bottom: 0px;
+    margin-top: 40px;
+  }
+  .form-group-popUp{
+    margin-bottom: 0px !important;
+    margin-top: 5px !important;
+  }
+}
+
+
+.form-group-check strong{
+  color: var(--yellow);
+  font-family: var(--font-antonio);
+  font-size: 18px;
+}
+
 .popup-content {
 
   padding: 40px 20px 30px 20px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   max-width: 400px;
   width: 90%;
@@ -302,7 +333,7 @@
   padding: 40px 20px 30px 20px;
     max-width: 580px;
   text-align: center;
-  
+
   width: 70%;
   animation: popIn 0.3s ease;
 }
@@ -314,7 +345,7 @@
 
 .registerPage-background-popUp{
   width: 80%;
-  max-width: 650px;
+  max-width: 650px !important;
   height: 90%;
   top: 7%;
   left: 50%;
@@ -327,7 +358,7 @@
 
 .registerPage-background-popUp2{
   width: 80%;
-  max-width: 650px;
+  max-width: 650px !important;
   height: 72%;
   top: 16%;
   left: 50%;

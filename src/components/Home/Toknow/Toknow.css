@@ -1,0 +1,150 @@
+.toknow-title-1 {
+  width: auto;
+  height: 167px;
+}
+.toknow-banner {
+  width: auto;
+  height: 258px;
+}
+  
+.toknow-text{
+  color: white;
+  font-size: var(--text-size);
+  font-family: var(--font-monst);
+  text-align: left;
+}
+
+.toknow-button{
+  width: auto;
+  height: 73px;
+  
+}
+
+.toknow-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.toknow-popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 40px;
+  border-radius: 10px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  max-width: 1000px;
+
+}
+.toknow-title-2 {
+  width: auto;
+  height: 45px;
+  margin-top: 20px;
+}
+.toknow-banner-2 {
+  width: auto;
+  height: 101px;
+  margin-bottom: 20px;
+}
+
+.toknow-background-popUp {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: -3%;
+  left: -5%;
+  z-index: -1;
+}
+
+.toknow-close-button {
+  width: auto;
+  height: 60px;
+  position: absolute;
+  top: -15px;
+  right: -12px;
+  cursor: pointer;
+}
+
+
+@media (min-width: 720px) {
+
+  .toknow-popup{
+    padding: 40px 60px;
+  }
+
+  .toknow-title-2 {
+  width: auto;
+  height: 4vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.toknow-banner-2 {
+  width: auto;
+  height: 9vw;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.toknow-background-popUp {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: -3%;
+  left: -5%;
+  z-index: -1;
+}
+
+.toknow-close-button {
+  width: auto;
+  height: 100px;
+  position: absolute;
+  top: -25px;
+  right: -12px;
+  cursor: pointer;
+}
+
+.toknow-text{
+  font-size: 1vw;
+}
+
+}
+
+.toknow-title-1-desktop {
+  width: 23vw;
+  position: absolute;
+  top: -3%;
+}
+.toknow-banner-desktop {
+  width: 20vw;
+  position: absolute; 
+  top: 27%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.toknow-button-desktop {
+  width: auto;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toknow-text-desktop {
+  position: absolute;
+  top: 64%;
+  color: white;
+  font-size: var(--text-desktop-size);
+  font-family: var(--font-monst);
+  text-align: center;
+}

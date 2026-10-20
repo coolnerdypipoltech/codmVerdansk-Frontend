@@ -1,6 +1,6 @@
 .intro-logo {
-    width: auto;
-    height: 210px;
+    width: 346px;
+    min-height: 210px;
     position: relative;
     z-index: 2;
     padding-bottom: 140px;
@@ -14,11 +14,29 @@
     z-index: 2;
 
 }
-.intro-date-banner {
+
+.intro-register {
     width: auto;
-    height: 76px;
+    height: 87px;
     position: relative;
     z-index: 2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.intro-register:hover {
+    transform: scale(1.1);
+}
+
+
+
+.intro-date-banner {
+    width: auto;
+    height: 63px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
 }
 .intro-hashtag {
     width: auto;
@@ -124,10 +142,10 @@
 
 .intro-banner-desktop{
     width: auto;
-    height: 11vw;
+    height: 10vw;
     position: absolute;
     z-index: 2;
-    top: 43%;
+    top:48%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -151,6 +169,22 @@
     
 }
 
+
+.intro-register-desktop{
+    position:absolute;
+    width: auto;
+    height: 8vw;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.intro-register-desktop:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
 .intro-description-desktop{
     color: black;
     font-size: var(--text-desktop-size);
@@ -172,7 +206,7 @@
     height: 8vw;
     position: absolute;
     z-index: 2;
-    top: 76%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

@@ -6,42 +6,63 @@ import {
 
   phase_left,
   desktop_tile_1,
-  CreatorsPage_title,
+  creators_title,
   commonCreator,
   CreatorsPage_bckg,
+    Creador_0,
+  Creador_1,
+  Creador_2,
+  Creador_3,
+  Creador_4,
+  Creador_5,
+  Creador_6,
+  Creador_7,
+  Creador_8,
+  Creador_9,
+  Creador_10,
+  Creador_11,
+  Creador_12,
+  Creador_13,
+  Creador_14,
+  Creador_15,
+  Creador_16,
+  Creador_17,
+  Creador_18,
+  Creador_19,
+  Creador_20,
+  Creador_21,
+  Creador_22,
+  Creador_23,
+  Creador_24,
 } from "../../assets/assetsDirectory";
 import Reveal from "../../components/Reveal/Reveal";
 
 const items = [
-  commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
-
-    commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
-
-    commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
-
-    commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
-
-    commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
-  commonCreator,
+  Creador_0,
+  Creador_1,
+  Creador_2,
+  Creador_3,
+  Creador_4,
+  Creador_5,
+  Creador_6,
+  Creador_7,
+  Creador_8,
+  Creador_9,
+  Creador_10,
+  Creador_11,
+  Creador_12,
+  Creador_13,
+  Creador_14,
+  Creador_15,
+  Creador_16,
+  Creador_17,
+  Creador_18,
+  Creador_19,
+  Creador_20,
+  Creador_21,
+  Creador_22,
+  Creador_23,
+  Creador_24,
 
 
   
@@ -78,7 +99,7 @@ const CreatorsPage = () => {
           }}
         ></img></Reveal>
       </div>
-      <Reveal><img loading="lazy" src={CreatorsPage_title} alt="back" className="CreatorsPage-title"></img></Reveal>
+      <Reveal><img loading="lazy" src={creators_title} alt="back" className="CreatorsPage-title"></img></Reveal>
       <div className="creators-items-container">
           {items.map((item, index) => (
             <Reveal key={index}><img src={item} alt={`Creator ${index}`} className="creator-item" /></Reveal>

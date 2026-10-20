@@ -58,7 +58,7 @@ function SplashScreen({ children }) {
   };
 
   if (phase === "done") return children;
-console.log(phase);
+
   return (
     <>
 

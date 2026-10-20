@@ -13,13 +13,33 @@ import {
   registerPage_continue_button,
   registerPage_create_button,
   registerPage_join_button,
+  registerPage_title, 
+  registerPage_back_button,
+  registerPage_next_button,
 } from "../../assets/assetsDirectory";
 
 import { Captcha } from "recaptz";
 
-import PopUp from "../PopUp/PopUp";
-
 import { useNavigate } from "react-router";
+
+// Mismo backend/flujo de OAuth de Discord que codmVerdanskBackend (src/discord.js
+// + src/server.js). Apuntamos a /auth/discord del BACKEND (no directo a
+// Discord): esa ruta arma la URL de autorización con su propio
+// DISCORD_CLIENT_ID/DISCORD_REDIRECT_URI del .env, así el client_id y el
+// redirect_uri siempre coinciden con los que usa el backend para canjear el
+// code (si se arman por separado en el frontend, cualquier desincronización
+// -client_id distinto, redirect_uri apuntando a otro lado- hace que Discord
+// vuelva sin datos). Es una navegación de página completa en la misma
+// pestaña: Discord redirige a /auth/discord/callback en el backend, que
+// intercambia el code y redirige de vuelta a FRONTEND_URL/register con los
+// datos como query params (discord_username, discord_id, etc.), que se leen
+// en el useEffect de abajo.
+const DISCORD_AUTH_URL =
+  "https://register.verdanskcodm.com/auth/discord";
+
+// Para no perder lo que el usuario ya escribió al navegar a Discord y volver
+// (es una redirección de página completa, React se vuelve a montar de cero).
+const REGISTRATION_DRAFT_STORAGE_KEY = "codm_registration_draft";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -31,10 +51,10 @@ const RegistrationForm = () => {
     discord: "",
     country: "",
     age: "",
-    passport: false,
-    availabilityToTravel: false,
+
     termsAndConditions: false,
   });
+
   const navigate = useNavigate();
   const [forceReloadCaptcha, setForceReloadCaptcha] = useState(0);
   const [captchaError, setCaptchaError] = useState(false);
@@ -43,8 +63,8 @@ const RegistrationForm = () => {
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [popup, setPopup] = useState({
-    show: true,
-    type: "success-yesDiscord",
+    show: false,
+    type: "",
     message: "",
   });
   const firstRender = React.useRef(true);
@@ -80,6 +100,60 @@ const RegistrationForm = () => {
     }
   }, [isFormCompleted]);
 
+  // Restaura lo que el usuario ya había escrito antes de ir a Discord y,
+  // si viene de /auth/discord/callback (ver comentario de DISCORD_AUTH_URL),
+  // aplica el discord_username de la URL por encima (y limpia esos params).
+  // Todo en un solo efecto, protegido con un ref: leer la URL y limpiarla no
+  // es idempotente, así que bajo StrictMode (que duplica efectos en dev) la
+  // segunda pasada ya no encontraría el query param y pisaría el valor con
+  // el del draft guardado.
+  const didRestoreDraft = React.useRef(false);
+
+
+  useEffect(() => {
+    if (didRestoreDraft.current) return;
+    didRestoreDraft.current = true;
+
+    let restored = {};
+    try {
+      const saved = sessionStorage.getItem(REGISTRATION_DRAFT_STORAGE_KEY);
+      if (saved) restored = JSON.parse(saved);
+    } catch (e) {
+      // sessionStorage no disponible o JSON corrupto: seguimos con el form vacío.
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const discordKeys = [
+      "discord_username",
+      "discord_id",
+      "discord_email",
+      "discord_avatar",
+      "discord_error",
+    ];
+    const hasDiscordParams = discordKeys.some((key) => params.has(key));
+    const discordUsername = params.get("discord_username");
+
+    if (Object.keys(restored).length > 0 || discordUsername) {
+      setFormData((prev) => ({
+        ...prev,
+        ...restored,
+        ...(discordUsername ? { discord: discordUsername } : {}),
+      }));
+    }
+
+    if (hasDiscordParams) {
+      discordKeys.forEach((key) => params.delete(key));
+      const newSearch = params.toString();
+      window.history.replaceState(
+        {},
+        "",
+        window.location.pathname +
+          (newSearch ? `?${newSearch}` : "") +
+          window.location.hash,
+      );
+    }
+  }, []);
+
   const countries = [
     { value: "MEX", label: "México" },
     { value: "ARG", label: "Argentina" },
@@ -94,11 +168,18 @@ const RegistrationForm = () => {
     return emailRegex.test(email);
   };
 
+  // Solo letras (con acentos/ñ) y espacios
+  const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
+  // Solo letras y números
+  const uidRegex = /^[A-Za-z0-9]+$/;
+
   const validateForm = () => {
     const newErrors = {};
 
     if (!formData.name) {
       newErrors.name = "El nombre completo es requerido";
+    } else if (!nameRegex.test(formData.name)) {
+      newErrors.name = "El nombre solo puede contener letras";
     }
 
     if (!formData.username) {
@@ -107,12 +188,16 @@ const RegistrationForm = () => {
 
     if (!formData.age) {
       newErrors.age = "La edad es requerida";
-    } else if (Number(formData.age) < 16 || Number(formData.age) > 99) {
-      newErrors.age = "Debes tener entre 16 y 99 años";
+    } else if (Number(formData.age) < 0) {
+      newErrors.age = "La edad no puede ser negativa";
     }
 
     if (!formData.uid) {
       newErrors.uid = "El UID es requerido";
+    } else if (!uidRegex.test(formData.uid)) {
+      newErrors.uid = "El UID solo puede contener letras y números";
+    } else if (formData.uid.length > 20) {
+      newErrors.uid = "El UID no puede tener más de 20 caracteres";
     }
 
     if (!formData.platform) {
@@ -134,18 +219,10 @@ const RegistrationForm = () => {
         "Se necesita aceptar los terminos y condiciones";
     }
 
-    if (!formData.passport) {
-      newErrors.passport =
-        "Se necesita cumplir con los requisitos para viajar en tu país";
-    }
-
-    if (!formData.availabilityToTravel) {
-      newErrors.availabilityToTravel = "Se necesita disponibilidad para viajar";
-    }
-
     if (!isVerified) {
       setCaptchaError(true);
     }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -163,13 +240,33 @@ const RegistrationForm = () => {
   };
 
   const handleVerifyDiscord = () => {
-    // Implement Discord verification logic here
+    try {
+      sessionStorage.setItem(
+        REGISTRATION_DRAFT_STORAGE_KEY,
+        JSON.stringify(formData),
+      );
+    } catch (e) {
+      // sessionStorage no disponible: seguimos igual, solo no se restaura el draft.
+    }
+    window.location.href = DISCORD_AUTH_URL;
   };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => {
-      const updatedValue = type === "checkbox" ? checked : value;
+      let updatedValue = type === "checkbox" ? checked : value;
+
+      if (name === "name" && typeof updatedValue === "string") {
+        updatedValue = updatedValue.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
+      }
+
+      if (name === "uid" && typeof updatedValue === "string") {
+        updatedValue = updatedValue.replace(/[^A-Za-z0-9]/g, "").slice(0, 20);
+      }
+
+      if (name === "age" && typeof updatedValue === "string") {
+        updatedValue = updatedValue.replace(/[^0-9]/g, "");
+      }
 
       return {
         ...prev,
@@ -182,6 +279,7 @@ const RegistrationForm = () => {
       setErrors((prev) => ({ ...prev, [name]: "" }));
     }
   };
+  
 
   const actualSubmit = async () => {
     if (!validateForm()) {
@@ -214,17 +312,20 @@ const RegistrationForm = () => {
       username: formData.username,
       platform: formData.platform,
       discord: helperDiscord,
-      age: formData.age,
+      age: Number(formData.age),
     };
 
     try {
+
       const response = await fetch(
         "https://register.verdanskcodm.com/register",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            "x-api-key": process.env.REACT_APP_API_KEY,
           },
+
           body: JSON.stringify(dataToSend),
         },
       );
@@ -238,10 +339,26 @@ const RegistrationForm = () => {
             country: formData.country,
           });
         }
-        setPopup({
-          show: true,
-          type: "success",
-        });
+
+        if (formData.discord.trim() !== "") {
+          // Implement Discord verification logic here if needed
+          setPopup({
+            show: true,
+            type: "success-yesDiscord",
+          });
+        } else {
+          setPopup({
+            show: true,
+            type: "success-noDiscord",
+          });
+        }
+
+        try {
+          sessionStorage.removeItem(REGISTRATION_DRAFT_STORAGE_KEY);
+        } catch (e) {
+          // sessionStorage no disponible: no hay nada que limpiar.
+        }
+
         // Reset form
         setFormData({
           name: "",
@@ -252,8 +369,6 @@ const RegistrationForm = () => {
           email: "",
           discord: "",
           country: "",
-          passport: false,
-          availabilityToTravel: false,
           termsAndConditions: false,
         });
       } else if (response.status === 400) {
@@ -261,7 +376,8 @@ const RegistrationForm = () => {
           show: true,
           type: "error",
           message:
-            "Falta información requerida. Por favor verifica todos los campos.",
+            "Falta información requerida. Por favor verifica todos los campos."
+            ,
         });
       } else if (response.status === 409) {
         setPopup({
@@ -350,27 +466,35 @@ const RegistrationForm = () => {
           <div className="popup-overlay" onClick={closePopup}>
             <div
               className={`popup-content ${popup.type}`}
-              
               onClick={(e) => e.stopPropagation()}
             >
               <img
                 loading="lazy"
                 src={registerPage_background_popUp}
                 alt="back"
-                className={popup.type === "instructions" ? "registerPage-background-popUp" : "registerPage-background-popUp2" }
-                
+                className={
+                  popup.type === "instructions"
+                    ? "registerPage-background-popUp"
+                    : "registerPage-background-popUp2"
+                }
               ></img>
               <div
                 style={{
                   width: "100%",
                   display: "flex",
                   justifyContent: "center",
-                  
                 }}
               ></div>
               {popup.type === "success-yesDiscord" && (
                 <>
-                  <div style={{ padding: "10px 20px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                  <div
+                    style={{
+                      padding: "10px 20px",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                    }}
+                  >
                     <img
                       loading="lazy"
                       src={registerPage_title_completed}
@@ -423,7 +547,14 @@ const RegistrationForm = () => {
 
               {popup.type === "success-noDiscord" && (
                 <>
-                  <div style={{ padding: "10px 20px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                  <div
+                    style={{
+                      padding: "10px 20px",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                    }}
+                  >
                     <img
                       loading="lazy"
                       src={registerPage_title_completed}
@@ -482,30 +613,68 @@ const RegistrationForm = () => {
 
               {popup.type === "instructions" && (
                 <>
-                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "10px 20px" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      padding: "10px 20px",
+                    }}
+                  >
                     <img
                       loading="lazy"
                       src={registerPage_title_locate}
                       alt="back"
                       className="registerPage-title"
                     ></img>
-                    <p className="form-group-popUp" style={{ textAlign: "left"}}>
-                      1. Inicia sesión en el juego <span style={{ color: "#C19F33" }}>desde tu dispositivo.</span>
+                    <p
+                      className="form-group-popUp"
+                      style={{ textAlign: "left" }}
+                    >
+                      1. Inicia sesión en el juego{" "}
+                      <span style={{ color: "#C19F33" }}>
+                        desde tu dispositivo.
+                      </span>
                     </p>
-                    <p className="form-group-popUp" style={{ textAlign: "left"}}>
-                      2. Selecciona tu perfil en la <span style={{ color: "#C19F33" }}>esquina superior izquierda </span> de la pantalla principa
+                    <p
+                      className="form-group-popUp"
+                      style={{ textAlign: "left" }}
+                    >
+                      2. Selecciona tu perfil en la{" "}
+                      <span style={{ color: "#C19F33" }}>
+                        esquina superior izquierda{" "}
+                      </span>{" "}
+                      de la pantalla principa
                     </p>
-                    <p className="form-group-popUp" style={{ textAlign: "left"}}>
-                      3. Verás una serie de opciones a la izquierda de la pantalla. selecciona la pestaña <span style={{ color: "#C19F33" }}>"básico".</span>
+                    <p
+                      className="form-group-popUp"
+                      style={{ textAlign: "left" }}
+                    >
+                      3. Verás una serie de opciones a la izquierda de la
+                      pantalla. selecciona la pestaña{" "}
+                      <span style={{ color: "#C19F33" }}>"básico".</span>
                     </p>
-                    <p className="form-group-popUp" style={{ textAlign: "left"}}>
-                      4. <span style={{ color: "#C19F33" }}> Debajo de tu nombre de usuario, </span> verás una serie de números ese es tu UID.
+                    <p
+                      className="form-group-popUp"
+                      style={{ textAlign: "left" }}
+                    >
+                      4.{" "}
+                      <span style={{ color: "#C19F33" }}>
+                        {" "}
+                        Debajo de tu nombre de usuario,{" "}
+                      </span>{" "}
+                      verás una serie de números ese es tu UID.
                     </p>
-                    <p className="form-group-popUp" style={{ textAlign: "left"}}>
-                      5. <span style={{ color: "#C19F33" }}>
- Haz clic en el botón de copiar </span> a la derecha del número para evitar errores al escribirlo.
+                    <p
+                      className="form-group-popUp"
+                      style={{ textAlign: "left" }}
+                    >
+                      5.{" "}
+                      <span style={{ color: "#C19F33" }}>
+                        Haz clic en el botón de copiar{" "}
+                      </span>{" "}
+                      a la derecha del número para evitar errores al escribirlo.
                     </p>
-                    
                   </div>
                   <div
                     onClick={closePopup}
@@ -524,12 +693,35 @@ const RegistrationForm = () => {
                   </div>
                 </>
               )}
-              <div className= {popup.type === "instructions" ? "popUp_close" : "popUp_close2"} onClick={closePopup}>
-                <img
-                  loading="lazy"
-                  src={registerPage_close}
-                  alt="Cerrar"
-                />
+
+              {popup.type === "error" && (
+                <>
+                  <p className="form-group-popUp">{popup.message}</p>
+                  <div
+                    onClick={closePopup}
+                    style={{
+                      width: "100%",
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      loading="lazy"
+                      src={registerPage_back_button}
+                      style={{ height: "64px", marginTop: "20px" }}
+                      alt="Cerrar"
+                    />
+                  </div>
+                </>
+              )}
+
+              <div
+                className={
+                  popup.type === "instructions" ? "popUp_close" : "popUp_close2"
+                }
+                onClick={closePopup}
+              >
+                <img loading="lazy" src={registerPage_close} alt="Cerrar" />
               </div>
             </div>
           </div>
@@ -577,28 +769,6 @@ const RegistrationForm = () => {
               )}
             </div>
 
-            {/* Age */}
-            <div className="form-group">
-              <label className="inter-font" htmlFor="age">
-                Edad*
-              </label>
-              <input
-                type="number"
-                id="age"
-                name="age"
-                value={formData.age}
-                onChange={handleChange}
-                placeholder=""
-                min="16"
-                max="99"
-                className={errors.age ? "error" : ""}
-                autoComplete="off"
-              />
-              {errors.age && (
-                <span className="error-message">{errors.age}</span>
-              )}
-            </div>
-
             {/* UID */}
             <div className="form-group">
               <div style={{ display: "flex", flexDirection: "row" }}>
@@ -617,7 +787,7 @@ const RegistrationForm = () => {
                 className={errors.uid ? "error" : ""}
               />
               <p
-                onClick={() => navigate("/instructions")}
+                onClick={() => setPopup({ show: true, type: "instructions" })}
                 className="inter-font"
                 style={{
                   color: "white",
@@ -740,6 +910,28 @@ const RegistrationForm = () => {
               )}
             </div>
 
+            {/* Age */}
+            <div className="form-group">
+              <label className="inter-font" htmlFor="age">
+                Edad*
+              </label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                value={formData.age}
+                onChange={handleChange}
+                placeholder=""
+                min="16"
+                max="99"
+                className={errors.age ? "error" : ""}
+                autoComplete="off"
+              />
+              {errors.age && (
+                <span className="error-message">{errors.age}</span>
+              )}
+            </div>
+
             {/* Checkboxes */}
             <div className="checkbox-group">
               <label
@@ -752,6 +944,12 @@ const RegistrationForm = () => {
                   checked={formData.termsAndConditions}
                   onChange={handleChange}
                   className="inputDiamond"
+                                    onClick={() =>
+                    setFormData({
+                      ...formData,
+                      termsAndConditions: !formData.termsAndConditions,
+                    })
+                  }
                 />
                 <span
                   className="checkmark"
@@ -822,9 +1020,7 @@ const RegistrationForm = () => {
                   }
                 ></span>
                 <p className="inputDiamond">
-                  Entiendo que no necesito unirme a Discord para registrarme,
-                  pero si soy seleccionado para la siguiente fase deberé unirme
-                  al servidor o quedaré descalificado.
+                  Entiendo que en caso de ser seleccionado para la siguiente fase debo estar en el servidor de Discord para participar en las clasificatorias, de lo contrario perderé mi lugar.
                 </p>
               </label>
               {errors.discordDisclousure && (
@@ -902,68 +1098,119 @@ const RegistrationForm = () => {
           </button>
 
           <div style={{ minHeight: "30px" }}></div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              gap: "5px",
-              justifyContent: "center",
-            }}
-          >
-            <p className="inter-font">
-              No se solicitan documentos en esta etapa
-            </p>
-          </div>
         </div>
       </div>
+
       {isFormCompleted && (
-        <PopUp
-          action={() => {
-            actualSubmit();
-          }}
-          closePopUp={() => {
-            setIsFormCompleted(false);
-          }}
-        >
-          <div style={{ marginBottom: "15px" }}>
-            <p
+        <div className="popup-overlay" onClick={closePopup}>
+          <div
+            className={`popup-content ${popup.type}`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              loading="lazy"
+              src={registerPage_background_popUp}
+              alt="back"
+              className={
+                "registerPage-background-popUp"
+              }
+            ></img>
+            <div
               style={{
-                fontWeight: "bold",
-                marginBottom: "10px",
-                textAlign: "center",
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            ></div>
+
+            <img
+                      loading="lazy"
+                      src={registerPage_title}
+                      alt="back"
+                      className="registerPage-title"
+                    ></img>
+
+            <div className="form-group-popUp" style={{ marginBottom: "15px", width: "100%" }}>
+              <p
+                style={{
+                  fontWeight: "bold",
+                  marginBottom: "10px",
+                  textAlign: "center",
+                }}
+              >
+                Por favor revisa tu información:
+              </p>
+              <p className="form-group-check">
+                <strong>Nombre Completo:</strong> {formData.name}
+              </p>
+              <p className="form-group-check">
+                <strong>Nombre de usuario:</strong> {formData.username}
+              </p>
+              <p className="form-group-check">
+                <strong>Edad:</strong> {formData.age}
+              </p>
+              <p className="form-group-check">
+                <strong>UID:</strong> {formData.uid}
+              </p>
+              <p className="form-group-check">
+                <strong>Plataforma:</strong> {formData.platform}
+              </p>
+              <p className="form-group-check">
+                <strong>Correo:</strong> {formData.email}
+              </p>
+              <p className="form-group-check">
+                <strong>Discord:</strong> {formData.discord}
+              </p>
+              <p className="form-group-check">
+                <strong>País:</strong>{" "}
+                {countries.find((c) => c.value === formData.country)?.label ||
+                  formData.country}
+              </p>
+            </div>
+
+            <div
+              onClick={closePopup}
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
               }}
             >
-              Por favor revisa tu información:
-            </p>
-            <p>
-              <strong>Nombre Completo:</strong> {formData.name}
-            </p>
-            <p>
-              <strong>Nombre de usuario:</strong> {formData.username}
-            </p>
-            <p>
-              <strong>Edad:</strong> {formData.age}
-            </p>
-            <p>
-              <strong>UID:</strong> {formData.uid}
-            </p>
-            <p>
-              <strong>Plataforma:</strong> {formData.platform}
-            </p>
-            <p>
-              <strong>Correo:</strong> {formData.email}
-            </p>
-            <p>
-              <strong>Discord:</strong> {formData.discord}
-            </p>
-            <p>
-              <strong>País:</strong>{" "}
-              {countries.find((c) => c.value === formData.country)?.label ||
-                formData.country}
-            </p>
+              <img
+              onClick={closePopup}
+                loading="lazy"
+                src={registerPage_back_button}
+                style={{ height: "64px", marginTop: "20px" }}
+                alt="Cerrar"
+              />
+            </div>
+
+            <div
+              onClick={actualSubmit}
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                loading="lazy"
+                src={registerPage_next_button}
+                style={{ height: "64px", marginTop: "20px" }}
+                alt="Crear"
+              />
+            </div>
+
+            <div
+              className={
+                "popUp_close"
+              }
+              onClick={closePopup}
+            >
+              <img onClick={closePopup} loading="lazy" src={registerPage_close} alt="Cerrar" />
+            </div>
           </div>
-        </PopUp>
+        </div>
       )}
     </>
   );

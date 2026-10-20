@@ -26,3 +26,13 @@
   width: 150px;
   height: auto;
 }
+
+.creator-item:hover{
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .creator-item{
+    width: 10vw;
+  }
+}

@@ -10,6 +10,7 @@ import Intro_ghost from "./intro/background_sticker.png"
 import Intro_hashtag from "./intro/hashtag.png"
 import Intro_logo from "./intro/home_logo.png"
 import Intro_banner from "./intro/signal_info.png"
+import Intro_register from "./intro/intro_register.png"
 //import Intro_bckg from "./intro/Background_Inicio.png"
 //import Intro_bckg2 from "./intro/Background_Inicio2.png"
 //import Intro_ghost_main from "./intro/Ghost_Inicio.png"
@@ -86,7 +87,6 @@ import faqsPage_bckg from "./faqsPage/faqsPage-background.png"
 import desktop_ghost_banner from "./desktop/desktop-ghost-banner.png"
 import desktop_info from "./desktop/desktop-info.png"
 
-import CreatorsPage_title from "./CreatorsPage/creatorsPage_title.png"
 import commonCreator from "./CreatorsPage/creator.png"
 //import CreatorsPage_bckg from "./CreatorsPage/creatorsPage_Bckg.png"
 
@@ -161,9 +161,56 @@ import registerPage_close from "./registerPage/registerPage-close.png"
 import registerPage_continue_button from "./registerPage/registerPage-continue-button.png"
 import registerPage_create_button from "./registerPage/registerPage-create-button.png"
 import registerPage_join_button from "./registerPage/registerPage-join-button.png"
+import registerPage_back_button from "./registerPage/registerPage-back-button.png"
+import registerPage_next_button from "./registerPage/registerPage-next-button.png"
 
 import registerPage_title_completed from "./registerPage/registerPage-title-completed.png"
 import registerPage_title_locate from "./registerPage/registerPage-title-locate.png"
+
+import mascots_slider_1 from "./mascots/slider/mascots-slider-1.jfif"
+import mascots_slider_2 from "./mascots/slider/mascots-slider-1.jfif"
+import mascots_slider_3 from "./mascots/slider/mascots-slider-1.jfif"
+import mascots_slider_4 from "./mascots/slider/mascots-slider-1.jfif"
+import mascots_slider_5 from "./mascots/slider/mascots-slider-1.jfif"
+import mascots_slider_6 from "./mascots/slider/mascots-slider-1.jfif"
+import mascots_slider_7 from "./mascots/slider/mascots-slider-1.jfif"
+import mascots_slider_8 from "./mascots/slider/mascots-slider-1.jfif"
+import mascots_slider_9 from "./mascots/slider/mascots-slider-1.jfif"
+import mascots_slider_10 from "./mascots/slider/mascots-slider-1.jfif"
+
+import toknow_banner from "./toknow/toknow-banner.png"
+import toknow_banner_2 from "./toknow/toknow-banner-2.png"
+import toknow_button from "./toknow/toknow-button.png"
+import toknow_title_1 from "./toknow/toknow-title-1.png"
+import toknow_title_2 from "./toknow/toknow-title-2.png"
+
+
+import Creador_0 from "./CreatorsPage/creators/Creador-0.png"
+import Creador_1 from "./CreatorsPage/creators/Creador-1.png"
+import Creador_2 from "./CreatorsPage/creators/Creador-2.png"
+import Creador_3 from "./CreatorsPage/creators/Creador-3.png"
+import Creador_4 from "./CreatorsPage/creators/Creador-4.png"
+import Creador_5 from "./CreatorsPage/creators/Creador-5.png"
+import Creador_6 from "./CreatorsPage/creators/Creador-6.png"
+import Creador_7 from "./CreatorsPage/creators/Creador-7.png"
+import Creador_8 from "./CreatorsPage/creators/Creador-8.png"
+import Creador_9 from "./CreatorsPage/creators/Creador-9.png"
+import Creador_10 from "./CreatorsPage/creators/Creador-10.png"
+import Creador_11 from "./CreatorsPage/creators/Creador-11.png"
+import Creador_12 from "./CreatorsPage/creators/Creador-12.png"
+import Creador_13 from "./CreatorsPage/creators/Creador-13.png"
+import Creador_14 from "./CreatorsPage/creators/Creador-14.png"
+import Creador_15 from "./CreatorsPage/creators/Creador-15.png"
+import Creador_16 from "./CreatorsPage/creators/Creador-16.png"
+import Creador_17 from "./CreatorsPage/creators/Creador-17.png"
+import Creador_18 from "./CreatorsPage/creators/Creador-18.png"
+import Creador_19 from "./CreatorsPage/creators/Creador-19.png"
+import Creador_20 from "./CreatorsPage/creators/Creador-20.png"
+import Creador_21 from "./CreatorsPage/creators/Creador-21.png"
+import Creador_22 from "./CreatorsPage/creators/Creador-22.png"
+import Creador_23 from "./CreatorsPage/creators/Creador-23.png"
+import Creador_24 from "./CreatorsPage/creators/Creador-24.png"
+
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
@@ -216,7 +263,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_granade_1, sticker_granade_2, sticker_truck_1, sticker_truck_2, sticker_truck_3, sticker_walkt_1, sticker_walkt_2, 
      sticker_ghost_1, sticker_ghost_2,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
-     sticker_granade_3,
+     sticker_granade_3, Intro_register,
      sticker_paracaidas_flip_1,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
@@ -224,10 +271,16 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      registerPage_button,
      registerPage_check_down,
      registerPage_check_up,
+     toknow_banner, toknow_banner_2, toknow_button, toknow_title_1, toknow_title_2,
+     mascots_slider_1, mascots_slider_2, mascots_slider_3, mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8, mascots_slider_9, mascots_slider_10,
      registerPage_title, registerPage_title_completed, registerPage_title_locate, registerPage_accept_button, registerPage_background, registerPage_background_popUp, registerPage_close, registerPage_continue_button, registerPage_create_button, registerPage_join_button, 
      faqsPage_itemL, video_marco_mobil, video_marco_desktop_left, video_marco_desktop_right, 
      sticker_ghost_main_f1, sticker_ghost_main_f2, sticker_ghost_main_f3,
      sticker_paracaidasBlanco_f2, sticker_paracaidas_flip_2, sticker_Disparo_f1, sticker_Disparo_f2, sticker_Disparo_f3,
      sticker_paracaidas_1, sticker_paracaidas_2,
      sticker_creadores_F1, sticker_creadores_F2, sticker_creadores_F3,
-     faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, CreatorsPage_title, commonCreator, Intro_bckg2, Intro_ghost_main };
+     registerPage_back_button, registerPage_next_button,
+     faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, commonCreator, Intro_bckg2, Intro_ghost_main,
+     Creador_0, Creador_1, Creador_2, Creador_3, Creador_4, Creador_5, Creador_6, Creador_7, Creador_8, Creador_9, Creador_10,
+     Creador_11, Creador_12, Creador_13, Creador_14, Creador_15, Creador_16, Creador_17, Creador_18, Creador_19,
+     Creador_20, Creador_21, Creador_22, Creador_23, Creador_24 };

@@ -13,6 +13,7 @@ import {
   sticker_ghost_F3,
   sticker_rayos_f1,
   sticker_rayos_f2,
+
 } from "../../../assets/assetsDirectory";
 import { useViewport } from "../../../context/ViewportContext";
 import { useNavigate } from "react-router-dom";

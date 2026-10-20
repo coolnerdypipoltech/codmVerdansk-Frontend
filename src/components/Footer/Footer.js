@@ -1,10 +1,11 @@
 
 import './Footer.css';
+import { useNavigate } from 'react-router-dom';
 
 import { footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon } from '../../assets/assetsDirectory';
 import { trackEvent } from '../../utils/analytics';
 const Footer = () => {
-
+  const navigate = useNavigate();
   return (
     <div className="footer">
       <div className="footer-container" >
@@ -18,6 +19,7 @@ const Footer = () => {
       {/* <p className="footer-text">Políticas de privacidad</p>
       <p className="footer-text">Términos y condiciones</p> */}
       <p className="footer-text">© 2024 Call of Duty Verdansk</p>
+      
     </div>
     
     <div className="footer-bckg" style={{ backgroundImage: `url(${footer_bckg})` }}></div>

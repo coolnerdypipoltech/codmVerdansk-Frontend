@@ -1,10 +1,9 @@
 // Thin wrapper around the global gtag() loaded in public/index.html.
 // Safe to call anywhere: it no-ops if the GA script is blocked or not loaded yet.
 export const trackEvent = (eventName, params = {}) => {
-  console.log(window);
-  console.log(window.gtag)
+
   if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-    console.log('Tracking event:', eventName, params);
+
     window.gtag('event', eventName, params);
   }
 };

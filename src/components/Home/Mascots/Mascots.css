@@ -3,13 +3,6 @@
     height: 151px;
 }
 
-.mascots-banner{
-    width: 80vw;
-    max-width: 550px;
-    height: auto;
-    position: relative;
-    left: -10px;
-}
 .rulebook{
     width: auto;
     height: 70px;
@@ -29,6 +22,138 @@
     text-transform: uppercase;
 }
 
+/* Carrusel de botargas con efecto de pila de fotos: misma lógica de control
+   (botones + indicadores + auto-avance con pausa) que el carrusel de
+   Phases.js, con un look distinto (cartas apiladas en vez de slide único). */
+.mascots-stack-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.mascots-stack{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.mascots-stack-cards{
+    position: relative;
+    width: 55vw;
+    max-width: 280px;
+    aspect-ratio: 4 / 5.6;
+}
+
+/* Marco blanco tipo foto polaroid: más grueso abajo que a los costados,
+   como el espacio para escribir a mano debajo de una polaroid real. */
+.mascots-stack-card{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #fafaf5;
+    padding: 5% 5% 16% 5%;
+    border-radius: 2px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.mascots-stack-card-photo{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mascots-stack-card-depth-0{
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    z-index: 3;
+}
+
+.mascots-stack-card-depth-1{
+    transform: translate(10px, 12px) rotate(6deg) scale(0.94);
+    z-index: 2;
+    opacity: 0.85;
+}
+
+.mascots-stack-card-depth-2{
+    transform: translate(-10px, 18px) rotate(-7deg) scale(0.88);
+    z-index: 1;
+    opacity: 0.65;
+}
+
+.mascots-stack-control-left,
+.mascots-stack-control-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.mascots-stack-control-img{
+    display: block;
+    min-width: 40px;
+    min-height: 40px;
+    object-fit: contain;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.mascots-stack-control-img:active,
+.mascots-stack-control-img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.mascots-stack-indicators{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.mascots-stack-indicator{
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 1px solid var(--yellow);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mascots-stack-indicator.is-active{
+    background: var(--yellow);
+}
+
+@keyframes mascotsStackInFromLeft {
+  from { transform: translateX(-60px) rotate(0deg) scale(0.85); opacity: 0; }
+  to   { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+}
+
+@keyframes mascotsStackInFromRight {
+  from { transform: translateX(60px) rotate(0deg) scale(0.85); opacity: 0; }
+  to   { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+}
+
+.mascots-stack--right-in{
+    animation: mascotsStackInFromLeft 0.4s ease-in-out;
+}
+
+.mascots-stack--left-in{
+    animation: mascotsStackInFromRight 0.4s ease-in-out;
+}
+
 
 
 .mascots-title-desktop{
@@ -40,14 +165,6 @@
     transform: translateX(-50%);
 }
 
-.mascots-banner-desktop{
-    width: 30vw;
-    height: auto;
-        position:absolute;
-    top: 25%;
-    left: 35%;
-    transform: translateX(-50%);
-}
 .rulebook-desktop{
     height: auto;
             width: 20vw;
@@ -74,4 +191,25 @@
     top: 43%;
     left: 70%;
     transform: translateX(-50%);
+}
+
+.mascots-stack-wrapper-desktop{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 30vw;
+
+}
+
+.mascots-stack-wrapper-desktop .mascots-stack-cards{
+    width: 20vw;
+    max-width: none;
+}
+
+.mascots-stack-wrapper-desktop .mascots-stack-control-img{
+    min-width: 2vw;
+    min-height: 2vw;
+    max-width: 100px;
+    max-height: 100px;
 }
