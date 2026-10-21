@@ -18,6 +18,8 @@
     color: var(--yellow);
     margin: 2px;
     line-height: 1.2;
+    position: relative;
+    z-index: 2;
 }
 
 .information-ghost{
@@ -34,8 +36,8 @@
     width: auto;
     height: 128px;
     position: absolute;
-    right: 0px;
-    top: 45.5%;
+    right: -20px;
+    top: 52%;
     z-index: 1;
     animation: bob-and-tilt 13s ease-in-out infinite;
 }
@@ -63,14 +65,14 @@
 }
 
 .information-text2-desktop{
-    font-size: var(--title-desktop-size) ;
+    font-size: 1.8vw ;
     font-family: var(--font-anton);
     color: var(--yellow);
     margin: 2px;
     line-height: 1.2;
         position: absolute;
     left: 50%;
-    top: 65.5%;
+    top: 68%;
     transform: translateX(-50%);
 }
 

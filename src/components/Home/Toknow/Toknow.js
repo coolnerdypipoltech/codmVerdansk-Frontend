@@ -2,7 +2,7 @@
 import './Toknow.css';
 
 
-import { vide_bckg, desktop_3, toknow_banner, toknow_banner_2, toknow_button, toknow_title_1, toknow_title_2,   registerPage_background_popUp,
+import {  desktop_5_5, toknow_banner, toknow_banner_2, toknow_button, toknow_title_1, toknow_title_2, toknow_bckg, registerPage_background_popUp,
   registerPage_close, } from '../../../assets/assetsDirectory';
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
@@ -16,15 +16,16 @@ const Toknow = () => {
     <>{isMobile ? (<div
       className="general-page"
       style={{
-        backgroundImage: `url(${isMobile ? vide_bckg : desktop_3})`,
+        backgroundImage: `url(${isMobile ? toknow_bckg : desktop_5_5})`,
         minHeight: "720px",
         maxHeight: isMobile ? "647px" : undefined,
-        gap: "20px"
+        gap: "20px",
+        justifyContent: "flex-start"
       }}
     >
       <Reveal><img src={toknow_title_1} alt="Toknow Title 1" className="toknow-title-1"></img></Reveal>
       <Reveal><img src={toknow_banner} alt="Toknow Banner" className="toknow-banner" ></img></Reveal>
-<Reveal>      <p className="toknow-text">Antes de continuar, revisa algunos <br></br> <span style={{color: "#FFCE34"}}>detalles importantes</span> que pueden <br></br> afectar tu participación</p>
+<Reveal>      <p className="toknow-text" style={{textAlign: "center", lineHeight: "1.2"}}>Antes de continuar, revisa algunos <br></br> <span style={{color: "#FFCE34", fontWeight: "bold"}}>detalles importantes</span> que pueden <br></br> afectar tu participación</p>
 </Reveal>
       <Reveal><img src={toknow_button} alt="Toknow Button" className="toknow-button" onClick={() => setIsButtonClicked(true)}></img></Reveal>
 
@@ -56,10 +57,10 @@ const Toknow = () => {
       }}
       
     >
-      <img src={desktop_3} alt="Background" className="bckg-desktop" />
+      <img src={desktop_5_5} alt="Background" className="bckg-desktop" />
             <Reveal><img src={toknow_title_1} alt="Toknow Title 1" className="toknow-title-1-desktop"></img></Reveal>
       <Reveal><img src={toknow_banner} alt="Toknow Banner" className="toknow-banner-desktop" ></img></Reveal>
-<Reveal>      <p className="toknow-text-desktop">Antes de continuar, revisa algunos <br></br> <span style={{color: "#FFCE34"}}>detalles importantes</span> que pueden <br></br> afectar tu participación</p>
+<Reveal>      <p className="toknow-text-desktop" style={{textAlign: "center"}}>Antes de continuar, revisa algunos <br></br> <span style={{color: "#FFCE34", fontWeight: "bold"}}>detalles importantes</span> que pueden <br></br> afectar tu participación</p>
 </Reveal>
       <Reveal><img src={toknow_button} alt="Toknow Button" className="toknow-button-desktop" onClick={() => setIsButtonClicked(true)}></img></Reveal>
 
@@ -69,7 +70,7 @@ const Toknow = () => {
         <div className='toknow-popup'>
           <><img src={registerPage_background_popUp} alt="Background PopUp" className="toknow-background-popUp"></img></>
           <img src={toknow_title_2} alt="Toknow Title 2" className="toknow-title-2"></img>
-          <p className="toknow-text">El registro será del <span style={{color: "#C9A73C", fontWeight: "bold"}}>23 de agosto </span> 12:00 PM [UTC -6] <span style={{color: "#C9A73C", fontWeight: "bold"}}>al 31 de agosto </span> 
+          <p className="toknow-text" style={{textAlign: "left", width: "100%"}}>El registro será del <span style={{color: "#C9A73C", fontWeight: "bold"}}>23 de agosto </span> 12:00 PM [UTC -6] <span style={{color: "#C9A73C", fontWeight: "bold"}}>al 31 de agosto </span> 
             a las 6:00 PM [UTC-6]</p>
 
           <p className="toknow-text">Aunque la selección de jugadores será aleatoria, el orden de registro dará prioridad en el proceso de selección para la <span style={{color: "#C9A73C", fontWeight: "bold"}}>PRIMERA RONDA DE CLASIFICATORIAS</span>.</p>

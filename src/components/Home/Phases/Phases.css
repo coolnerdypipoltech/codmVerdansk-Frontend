@@ -102,13 +102,13 @@
 .phase-carousel-indicators{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 7px;
     margin-top: 0px;
 }
 
 .phase-carousel-indicator{
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     padding: 0;
     border: 1px solid var(--yellow);
     border-radius: 50%;
@@ -304,7 +304,7 @@
     font-weight: bold;
     line-height: 1.2;
         position: absolute;
-    top: 19%;
+    top: 22%;
     left: 50%;
     transform: translateX(-50%);
 }

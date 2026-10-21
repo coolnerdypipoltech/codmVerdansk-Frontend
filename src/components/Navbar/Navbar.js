@@ -15,10 +15,11 @@ const Navbar = () => {
     option1: { label: "INICIO", target: "inicio" },
     option2: { label: "¿QUÉ ES SEÑAL VERDANSK?", target: "informacion" },
     option3: { label: "4 FASES", target: "fases" },
-    option4: { label: "BOTARGAS", target: "botargas" },
-    option5: { label: "CALENDARIO", target: "calendario" },
-    option6: { label: "CREADORES", target: "creadores" },
-    option7: { label: "PREGUNTAS FRECUENTES", target: "faqs2" }
+    option4: { label: "LO QUE DEBES SABER", target: "toknow" },
+    option5: { label: "BOTARGAS", target: "botargas" },
+    option6: { label: "CALENDARIO", target: "calendario" },
+    option7: { label: "LÍDERES DE ESCUADRÓN", target: "creadores" },
+    option8: { label: "PREGUNTAS FRECUENTES", target: "faqs2" }
   }
 
   const handleNavigate = (event, target) => {

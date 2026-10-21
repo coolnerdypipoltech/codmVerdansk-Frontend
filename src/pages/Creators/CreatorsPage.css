@@ -6,6 +6,12 @@
 }
 
 
+@media (min-width: 720px) {
+  .CreatorsPage-title{
+    height: 10vw;
+  }
+}
+
 .phase-left-container
 {
   width: 90%;

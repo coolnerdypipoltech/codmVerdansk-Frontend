@@ -124,7 +124,7 @@ const Intro = () => {
         src={Intro_register}
         alt="Intro Register"
         className="intro-register"
-        onClick={() => {navigate("/register")}}
+        onClick={() => {navigate("/register"); window.scrollTo(0, 0);}}
       /></Reveal>
 
             <Reveal><div className="intro-ghost-container">

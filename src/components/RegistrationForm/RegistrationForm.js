@@ -16,24 +16,14 @@ import {
   registerPage_title, 
   registerPage_back_button,
   registerPage_next_button,
+  chevron_down,
 } from "../../assets/assetsDirectory";
 
 import { Captcha } from "recaptz";
 
 import { useNavigate } from "react-router";
 
-// Mismo backend/flujo de OAuth de Discord que codmVerdanskBackend (src/discord.js
-// + src/server.js). Apuntamos a /auth/discord del BACKEND (no directo a
-// Discord): esa ruta arma la URL de autorización con su propio
-// DISCORD_CLIENT_ID/DISCORD_REDIRECT_URI del .env, así el client_id y el
-// redirect_uri siempre coinciden con los que usa el backend para canjear el
-// code (si se arman por separado en el frontend, cualquier desincronización
-// -client_id distinto, redirect_uri apuntando a otro lado- hace que Discord
-// vuelva sin datos). Es una navegación de página completa en la misma
-// pestaña: Discord redirige a /auth/discord/callback en el backend, que
-// intercambia el code y redirige de vuelta a FRONTEND_URL/register con los
-// datos como query params (discord_username, discord_id, etc.), que se leen
-// en el useEffect de abajo.
+
 const DISCORD_AUTH_URL =
   "https://register.verdanskcodm.com/auth/discord";
 
@@ -488,11 +478,13 @@ const RegistrationForm = () => {
               {popup.type === "success-yesDiscord" && (
                 <>
                   <div
+                  onClick={() => window.open("https://discord.gg/U2qBFySbbW", "_blank")}
                     style={{
                       padding: "10px 20px",
                       display: "flex",
                       flexDirection: "column",
                       alignItems: "center",
+                      marginTop: "100px",
                     }}
                   >
                     <img
@@ -501,7 +493,7 @@ const RegistrationForm = () => {
                       alt="back"
                       className="registerPage-title"
                     ></img>
-                    <p className="form-group-popUp">
+                    <p className="form-group-popUp" >
                       Te recomendamos
                       <span style={{ color: "#C19F33" }}>
                         {" "}
@@ -523,12 +515,12 @@ const RegistrationForm = () => {
                     <img
                       loading="lazy"
                       src={registerPage_join_button}
-                      style={{ height: "64px", marginTop: "20px" }}
+                      className="registerPage-end-button"
                       alt="Cerrar"
                     />
                   </div>
                   <div
-                    onClick={closePopup}
+                    onClick={() => navigate("/")}
                     style={{
                       width: "100%",
                       display: "flex",
@@ -538,7 +530,7 @@ const RegistrationForm = () => {
                     <img
                       loading="lazy"
                       src={registerPage_continue_button}
-                      style={{ height: "64px", marginTop: "20px" }}
+                      className="registerPage-end-button"
                       alt="Cerrar"
                     />
                   </div>
@@ -553,6 +545,7 @@ const RegistrationForm = () => {
                       display: "flex",
                       flexDirection: "column",
                       alignItems: "center",
+                      marginTop: "90px"
                     }}
                   >
                     <img
@@ -579,7 +572,7 @@ const RegistrationForm = () => {
                     </p>
                   </div>
                   <div
-                    onClick={closePopup}
+                    onClick={() => window.open("https://discord.com/register", "_blank")}
                     style={{
                       width: "100%",
                       display: "flex",
@@ -589,12 +582,12 @@ const RegistrationForm = () => {
                     <img
                       loading="lazy"
                       src={registerPage_create_button}
-                      style={{ height: "64px", marginTop: "20px" }}
+                      className="registerPage-end-button"
                       alt="Cerrar"
                     />
                   </div>
                   <div
-                    onClick={closePopup}
+                    onClick={() => navigate("/")}
                     style={{
                       width: "100%",
                       display: "flex",
@@ -604,7 +597,7 @@ const RegistrationForm = () => {
                     <img
                       loading="lazy"
                       src={registerPage_continue_button}
-                      style={{ height: "64px", marginTop: "20px" }}
+                      className="registerPage-end-button"
                       alt="Cerrar"
                     />
                   </div>
@@ -626,10 +619,11 @@ const RegistrationForm = () => {
                       src={registerPage_title_locate}
                       alt="back"
                       className="registerPage-title"
+                      style={{ marginBottom: "20px" }}
                     ></img>
                     <p
                       className="form-group-popUp"
-                      style={{ textAlign: "left" }}
+                      style={{ textAlign: "left", marginTop: "50px" }}
                     >
                       1. Inicia sesión en el juego{" "}
                       <span style={{ color: "#C19F33" }}>
@@ -687,7 +681,7 @@ const RegistrationForm = () => {
                     <img
                       loading="lazy"
                       src={registerPage_accept_button}
-                      style={{ height: "64px", marginTop: "20px" }}
+                      className="registerPage-end-button"
                       alt="Cerrar"
                     />
                   </div>
@@ -708,7 +702,7 @@ const RegistrationForm = () => {
                     <img
                       loading="lazy"
                       src={registerPage_back_button}
-                      style={{ height: "64px", marginTop: "20px" }}
+                      className="registerPage-end-button"
                       alt="Cerrar"
                     />
                   </div>
@@ -815,6 +809,7 @@ const RegistrationForm = () => {
                 value={formData.platform}
                 onChange={handleChange}
                 className={errors.platform ? "error" : ""}
+                style={{ backgroundImage: `url(${chevron_down})` }}
               >
                 <option value="" style={{ color: "grey" }}>
                   Selecciona plataforma
@@ -895,6 +890,7 @@ const RegistrationForm = () => {
                 value={formData.country}
                 onChange={handleChange}
                 className={errors.country ? "error" : ""}
+                style={{ backgroundImage: `url(${chevron_down})` }}
               >
                 <option className="inter-font" style={{ color: "grey" }}>
                   Selecciona país
@@ -1180,7 +1176,7 @@ const RegistrationForm = () => {
               onClick={closePopup}
                 loading="lazy"
                 src={registerPage_back_button}
-                style={{ height: "64px", marginTop: "20px" }}
+                className="registerPage-end-button"
                 alt="Cerrar"
               />
             </div>
@@ -1196,7 +1192,7 @@ const RegistrationForm = () => {
               <img
                 loading="lazy"
                 src={registerPage_next_button}
-                style={{ height: "64px", marginTop: "20px" }}
+                className="registerPage-end-button"
                 alt="Crear"
               />
             </div>

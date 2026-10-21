@@ -107,6 +107,7 @@
   margin-top: 10px;
   font-family: var(--font-monst);
   margin-bottom: 0px;
+  width: 100%;
 }
 
 .form-group input,
@@ -124,6 +125,13 @@
 
 .form-group select{
   color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 36px;
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
 }
 
 .form-group input:focus,
@@ -167,7 +175,7 @@
   font-size: 14px;
   color: #333;
   position: relative;
-  padding-left: 35px;
+  padding-left: 55px;
   user-select: none;
 }
 
@@ -179,15 +187,17 @@
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  left: 5px;
+  left: 0px;
   z-index: 20;
+  height: 40px;
+  width: 40px;
 }
 
 .checkmark {
   position: absolute;
   left: 0;
-  height: 22px;
-  width: 22px;
+  height: 40px;
+  width: 40px;
   background-color: transparent;
   border: none;
   border-radius: 0;
@@ -298,8 +308,9 @@
     margin-bottom: 3px;
   }
   .registerPage-title{
+    height: 15vh !important;
     margin-bottom: 0px;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .form-group-popUp{
     margin-bottom: 0px !important;
@@ -315,7 +326,7 @@
 }
 
 .popup-content {
-
+  height: 100%;
   padding: 40px 20px 30px 20px;
   display: flex;
   flex-direction: column;
@@ -340,7 +351,9 @@
 
 .registerPage-title{
   height: 150px;
-  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  min-height: 100px;
 }
 
 .registerPage-background-popUp{
@@ -569,4 +582,16 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.registerPage-end-button{
+  height: 64px;
+  margin-top: 10px;
+}
+
+@media (max-height: 700px) {
+  .registerPage-end-button {
+    height: 50px;
+    
+  }
 }

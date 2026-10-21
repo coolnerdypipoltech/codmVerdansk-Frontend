@@ -29,7 +29,7 @@ const Information = () => {
         backgroundImage: `url(${isMobile ? Information_bckg : desktop_3})`,
       }}
     >
-      <div style={{ height: "50px" }}></div>
+      <div style={{ height: "0px" }}></div>
       <Reveal><img
         id="informacion"
         src={Information_banner}
@@ -37,12 +37,13 @@ const Information = () => {
         className="information-banner"
       /></Reveal>
       <Reveal><p className="information-text1">
-        Es la evolución del Battle <br></br>
-        Royale y la jugamos
+        Una misteriosa transmisión que <br></br> 
+        marca el inicio de una nueva era <br></br> 
+        en Battle Royale.
       </p></Reveal>
       <Reveal><p className="information-text2">
-        con todo el caos de la <br></br>
-        cultura pop latina
+        Únete a la competencia y enfréntate a <br></br>
+        Verdansk por primera vez.
       </p></Reveal>
       <Reveal><div className="information-ghost" style={{ top: "50%" }}>
         <FrameAnimation
@@ -83,12 +84,13 @@ const Information = () => {
         className="information-banner-desktop"
       /></Reveal>
       <Reveal><p className="information-text1-desktop">
-        Es la evolución del Battle
-        Royale y la jugamos
+        Una misteriosa transmisión que marca <br></br> 
+         el inicio de una nueva era 
+        en Battle Royale.
       </p></Reveal>
       <Reveal><p className="information-text2-desktop">
-        con todo el caos de la 
-        cultura  <br></br> pop latina
+        Únete a la competencia y enfréntate a <br></br>
+        Verdansk por primera vez.
       </p></Reveal>
       <Reveal><div className="information-ghost-desktop" style={{ top:"67%"}}>
         <FrameAnimation
