@@ -29,7 +29,7 @@ import rulebook from "./mascots/rulebook.png"
 //import Mascots_bckg from "./mascots/Background_Botargas.png"
 
 
-
+import tk_icon from "./footer/tk-icon.png"
 
 //import calendar from "./calendar/calendar.png"
 
@@ -190,7 +190,7 @@ const videoMobile = "https://file.verdanskcodm.com/videos/SV_LOGO_Loop_A.mp4";
 const videoDesktop = "https://file.verdanskcodm.com/videos/SV_LOGO_Loop_Aweb.mp4";
 
 export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM, commonWallpaperD, Intro_date_banner, desktop_calendar, desktop_ghost_banner, desktop_info,
-    desktop_1, desktop_2, desktop_3, desktop_4, desktop_5, desktop_6, desktop_7, desktop_8, desktop_9, 
+    desktop_1, desktop_2, desktop_3, desktop_4, desktop_5, desktop_6, desktop_7, desktop_8, desktop_9, tk_icon,
     Intro_ghost, Intro_hashtag, Intro_logo, Intro_banner, Intro_bckg, Intro_sticker1, vide_bckg, Information_banner, Information_bckg, Mascots_title, Mascots_banner, 
     creators_banner, creators_button, creators_title, creators_bckg, faqs_banner, faqs_button, faqs_title, faqs_bckg,
     rulebook, Mascots_bckg, calendar, EventButton, calendar_bckg, desktop_menu,

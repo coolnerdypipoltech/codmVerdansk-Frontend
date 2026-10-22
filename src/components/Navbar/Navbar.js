@@ -1,7 +1,7 @@
 
 import './Navbar.css';
 import { useEffect, useState } from "react";
-import { NavBar_Logo, NavBar_Menu, NavBar_Header, NavBar_bckg, desktop_menu, fb_icon, ig_icon, yt_icon, phase_left } from "../../assets/assetsDirectory";
+import { NavBar_Logo, NavBar_Menu, NavBar_Header, NavBar_bckg, desktop_menu, fb_icon, ig_icon, yt_icon, phase_left, tk_icon } from "../../assets/assetsDirectory";
 import { useViewport } from "../../context/ViewportContext";
 import { useNavigate, useLocation  } from "react-router-dom";
 import { trackEvent } from "../../utils/analytics";
@@ -120,6 +120,7 @@ const Navbar = () => {
         <img loading="lazy" src={fb_icon} onClick={() => { window.open("https://www.facebook.com/LATAMCallOfDutyMobile", "_blank"); trackEvent("Social Media", "Click", "Facebook"); }} alt="Facebook Icon" className="footer-icon" />
         <img loading="lazy" src={ig_icon} onClick={() => { window.open("https://www.instagram.com/callofdutymobilelatam/", "_blank"); trackEvent("Social Media", "Click", "Instagram"); }} alt="Instagram Icon" className="footer-icon" />
         <img loading="lazy" src={yt_icon} onClick={() => { window.open("https://www.youtube.com/@LATAMCallOfDutyMobile", "_blank"); trackEvent("Social Media", "Click", "YouTube"); }} alt="YouTube Icon" className="footer-icon" />
+        <img loading="lazy" src={tk_icon} onClick={() => { window.open("https://www.tiktok.com/@callofdutymobile_latam", "_blank"); trackEvent("Social Media", "Click", "TikTok"); }} alt="TikTok Icon" className="footer-icon" />
       </div>
 
       </div>
