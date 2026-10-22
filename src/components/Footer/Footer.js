@@ -1,7 +1,7 @@
 
 import './Footer.css';
 
-import { footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon } from '../../assets/assetsDirectory';
+import { footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon, tk_icon } from '../../assets/assetsDirectory';
 import { trackEvent } from '../../utils/analytics';
 const Footer = () => {
 
@@ -14,6 +14,7 @@ const Footer = () => {
         <img loading="lazy" src={fb_icon} onClick={() => { window.open("https://www.facebook.com/LATAMCallOfDutyMobile", "_blank"); trackEvent("social_media", "Click", "Facebook"); }} alt="Facebook Icon" className="footer-icon" />
         <img loading="lazy" src={ig_icon} onClick={() => { window.open("https://www.instagram.com/callofdutymobilelatam/", "_blank"); trackEvent("social_media", "Click", "Instagram"); }} alt="Instagram Icon" className="footer-icon" />
         <img loading="lazy" src={yt_icon} onClick={() => { window.open("https://www.youtube.com/@LATAMCallOfDutyMobile", "_blank"); trackEvent("social_media", "Click", "YouTube"); }} alt="YouTube Icon" className="footer-icon" />
+        <img loading="lazy" src={tk_icon} onClick={() => { window.open("https://www.tiktok.com/@callofdutymobile_latam", "_blank"); trackEvent("social_media", "Click", "TikTok"); }} alt="TikTok Icon" className="footer-icon" />
       </div>
       {/* <p className="footer-text">Políticas de privacidad</p>
       <p className="footer-text">Términos y condiciones</p> */}
