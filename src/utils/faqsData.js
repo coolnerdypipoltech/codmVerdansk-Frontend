@@ -41,16 +41,16 @@ export const faqsData = [
     ],
   },
   {
-    category: "Offline Qualifiers",
+    category: "Primera ronda de clasificatorias",
     items: [
       {
-        title: "¿Cuándo serán las Offline Qualifiers?",
+        title: "¿Cuándo será la Primera ronda de clasificatorias?",
         description: "Se realizarán los días 3 y 4 de noviembre.",
       },
       {
         title: "¿Cuántos jugadores serán seleccionados?",
         description:
-          "Se seleccionarán 1,500 jugadores para participar en las Offline Qualifiers.",
+          "Se seleccionarán 1,500 jugadores para participar en la Primera ronda de clasificatorias.",
       },
       {
         title: "¿Cómo se seleccionarán los jugadores?",
@@ -58,21 +58,21 @@ export const faqsData = [
           "Los jugadores serán seleccionados al azar entre quienes hayan completado correctamente su registro, incluyendo el ingreso correcto de su usuario de Discord.",
       },
       {
-        title: "¿Cómo sabré si fui seleccionado para las Offline Qualifiers?",
+        title: "¿Cómo sabré si fui seleccionado para la Primera ronda de clasificatorias?",
         description:
           "Todos los jugadores seleccionados serán notificados por medio de los canales en el servidor oficial de Discord de CODM Señal Verdansk.",
       },
       {
         title: "¿Cuántos jugadores pasarán a la siguiente etapa?",
-        description: "400 jugadores podrán avanzar a las Online Qualifiers.",
+        description: "400 jugadores podrán avanzar a la Segunda ronda de clasificatorias.",
       },
     ],
   },
   {
-    category: "Online Qualifiers",
+    category: "Segunda ronda de clasificatorias",
     items: [
       {
-        title: "¿Cuándo serán las Online Qualifiers?",
+        title: "¿Cuándo será la Segunda ronda de clasificatorias?",
         description:
           "Se realizarán los días 6 y 7 de noviembre y serán transmitidos en línea en los canales oficiales de CODM LATAM.",
       },
@@ -83,7 +83,7 @@ export const faqsData = [
       {
         title: "¿Cómo se determinará quién avanza?",
         description:
-          "Los 25 mejores jugadores de cada bloque avanzarán a la siguiente etapa, mediante una selección de kills y desempate según criterios de Activision.",
+          "Los 25 mejores jugadores de cada bloque avanzarán a la siguiente etapa, mediante una selección de kills y desempate según criterios de Activision en la Segunda ronda de clasificatorias.",
       },
     ],
   },
@@ -93,7 +93,7 @@ export const faqsData = [
       {
         title: "¿Qué es el Draft?",
         description:
-          "Es la etapa en la que 25 creadores de contenido seleccionarán a 3 jugadores principales y 1 de banca para formar parte de su squad. Esta etapa está incluida al final de los Online Qualifiers y no será transmitida en línea.",
+          "Es la etapa en la que 25 creadores de contenido seleccionarán a 3 jugadores principales y 1 de banca para formar parte de su squad. Esta etapa está incluida al final de los Segunda ronda de clasificatorias y no será transmitida en línea.",
       },
     ],
   },
