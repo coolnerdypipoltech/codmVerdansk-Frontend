@@ -145,12 +145,26 @@ const RegistrationForm = () => {
   }, []);
 
   const countries = [
+    { value: "BEL", label: "Belice" },
+    { value: "CRI", label: "Costa Rica" },
+    { value: "SLV", label: "El Salvador" },
+    { value: "GTM", label: "Guatemala" },
+    { value: "HND", label: "Honduras" },
     { value: "MEX", label: "México" },
+    { value: "NIC", label: "Nicaragua" },
+    { value: "PAN", label: "Panamá" },
+    { value: "CUB", label: "Cuba" },
+    { value: "HTI", label: "Haití" },
+    { value: "DOM", label: "República Dominicana" },
     { value: "ARG", label: "Argentina" },
-    { value: "ECU", label: "Ecuador" },
-    { value: "COL", label: "Colombia" },
+    { value: "BOL", label: "Bolivia" },
     { value: "CHL", label: "Chile" },
+    { value: "COL", label: "Colombia" },
+    { value: "ECU", label: "Ecuador" },
+    { value: "PRY", label: "Paraguay" },
     { value: "PER", label: "Perú" },
+    { value: "URY", label: "Uruguay" },
+    { value: "VEN", label: "Venezuela" },
   ];
 
   const validateEmail = (email) => {
