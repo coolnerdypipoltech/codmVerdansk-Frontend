@@ -93,7 +93,7 @@ export const faqsData = [
       {
         title: "¿Qué es el Draft?",
         description:
-          "Es la etapa en la que 25 creadores de contenido seleccionarán a 3 jugadores principales y 1 de banca para formar parte de su squad. Esta etapa está incluida al final de los Segunda ronda de clasificatorias y no será transmitida en línea.",
+          "Es la etapa en la que 25 creadores de contenido seleccionarán a 3 jugadores principales y 1 de banca para formar parte de su squad.",
       },
     ],
   },

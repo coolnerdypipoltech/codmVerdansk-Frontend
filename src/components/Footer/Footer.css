@@ -58,6 +58,11 @@
     cursor: pointer;
 }
 
+.footer-icons img {
+    height: 40px;
+    width: auto;
+}
+
 .footer-icons img:hover {
     transform: scale(1.2);
 }
