@@ -8,6 +8,7 @@ import {
   registerPage_title_completed,
   registerPage_title_locate,
   registerPage_accept_button,
+  registerPage_error,
   registerPage_background_popUp,
   registerPage_close,
   registerPage_continue_button,
@@ -174,8 +175,6 @@ const RegistrationForm = () => {
 
   // Solo letras (con acentos/ñ) y espacios
   const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
-  // Solo letras y números
-  const uidRegex = /^[A-Za-z0-9]+$/;
 
   const validateForm = () => {
     const newErrors = {};
@@ -198,10 +197,6 @@ const RegistrationForm = () => {
 
     if (!formData.uid) {
       newErrors.uid = "El UID es requerido";
-    } else if (!uidRegex.test(formData.uid)) {
-      newErrors.uid = "El UID solo puede contener letras y números";
-    } else if (formData.uid.length > 20) {
-      newErrors.uid = "El UID no puede tener más de 20 caracteres";
     }
 
     if (!formData.platform) {
@@ -492,7 +487,7 @@ const RegistrationForm = () => {
               {popup.type === "success-yesDiscord" && (
                 <>
                   <div
-                  onClick={() => window.open("https://discord.gg/U2qBFySbbW", "_blank")}
+                 
                     style={{
                       padding: "10px 20px",
                       display: "flex",
@@ -519,7 +514,7 @@ const RegistrationForm = () => {
                     </p>
                   </div>
                   <div
-                    onClick={closePopup}
+                    onClick={() => window.open("https://discord.gg/U2qBFySbbW", "_blank")}
                     style={{
                       width: "100%",
                       display: "flex",
@@ -618,93 +613,21 @@ const RegistrationForm = () => {
                 </>
               )}
 
-              {popup.type === "instructions" && (
-                <>
-                  <div
-                    style={{
+              {popup.type === "error" && (
+                <div                     style={{
+                      padding: "20px 20px",
                       display: "flex",
                       flexDirection: "column",
                       alignItems: "center",
-                      padding: "10px 20px",
-                    }}
-                  >
-                    <img
+                      marginTop: "90px"
+                    }}>
+                                    <img
                       loading="lazy"
-                      src={registerPage_title_locate}
+                      src={registerPage_error}
                       alt="back"
                       className="registerPage-title"
-                      style={{ marginBottom: "20px" }}
                     ></img>
-                    <p
-                      className="form-group-popUp"
-                      style={{ textAlign: "left", marginTop: "50px" }}
-                    >
-                      1. Inicia sesión en el juego{" "}
-                      <span style={{ color: "#C19F33" }}>
-                        desde tu dispositivo.
-                      </span>
-                    </p>
-                    <p
-                      className="form-group-popUp"
-                      style={{ textAlign: "left" }}
-                    >
-                      2. Selecciona tu perfil en la{" "}
-                      <span style={{ color: "#C19F33" }}>
-                        esquina superior izquierda{" "}
-                      </span>{" "}
-                      de la pantalla principa
-                    </p>
-                    <p
-                      className="form-group-popUp"
-                      style={{ textAlign: "left" }}
-                    >
-                      3. Verás una serie de opciones a la izquierda de la
-                      pantalla. selecciona la pestaña{" "}
-                      <span style={{ color: "#C19F33" }}>"básico".</span>
-                    </p>
-                    <p
-                      className="form-group-popUp"
-                      style={{ textAlign: "left" }}
-                    >
-                      4.{" "}
-                      <span style={{ color: "#C19F33" }}>
-                        {" "}
-                        Debajo de tu nombre de usuario,{" "}
-                      </span>{" "}
-                      verás una serie de números ese es tu UID.
-                    </p>
-                    <p
-                      className="form-group-popUp"
-                      style={{ textAlign: "left" }}
-                    >
-                      5.{" "}
-                      <span style={{ color: "#C19F33" }}>
-                        Haz clic en el botón de copiar{" "}
-                      </span>{" "}
-                      a la derecha del número para evitar errores al escribirlo.
-                    </p>
-                  </div>
-                  <div
-                    onClick={closePopup}
-                    style={{
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <img
-                      loading="lazy"
-                      src={registerPage_accept_button}
-                      className="registerPage-end-button"
-                      alt="Cerrar"
-                    />
-                  </div>
-                </>
-              )}
-
-              {popup.type === "error" && (
-                <>
-                  <p className="form-group-popUp">{popup.message}</p>
+                  <p className="form-group-popUp" style={{ minHeight: "50vw", marginTop: "40px" }}>{popup.message}</p>
                   <div
                     onClick={closePopup}
                     style={{
@@ -720,7 +643,7 @@ const RegistrationForm = () => {
                       alt="Cerrar"
                     />
                   </div>
-                </>
+                </div>
               )}
 
               <div
@@ -795,7 +718,7 @@ const RegistrationForm = () => {
                 className={errors.uid ? "error" : ""}
               />
               <p
-                onClick={() => setPopup({ show: true, type: "instructions" })}
+                onClick={() => {navigate("/uid"); document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }}
                 className="inter-font"
                 style={{
                   color: "white",

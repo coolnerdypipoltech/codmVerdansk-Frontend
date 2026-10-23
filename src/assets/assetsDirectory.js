@@ -213,6 +213,12 @@ import Creador_24 from "./CreatorsPage/creators/Creador-24.png"
 
 import chevron_down from "./registerPage/chevron-down.svg"
 
+import uid_step_1 from "./uid/uid-step-1.png"
+import uid_step_2 from "./uid/uid-step-2.png"
+import uid_step_3 from "./uid/uid-step-3.png"
+
+import registerPage_error from "./registerPage/registerPage-error.png"
+
 import mascots_snacking from "./mascots/mascots-snackin.png"
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
@@ -269,6 +275,9 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
      sticker_granade_3, Intro_register,
      sticker_paracaidas_flip_1,
+     uid_step_1,
+     uid_step_2,
+     uid_step_3,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
      sticker_paracaidasBlanco_flip_f2,
@@ -281,7 +290,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      faqsPage_itemL, video_marco_mobil, video_marco_desktop_left, video_marco_desktop_right, 
      sticker_ghost_main_f1, sticker_ghost_main_f2, sticker_ghost_main_f3,
      sticker_paracaidasBlanco_f2, sticker_paracaidas_flip_2, sticker_Disparo_f1, sticker_Disparo_f2, sticker_Disparo_f3,
-     sticker_paracaidas_1, sticker_paracaidas_2,
+     sticker_paracaidas_1, sticker_paracaidas_2, registerPage_error,
      sticker_creadores_F1, sticker_creadores_F2, sticker_creadores_F3,
      registerPage_back_button, registerPage_next_button, toknow_bckg,
      faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, commonCreator, Intro_bckg2, Intro_ghost_main,
