@@ -652,7 +652,7 @@ const RegistrationForm = () => {
                 }
                 onClick={closePopup}
               >
-                <img loading="lazy" src={registerPage_close} alt="Cerrar" />
+                <img loading="lazy" src={registerPage_close} alt="Cerrar" onClick={closePopup} />
               </div>
             </div>
           </div>
@@ -914,7 +914,7 @@ const RegistrationForm = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       e.stopPropagation();
-                      navigate("/privacy");
+                      window.open("https://www.activision.com/mx/es/legal/privacy-policy", "_blank");
                     }}
                     style={{ textDecoration: "underline", cursor: "pointer" }}
                   >
