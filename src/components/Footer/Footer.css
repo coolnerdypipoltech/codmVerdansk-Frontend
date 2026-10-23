@@ -46,6 +46,7 @@
     font-family: var(--font-monst);
     margin: 5px;
     color: white;
+    padding: 0px 10px;
 }
 
 .footer-icons{
