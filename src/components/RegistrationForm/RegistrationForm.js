@@ -913,18 +913,8 @@ const RegistrationForm = () => {
                     style={{ textDecoration: "underline", cursor: "pointer" }}
                   >
                     Términos y Condiciones del Torneo, 
-                  </span>{" "}
-                    <span
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      openTerminosPDF();
-                    }}
-                    style={{ textDecoration: "underline", cursor: "pointer" }}
-                  >
-                    Términos y Condiciones de la Rifa de premios.
-                  </span>{" "}
-                  y{" "}
+                  </span> y {" "}
+ 
                   <span
                     onClick={(e) => {
                       e.preventDefault();

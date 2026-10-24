@@ -24,8 +24,8 @@ const Footer = () => {
       </div>
       <p className="footer-text" onClick={() => { window.open("https://www.activision.com/mx/es/legal/privacy-policy", "_blank"); trackEvent("footer", "Click", "Políticas de privacidad"); }}>Políticas de privacidad</p>
       <p className="footer-text" onClick={openTerminosPDF}>Términos y condiciones del Torneo</p>
-      <p className="footer-text" onClick={openTerminosPDF}>Términos y condiciones de la Rifa de premios.</p>
-      <p className="footer-text">© 2026 Call of Duty Verdansk</p>
+      {/* <p className="footer-text" onClick={openTerminosPDF}>Términos y condiciones de la Rifa de premios.</p> */}
+      <p className="footer-text" style={{ cursor: "default" }}>© 2026 Call of Duty Verdansk</p>
       <div style={{height: "20px"}}></div>
     </div>
     
