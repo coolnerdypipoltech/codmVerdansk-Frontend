@@ -1,8 +1,8 @@
 {
   "name": "codmVerdansk",
   "version": "0.1.0",
-  "homepage": "http://157.230.72.221/",
-  "homepage2": "https://coolnerdypipoltech.github.io/codmVerdansk-Frontend/",
+  "homepage2": "https://verdanskcodm.com/",
+  "homepage": "https://coolnerdypipoltech.github.io/codmVerdansk-Frontend/",
   "private": true,
   "dependencies": {
     "@rive-app/react-canvas": "^4.36.0",
@@ -15,6 +15,7 @@
     "react-dom": "^19.3.0",
     "react-router-dom": "^7.18.4",
     "react-scripts": "5.0.1",
+    "recaptz": "^2.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

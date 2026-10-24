@@ -49,5 +49,12 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 10px;
+
+}
+
+@media (min-width: 720px) {
+  .faqs-category-title{
+    font-size: 2vw;
+  }
 }

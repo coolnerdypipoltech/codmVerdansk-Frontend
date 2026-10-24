@@ -66,6 +66,25 @@
     left: 5px;
 }
 
+@media (min-width: 720px) {
+    .faqsItem-num-text{
+    font-size: 1.7vw;
+
+}
+
+.faqsItem-num-text2{
+    font-size: 1.7vw;
+
+}
+
+.faqsItem-num-img{
+    height: 3vw;
+    min-height: 30px;
+    position: relative;
+    top: -0.8vw;
+}
+}
+
 
 .faqsItem-title-text{
     font-size: var(--text-size);
@@ -86,7 +105,7 @@
     font-family: var(--font-monst);
     color: white;
     margin: 0px;
-    width: 60vw;
+    width: 70vw;
     margin-left: 9vw;
     text-align: left;
     padding: 20px;
@@ -157,4 +176,12 @@
         top: -5vw !important;
         font-size: 1.3vw;
     }
+}
+
+@media (min-width: 720px) {
+    .faqsItem-description-text{
+
+    width: 66vw;
+        margin-left: 4vw;
+}
 }

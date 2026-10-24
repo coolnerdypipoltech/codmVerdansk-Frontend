@@ -8,6 +8,26 @@
   overflow: hidden;
 }
 
+/* La librería "recaptz" (ver RegistrationForm.js) inyecta su Tailwind
+   Preflight completo en <head> apenas se importa el módulo, sin scoping,
+   incluyendo "img, video { max-width: 100%; height: auto; }". Para <img>
+   position:absolute con width:auto cuyo contenedor aún no tiene un ancho
+   definido, ese max-width colapsa a 0 y rompe el ancho real de la imagen
+   en TODO el sitio (no solo en /register). "html img"/"html video" tiene
+   más especificidad que el "img"/"video" de recaptz, así que gana sin
+   necesitar !important. Se vuelve a habilitar solo donde recaptz lo usa.*/
+html img,
+html video {
+  max-width: none;
+}
+
+.registration-container img,
+.registration-container video,
+.my-custom-captcha img,
+.my-custom-captcha video {
+  max-width: 100%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

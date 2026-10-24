@@ -1,5 +1,5 @@
 import "./Intro.css";
-import Counter from "../Counter/Counter";
+
 import Reveal from "../../Reveal/Reveal";
 import FrameAnimation from "../../FrameAnimation/FrameAnimation"
 import {
@@ -12,7 +12,7 @@ import {
   Intro_bckg2,
   desktop_1,
   desktop_2,
-  desktop_info,
+
   sticker_ghost_main_f1,
   sticker_ghost_main_f2,
   sticker_ghost_main_f3,
@@ -27,12 +27,15 @@ import {
   sticker_paracaidas_2,
   sticker_paracaidas_flip_1,
   sticker_paracaidas_flip_2,
+  Intro_register,
 } from "../../../assets/assetsDirectory";
 
 import { useViewport } from "../../../context/ViewportContext";
+import { useNavigate } from "react-router-dom";
 
 const Intro = () => {
   const { isMobile } = useViewport();
+  const navigate = useNavigate();
 
   return (
     <>{isMobile ? (<div
@@ -105,11 +108,23 @@ const Intro = () => {
         className="intro-logo"
       /></Reveal>
 
+      <></>
+
+
       <Reveal><img
         loading="lazy"
         src={Intro_banner}
         alt="Intro Banner"
         className="intro-banner"
+      /></Reveal>
+
+
+            <Reveal><img
+        loading="lazy"
+        src={Intro_register}
+        alt="Intro Register"
+        className="intro-register"
+        onClick={() => {navigate("/register"); window.scrollTo(0, 0);}}
       /></Reveal>
 
             <Reveal><div className="intro-ghost-container">
@@ -122,11 +137,6 @@ const Intro = () => {
       /></div></Reveal>
 
 
-      <Counter></Counter>
-      <Reveal><p className="intro-description">
-        Para que te registres al <br></br>
-        evento más chingón del año.
-      </p></Reveal>
 
       <Reveal><img
         loading="lazy"
@@ -225,15 +235,19 @@ const Intro = () => {
 
       <Reveal><img
         loading="lazy"
-        src={desktop_info}
+        src={Intro_banner}
         alt="Intro Banner"
         className="intro-banner-desktop"
       /></Reveal>
 
-      <Reveal><div className="counter-desktop">
-        <Counter></Counter>
-      </div></Reveal>
 
+            <Reveal><img
+            onClick={() => {navigate("/register")}}
+        loading="lazy"
+        src={Intro_register}
+        alt="Intro Register"
+        className="intro-register-desktop"
+      /></Reveal>
  
 
       <img
@@ -247,10 +261,6 @@ const Intro = () => {
         }}
       />
 
-           <Reveal><p className="intro-description-desktop">
-        Para que te registres al <br></br>
-        evento más chingón del año.
-      </p></Reveal>
 
       <Reveal><img
         loading="lazy"
