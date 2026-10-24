@@ -450,6 +450,7 @@ const RegistrationForm = () => {
 
   const closePopup = () => {
     setPopup({ show: false, type: "", message: "" });
+    setIsFormCompleted(false);
   };
 
   return (

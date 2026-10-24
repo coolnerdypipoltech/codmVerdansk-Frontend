@@ -588,6 +588,7 @@ input[type=number] {
 .registerPage-end-button{
   height: 64px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 @media (max-height: 700px) {
