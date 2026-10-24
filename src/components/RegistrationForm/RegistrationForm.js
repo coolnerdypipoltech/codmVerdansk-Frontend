@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./RegistrationForm.css";
+import TerminosPDF from "../../assets/files/Termino_y_Condiciones_Señal_Verdansk.pdf";
 
 import {
   registerPage_check_down,
@@ -59,6 +60,10 @@ const RegistrationForm = () => {
     message: "",
   });
   const firstRender = React.useRef(true);
+
+  const openTerminosPDF = () => {
+    window.open(TerminosPDF, "_blank", "noopener,noreferrer");
+  };
 
   useEffect(() => {
     if (firstRender.current) {
@@ -903,7 +908,7 @@ const RegistrationForm = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       e.stopPropagation();
-                      navigate("/terms");
+                      openTerminosPDF();
                     }}
                     style={{ textDecoration: "underline", cursor: "pointer" }}
                   >
@@ -913,7 +918,7 @@ const RegistrationForm = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       e.stopPropagation();
-                      navigate("/terms");
+                      openTerminosPDF();
                     }}
                     style={{ textDecoration: "underline", cursor: "pointer" }}
                   >

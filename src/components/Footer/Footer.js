@@ -3,6 +3,12 @@ import './Footer.css';
 
 import { footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon, tk_icon } from '../../assets/assetsDirectory';
 import { trackEvent } from '../../utils/analytics';
+import TerminosPDF from '../../assets/files/Termino_y_Condiciones_Señal_Verdansk.pdf';
+
+  const openTerminosPDF = () => {
+    trackEvent("footer", "Click", "Términos y condiciones");
+    window.open(TerminosPDF, "_blank", "noopener,noreferrer");
+  };
 const Footer = () => {
 
   return (
@@ -17,8 +23,8 @@ const Footer = () => {
         <img loading="lazy" src={tk_icon} onClick={() => { window.open("https://www.tiktok.com/@callofdutymobile_latam", "_blank"); trackEvent("social_media", "Click", "TikTok"); }} alt="TikTok Icon" className="footer-icon" />
       </div>
       <p className="footer-text" onClick={() => { window.open("https://www.activision.com/mx/es/legal/privacy-policy", "_blank"); trackEvent("footer", "Click", "Políticas de privacidad"); }}>Políticas de privacidad</p>
-      <p className="footer-text" onClick={() => { window.open("https://www.callofduty.com/terms", "_blank"); trackEvent("footer", "Click", "Términos y condiciones"); }}>Términos y condiciones del Torneo</p>
-      <p className="footer-text" onClick={() => { window.open("https://www.callofduty.com/terms", "_blank"); trackEvent("footer", "Click", "Términos y condiciones"); }}>Términos y condiciones de la Rifa de premios.</p>
+      <p className="footer-text" onClick={openTerminosPDF}>Términos y condiciones del Torneo</p>
+      <p className="footer-text" onClick={openTerminosPDF}>Términos y condiciones de la Rifa de premios.</p>
       <p className="footer-text">© 2026 Call of Duty Verdansk</p>
       <div style={{height: "20px"}}></div>
     </div>
