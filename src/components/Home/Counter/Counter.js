@@ -2,7 +2,7 @@
 import './Counter.css';
 import { useEffect, useState } from 'react';
 
-const TARGET_DATE = new Date('2026-10-23T10:00:00-14:00');
+const TARGET_DATE = new Date('2026-10-23T10:00:00-15:30');
 
 const getTimeRemaining = () => {
   const difference = Math.max(0, TARGET_DATE.getTime() - Date.now());
