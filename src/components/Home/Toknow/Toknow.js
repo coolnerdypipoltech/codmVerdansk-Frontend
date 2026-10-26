@@ -35,7 +35,7 @@ const Toknow = () => {
         <div className='toknow-popup'>
           <><img src={registerPage_background_popUp} alt="Background PopUp" className="toknow-background-popUp"></img></>
           <img src={toknow_title_2} alt="Toknow Title 2" className="toknow-title-2"></img>
-          <p className="toknow-text">El registro será del <span style={{color: "#C9A73C", fontWeight: "bold"}}>23 de agosto </span> 12:00 PM [UTC -6] <span style={{color: "#C9A73C", fontWeight: "bold"}}>al 31 de agosto </span> 
+          <p className="toknow-text">El registro será del <span style={{color: "#C9A73C", fontWeight: "bold"}}>23 de octubre </span> 12:00 PM [UTC -6] <span style={{color: "#C9A73C", fontWeight: "bold"}}>al 31 de octubre </span> 
             a las 6:00 PM [UTC-6]</p>
 
           <p className="toknow-text">Aunque la selección de jugadores será aleatoria, el orden de registro dará prioridad en el proceso de selección para la <span style={{color: "#C9A73C", fontWeight: "bold"}}>PRIMERA RONDA DE CLASIFICATORIAS</span>.</p>
@@ -70,7 +70,7 @@ const Toknow = () => {
         <div className='toknow-popup'>
           <><img src={registerPage_background_popUp} alt="Background PopUp" className="toknow-background-popUp"></img></>
           <img src={toknow_title_2} alt="Toknow Title 2" className="toknow-title-2"></img>
-          <p className="toknow-text" style={{textAlign: "left", width: "100%"}}>El registro será del <span style={{color: "#C9A73C", fontWeight: "bold"}}>23 de agosto </span> 12:00 PM [UTC -6] <span style={{color: "#C9A73C", fontWeight: "bold"}}>al 31 de agosto </span> 
+          <p className="toknow-text" style={{textAlign: "left", width: "100%"}}>El registro será del <span style={{color: "#C9A73C", fontWeight: "bold"}}>23 de octubre </span> 12:00 PM [UTC -6] <span style={{color: "#C9A73C", fontWeight: "bold"}}>al 31 de octubre </span> 
             a las 6:00 PM [UTC-6]</p>
 
           <p className="toknow-text">Aunque la selección de jugadores será aleatoria, el orden de registro dará prioridad en el proceso de selección para la <span style={{color: "#C9A73C", fontWeight: "bold"}}>PRIMERA RONDA DE CLASIFICATORIAS</span>.</p>
