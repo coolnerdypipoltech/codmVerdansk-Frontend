@@ -221,6 +221,10 @@ import registerPage_error from "./registerPage/registerPage-error.png"
 
 import mascots_snacking from "./mascots/mascots-snackin.png"
 
+import grandFinal_title from "./grandFinal/grandFinal_title.png"
+import event_title from "./event/event_final.png"
+
+
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
 
@@ -277,7 +281,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_paracaidas_flip_1,
      uid_step_1,
      uid_step_2,
-     uid_step_3,
+     uid_step_3, grandFinal_title, event_title,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
      sticker_paracaidasBlanco_flip_f2,

@@ -69,12 +69,7 @@ const Information = () => {
 
         }}
       >
-        <img
-          src={desktop_3}
-          alt="Information Background"
-          className="bckg-desktop"
-          
-        />
+
 
 
               <Reveal><img

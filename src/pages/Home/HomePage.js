@@ -1,14 +1,16 @@
 
 import './HomePage.css';
 import Intro from '../../components/Home/Intro/Intro';
-import Video from '../../components/Home/Video/Video';
+
 import Creators from '../../components/Home/Creators/Creators';
 import Faqs from '../../components/Home/Faqs/Faqs';
 import Information from '../../components/Home/Information/Information';
 import Mascots from '../../components/Home/Mascots/Mascots';
 import Calendar from '../../components/Home/Calendar/Calendar';
 import Phases from '../../components/Home/Phases/Phases';
-import Toknow from '../../components/Home/Toknow/Toknow';
+import GrandFinal from '../../components/Home/GrandFinal/GrandFinal';
+import Event from '../../components/Home/Event/Event';
+
 import {
 
   sticker_paracaidasBlanco_f1,
@@ -25,12 +27,12 @@ const HomePage = () => {
   return (
     <div className="home-page" >
       <div id="inicio"><Intro /></div>
+      <div id="grandfinal"><GrandFinal></GrandFinal></div>
+      <div id="evento"><Event></Event></div>
 
-              <Video></Video>
       <div ><Information></Information></div>
 
       <div id="fases"><Phases></Phases></div>
-      <div id="toknow"><Toknow></Toknow></div>
       <div id="botargas"><Mascots></Mascots></div>
       <div id="calendario"><Calendar></Calendar></div>
       <div id="creadores"><Creators></Creators></div>

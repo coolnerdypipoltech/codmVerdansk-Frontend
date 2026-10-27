@@ -127,14 +127,7 @@ const Intro = () => {
         onClick={() => {navigate("/register"); window.scrollTo(0, 0);}}
       /></Reveal>
 
-            <Reveal><div className="intro-ghost-container">
-              <FrameAnimation
-        loading="lazy"
-        frames={[sticker_Disparo_f1, sticker_Disparo_f2, sticker_Disparo_f3]}
-        alt="Intro Ghost"
-        fps={5}
-        className="intro-ghost"
-      /></div></Reveal>
+
 
 
 
@@ -151,7 +144,7 @@ const Intro = () => {
         className="intro-hashtag"
       /></Reveal>
 
-      <Reveal><div style={{ position: "absolute", top: "700px", height: "500px", left: "90%", width: "1px" }}>
+      <Reveal><div style={{ position: "absolute", top: "580px", height: "500px", left: "90%", width: "1px" }}>
         <FrameAnimation
         loading="lazy"
         frames={[sticker_walkt_1, sticker_walkt_2]}

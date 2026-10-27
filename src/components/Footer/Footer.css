@@ -65,6 +65,14 @@
     width: auto;
 }
 
+@media(min-width: 768px) {
+    
+.footer-icons img {
+    height: 3.5vw;
+    width: auto;
+}
+}
+
 .footer-icons img:hover {
     transform: scale(1.2);
 }
