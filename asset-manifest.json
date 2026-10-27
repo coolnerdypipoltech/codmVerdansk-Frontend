@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.060969d2.css",
-    "main.js": "/static/js/main.f175d7ae.js",
+    "main.css": "/static/css/main.9f34505a.css",
+    "main.js": "/static/js/main.7200cfc7.js",
     "static/js/453.ae176ed8.chunk.js": "/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -19,7 +19,6 @@
     "static/media/video-marco-desktop-right.png": "/static/media/video-marco-desktop-right.c935360549fc76670416.png",
     "static/media/Background_desktop.webp": "/static/media/Background_desktop.5e5457b025b9282061e4.webp",
     "static/media/mascots-banner.png": "/static/media/mascots-banner.508e55c8d80c6343390c.png",
-    "static/media/mascots-slider-1.png": "/static/media/mascots-slider-1.3a87c022664ed566630a.png",
     "static/media/desktop-tile-1.png": "/static/media/desktop-tile-1.b7948caebd45eb001ead.png",
     "static/media/Background_mobile.webp": "/static/media/Background_mobile.4ccda0d024106093de87.webp",
     "static/media/Termino_y_Condiciones_Señal_Verdansk.pdf": "/static/media/Termino_y_Condiciones_Señal_Verdansk.d188d7bfc5073c846d75.pdf",
@@ -68,6 +67,8 @@
     "static/media/ReglamentoOficial.pdf": "/static/media/ReglamentoOficial.85fe20dfec604e98b86a.pdf",
     "static/media/phase-info-1.png": "/static/media/phase-info-1.9632a835d60e0d11ae0e.png",
     "static/media/Disparo_f2.png": "/static/media/Disparo_f2.66eba88740bdce266e27.png",
+    "static/media/signal_info.png": "/static/media/signal_info.840de98a93da2c8e3d4e.png",
+    "static/media/mascots-marco.png": "/static/media/mascots-marco.2071856abd12622468c1.png",
     "static/media/intro_register.png": "/static/media/intro_register.9195f1ad145515e8937d.png",
     "static/media/sticker-ghost-1.png": "/static/media/sticker-ghost-1.c7a5076a47f8745b0f92.png",
     "static/media/Disparo_f3.png": "/static/media/Disparo_f3.f64bcd87e18ec26d2124.png",
@@ -76,6 +77,7 @@
     "static/media/Disparo_f1.png": "/static/media/Disparo_f1.804755b2a24f751f0cfd.png",
     "static/media/toknow-banner.png": "/static/media/toknow-banner.b4668909993a505c2213.png",
     "static/media/sticker-ghost-2.png": "/static/media/sticker-ghost-2.375b7aeb4318244606f7.png",
+    "static/media/date_banner.png": "/static/media/date_banner.bc172bc0511ece7dbc41.png",
     "static/media/sticker-granade-3.png": "/static/media/sticker-granade-3.951688c67c72465a24b0.png",
     "static/media/sticker-granade-2.png": "/static/media/sticker-granade-2.ad8588e3a8faa89fcbfd.png",
     "static/media/desktop-ghost-banner.png": "/static/media/desktop-ghost-banner.a0d1ce4efbbd9c0c5832.png",
@@ -84,7 +86,6 @@
     "static/media/home_logo.png": "/static/media/home_logo.69d4c6dfddf772dbf154.png",
     "static/media/footer-bckg.png": "/static/media/footer-bckg.f92b31fff669f3470cca.png",
     "static/media/background_sticker.png": "/static/media/background_sticker.e3179f922c30fbf1453d.png",
-    "static/media/event_final.png": "/static/media/event_final.bf41133425045b97bd2b.png",
     "static/media/phases-title.png": "/static/media/phases-title.180e74587826a281b17b.png",
     "static/media/info_ghost.png": "/static/media/info_ghost.e5ac6aaecb9bdad59d35.png",
     "static/media/faqs-banner.png": "/static/media/faqs-banner.5617c47dda6fb356084e.png",
@@ -95,10 +96,8 @@
     "static/media/uid-step-2.png": "/static/media/uid-step-2.22d369b24855424e4b61.png",
     "static/media/info-title.png": "/static/media/info-title.db0ede5b1fc46801c999.png",
     "static/media/desktop-info.png": "/static/media/desktop-info.c38f78219723d7853cf7.png",
-    "static/media/grandFinal_title.png": "/static/media/grandFinal_title.386248a2a7dd3ba000c3.png",
     "static/media/mascots-title.png": "/static/media/mascots-title.3ce098cd9f714d5f2bcd.png",
     "static/media/sticker-granade-1.png": "/static/media/sticker-granade-1.fbac9e67b69952b285b4.png",
-    "static/media/signal_info.png": "/static/media/signal_info.af889b2c00318b095c96.png",
     "static/media/intro_sticker1.png": "/static/media/intro_sticker1.3f21569e6e79735d54df.png",
     "static/media/registerPage-title-locate.png": "/static/media/registerPage-title-locate.a0d7aab0f5b6c8cdeb6c.png",
     "static/media/registerPage-next-button.png": "/static/media/registerPage-next-button.79bab65f9f39099eb865.png",
@@ -110,7 +109,6 @@
     "static/media/event-button.png": "/static/media/event-button.95cfac6cc1924244a12d.png",
     "static/media/registerPage-create-button.png": "/static/media/registerPage-create-button.e477d9c2b29633bdfd14.png",
     "static/media/faqsPage-item-desktop.png": "/static/media/faqsPage-item-desktop.8a35a99668dba9fc3b2d.png",
-    "static/media/date_banner.png": "/static/media/date_banner.038ce54f591fd54dba76.png",
     "static/media/registerPage-join-button.png": "/static/media/registerPage-join-button.cf8b1dbb9c224a29cf10.png",
     "static/media/creators-button.png": "/static/media/creators-button.09353749b16f7f999232.png",
     "static/media/registerPage-continue-button.png": "/static/media/registerPage-continue-button.b94eb28601f6d5c03136.png",
@@ -127,12 +125,12 @@
     "index.html": "/index.html",
     "static/media/faqs-arrow.svg": "/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
     "static/media/chevron-down.svg": "/static/media/chevron-down.8c4eb837fce7d6d19a3818e889113aa9.svg",
-    "main.060969d2.css.map": "/static/css/main.060969d2.css.map",
-    "main.f175d7ae.js.map": "/static/js/main.f175d7ae.js.map",
+    "main.9f34505a.css.map": "/static/css/main.9f34505a.css.map",
+    "main.7200cfc7.js.map": "/static/js/main.7200cfc7.js.map",
     "453.ae176ed8.chunk.js.map": "/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.060969d2.css",
-    "static/js/main.f175d7ae.js"
+    "static/css/main.9f34505a.css",
+    "static/js/main.7200cfc7.js"
   ]
 }
