@@ -2,7 +2,7 @@
 import './Mascots.css';
 
 import { useEffect, useRef, useState } from 'react';
-import { desktop_6, Mascots_bckg, mascots_snacking, Mascots_title, rulebook, Mascots_banner, mascots_slider_1, mascots_slider_2, mascots_slider_3, mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8, mascots_slider_9, mascots_slider_10, phase_left, phase_right } from '../../../assets/assetsDirectory';
+import { desktop_6, Mascots_bckg, mascots_snacking, Mascots_title, rulebook, mascots_marco, mascots_slider_1, mascots_slider_2, phase_left, phase_right } from '../../../assets/assetsDirectory';
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
 import { trackEvent } from '../../../utils/analytics';
@@ -15,8 +15,7 @@ const openRulebook = () => {
 };
 
 const mascotsSlides = [
-  mascots_slider_1, mascots_slider_2, mascots_slider_3, mascots_slider_4, mascots_slider_5,
-  mascots_slider_6, mascots_slider_7, mascots_slider_8, mascots_slider_9, mascots_slider_10,
+  mascots_slider_1, mascots_slider_2,
 ];
 
 const Mascots = () => {
@@ -107,12 +106,17 @@ const Mascots = () => {
                     : ""
                 }`}
               >
-                <img
-                  loading="lazy"
+                <video
+                  loading="eager"
                   src={mascotsSlides[index]}
                   alt={isFront ? `Botarga ${currentSlide + 1}` : ""}
                   className="mascots-stack-card-photo"
+                  muted
+                  autoPlay
+                  loop
+                  playsInline
                 />
+                <img loading="lazy" src={mascots_marco} alt="Mascots Marco" className="mascots-stack-card-photo-cover" />
               </div>
             );
           })}
@@ -156,8 +160,8 @@ const Mascots = () => {
       >
         <Reveal><img loading="lazy" src={Mascots_title} alt="Mascots Title" className="mascots-title" /></Reveal>
 
-       {/* Banner  <Reveal><div className="mascots-stack-wrapper">{mascotsStack}</div></Reveal> */}
-       <Reveal><img loading="lazy" src={Mascots_banner} alt="Mascots Banner" className="mascots-stack-wrapper" /></Reveal>
+       
+        <Reveal><div className="mascots-stack-wrapper">{mascotsStack}</div></Reveal>
         <Reveal><img loading="lazy" src={mascots_snacking} alt="Mascots Snacking" className="mascots-snacking" /></Reveal>
         <Reveal><img loading="lazy" src={rulebook} alt="Rulebook" className="rulebook" onClick={openRulebook} /></Reveal>
       </div>
@@ -171,9 +175,8 @@ const Mascots = () => {
         />
 
         <Reveal><img loading="lazy" src={Mascots_title} alt="Mascots Title" className="mascots-title-desktop" /></Reveal>
-        {/* Banner <Reveal><div className="mascots-stack-wrapper-desktop">{mascotsStack}</div></Reveal> */}
-        
-        <Reveal><img loading="lazy" src={Mascots_banner} alt="Mascots Banner" className="mascots-stack-wrapper-desktop" /></Reveal>
+        <Reveal><div className="mascots-stack-wrapper-desktop">{mascotsStack}</div></Reveal> 
+
         <Reveal><img loading="lazy" src={mascots_snacking} alt="Mascots Snacking" className="mascots-snacking-desktop" /></Reveal>
         <Reveal><img loading="lazy" src={rulebook} alt="Rulebook" className="rulebook-desktop" onClick={openRulebook} /></Reveal>
 

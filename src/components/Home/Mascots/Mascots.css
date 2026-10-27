@@ -49,7 +49,10 @@
     max-width: 320px;
     aspect-ratio: 4 / 5;
     left: 5px;
+    
 }
+
+
 
 .mascots-snacking{
     width: auto;
@@ -74,8 +77,22 @@
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    padding: 10px 5px;
+    object-position: top;
+
+
 }
+
+.mascots-stack-card-photo-cover{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 .mascots-stack-card-depth-0{
     transform: translate(0, 0) rotate(0deg) scale(1);
@@ -242,4 +259,22 @@
     height: 5vw;
     max-width: 80px;
     max-height: 80px;
+}
+
+@media (min-width: 720px) {
+    .mascots-stack-cards{
+        top:50px;
+        z-index: 10;
+    }
+    .mascots-stack-control-right{
+        top: 50px;
+    }
+    .mascots-stack-control-left{
+        top: 50px;
+    }
+
+    .mascots-stack-indicators{
+        position: relative;
+        top: 55px;
+    }
 }

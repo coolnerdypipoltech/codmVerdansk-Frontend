@@ -167,16 +167,7 @@ import registerPage_next_button from "./registerPage/registerPage-next-button.pn
 import registerPage_title_completed from "./registerPage/registerPage-title-completed.png"
 import registerPage_title_locate from "./registerPage/registerPage-title-locate.png"
 
-import mascots_slider_1 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_2 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_3 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_4 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_5 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_6 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_7 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_8 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_9 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_10 from "./mascots/slider/mascots-slider-1.png"
+
 
 import toknow_banner from "./toknow/toknow-banner.png"
 import toknow_banner_2 from "./toknow/toknow-banner-2.png"
@@ -220,6 +211,10 @@ import uid_step_3 from "./uid/uid-step-3.png"
 import registerPage_error from "./registerPage/registerPage-error.png"
 
 import mascots_snacking from "./mascots/mascots-snackin.png"
+import mascots_marco from "./mascots/mascots-marco.png"
+
+const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.webm"
+const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.webm"
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
@@ -275,7 +270,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
      sticker_granade_3, Intro_register,
      sticker_paracaidas_flip_1,
-     uid_step_1,
+     uid_step_1, mascots_marco,
      uid_step_2,
      uid_step_3,
      sticker_paracaidasBlanco_f1,
@@ -285,7 +280,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      registerPage_check_down,
      registerPage_check_up, chevron_down,
      toknow_banner, toknow_banner_2, toknow_button, toknow_title_1, toknow_title_2,
-     mascots_slider_1, mascots_slider_2, mascots_slider_3, mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8, mascots_slider_9, mascots_slider_10,
+     mascots_slider_1, mascots_slider_2,
      registerPage_title, registerPage_title_completed, registerPage_title_locate, registerPage_accept_button, registerPage_background, registerPage_background_popUp, registerPage_close, registerPage_continue_button, registerPage_create_button, registerPage_join_button, 
      faqsPage_itemL, video_marco_mobil, video_marco_desktop_left, video_marco_desktop_right, 
      sticker_ghost_main_f1, sticker_ghost_main_f2, sticker_ghost_main_f3,
