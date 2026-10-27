@@ -540,7 +540,7 @@ const RegistrationForm = () => {
             </div>
           </form>
 
-          <button
+          <div
             disabled={isLoading}
             onClick={handleSubmit}
             style={{
@@ -559,7 +559,7 @@ const RegistrationForm = () => {
               style={{ height: "73px" }}
               alt="Continuar"
             />
-          </button>
+          </div>
 
           <div style={{ minHeight: "30px" }}></div>
         </div>
