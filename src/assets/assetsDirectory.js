@@ -213,8 +213,8 @@ import registerPage_error from "./registerPage/registerPage-error.png"
 import mascots_snacking from "./mascots/mascots-snackin.png"
 import mascots_marco from "./mascots/mascots-marco.png"
 
-const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.webm"
-const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.webm"
+const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
+const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";

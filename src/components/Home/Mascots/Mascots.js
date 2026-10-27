@@ -106,17 +106,14 @@ const Mascots = () => {
                     : ""
                 }`}
               >
-                <video
+                <img
                   loading="eager"
                   src={mascotsSlides[index]}
                   alt={isFront ? `Botarga ${currentSlide + 1}` : ""}
                   className="mascots-stack-card-photo"
-                  muted
-                  autoPlay
-                  loop
-                  playsInline
-                />
-                <img loading="lazy" src={mascots_marco} alt="Mascots Marco" className="mascots-stack-card-photo-cover" />
+
+                  />
+
               </div>
             );
           })}
