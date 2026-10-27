@@ -27,26 +27,14 @@ const Event = () => {
             justifyContent: "flex-start",
           }}
         >
-          <Reveal>
-            <img
-              loading="lazy"
-              src={event_title}
-              alt="Event Button"
-              className="event-title-img"
-              onClick={() => {
-                trackEvent("Calendar", "Click", "Event Button");
-                window.open("https://maps.app.goo.gl/DH9LjYsT1PjMnSCZ9");
-              }}
-            />
-          </Reveal>
+
           <div>
             <Reveal>
-              <p className="event-title">15 de noviembre, mesones 72, CDMX.</p>
+              <p className="event-title">14 de noviembre, mesones 72, CDMX.</p>
             </Reveal>
             <Reveal>
               <p className="event-text">
-                Verdansk se muda a downtown de la CDMX con una experiencia
-                única, irrepetible, latina y muy caótica.
+                El caos invade el centro de la CDMX: una experiencia irrepetible con auténtica vibra latina.
               </p>
             </Reveal>
           </div>

@@ -28,7 +28,7 @@ const HomePage = () => {
     <div className="home-page" >
       <div id="inicio"><Intro /></div>
       <div id="grandfinal"><GrandFinal></GrandFinal></div>
-      <div id="evento"><Event></Event></div>
+
 
       <div ><Information></Information></div>
 

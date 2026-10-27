@@ -18,13 +18,16 @@ import {
 } from "../../assets/assetsDirectory";
 
 import { useNavigate } from "react-router";
+import { countries, mexicoStates } from "./locationData";
 
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     lastName: "",
-    age: "",
+    country: "",
+    state: "",
+    ticketType: "",
     email: "",
 
     termsAndConditions: false,
@@ -80,10 +83,16 @@ const RegistrationForm = () => {
       newErrors.lastName = "Los apellidos solo pueden contener letras";
     }
 
-    if (!formData.age) {
-      newErrors.age = "La edad es requerida";
-    } else if (Number(formData.age) < 0) {
-      newErrors.age = "La edad no puede ser negativa";
+    if (!formData.country) {
+      newErrors.country = "El país es requerido";
+    }
+
+    if (formData.country === "México" && !formData.state) {
+      newErrors.state = "El estado es requerido";
+    }
+
+    if (!formData.ticketType) {
+      newErrors.ticketType = "Selecciona tu tipo de pase";
     }
 
     if (!formData.email) {
@@ -113,8 +122,12 @@ const RegistrationForm = () => {
         updatedValue = updatedValue.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
       }
 
-      if (name === "age" && typeof updatedValue === "string") {
-        updatedValue = updatedValue.replace(/[^0-9]/g, "");
+      if (name === "country" && updatedValue !== "México") {
+        return {
+          ...prev,
+          country: updatedValue,
+          state: "",
+        };
       }
 
       return {
@@ -149,7 +162,9 @@ const RegistrationForm = () => {
     const dataToSend = {
       name: formData.name.trim(),
       lastName: formData.lastName.trim(),
-      age: Number(formData.age),
+      country: formData.country,
+      state: formData.country === "México" ? formData.state : "",
+      ticketType: Number(formData.ticketType),
       email: formData.email,
     };
 
@@ -186,7 +201,9 @@ const RegistrationForm = () => {
         setFormData({
           name: "",
           lastName: "",
-          age: "",
+          country: "",
+          state: "",
+          ticketType: "",
           email: "",
           termsAndConditions: false,
         });
@@ -433,26 +450,78 @@ const RegistrationForm = () => {
               )}
             </div>
 
-            {/* Age */}
+            {/* Country */}
             <div className="form-group">
-              <label className="inter-font" htmlFor="age">
-                Edad*
+              <label className="inter-font" htmlFor="country">
+                País*
               </label>
-              <input
-                type="number"
-                id="age"
-                name="age"
-                value={formData.age}
+              <select
+                id="country"
+                name="country"
+                value={formData.country}
                 onChange={handleChange}
-                placeholder=""
-                min="16"
-                max="99"
-                className={errors.age ? "error" : ""}
-                autoComplete="off"
-              />
-              {errors.age && (
-                <span className="error-message">{errors.age}</span>
+                className={errors.country ? "error" : ""}
+              >
+                <option value="">Selecciona un país</option>
+                {countries.map((country) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
+                ))}
+              </select>
+              {errors.country && (
+                <span className="error-message">{errors.country}</span>
               )}
+            </div>
+
+            {/* State (only for México) */}
+            {formData.country === "México" && (
+              <div className="form-group">
+                <label className="inter-font" htmlFor="state">
+                  Estado*
+                </label>
+                <select
+                  id="state"
+                  name="state"
+                  value={formData.state}
+                  onChange={handleChange}
+                  className={errors.state ? "error" : ""}
+                >
+                  <option value="">Selecciona un estado</option>
+                  {mexicoStates.map((state) => (
+                    <option key={state} value={state}>
+                      {state}
+                    </option>
+                  ))}
+                </select>
+                {errors.state && (
+                  <span className="error-message">{errors.state}</span>
+                )}
+              </div>
+            )}
+
+            {/* Ticket type */}
+            <div className="form-group">
+              <label className="inter-font" htmlFor="ticketType">
+                Tipo de pase*
+              </label>
+              <select
+                id="ticketType"
+                name="ticketType"
+                value={formData.ticketType}
+                onChange={handleChange}
+                className={errors.ticketType ? "error" : ""}
+              >
+                <option value="">Selecciona tu tipo de pase</option>
+                <option value="1">1 - Single Ticket</option>
+                <option value="2">2 - Pase Doble</option>
+              </select>
+              {errors.ticketType && (
+                <span className="error-message">{errors.ticketType}</span>
+              )}
+              <p className="form-group-text">
+                Si recibes tu boleto por correo, ya tienes tu entrada confirmada al evento.
+              </p>
             </div>
 
             {/* Email */}
@@ -611,7 +680,16 @@ const RegistrationForm = () => {
                 <strong>Apellidos:</strong> {formData.lastName}
               </p>
               <p className="form-group-check">
-                <strong>Edad:</strong> {formData.age}
+                <strong>País:</strong> {formData.country}
+              </p>
+              {formData.country === "México" && (
+                <p className="form-group-check">
+                  <strong>Estado:</strong> {formData.state}
+                </p>
+              )}
+              <p className="form-group-check">
+                <strong>Tipo de pase:</strong>{" "}
+                {formData.ticketType === "2" ? "Pase Doble" : "Single Ticket"}
               </p>
               <p className="form-group-check">
                 <strong>Correo:</strong> {formData.email}
