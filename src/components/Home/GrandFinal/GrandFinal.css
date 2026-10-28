@@ -1,5 +1,5 @@
 .grandfinal-title-img{
-  height: 148px;
+  height: 168px;
   width: auto;
 }
 
@@ -73,7 +73,15 @@
   position: absolute;
   z-index: 0;
   left: 50%;
-  top: 20%;
+  margin-bottom: 56%;
   transform: translateX(-50%);
 
+}
+
+.desktop-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: column;
 }

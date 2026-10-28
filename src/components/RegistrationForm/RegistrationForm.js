@@ -12,9 +12,7 @@ import {
   registerPage_close,
   registerPage_continue_button,
   registerPage_join_button,
-  registerPage_title,
   registerPage_back_button,
-  registerPage_next_button,
 } from "../../assets/assetsDirectory";
 
 import { useNavigate } from "react-router";
@@ -34,7 +32,6 @@ const RegistrationForm = () => {
   });
 
   const navigate = useNavigate();
-  const [isFormCompleted, setIsFormCompleted] = useState(false);
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [popup, setPopup] = useState({
@@ -51,14 +48,14 @@ const RegistrationForm = () => {
     const navbarElement = document.querySelector(".navbar-container");
 
     if (navbarElement) {
-      if (isFormCompleted) {
+      if (popup.show) {
         navbarElement.style.zIndex = "0";
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else {
         navbarElement.style.zIndex = "1000";
       }
     }
-  }, [isFormCompleted]);
+  }, [popup.show]);
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -243,23 +240,17 @@ const RegistrationForm = () => {
           error.message || "Ocurrió un error de red. Intenta nuevamente.",
       });
     } finally {
-      setIsFormCompleted(false);
       setIsLoading(false);
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!validateForm()) {
-      return;
-    }
-    setIsFormCompleted(true);
+    await actualSubmit();
   };
 
   const closePopup = () => {
     setPopup({ show: false, type: "", message: "" });
-    setIsFormCompleted(false);
   };
 
   return (
@@ -302,13 +293,10 @@ const RegistrationForm = () => {
               {popup.type === "success" && (
                 <>
                   <div
+                    className="popup-success-content"
 
                     style={{
-                      padding: "10px 20px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      marginTop: "100px",
+                      
                     }}
                   >
                     <img
@@ -318,30 +306,18 @@ const RegistrationForm = () => {
                       className="registerPage-title"
                     ></img>
                     <p className="form-group-popUp" >
-                      Te recomendamos
-                      <span style={{ color: "#C19F33" }}>
+                      ¡Ya estás participando por la oportunidad de vivir la Gran Final en vivo! <br></br> <br></br>
+                      <span style={{ color: "#C19F33"  }}>
                         {" "}
-                        unirte al servidor oficial de Discord{" "}
+                        ¿Cómo sabrás si ganaste un boleto?{" "}
                       </span>
-                      para que estés enterado de todas las novedades y en caso
-                      de quedar seleccionado para la siguiente fase puedas
-                      recibir las instrucciones necesarias.
+                      <br></br> <br></br>
+                      Los ganadores serán seleccionados al azar y recibirán su pase por correo electrónico el 11 de noviembre.
+                      <br></br> <br></br>
                     </p>
-                  </div>
-                  <div
-                    onClick={() => window.open("https://discord.gg/U2qBFySbbW", "_blank")}
-                    style={{
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <img
-                      loading="lazy"
-                      src={registerPage_join_button}
-                      className="registerPage-end-button"
-                      alt="Cerrar"
-                    />
+                    <p className="form-group-popUp" >
+                      Si recibes el correo, ¡tu pase es tu boleto para el día del evento! <br></br> Importante: el acceso se dará por orden de llegada.
+                    </p>
                   </div>
                   <div
                     onClick={() => navigate("/")}
@@ -633,113 +609,6 @@ const RegistrationForm = () => {
           <div style={{ minHeight: "30px" }}></div>
         </div>
       </div>
-
-      {isFormCompleted && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div
-            className={`popup-content ${popup.type}`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              loading="lazy"
-              src={registerPage_background_popUp}
-              alt="back"
-              className={
-                "registerPage-background-popUp"
-              }
-            ></img>
-            <div
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            ></div>
-
-            <img
-                      loading="lazy"
-                      src={registerPage_title}
-                      alt="back"
-                      className="registerPage-title"
-                    ></img>
-
-            <div className="form-group-popUp" style={{ marginBottom: "15px", width: "100%" }}>
-              <p
-                style={{
-                  fontWeight: "bold",
-                  marginBottom: "10px",
-                  textAlign: "center",
-                }}
-              >
-                Por favor revisa tu información:
-              </p>
-              <p className="form-group-check">
-                <strong>Nombre:</strong> {formData.name}
-              </p>
-              <p className="form-group-check">
-                <strong>Apellidos:</strong> {formData.lastName}
-              </p>
-              <p className="form-group-check">
-                <strong>País:</strong> {formData.country}
-              </p>
-              {formData.country === "México" && (
-                <p className="form-group-check">
-                  <strong>Estado:</strong> {formData.state}
-                </p>
-              )}
-              <p className="form-group-check">
-                <strong>Tipo de pase:</strong>{" "}
-                {formData.ticketType === "2" ? "Pase Doble" : "Single Ticket"}
-              </p>
-              <p className="form-group-check">
-                <strong>Correo:</strong> {formData.email}
-              </p>
-            </div>
-
-            <div
-              onClick={closePopup}
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <img
-              onClick={closePopup}
-                loading="lazy"
-                src={registerPage_back_button}
-                className="registerPage-end-button"
-                alt="Cerrar"
-              />
-            </div>
-
-            <div
-              onClick={actualSubmit}
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <img
-                loading="lazy"
-                src={registerPage_next_button}
-                className="registerPage-end-button"
-                alt="Crear"
-              />
-            </div>
-
-            <div
-              className={
-                "popUp_close"
-              }
-              onClick={closePopup}
-            >
-              <img onClick={closePopup} loading="lazy" src={registerPage_close} alt="Cerrar" />
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };

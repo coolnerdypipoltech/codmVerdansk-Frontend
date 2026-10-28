@@ -17,7 +17,7 @@ const RegisterPage = () => {
   
 
   return (
-    <div className="register-page" style={{backgroundImage: `url(${registerPage_background})`}}>
+    <div className="register-page" style={{backgroundImage: `url(${registerPage_background})`,}}>
         <div style={{height: "130px"}}></div>
         <div className="phase-left-container">
         <img

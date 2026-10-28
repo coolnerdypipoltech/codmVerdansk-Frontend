@@ -1,8 +1,9 @@
 import "./GrandFinal.css";
 
 import {
-  desktop_5_5,
-  toknow_bckg,
+  desktop_2,
+  desktop_3,
+  grandFinal_bckg,
   grandFinal_title,
   fb_icon,
   EventButton,
@@ -23,7 +24,7 @@ const GrandFinal = () => {
         <div
           className="general-page"
           style={{
-            backgroundImage: `url(${isMobile ? toknow_bckg : desktop_5_5})`,
+            backgroundImage: `url(${isMobile ? grandFinal_bckg : desktop_3})`,
             minHeight: "900px",
             maxHeight: isMobile ? "850px" : undefined,
             gap: "20px",
@@ -47,7 +48,7 @@ const GrandFinal = () => {
 
               <Reveal>
                 <p className="grandfinal-text">
-                  Ya falta menos para celebrar la Gran Final Señal Verdansk.
+                  Ya falta menos para celebrar <br></br> la Gran Final Señal Verdansk.
                 </p>
               </Reveal>
               <Reveal>
@@ -78,7 +79,7 @@ const GrandFinal = () => {
                 />
               </Reveal>
               <Reveal>
-                <p className="grandfinal-title">
+                <p className="grandfinal-title" style={{fontSize: "20px", textTransform: "uppercase"}}>
                   Links oficiales de streaming
                 </p>
               </Reveal>
@@ -141,7 +142,7 @@ const GrandFinal = () => {
         </div>
       ) : (
         <>
-          <img src={desktop_5_5} className="desktop-5"></img>
+
           <div
             className="general-page-desktop"
             style={{ zIndex: 10, marginTop: "15vh" }}
@@ -170,8 +171,8 @@ const GrandFinal = () => {
               </Reveal>
               <Reveal>
                 <p className="grandfinal-text-desktop">
-                  El caos invade el centro de la CDMX: una experiencia
-                  irrepetible con auténtica vibra latina.
+                  El caos invade el centro de la CDMX: <br></br> una experiencia
+                  irrepetible con <br></br> auténtica vibra latina.
                 </p>
               </Reveal>
 
@@ -194,7 +195,7 @@ const GrandFinal = () => {
               </Reveal>
               <Reveal>
                 <p className="grandfinal-text-desktop">
-                  Si estás en CDMX puedes asistir a la gran final IRL o seguirla
+                  Si estás en CDMX puedes asistir <br></br> a la gran final IRL o seguirla <br></br>
                   en vivo por la señal en streaming
                 </p>
               </Reveal>
@@ -246,6 +247,7 @@ const GrandFinal = () => {
               </Reveal>
             </div>
           </div>
+                    <div className="desktop-container"><img src={desktop_3} className="desktop-5"></img></div>
         </>
       )}{" "}
     </>

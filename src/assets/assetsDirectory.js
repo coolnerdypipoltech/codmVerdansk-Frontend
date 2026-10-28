@@ -224,6 +224,7 @@ import mascots_snacking from "./mascots/mascots-snackin.png"
 import grandFinal_title from "./grandFinal/grandFinal_title.png"
 import event_title from "./event/event_final.png"
 
+import grandFinal_bckg from "./grandFinal/grandFinal_bckg.png"
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
@@ -238,7 +239,9 @@ const Intro_ghost_main = "https://file.verdanskcodm.com/intro/Ghost_Inicio.png";
 const vide_bckg = "https://file.verdanskcodm.com/video/Background_Video.png";
 const Information_bckg = "https://file.verdanskcodm.com/info/Background_señal.png";
 
-const Mascots_bckg = "https://file.verdanskcodm.com/mascots/Background_Botargas1.1.png";
+
+
+const Mascots_bckg = "https://file.verdanskcodm.com/mascots/Background_Botargas.png";
 //const Mascots_banner = "https://verdanskcodm.com/mascots/mascots-banner.png";
 const phase_bckg = "https://file.verdanskcodm.com/phases/Background_5Fases1.1.png";
 const phase_sticker = "https://file.verdanskcodm.com/phases/phases_sticker.png";
@@ -252,7 +255,7 @@ const CreatorsPage_bckg = "https://file.verdanskcodm.com/CreatorsPage/creatorsPa
 const desktop_1 = "https://file.verdanskcodm.com/desktop/desktop-1.3.png";
 const desktop_2 = "https://file.verdanskcodm.com/desktop/desktop-2.png";
 const desktop_3 = "https://file.verdanskcodm.com/desktop/desktop-3.1.png";
-const desktop_4 = "https://file.verdanskcodm.com/desktop/desktop-4.1.png";
+const desktop_4 = "https://file.verdanskcodm.com/desktop/desktop-4.2.png";
 const desktop_5 = "https://file.verdanskcodm.com/desktop/desktop-5.2.png";
 const desktop_5_5 = "https://file.verdanskcodm.com/desktop/desktop-5.5.png";
 const desktop_6 = "https://file.verdanskcodm.com/desktop/desktop-6.1.png";
@@ -296,7 +299,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_paracaidasBlanco_f2, sticker_paracaidas_flip_2, sticker_Disparo_f1, sticker_Disparo_f2, sticker_Disparo_f3,
      sticker_paracaidas_1, sticker_paracaidas_2, registerPage_error,
      sticker_creadores_F1, sticker_creadores_F2, sticker_creadores_F3,
-     registerPage_back_button, registerPage_next_button, toknow_bckg,
+     registerPage_back_button, registerPage_next_button, toknow_bckg, grandFinal_bckg,
      faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, commonCreator, Intro_bckg2, Intro_ghost_main,
      Creador_0, Creador_1, Creador_2, Creador_3, Creador_4, Creador_5, Creador_6, Creador_7, Creador_8, Creador_9, Creador_10,
      Creador_11, Creador_12, Creador_13, Creador_14, Creador_15, Creador_16, Creador_17, Creador_18, Creador_19,

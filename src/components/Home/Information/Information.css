@@ -48,7 +48,7 @@
     height: 15vw;
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 5%;
     transform: translateX(-50%);
     z-index: 2; 
 }
@@ -60,7 +60,7 @@
     color: white;
         position: absolute;
     left: 50%;
-    top: 50%;
+    top: 35%;
     transform: translateX(-50%);
 }
 
@@ -72,7 +72,7 @@
     line-height: 1.2;
         position: absolute;
     left: 50%;
-    top: 59%;
+    top: 42%;
     transform: translateX(-50%);
 }
 

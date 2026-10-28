@@ -112,7 +112,7 @@ const FaqsItem = forwardRef(
           let imgMinHeight = titleLines >= 3 ? "110px" : titleLines <= 1 ? "50px" : "70px";
     let titleTop = titleLines >= 3 ? "-100px" : titleLines <= 1 ? "-49px" : "-63px";
 
-    let topOffset = titleLines >= 3 ? "-40px" : titleLines <= 1 ? "-43px" : "-43px";
+    let topOffset = titleLines >= 3 ? "-40px" : titleLines <= 1 ? "-67px" : "-67px";
 
     if(titleLines > 3) {
       imgMinHeight = "130px";
@@ -120,7 +120,7 @@ const FaqsItem = forwardRef(
     }
 
     if(!isMobile) {
-      topOffset = "-3.8vw";
+      topOffset = "-5.5vw";
     } 
 
     return (
