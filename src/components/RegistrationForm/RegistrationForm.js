@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./RegistrationForm.css";
-import TerminosPDF from "../../assets/files/Termino_y_Condiciones_Señal_Verdansk.pdf";
-
+import { trackEvent } from '../../utils/analytics';
+import TerminosPDF2 from '../../assets/files/Terminos_y_Condiciones_de_las_Recompensas.pdf';
+import TerminosPDF from '../../assets/files/Términos_y_condiciones_del_Torneo_Señal_Verdansk.pdf';
 import {
   registerPage_check_down,
   registerPage_check_up,
@@ -62,7 +63,13 @@ const RegistrationForm = () => {
   const firstRender = React.useRef(true);
 
   const openTerminosPDF = () => {
+    trackEvent("footer", "Click", "Términos y condiciones");
     window.open(TerminosPDF, "_blank", "noopener,noreferrer");
+  };
+
+    const openTerminosPDF2 = () => {
+    trackEvent("footer", "Click", "Términos y condiciones");
+    window.open(TerminosPDF2, "_blank", "noopener,noreferrer");
   };
 
   useEffect(() => {
@@ -914,7 +921,19 @@ const RegistrationForm = () => {
                     style={{ textDecoration: "underline", cursor: "pointer" }}
                   >
                     Términos y Condiciones del Torneo, 
-                  </span> y {" "}
+                  </span>
+                  {" "}
+                    <span
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      openTerminosPDF2();
+                    }}
+                    style={{ textDecoration: "underline", cursor: "pointer" }}
+                  >
+                     Términos y Condiciones de la Rifa de premios.
+                  </span>
+                   {" "} y {" "}
  
                   <span
                     onClick={(e) => {

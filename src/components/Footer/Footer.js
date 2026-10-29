@@ -3,11 +3,17 @@ import './Footer.css';
 
 import { footer_bckg, cod_logo, fb_icon, ig_icon, yt_icon, tk_icon } from '../../assets/assetsDirectory';
 import { trackEvent } from '../../utils/analytics';
-import TerminosPDF from '../../assets/files/Termino_y_Condiciones_Señal_Verdansk.pdf';
+import TerminosPDF2 from '../../assets/files/Terminos_y_Condiciones_de_las_Recompensas.pdf';
+import TerminosPDF from '../../assets/files/Términos_y_condiciones_del_Torneo_Señal_Verdansk.pdf';
 
   const openTerminosPDF = () => {
     trackEvent("footer", "Click", "Términos y condiciones");
     window.open(TerminosPDF, "_blank", "noopener,noreferrer");
+  };
+
+    const openTerminosPDF2 = () => {
+    trackEvent("footer", "Click", "Términos y condiciones");
+    window.open(TerminosPDF2, "_blank", "noopener,noreferrer");
   };
 const Footer = () => {
 
@@ -24,7 +30,7 @@ const Footer = () => {
       </div>
       <p className="footer-text" onClick={() => { window.open("https://www.activision.com/mx/es/legal/privacy-policy", "_blank"); trackEvent("footer", "Click", "Políticas de privacidad"); }}>Políticas de privacidad</p>
       <p className="footer-text" onClick={openTerminosPDF}>Términos y condiciones del Torneo</p>
-      {/* <p className="footer-text" onClick={openTerminosPDF}>Términos y condiciones de la Rifa de premios.</p> */}
+       <p className="footer-text" onClick={openTerminosPDF2}>Términos y condiciones de la Rifa de premios.</p>
       <p className="footer-text" style={{ cursor: "default" }}>© 2026 Call of Duty Verdansk</p>
       <div style={{height: "20px"}}></div>
     </div>
