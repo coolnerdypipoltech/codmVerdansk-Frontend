@@ -931,7 +931,7 @@ const RegistrationForm = () => {
                     }}
                     style={{ textDecoration: "underline", cursor: "pointer" }}
                   >
-                     Términos y Condiciones de la Rifa de premios.
+                     Términos y Condiciones de la Rifa de las Recompensas.
                   </span>
                    {" "} y {" "}
  
