@@ -196,7 +196,17 @@
     height: 6vw;
     position: absolute;
     top: 51%;
-    left: 68%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.mascots-infinix-desktop{
+    width: auto;
+    height: 5.65vw;
+    position: absolute;
+    top: 51.5%;
+    left: 75%;
     transform: translate(-50%, -50%);
     z-index: 10;
 }

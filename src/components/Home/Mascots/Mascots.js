@@ -2,7 +2,7 @@
 import './Mascots.css';
 
 import { useEffect, useRef, useState } from 'react';
-import { desktop_6, Mascots_bckg, mascots_snacking, Mascots_title, rulebook, mascots_marco, mascots_slider_1, mascots_slider_2, phase_left, phase_right } from '../../../assets/assetsDirectory';
+import { desktop_6, Mascots_bckg, mascots_snacking, Mascots_title, rulebook, mascots_infinix, mascots_slider_1, mascots_slider_2, mascots_slider_3, mascots_slider_4, mascots_slider_5, phase_left, phase_right } from '../../../assets/assetsDirectory';
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
 import { trackEvent } from '../../../utils/analytics';
@@ -15,7 +15,7 @@ const openRulebook = () => {
 };
 
 const mascotsSlides = [
-  mascots_slider_1, mascots_slider_2,
+   mascots_slider_3, mascots_slider_4, mascots_slider_1,   mascots_slider_2, mascots_slider_5,
 ];
 
 const Mascots = () => {
@@ -159,7 +159,8 @@ const Mascots = () => {
 
        
         <Reveal><div className="mascots-stack-wrapper">{mascotsStack}</div></Reveal>
-        <Reveal><img loading="lazy" src={mascots_snacking} alt="Mascots Snacking" className="mascots-snacking" /></Reveal>
+        <div style={{display: 'flex', flexDirection: "row"}}><Reveal><img loading="lazy" src={mascots_snacking} alt="Mascots Snacking" className="mascots-snacking" /></Reveal>
+        <Reveal><img loading="lazy" src={mascots_infinix} alt="Mascots Infinix" className="mascots-snacking" /></Reveal></div>
         <Reveal><img loading="lazy" src={rulebook} alt="Rulebook" className="rulebook" onClick={openRulebook} /></Reveal>
       </div>
     ) : (
@@ -175,6 +176,7 @@ const Mascots = () => {
         <Reveal><div className="mascots-stack-wrapper-desktop">{mascotsStack}</div></Reveal> 
 
         <Reveal><img loading="lazy" src={mascots_snacking} alt="Mascots Snacking" className="mascots-snacking-desktop" /></Reveal>
+        <Reveal><img loading="lazy" src={mascots_infinix} alt="Mascots Infinix" className="mascots-infinix-desktop" /></Reveal>
         <Reveal><img loading="lazy" src={rulebook} alt="Rulebook" className="rulebook-desktop" onClick={openRulebook} /></Reveal>
 
 

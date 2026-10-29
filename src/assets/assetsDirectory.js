@@ -211,10 +211,14 @@ import uid_step_3 from "./uid/uid-step-3.png"
 import registerPage_error from "./registerPage/registerPage-error.png"
 
 import mascots_snacking from "./mascots/mascots-snackin.png"
+import mascots_infinix from "./mascots/mascots-infinix.png"
 import mascots_marco from "./mascots/mascots-marco.png"
 
 const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
 const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
+const mascots_slider_3 = "https://file.verdanskcodm.com/mascots/slider/slider_3.png"
+const mascots_slider_4 = "https://file.verdanskcodm.com/mascots/slider/slider_4.png"
+const mascots_slider_5 = "https://file.verdanskcodm.com/mascots/slider/slider_5.png"
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
@@ -271,13 +275,13 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_granade_3, Intro_register,
      sticker_paracaidas_flip_1,
      uid_step_1, mascots_marco,
-     uid_step_2,
-     uid_step_3,
+     uid_step_2, mascots_slider_3,
+     uid_step_3, mascots_slider_4, mascots_slider_5,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
      sticker_paracaidasBlanco_flip_f2,
      registerPage_button, mascots_snacking,
-     registerPage_check_down,
+     registerPage_check_down, mascots_infinix,
      registerPage_check_up, chevron_down,
      toknow_banner, toknow_banner_2, toknow_button, toknow_title_1, toknow_title_2,
      mascots_slider_1, mascots_slider_2,
