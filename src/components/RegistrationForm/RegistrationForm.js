@@ -14,8 +14,6 @@ import {
   registerPage_background_popUp,
   registerPage_close,
   registerPage_continue_button,
-  registerPage_create_button,
-  registerPage_join_button,
   registerPage_title, 
   registerPage_back_button,
   registerPage_next_button,
@@ -351,18 +349,10 @@ const RegistrationForm = () => {
           });
         }
 
-        if (formData.discord.trim() !== "") {
-          // Implement Discord verification logic here if needed
-          setPopup({
-            show: true,
-            type: "success-yesDiscord",
-          });
-        } else {
-          setPopup({
-            show: true,
-            type: "success-noDiscord",
-          });
-        }
+        setPopup({
+          show: true,
+          type: "success",
+        });
 
         try {
           sessionStorage.removeItem(REGISTRATION_DRAFT_STORAGE_KEY);
@@ -497,7 +487,7 @@ const RegistrationForm = () => {
                   justifyContent: "center",
                 }}
               ></div>
-              {popup.type === "success-yesDiscord" && (
+              {popup.type === "success" && (
                 <>
                   <div
                  
@@ -515,98 +505,15 @@ const RegistrationForm = () => {
                       alt="back"
                       className="registerPage-title"
                     ></img>
-                    <p className="form-group-popUp" >
-                      Te recomendamos
-                      <span style={{ color: "#C19F33" }}>
-                        {" "}
-                        unirte al servidor oficial de Discord{" "}
-                      </span>
-                      para que estés enterado de todas las novedades y en caso
-                      de quedar seleccionado para la siguiente fase puedas
-                      recibir las instrucciones necesarias.
-                    </p>
-                  </div>
-                  <div
-                    onClick={() => window.open("https://discord.gg/U2qBFySbbW", "_blank")}
-                    style={{
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <img
-                      loading="lazy"
-                      src={registerPage_join_button}
-                      className="registerPage-end-button"
-                      alt="Cerrar"
-                    />
-                  </div>
-                  <div
-                    onClick={() => navigate("/")}
-                    style={{
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <img
-                      loading="lazy"
-                      src={registerPage_continue_button}
-                      className="registerPage-end-button"
-                      alt="Cerrar"
-                    />
-                  </div>
-                </>
-              )}
-
-              {popup.type === "success-noDiscord" && (
-                <>
-                  <div
-                    style={{
-                      padding: "10px 20px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      marginTop: "90px"
-                    }}
-                  >
-                    <img
-                      loading="lazy"
-                      src={registerPage_title_completed}
-                      alt="back"
-                      className="registerPage-title"
-                    ></img>
                     <p className="form-group-popUp">
-                      En caso de quedar seleccionado
-                      <span style={{ color: "#C19F33" }}>
+                      Recibirás un
+                      <span style={{ color: "#FFD600" }}>
                         {" "}
-                        deberás contar con una cuenta de discord para continuar
-                        participando,{" "}
+                        correo de confirmación{" "}
                       </span>
-                      ya que ahí se llevará a cabo la comunicación oficial del
-                      torneo. En caso de no cumplir este requisito
-                      <span style={{ color: "#AA261A" }}>
-                        {" "}
-                        serás descalificado.{" "}
-                      </span>
-                      Si no tienes cuenta puedes crear una de manera gratuita
-                      aquí:
+                      con los siguientes pasos. Si no lo recibes revisa tu
+                      spam.
                     </p>
-                  </div>
-                  <div
-                    onClick={() => window.open("https://discord.com/register", "_blank")}
-                    style={{
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <img
-                      loading="lazy"
-                      src={registerPage_create_button}
-                      className="registerPage-end-button"
-                      alt="Cerrar"
-                    />
                   </div>
                   <div
                     onClick={() => navigate("/")}
