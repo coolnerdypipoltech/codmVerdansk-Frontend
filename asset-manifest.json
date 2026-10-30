@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/codmVerdansk-Frontend/static/css/main.b7279bc4.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.1aff77dd.js",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.e401d609.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -127,11 +127,11 @@
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.5b64f6444d966890197c791daa13aea2.svg",
     "static/media/chevron-down.svg": "/codmVerdansk-Frontend/static/media/chevron-down.8c4eb837fce7d6d19a3818e889113aa9.svg",
     "main.b7279bc4.css.map": "/codmVerdansk-Frontend/static/css/main.b7279bc4.css.map",
-    "main.1aff77dd.js.map": "/codmVerdansk-Frontend/static/js/main.1aff77dd.js.map",
+    "main.e401d609.js.map": "/codmVerdansk-Frontend/static/js/main.e401d609.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7279bc4.css",
-    "static/js/main.1aff77dd.js"
+    "static/js/main.e401d609.js"
   ]
 }
