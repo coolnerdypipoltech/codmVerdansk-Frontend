@@ -225,6 +225,11 @@ import grandFinal_title from "./grandFinal/grandFinal_title.png"
 import event_title from "./event/event_final.png"
 
 import grandFinal_bckg from "./grandFinal/grandFinal_bckg.png"
+import grandFinal_black from "./grandFinal/grandFinal_black.png"
+import grandFinal_banner from "./grandFinal/grandFinal_banner.png"
+import grandFinal_subTitle from "./grandFinal/grandFinal_subTitle.png"
+import grandFinal_tickets from "./grandFinal/grandFinal_tickets.png"
+
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
@@ -282,8 +287,8 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
      sticker_granade_3, Intro_register,
      sticker_paracaidas_flip_1,
-     uid_step_1,
-     uid_step_2,
+     uid_step_1, grandFinal_black, grandFinal_banner, grandFinal_subTitle,
+     uid_step_2, grandFinal_tickets,
      uid_step_3, grandFinal_title, event_title,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,

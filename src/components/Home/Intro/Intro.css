@@ -9,7 +9,7 @@
 
 .intro-banner {
     width: auto;
-    height: 100px;
+    height: 200px;
     position: relative;
     z-index: 2;
 
@@ -318,4 +318,46 @@
   }
 }
 
+.intro-text-title{
+    font-family: var(--font-anton);
+    font-size: 24px;
+    color: var(--yellow);
+    position: relative;
+    z-index: 10;
+    margin: 0px;
+    margin-top: 16px;
+}
 
+.intro-text-subtitle{
+        font-family: var(--font-monst);
+    font-size: var(--font-title-size);
+    color: white;
+    margin: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+@media(min-width: 1000px){
+    .intro-text-title{
+        
+    font-size: 2vw;
+
+}
+
+.intro-text-subtitle{
+
+    font-size: 1.5vw;
+
+}
+}
+
+.intro-title-desktop{
+        position: absolute;
+    width: auto;
+    height: 18vw;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%);
+
+    z-index: 12;
+}
