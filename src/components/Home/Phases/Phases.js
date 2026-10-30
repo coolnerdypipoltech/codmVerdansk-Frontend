@@ -174,6 +174,7 @@ const Phases = () => {
         <div key={currentPhase} className={`phase-info-container`}>
           <img
           src={phaseImages[currentPhase]}
+          onClick={() => clickStuff(currentPhase)}
           alt={`Información de la fase ${currentPhase + 1}`}
           className={`phase-info ${direction.current !== "forward" ? "phases-mobil--right-in" : "phases-mobil--left-in"}`}
         />
