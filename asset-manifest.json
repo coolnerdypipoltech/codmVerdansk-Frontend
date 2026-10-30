@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.34520e51.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.db9107bf.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.b7279bc4.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.1aff77dd.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -20,8 +20,9 @@
     "static/media/Background_desktop.webp": "/codmVerdansk-Frontend/static/media/Background_desktop.5e5457b025b9282061e4.webp",
     "static/media/mascots-banner.png": "/codmVerdansk-Frontend/static/media/mascots-banner.508e55c8d80c6343390c.png",
     "static/media/desktop-tile-1.png": "/codmVerdansk-Frontend/static/media/desktop-tile-1.b7948caebd45eb001ead.png",
+    "static/media/Terminos_y_Condiciones_de_las_Recompensas.pdf": "/codmVerdansk-Frontend/static/media/Terminos_y_Condiciones_de_las_Recompensas.3dada3d18802ff1f7ef1.pdf",
+    "static/media/Términos_y_condiciones_del_Torneo_Señal_Verdansk.pdf": "/codmVerdansk-Frontend/static/media/Términos_y_condiciones_del_Torneo_Señal_Verdansk.f3dd29deb787aba9db8d.pdf",
     "static/media/Background_mobile.webp": "/codmVerdansk-Frontend/static/media/Background_mobile.4ccda0d024106093de87.webp",
-    "static/media/Termino_y_Condiciones_Señal_Verdansk.pdf": "/codmVerdansk-Frontend/static/media/Termino_y_Condiciones_Señal_Verdansk.d188d7bfc5073c846d75.pdf",
     "static/media/sticker-truck-1.png": "/codmVerdansk-Frontend/static/media/sticker-truck-1.830b02363a5bd50054c8.png",
     "static/media/Web_calendario_f2.png": "/codmVerdansk-Frontend/static/media/Web_calendario_f2.f9588aa8353d337385e7.png",
     "static/media/Web_calendario_f1.png": "/codmVerdansk-Frontend/static/media/Web_calendario_f1.6c49a357959d8bab8a73.png",
@@ -59,13 +60,13 @@
     "static/media/Creador-1.png": "/codmVerdansk-Frontend/static/media/Creador-1.871b1dd990e259e7786a.png",
     "static/media/Creador-6.png": "/codmVerdansk-Frontend/static/media/Creador-6.18f51dd1581d7fdc62bc.png",
     "static/media/Creador-13.png": "/codmVerdansk-Frontend/static/media/Creador-13.aef7b5ed13b67a8752cc.png",
+    "static/media/phase-info-2.png": "/codmVerdansk-Frontend/static/media/phase-info-2.76c1fa34e430b3c03278.png",
     "static/media/creators-banner.png": "/codmVerdansk-Frontend/static/media/creators-banner.d75fc9fcbd01041c008e.png",
-    "static/media/phase-info-4.png": "/codmVerdansk-Frontend/static/media/phase-info-4.cc8294df1a81321d6178.png",
-    "static/media/phase-info-2.png": "/codmVerdansk-Frontend/static/media/phase-info-2.f52395200864246f31d2.png",
     "static/media/Creador-24.png": "/codmVerdansk-Frontend/static/media/Creador-24.9dd80656f99330728dad.png",
-    "static/media/phase-info-3.png": "/codmVerdansk-Frontend/static/media/phase-info-3.93fb65b1765429c3f670.png",
+    "static/media/phase-info-3.png": "/codmVerdansk-Frontend/static/media/phase-info-3.bd40465ac74af69eb0bc.png",
+    "static/media/phase-info-4.png": "/codmVerdansk-Frontend/static/media/phase-info-4.a81a6f2bcda61f966c7b.png",
     "static/media/ReglamentoOficial.pdf": "/codmVerdansk-Frontend/static/media/ReglamentoOficial.85fe20dfec604e98b86a.pdf",
-    "static/media/phase-info-1.png": "/codmVerdansk-Frontend/static/media/phase-info-1.9632a835d60e0d11ae0e.png",
+    "static/media/phase-info-1.png": "/codmVerdansk-Frontend/static/media/phase-info-1.8cb8a1ea1b3b115752f6.png",
     "static/media/Disparo_f2.png": "/codmVerdansk-Frontend/static/media/Disparo_f2.66eba88740bdce266e27.png",
     "static/media/signal_info.png": "/codmVerdansk-Frontend/static/media/signal_info.840de98a93da2c8e3d4e.png",
     "static/media/mascots-marco.png": "/codmVerdansk-Frontend/static/media/mascots-marco.2071856abd12622468c1.png",
@@ -121,16 +122,16 @@
     "static/media/registerPage-error.png": "/codmVerdansk-Frontend/static/media/registerPage-error.eeac68938f93ed9f7e00.png",
     "static/media/creator.png": "/codmVerdansk-Frontend/static/media/creator.a2dafffd0b4fccf1d6a8.png",
     "static/media/Rayos_f2.png": "/codmVerdansk-Frontend/static/media/Rayos_f2.524d265c726596c10431.png",
-    "static/media/Cod-logo.svg": "/codmVerdansk-Frontend/static/media/Cod-logo.fe3a1bfdea9872c48b8414fbaf24decb.svg",
+    "static/media/Cod-logo.svg": "/codmVerdansk-Frontend/static/media/Cod-logo.f9b0fce147238a419415f9c23831ee11.svg",
     "index.html": "/codmVerdansk-Frontend/index.html",
-    "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
+    "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.5b64f6444d966890197c791daa13aea2.svg",
     "static/media/chevron-down.svg": "/codmVerdansk-Frontend/static/media/chevron-down.8c4eb837fce7d6d19a3818e889113aa9.svg",
-    "main.34520e51.css.map": "/codmVerdansk-Frontend/static/css/main.34520e51.css.map",
-    "main.db9107bf.js.map": "/codmVerdansk-Frontend/static/js/main.db9107bf.js.map",
+    "main.b7279bc4.css.map": "/codmVerdansk-Frontend/static/css/main.b7279bc4.css.map",
+    "main.1aff77dd.js.map": "/codmVerdansk-Frontend/static/js/main.1aff77dd.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34520e51.css",
-    "static/js/main.db9107bf.js"
+    "static/css/main.b7279bc4.css",
+    "static/js/main.1aff77dd.js"
   ]
 }
