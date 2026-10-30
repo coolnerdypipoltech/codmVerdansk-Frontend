@@ -1,5 +1,6 @@
 import "./Phases.css";
 import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import FrameAnimation from "../../FrameAnimation/FrameAnimation";
 import useNearViewport from "../../../hooks/useNearViewport";
 import {
@@ -23,6 +24,7 @@ import { trackEvent } from '../../../utils/analytics';
 const phaseImages = [phase_info_1, phase_info_2, phase_info_3, phase_info_4];
 
 const Phases = () => {
+    const navigate = useNavigate();
   const { isMobile } = useViewport();
   const [currentPhase, setCurrentPhase] = useState(0);
   const [firstTime, setFirstTime] = useState(true);
@@ -76,7 +78,13 @@ const Phases = () => {
     pauseAutoAdvance();
   };
 
-
+  const clickStuff = (phase) => {
+    console.log(phase)
+    if(phase === 0){
+      navigate("/register");
+      document.body.scrollTop = 0 // Replace "/some-path" with the actual path you want to navigate to
+    }
+  };
 
   return (
     <>{isMobile ? (<><div
@@ -105,6 +113,7 @@ const Phases = () => {
         <div key={currentPhase} className={`phase-info-container`}>
           <img
           src={phaseImages[currentPhase]}
+          onClick={() => clickStuff(currentPhase)}
           alt={`Información de la fase ${currentPhase + 1}`}
           className={`phase-info ${direction.current !== "forward" ? "phases-mobil--right-in" : "phases-mobil--left-in"}`}
         />
