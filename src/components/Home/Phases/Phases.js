@@ -82,7 +82,8 @@ const Phases = () => {
     console.log(phase)
     if(phase === 0){
       navigate("/register");
-      document.body.scrollTop = 0 // Replace "/some-path" with the actual path you want to navigate to
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
   };
 
