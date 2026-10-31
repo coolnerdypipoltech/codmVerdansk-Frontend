@@ -1,8 +1,8 @@
 {
   "name": "codmVerdansk",
   "version": "0.1.0",
-  "homepage2": "https://verdanskcodm.com/",
-  "homepage": "https://coolnerdypipoltech.github.io/codmVerdansk-Frontend/",
+  "homepage": "https://verdanskcodm.com/",
+  "homepage2": "https://coolnerdypipoltech.github.io/codmVerdansk-Frontend/",
   "private": true,
   "dependencies": {
     "@rive-app/react-canvas": "^4.36.0",
