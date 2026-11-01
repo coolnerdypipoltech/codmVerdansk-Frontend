@@ -2,11 +2,17 @@ import "./Intro.css";
 
 import Reveal from "../../Reveal/Reveal";
 import FrameAnimation from "../../FrameAnimation/FrameAnimation";
+import { trackEvent } from "../../../utils/analytics";
 import {
   Intro_date_banner,
-  Intro_hashtag,
   Intro_logo,
-  Intro_banner,
+  fb_icon,
+  yt_icon,
+  tk_icon,
+  grandFinal_tickets,
+  grandFinal_banner,
+  grandFinal_subTitle,
+  grandFinal_black,
   Intro_bckg,
   grandFinal_title,
   Intro_bckg2,
@@ -157,7 +163,7 @@ const Intro = () => {
             <div
               style={{
                 position: "absolute",
-                top: "580px",
+                top: "700px",
                 height: "500px",
                 left: "90%",
                 width: "1px",
@@ -174,7 +180,7 @@ const Intro = () => {
           </Reveal>
         </div>
       ) : (
-        <div className="general-page-desktop">
+        <div className="general-page-desktop" style={{           minHeight: "55vw",}}>
           <img
             loading="eager"
             fetchPriority="high"
@@ -269,13 +275,31 @@ const Intro = () => {
             />
           </Reveal>
 
-          <p className="intro-text-title" style={{position: "absolute", top: "70%", left: "50%", transform: "translateX(-50%)"}}>EVENTO PRESENCIAL CDMX</p>
-          <p className="intro-text-subtitle" style={{position: "absolute", top: "77%", left: "50%", transform: "translateX(-50%)"}}>
+          <p
+            className="intro-text-title"
+            style={{
+              position: "absolute",
+              top: "70%",
+              left: "50%",
+              transform: "translateX(-50%)",
+            }}
+          >
+            EVENTO PRESENCIAL CDMX
+          </p>
+          <p
+            className="intro-text-subtitle"
+            style={{
+              position: "absolute",
+              top: "77%",
+              left: "50%",
+              transform: "translateX(-50%)",
+            }}
+          >
             Calle de Mesones 72, Centro Histórico, <br></br> Cuauhtémoc, 06080,
             Ciudad de México
           </p>
           <Reveal>
-            <Counter  />
+            <Counter />
           </Reveal>
 
           <img
@@ -320,6 +344,119 @@ const Intro = () => {
                 className="intro-ghost-desktop"
               />
             </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="footer-icons2-desktop" style={{ zIndex: 3 }}>
+              <img
+                loading="lazy"
+                src={tk_icon}
+                onClick={() => {
+                  window.open(
+                    "https://www.tiktok.com/@callofdutymobile_latam",
+                    "_blank",
+                  );
+                  trackEvent("Social Media", "Click", "TikTok");
+                }}
+                alt="TikTok Icon"
+                className="footer-icon2"
+              />
+
+              <img
+                loading="lazy"
+                src={fb_icon}
+                onClick={() => {
+                  window.open(
+                    "https://www.facebook.com/LATAMCallOfDutyMobile",
+                    "_blank",
+                  );
+                  trackEvent("Social Media", "Click", "Facebook");
+                }}
+                alt="Facebook Icon"
+                className="footer-icon2"
+              />
+              <img
+                loading="lazy"
+                src={yt_icon}
+                onClick={() => {
+                  window.open(
+                    "https://www.youtube.com/@LATAMCallOfDutyMobile",
+                    "_blank",
+                  );
+                  trackEvent("Social Media", "Click", "YouTube");
+                }}
+                alt="YouTube Icon"
+                className="footer-icon2"
+              />
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <img
+              loading="lazy"
+              src={grandFinal_black}
+              alt="Grand Final Tickets"
+              className="grandfinal-black-desktop"
+            ></img>
+          </Reveal>
+
+          <div className="grandfinal-black-container-desktop">
+            <p className="grandfinal-title-desktop" style={{ paddingTop: "10px" }}>
+              FINALISTAS
+            </p>
+            <p className="grandfinal-text-desktop">
+              Los jugadores finalistas{" "}
+              <span className="grandfinal-text-highlight">
+                se conectarán en línea
+              </span>{" "}
+              desde todaLatinoamérica para competir en la{" "}
+              Gran Final de Señal Verdansk
+            </p>
+            <p className="grandfinal-title-desktop">Espectadores</p>
+            <p className="grandfinal-text-desktop">
+              Podrán seguir la competencia de dos maneras:
+            </p>
+            <p className="grandfinal-text-desktop">
+              1.{" "}
+              <span className="grandfinal-text-highlight">
+                Si vives en CDMX
+              </span>
+              , podrás asistir a la final en el centro de la ciudad.
+            </p>
+            <p className="grandfinal-text-desktop">
+              2. <span style={{fontWeight: "bold"}}>Conectándote</span> a través de nuestra transmisión en vivo desde
+              cualquier lugar:
+            </p>
+          </div>
+
+          <Reveal>
+            <img
+              loading="lazy"
+              src={grandFinal_subTitle}
+              alt="Grand Final Title"
+              className="grandfinal-subtitle-desktop"
+            ></img>
+          </Reveal>
+
+          <Reveal>
+            <img
+              loading="lazy"
+              src={grandFinal_banner}
+              alt="Grand Final Title"
+              className="grandfinal-banner-desktop"
+            ></img>
+          </Reveal>
+
+          <Reveal>
+            <img
+              loading="lazy"
+              src={grandFinal_tickets}
+              alt="Grand Final Title"
+              className="grandfinal-tickets-desktop"
+              onClick={() => {
+                navigate("/register"); document.documentElement.scrollTop = 0 ;
+              }}
+            ></img>
           </Reveal>
         </div>
       )}{" "}

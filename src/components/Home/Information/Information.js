@@ -67,6 +67,7 @@ const Information = () => {
         style={{
           position: "relative",
 
+
         }}
       >
 

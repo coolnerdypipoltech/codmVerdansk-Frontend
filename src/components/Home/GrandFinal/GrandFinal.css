@@ -9,6 +9,8 @@
   width: auto;
   height: 395px;
   rotate: -2deg;
+  padding: 0px 20px;
+  max-width: 400px;
 }
 
 .grandfinal-black{
@@ -19,6 +21,8 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  max-height: 675px;
+  max-width: 550px;
 }
 
 .grandfinal-banner{
@@ -72,22 +76,22 @@
 }
 
 .grandfinal-text-desktop{
-  font-size: var(--text-desktop-size);
+  font-size: clamp(0.8vw, 1vw, 18px);
   font-family: var(--font-monst);
   line-height: 1.5;
   color: white;
-  width: 70%;
-  margin: 0 auto;
-  padding-top: 10px;
+  width: 100%;
+  margin: 0;
+
 }
 
 .grandfinal-title-desktop{
-    font-size: var(--text-desktop-size);
+    font-size: clamp(1.2vw, 1.5vw, 24px);
   font-family: var(--font-anton);
   line-height: 1.5;
   color: var(--yellow);
-  margin: 0 auto;
-  padding-top: 40px;
+  margin: 5px;
+
 }
 
 .grandfinal-content-desktop{
@@ -133,14 +137,26 @@
 
 .grandfinal-black-container-desktop{
   width: auto;
-
+  width: 20vw;
+  max-width: 600px;
   rotate: -2deg;
   position: absolute;
-  top: 0%;
-  left: 50%;
+  top: 131%;
+  left: 50.5%;
   transform: translate(-50%, -50%);
-  z-index: 10   ;
+  z-index: 10 ;
 
+}
+
+
+
+@media (min-width: 1900px) {
+  .grandfinal-black-container-desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8vw;
+  }
 }
 
 .grandfinal-texts-desktop{
@@ -153,22 +169,24 @@
 }
 
 .grandfinal-black-desktop{
-  width: 100%;
+  width: 30vw;
+  max-width: 700px;
   height: auto;
+
   position: absolute;
-  top: -700%;
+  top: 95%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .grandfinal-tickets-desktop{
   width: auto;
-  height: 86px;
+  height: 5vw;
   margin-top: 40px;
     position: absolute;
   left: 50%;
-  top: 50%;
+  top: 202%;
   transform: translate(-50%, -50%);
   z-index: 15;
 }
@@ -186,11 +204,11 @@
 
 .grandfinal-banner-desktop{
   width: auto;
-  height: 200px;
+  height: 20vw;
   margin-top: 40px;
     position: absolute;
   left: 50%;
-  top: 50%;
+  top: 175%;
   transform: translate(-50%, -50%);
   z-index: 15;
 }
@@ -202,7 +220,37 @@
   margin-top: 20px;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 154%;
   transform: translate(-50%, -50%);
   z-index: 15;
+}
+
+.grandfinal-subtitle-desktop{
+  width: auto;
+  height: 6vw;
+  max-height: 100px;
+  margin-top: 20px;
+    position: absolute;
+  left: 50%;
+  top: 105%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+
+}
+
+
+@media (max-width: 1200px) {
+  .grandfinal-black-container-desktop{
+    top: 126%;
+  }
+  .footer-icons2-desktop{
+    top: 144%;
+  }
+
+  .grandfinal-banner-desktop{
+    top: 160%;
+  }
+  .grandfinal-tickets-desktop{
+    top: 186%;
+  }
 }

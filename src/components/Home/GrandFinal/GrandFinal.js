@@ -1,7 +1,6 @@
 import "./GrandFinal.css";
 
 import {
-  desktop_2,
   desktop_3,
   grandFinal_bckg,
   Intro_date_banner,
@@ -9,18 +8,18 @@ import {
   grandFinal_banner,
   grandFinal_subTitle,
   fb_icon,
-  Intro_register,
   yt_icon,
   tk_icon,
   grandFinal_black,
 } from "../../../assets/assetsDirectory";
-import Counter from "../Counter/Counter";
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
 import { trackEvent } from "../../../utils/analytics";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const GrandFinal = () => {
   const { isMobile } = useViewport();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -76,13 +75,13 @@ const GrandFinal = () => {
                       </p>
                       <p className="grandfinal-text">
                         1.{" "}
-                        <span className="grandfinal-text-highlight">
+                        <span className="grandfinal-text-highlight" style={{fontWeight: "bold"}}>
                           Si vives en CDMX
                         </span>
                         , podrás asistir a la final en el centro de la ciudad.
                       </p>
                       <p className="grandfinal-text">
-                        2. Conectándote a través de nuestra transmisión en vivo
+                        2. <span style={{fontWeight: "bold"}}>Conectándote</span> a través de nuestra transmisión en vivo
                         desde cualquier lugar:
                       </p>
                     </div>
@@ -147,6 +146,9 @@ const GrandFinal = () => {
                       loading="lazy"
                       src={grandFinal_tickets}
                       alt="Grand Final Banner"
+                      onClick={() => {
+                        navigate("/register"); document.documentElement.scrollTop = 0 ;
+                      }}
                       className="grandfinal-tickets"
                     ></img>
                   </Reveal>
@@ -168,86 +170,17 @@ const GrandFinal = () => {
         <>
           <div
             className="general-page-desktop"
-            style={{ zIndex: 10, marginTop: "15vh" }}
+            style={{ zIndex: 10, marginTop: "20vh" }}
           >
-            <div className="grandFinal-content"></div>
+
           </div>
           <div className="desktop-container">
             <img src={desktop_3} className="desktop-5" alt="bckg"></img>
 
 
 
-            <Reveal>
-              <div className="footer-icons2-desktop" style={{ zIndex: 3 }}>
-                <img
-                  loading="lazy"
-                  src={tk_icon}
-                  onClick={() => {
-                    window.open(
-                      "https://www.tiktok.com/@callofdutymobile_latam",
-                      "_blank",
-                    );
-                    trackEvent("Social Media", "Click", "TikTok");
-                  }}
-                  alt="TikTok Icon"
-                  className="footer-icon2"
-                />
 
-                <img
-                  loading="lazy"
-                  src={fb_icon}
-                  onClick={() => {
-                    window.open(
-                      "https://www.facebook.com/LATAMCallOfDutyMobile",
-                      "_blank",
-                    );
-                    trackEvent("Social Media", "Click", "Facebook");
-                  }}
-                  alt="Facebook Icon"
-                  className="footer-icon2"
-                />
-                <img
-                  loading="lazy"
-                  src={yt_icon}
-                  onClick={() => {
-                    window.open(
-                      "https://www.youtube.com/@LATAMCallOfDutyMobile",
-                      "_blank",
-                    );
-                    trackEvent("Social Media", "Click", "YouTube");
-                  }}
-                  alt="YouTube Icon"
-                  className="footer-icon2"
-                />
-              </div>
-            </Reveal>
 
-            <Reveal>
-              <img
-                loading="lazy"
-                src={grandFinal_banner}
-                alt="Grand Final Banner"
-                className="grandfinal-banner-desktop"
-              ></img>
-            </Reveal>
-
-            <Reveal>
-              <img
-                loading="lazy"
-                src={grandFinal_tickets}
-                alt="Grand Final Banner"
-                className="grandfinal-tickets-desktop"
-              ></img>
-            </Reveal>
-
-            <Reveal>
-              <img
-                loading="lazy"
-                src={Intro_date_banner}
-                alt="Grand Final Banner"
-                className="grandfinal-date-desktop"
-              ></img>
-            </Reveal>
           </div>
         </>
       )}{" "}
