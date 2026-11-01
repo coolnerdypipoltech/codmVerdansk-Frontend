@@ -228,6 +228,9 @@ const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.
 const mascots_slider_3 = "https://file.verdanskcodm.com/mascots/slider/slider_3.png"
 const mascots_slider_4 = "https://file.verdanskcodm.com/mascots/slider/slider_4.png"
 const mascots_slider_5 = "https://file.verdanskcodm.com/mascots/slider/slider_5.png"
+const mascots_slider_6 = "https://file.verdanskcodm.com/mascots/slider/slider_6.png"
+const mascots_slider_7 = "https://file.verdanskcodm.com/mascots/slider/slider_7.png"
+const mascots_slider_8 = "https://file.verdanskcodm.com/mascots/slider/slider_8.png"
 
 
 
@@ -293,7 +296,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      uid_step_3, grandFinal_title, event_title,
       mascots_marco,
      mascots_slider_3,
-     mascots_slider_4, mascots_slider_5,
+     mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
      sticker_paracaidasBlanco_flip_f2,
