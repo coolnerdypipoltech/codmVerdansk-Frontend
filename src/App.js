@@ -6,7 +6,6 @@ import HomePage from './pages/Home/HomePage';
 import FaqsPage from './pages/Faqs/FaqsPage';
 import CreatorsPage from './pages/Creators/CreatorsPage';
 import RegisterPage from './pages/Register/RegisterPage';
-import UIDPage from './pages/UID/UIDPage';
 
 import './App.css';
 import './variables.css';
@@ -21,8 +20,7 @@ function App() {
             <Route path="/" element={<HomePage  />} />
             <Route path="/faqs" element={<FaqsPage  />} />
             <Route path="/creators" element={<CreatorsPage  />} />
-            <Route path="/register" element={<RegisterPage  />} />
-            <Route path="/uid" element={<UIDPage  />} />
+            {/* <Route path="/register" element={<RegisterPage  />} />  */}
 
             <Route path="*" element={<HomePage  />} />
             

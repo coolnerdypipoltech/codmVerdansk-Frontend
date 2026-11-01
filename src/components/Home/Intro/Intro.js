@@ -27,7 +27,7 @@ import {
   sticker_paracaidas_2,
   sticker_paracaidas_flip_1,
   sticker_paracaidas_flip_2,
-  Intro_register,
+  intro_end,
 } from "../../../assets/assetsDirectory";
 
 import { useViewport } from "../../../context/ViewportContext";
@@ -121,10 +121,9 @@ const Intro = () => {
 
             <Reveal><img
         loading="lazy"
-        src={Intro_register}
+        src={intro_end}
         alt="Intro Register"
         className="intro-register"
-        onClick={() => {navigate("/register"); window.scrollTo(0, 0);}}
       /></Reveal>
 
             <Reveal><div className="intro-ghost-container">
@@ -244,7 +243,7 @@ const Intro = () => {
             <Reveal><img
             onClick={() => {navigate("/register")}}
         loading="lazy"
-        src={Intro_register}
+        src={intro_end}
         alt="Intro Register"
         className="intro-register-desktop"
       /></Reveal>
