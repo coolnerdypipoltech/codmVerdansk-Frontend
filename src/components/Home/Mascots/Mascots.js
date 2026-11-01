@@ -2,7 +2,7 @@
 import './Mascots.css';
 
 import { useEffect, useRef, useState } from 'react';
-import { desktop_6, Mascots_bckg, mascots_snacking, Mascots_title, rulebook, mascots_infinix, mascots_slider_1, mascots_slider_2, mascots_slider_3, mascots_slider_4, mascots_slider_5, phase_left, phase_right } from '../../../assets/assetsDirectory';
+import { desktop_6, Mascots_bckg, mascots_snacking, Mascots_title, rulebook, mascots_infinix, mascots_slider_1, mascots_slider_2, mascots_slider_3, mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8, phase_left, phase_right } from '../../../assets/assetsDirectory';
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
 import { trackEvent } from '../../../utils/analytics';
@@ -15,7 +15,7 @@ const openRulebook = () => {
 };
 
 const mascotsSlides = [
-   mascots_slider_3, mascots_slider_4, mascots_slider_1,   mascots_slider_2, mascots_slider_5,
+   mascots_slider_3, mascots_slider_4, mascots_slider_1,   mascots_slider_2, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8,
 ];
 
 const Mascots = () => {

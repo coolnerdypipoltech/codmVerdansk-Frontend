@@ -214,11 +214,16 @@ import mascots_snacking from "./mascots/mascots-snackin.png"
 import mascots_infinix from "./mascots/mascots-infinix.png"
 import mascots_marco from "./mascots/mascots-marco.png"
 
+import intro_end from "./intro/intro_end.png"
+
 const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
 const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
 const mascots_slider_3 = "https://file.verdanskcodm.com/mascots/slider/slider_3.png"
 const mascots_slider_4 = "https://file.verdanskcodm.com/mascots/slider/slider_4.png"
 const mascots_slider_5 = "https://file.verdanskcodm.com/mascots/slider/slider_5.png"
+const mascots_slider_6 = "https://file.verdanskcodm.com/mascots/slider/slider_6.png"
+const mascots_slider_7 = "https://file.verdanskcodm.com/mascots/slider/slider_7.png"
+const mascots_slider_8 = "https://file.verdanskcodm.com/mascots/slider/slider_8.png"
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
@@ -275,9 +280,10 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_granade_3, Intro_register,
      sticker_paracaidas_flip_1,
      uid_step_1, mascots_marco,
-     uid_step_2, mascots_slider_3,
-     uid_step_3, mascots_slider_4, mascots_slider_5,
+     uid_step_2, mascots_slider_3, 
+     uid_step_3, mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8,
      sticker_paracaidasBlanco_f1,
+     intro_end,
      sticker_paracaidasBlanco_flip_f1,
      sticker_paracaidasBlanco_flip_f2,
      registerPage_button, mascots_snacking,
