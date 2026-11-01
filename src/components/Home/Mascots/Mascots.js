@@ -15,7 +15,7 @@ const openRulebook = () => {
 };
 
 const mascotsSlides = [
-   mascots_slider_3, mascots_slider_4, mascots_slider_1,   mascots_slider_2, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8,
+   mascots_slider_3, mascots_slider_4, mascots_slider_1, mascots_slider_6,   mascots_slider_2, mascots_slider_5,  mascots_slider_7, mascots_slider_8,
 ];
 
 const Mascots = () => {
