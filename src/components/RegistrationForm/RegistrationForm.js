@@ -8,15 +8,24 @@ import {
   registerPage_button,
   registerPage_title_completed,
   registerPage_error,
+  registerPage_hashtag,
   registerPage_background_popUp,
   registerPage_close,
   registerPage_continue_button,
-  registerPage_join_button,
+  
   registerPage_back_button,
 } from "../../assets/assetsDirectory";
 
 import { useNavigate } from "react-router";
 import { countries, mexicoStates } from "./locationData";
+
+// Saca acentos y diéresis (é→e, ñ→n, etc.) solo para lo que se manda a la
+// API. El usuario sigue viendo "México"/"Yucatán" tal cual en el formulario;
+// esto no toca formData, solo se usa al armar dataToSend.
+const stripAccents = (value) =>
+  typeof value === "string"
+    ? value.normalize("NFD").replace(/[̀-ͯ]/g, "")
+    : value;
 
 
 const RegistrationForm = () => {
@@ -159,10 +168,11 @@ const RegistrationForm = () => {
     const dataToSend = {
       name: formData.name.trim(),
       lastName: formData.lastName.trim(),
-      country: formData.country,
-      state: formData.country === "México" ? formData.state : "",
-      ticketType: Number(formData.ticketType),
+      country: stripAccents(formData.country),
+      state: formData.country === "México" ? stripAccents(formData.state) : "",
+      ticketType:formData.ticketType,
       email: formData.email,
+      termsAndConditions: formData.termsAndConditions,
     };
 
     try {
@@ -305,19 +315,25 @@ const RegistrationForm = () => {
                       alt="back"
                       className="registerPage-title"
                     ></img>
-                    <p className="form-group-popUp" >
-                      ¡Ya estás participando por la oportunidad de vivir la Gran Final en vivo! <br></br> <br></br>
-                      <span style={{ color: "#C19F33"  }}>
+                    <p className="form-group-popUp" style={{ textAlign: "center",  marginTop: "20px" }}>
+                      <span style={{ color: "#C19F33", fontWeight: "bold" }}>¡Gracias por registrarte!</span> <br></br> <br></br>
+                      El
+                      <span style={{ color: "#FFCE34", fontWeight: "bold" }}>
                         {" "}
-                        ¿Cómo sabrás si ganaste un boleto?{" "}
+                        10 de noviembre{" "}
                       </span>
-                      <br></br> <br></br>
-                      Los ganadores serán seleccionados al azar y recibirán su pase por correo electrónico el 11 de noviembre.
-                      <br></br> <br></br>
+
+                      recibirás un correo para confirmar tu asistencia y participar por uno de los boletos disponibles para la Gran Final de Señal Verdansk. 
+
+
                     </p>
-                    <p className="form-group-popUp" >
-                      Si recibes el correo, ¡tu pase es tu boleto para el día del evento! <br></br> Importante: el acceso se dará por orden de llegada.
-                    </p>
+                    <img
+                      loading="lazy"
+                      src={registerPage_hashtag}
+                      alt="back"
+                      style={{ marginBottom: "20px", height: "60px", marginTop: "20px" }}
+                    ></img>
+
                   </div>
                   <div
                     onClick={() => navigate("/")}
@@ -489,8 +505,8 @@ const RegistrationForm = () => {
                 className={errors.ticketType ? "error" : ""}
               >
                 <option value="">Selecciona tu tipo de pase</option>
-                <option value="1">1 - Single Ticket</option>
-                <option value="2">2 - Pase Doble</option>
+                <option value="Single">1 - Single Ticket</option>
+                <option value="Double">2 - Pase Doble</option>
               </select>
               {errors.ticketType && (
                 <span className="error-message">{errors.ticketType}</span>

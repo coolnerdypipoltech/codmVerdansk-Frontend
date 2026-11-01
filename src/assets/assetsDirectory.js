@@ -29,6 +29,7 @@ import Mascots_banner from "./mascots/mascots-banner.png"
 import rulebook from "./mascots/rulebook.png"
 //import Mascots_bckg from "./mascots/Background_Botargas.png"
 
+import registerPage_hashtag from "./registerPage/register-hashtag.png"
 
 import tk_icon from "./footer/tk-icon.png"
 
@@ -290,7 +291,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_ghost_1, sticker_ghost_2,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
      sticker_granade_3, Intro_register,
-     sticker_paracaidas_flip_1,
+     sticker_paracaidas_flip_1, registerPage_hashtag,
      uid_step_1, grandFinal_black, grandFinal_banner, grandFinal_subTitle,
      uid_step_2, grandFinal_tickets,
      uid_step_3, grandFinal_title, event_title,
