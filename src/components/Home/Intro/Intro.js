@@ -241,7 +241,7 @@ const Intro = () => {
 
 
             <Reveal><img
-            onClick={() => {navigate("/register")}}
+
         loading="lazy"
         src={intro_end}
         alt="Intro Register"
