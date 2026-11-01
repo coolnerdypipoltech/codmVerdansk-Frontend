@@ -19,10 +19,15 @@ const Video = () => {
     // como propiedad del DOM (el atributo muted del JSX a veces no alcanza
     // a aplicarse a tiempo) y si tiene playsInline.
     el.muted = true;
-    const playPromise = el.play();
-    if (playPromise && typeof playPromise.catch === "function") {
+    try{
+      const playPromise = el.play();
+      if (playPromise && typeof playPromise.catch === "function") {
       playPromise.catch(() => {});
     }
+    }catch(e){
+
+    }
+    
   }, [isMobile]);
 
   return (

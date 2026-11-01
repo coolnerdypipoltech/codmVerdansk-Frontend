@@ -167,16 +167,7 @@ import registerPage_next_button from "./registerPage/registerPage-next-button.pn
 import registerPage_title_completed from "./registerPage/registerPage-title-completed.png"
 import registerPage_title_locate from "./registerPage/registerPage-title-locate.png"
 
-import mascots_slider_1 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_2 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_3 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_4 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_5 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_6 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_7 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_8 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_9 from "./mascots/slider/mascots-slider-1.png"
-import mascots_slider_10 from "./mascots/slider/mascots-slider-1.png"
+
 
 import toknow_banner from "./toknow/toknow-banner.png"
 import toknow_banner_2 from "./toknow/toknow-banner-2.png"
@@ -220,6 +211,8 @@ import uid_step_3 from "./uid/uid-step-3.png"
 import registerPage_error from "./registerPage/registerPage-error.png"
 
 import mascots_snacking from "./mascots/mascots-snackin.png"
+import mascots_infinix from "./mascots/mascots-infinix.png"
+import mascots_marco from "./mascots/mascots-marco.png"
 
 import grandFinal_title from "./grandFinal/grandFinal_title.png"
 import event_title from "./event/event_final.png"
@@ -229,6 +222,14 @@ import grandFinal_black from "./grandFinal/grandFinal_black.png"
 import grandFinal_banner from "./grandFinal/grandFinal_banner.png"
 import grandFinal_subTitle from "./grandFinal/grandFinal_subTitle.png"
 import grandFinal_tickets from "./grandFinal/grandFinal_tickets.png"
+
+const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
+const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
+const mascots_slider_3 = "https://file.verdanskcodm.com/mascots/slider/slider_3.png"
+const mascots_slider_4 = "https://file.verdanskcodm.com/mascots/slider/slider_4.png"
+const mascots_slider_5 = "https://file.verdanskcodm.com/mascots/slider/slider_5.png"
+
+
 
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
@@ -290,16 +291,19 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      uid_step_1, grandFinal_black, grandFinal_banner, grandFinal_subTitle,
      uid_step_2, grandFinal_tickets,
      uid_step_3, grandFinal_title, event_title,
+      mascots_marco,
+     mascots_slider_3,
+     mascots_slider_4, mascots_slider_5,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
      sticker_paracaidasBlanco_flip_f2,
      registerPage_button, mascots_snacking,
-     registerPage_check_down,
+     registerPage_check_down, mascots_infinix,
      registerPage_check_up, chevron_down,
      toknow_banner, toknow_banner_2, toknow_button, toknow_title_1, toknow_title_2,
-     mascots_slider_1, mascots_slider_2, mascots_slider_3, mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8, mascots_slider_9, mascots_slider_10,
+     mascots_slider_1, mascots_slider_2,
      registerPage_title, registerPage_title_completed, registerPage_title_locate, registerPage_accept_button, registerPage_background, registerPage_background_popUp, registerPage_close, registerPage_continue_button, registerPage_create_button, registerPage_join_button, 
-     faqsPage_itemL, video_marco_mobil, video_marco_desktop_left, video_marco_desktop_right, 
+     faqsPage_itemL, video_marco_mobil, video_marco_desktop_left, video_marco_desktop_right,
      sticker_ghost_main_f1, sticker_ghost_main_f2, sticker_ghost_main_f3,
      sticker_paracaidasBlanco_f2, sticker_paracaidas_flip_2, sticker_Disparo_f1, sticker_Disparo_f2, sticker_Disparo_f3,
      sticker_paracaidas_1, sticker_paracaidas_2, registerPage_error,
