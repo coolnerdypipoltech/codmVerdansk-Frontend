@@ -11,7 +11,8 @@
     flex-flow: row nowrap;
     gap: 15px;
     position: relative;
-    z-index: 2;
+    z-index: 12;
+    margin-bottom: 20px;
 }
 
 .counter-inner{
@@ -72,6 +73,10 @@
     max-width: 50vw;
     gap: 2vw;
     padding: 10px 10px; 
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .counter-number {

@@ -60,9 +60,27 @@
     cursor: pointer;
 }
 
+.footer-icons2{
+    display: flex;
+    gap: 20px;
+    margin-top: 60px;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
 .footer-icons img {
     height: 40px;
     width: auto;
+}
+
+@media(min-width: 768px) {
+    
+.footer-icons img {
+    height: 3.5vw;
+    width: auto;
+}
 }
 
 .footer-icons img:hover {
@@ -72,4 +90,17 @@
 .footer-icons img:active {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.footer-icon2 {
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .footer-icon2 {
+        height: 3.5vw;
+        width: auto;
+    }
 }

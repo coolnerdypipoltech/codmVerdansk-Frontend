@@ -1,56 +1,46 @@
 import React, { useEffect, useState } from "react";
 import "./RegistrationForm.css";
-import { trackEvent } from '../../utils/analytics';
-import TerminosPDF2 from '../../assets/files/Terminos_y_Condiciones_de_las_Recompensas.pdf';
-import TerminosPDF from '../../assets/files/Términos_y_condiciones_del_Torneo_Señal_Verdansk.pdf';
+import TerminosPDF from "../../assets/files/Termino_y_Condiciones_Señal_Verdansk.pdf";
+
 import {
   registerPage_check_down,
   registerPage_check_up,
   registerPage_button,
   registerPage_title_completed,
-  registerPage_title_locate,
-  registerPage_accept_button,
   registerPage_error,
+  registerPage_hashtag,
   registerPage_background_popUp,
   registerPage_close,
   registerPage_continue_button,
-  registerPage_title, 
+  
   registerPage_back_button,
-  registerPage_next_button,
-  chevron_down,
 } from "../../assets/assetsDirectory";
 
-import { Captcha } from "recaptz";
-
 import { useNavigate } from "react-router";
+import { countries, mexicoStates } from "./locationData";
 
+// Saca acentos y diéresis (é→e, ñ→n, etc.) solo para lo que se manda a la
+// API. El usuario sigue viendo "México"/"Yucatán" tal cual en el formulario;
+// esto no toca formData, solo se usa al armar dataToSend.
+const stripAccents = (value) =>
+  typeof value === "string"
+    ? value.normalize("NFD").replace(/[̀-ͯ]/g, "")
+    : value;
 
-const DISCORD_AUTH_URL =
-  "https://register.verdanskcodm.com/auth/discord";
-
-// Para no perder lo que el usuario ya escribió al navegar a Discord y volver
-// (es una redirección de página completa, React se vuelve a montar de cero).
-const REGISTRATION_DRAFT_STORAGE_KEY = "codm_registration_draft";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     name: "",
-    username: "",
-    uid: "",
-    platform: "",
-    email: "",
-    discord: "",
+    lastName: "",
     country: "",
-    age: "",
+    state: "",
+    ticketType: "",
+    email: "",
 
     termsAndConditions: false,
   });
 
   const navigate = useNavigate();
-  const [forceReloadCaptcha, setForceReloadCaptcha] = useState(0);
-  const [captchaError, setCaptchaError] = useState(false);
-  const [isVerified, setIsVerified] = useState(false);
-  const [isFormCompleted, setIsFormCompleted] = useState(false);
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [popup, setPopup] = useState({
@@ -58,125 +48,23 @@ const RegistrationForm = () => {
     type: "",
     message: "",
   });
-  const firstRender = React.useRef(true);
 
   const openTerminosPDF = () => {
-    trackEvent("footer", "Click", "Términos y condiciones");
     window.open(TerminosPDF, "_blank", "noopener,noreferrer");
   };
-
-    const openTerminosPDF2 = () => {
-    trackEvent("footer", "Click", "Términos y condiciones");
-    window.open(TerminosPDF2, "_blank", "noopener,noreferrer");
-  };
-
-  useEffect(() => {
-    if (firstRender.current) {
-      setCaptchaError(false);
-      setTimeout(changeText, 100);
-    }
-    if (isVerified && Object.keys(errors).length === 0 && !isFormCompleted) {
-      setIsFormCompleted(true);
-    }
-  }, [isVerified]);
-
-  useEffect(() => {
-    const object = document.querySelector(".text-yellow-700");
-
-    if (object) {
-      //object.remove();
-    }
-  }, [captchaError]);
 
   useEffect(() => {
     const navbarElement = document.querySelector(".navbar-container");
 
     if (navbarElement) {
-      if (isFormCompleted) {
+      if (popup.show) {
         navbarElement.style.zIndex = "0";
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else {
         navbarElement.style.zIndex = "1000";
       }
     }
-  }, [isFormCompleted]);
-
-  // Restaura lo que el usuario ya había escrito antes de ir a Discord y,
-  // si viene de /auth/discord/callback (ver comentario de DISCORD_AUTH_URL),
-  // aplica el discord_username de la URL por encima (y limpia esos params).
-  // Todo en un solo efecto, protegido con un ref: leer la URL y limpiarla no
-  // es idempotente, así que bajo StrictMode (que duplica efectos en dev) la
-  // segunda pasada ya no encontraría el query param y pisaría el valor con
-  // el del draft guardado.
-  const didRestoreDraft = React.useRef(false);
-
-
-  useEffect(() => {
-    if (didRestoreDraft.current) return;
-    didRestoreDraft.current = true;
-
-    let restored = {};
-    try {
-      const saved = sessionStorage.getItem(REGISTRATION_DRAFT_STORAGE_KEY);
-      if (saved) restored = JSON.parse(saved);
-    } catch (e) {
-      // sessionStorage no disponible o JSON corrupto: seguimos con el form vacío.
-    }
-
-    const params = new URLSearchParams(window.location.search);
-    const discordKeys = [
-      "discord_username",
-      "discord_id",
-      "discord_email",
-      "discord_avatar",
-      "discord_error",
-    ];
-    const hasDiscordParams = discordKeys.some((key) => params.has(key));
-    const discordUsername = params.get("discord_username");
-
-    if (Object.keys(restored).length > 0 || discordUsername) {
-      setFormData((prev) => ({
-        ...prev,
-        ...restored,
-        ...(discordUsername ? { discord: discordUsername } : {}),
-      }));
-    }
-
-    if (hasDiscordParams) {
-      discordKeys.forEach((key) => params.delete(key));
-      const newSearch = params.toString();
-      window.history.replaceState(
-        {},
-        "",
-        window.location.pathname +
-          (newSearch ? `?${newSearch}` : "") +
-          window.location.hash,
-      );
-    }
-  }, []);
-
-  const countries = [
-    { value: "BEL", label: "Belice" },
-    { value: "CRI", label: "Costa Rica" },
-    { value: "SLV", label: "El Salvador" },
-    { value: "GTM", label: "Guatemala" },
-    { value: "HND", label: "Honduras" },
-    { value: "MEX", label: "México" },
-    { value: "NIC", label: "Nicaragua" },
-    { value: "PAN", label: "Panamá" },
-    { value: "CUB", label: "Cuba" },
-    { value: "HTI", label: "Haití" },
-    { value: "DOM", label: "República Dominicana" },
-    { value: "ARG", label: "Argentina" },
-    { value: "BOL", label: "Bolivia" },
-    { value: "CHL", label: "Chile" },
-    { value: "COL", label: "Colombia" },
-    { value: "ECU", label: "Ecuador" },
-    { value: "PRY", label: "Paraguay" },
-    { value: "PER", label: "Perú" },
-    { value: "URY", label: "Uruguay" },
-    { value: "VEN", label: "Venezuela" },
-  ];
+  }, [popup.show]);
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -190,27 +78,27 @@ const RegistrationForm = () => {
     const newErrors = {};
 
     if (!formData.name) {
-      newErrors.name = "El nombre completo es requerido";
+      newErrors.name = "El nombre es requerido";
     } else if (!nameRegex.test(formData.name)) {
       newErrors.name = "El nombre solo puede contener letras";
     }
 
-    if (!formData.username) {
-      newErrors.username = "El nombre de usuario es requerido";
+    if (!formData.lastName) {
+      newErrors.lastName = "Los apellidos son requeridos";
+    } else if (!nameRegex.test(formData.lastName)) {
+      newErrors.lastName = "Los apellidos solo pueden contener letras";
     }
 
-    if (!formData.age) {
-      newErrors.age = "La edad es requerida";
-    } else if (Number(formData.age) < 0) {
-      newErrors.age = "La edad no puede ser negativa";
+    if (!formData.country) {
+      newErrors.country = "El país es requerido";
     }
 
-    if (!formData.uid) {
-      newErrors.uid = "El UID es requerido";
+    if (formData.country === "México" && !formData.state) {
+      newErrors.state = "El estado es requerido";
     }
 
-    if (!formData.platform) {
-      newErrors.platform = "La plataforma es requerida";
+    if (!formData.ticketType) {
+      newErrors.ticketType = "Selecciona tu tipo de pase";
     }
 
     if (!formData.email) {
@@ -219,45 +107,13 @@ const RegistrationForm = () => {
       newErrors.email = "El correo no es válido";
     }
 
-    if (!formData.country) {
-      newErrors.country = "El país es requerido";
-    }
-
     if (!formData.termsAndConditions) {
       newErrors.termsAndConditions =
-        "Se necesita aceptar los terminos y condiciones";
-    }
-
-    if (!isVerified) {
-      setCaptchaError(true);
+        "Se necesita aceptar los términos y condiciones y las políticas de privacidad";
     }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
-  };
-
-  const changeText = () => {
-    const successElement = document.querySelector(
-      "h3.text-lg.font-semibold.mb-1.text-green-700",
-    );
-    if (
-      successElement &&
-      successElement.textContent === "Verification Successful!"
-    ) {
-      successElement.textContent = "Captcha completado con éxito!";
-    }
-  };
-
-  const handleVerifyDiscord = () => {
-    try {
-      sessionStorage.setItem(
-        REGISTRATION_DRAFT_STORAGE_KEY,
-        JSON.stringify(formData),
-      );
-    } catch (e) {
-      // sessionStorage no disponible: seguimos igual, solo no se restaura el draft.
-    }
-    window.location.href = DISCORD_AUTH_URL;
   };
 
   const handleChange = (e) => {
@@ -265,16 +121,19 @@ const RegistrationForm = () => {
     setFormData((prev) => {
       let updatedValue = type === "checkbox" ? checked : value;
 
-      if (name === "name" && typeof updatedValue === "string") {
+      if (
+        (name === "name" || name === "lastName") &&
+        typeof updatedValue === "string"
+      ) {
         updatedValue = updatedValue.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
       }
 
-      if (name === "uid" && typeof updatedValue === "string") {
-        updatedValue = updatedValue.replace(/[^A-Za-z0-9]/g, "").slice(0, 20);
-      }
-
-      if (name === "age" && typeof updatedValue === "string") {
-        updatedValue = updatedValue.replace(/[^0-9]/g, "");
+      if (name === "country" && updatedValue !== "México") {
+        return {
+          ...prev,
+          country: updatedValue,
+          state: "",
+        };
       }
 
       return {
@@ -288,7 +147,7 @@ const RegistrationForm = () => {
       setErrors((prev) => ({ ...prev, [name]: "" }));
     }
   };
-  
+
 
   const actualSubmit = async () => {
     if (!validateForm()) {
@@ -300,28 +159,20 @@ const RegistrationForm = () => {
       window.gtag("event", "form_submit", {
         event_category: "Registration",
         event_label: "Registro Form Submit",
-        country: formData.country,
       });
     }
 
-    setForceReloadCaptcha((prev) => prev + 1);
     setIsLoading(true);
-
-    let helperDiscord = "null";
-    if (formData.discord.trim() !== "") {
-      helperDiscord = formData.discord.trim();
-    }
 
     // Filtrar solo los campos no booleanos para enviar al servidor
     const dataToSend = {
+      name: formData.name.trim(),
+      lastName: formData.lastName.trim(),
+      country: stripAccents(formData.country),
+      state: formData.country === "México" ? stripAccents(formData.state) : "",
+      ticketType:formData.ticketType,
       email: formData.email,
-      country: formData.country,
-      uid: formData.uid,
-      name: formData.name,
-      username: formData.username,
-      platform: formData.platform,
-      discord: helperDiscord,
-      age: Number(formData.age),
+      termsAndConditions: formData.termsAndConditions,
     };
 
     try {
@@ -345,7 +196,6 @@ const RegistrationForm = () => {
           window.gtag("event", "registration_success", {
             event_category: "Registration",
             event_label: "Registro Exitoso",
-            country: formData.country,
           });
         }
 
@@ -354,22 +204,14 @@ const RegistrationForm = () => {
           type: "success",
         });
 
-        try {
-          sessionStorage.removeItem(REGISTRATION_DRAFT_STORAGE_KEY);
-        } catch (e) {
-          // sessionStorage no disponible: no hay nada que limpiar.
-        }
-
         // Reset form
         setFormData({
           name: "",
-          age: "",
-          username: "",
-          uid: "",
-          platform: "",
-          email: "",
-          discord: "",
+          lastName: "",
           country: "",
+          state: "",
+          ticketType: "",
+          email: "",
           termsAndConditions: false,
         });
       } else if (response.status === 400) {
@@ -385,12 +227,6 @@ const RegistrationForm = () => {
           show: true,
           type: "error",
           message: "Este email ya ha sido registrado anteriormente.",
-        });
-      } else if (response.status === 410) {
-        setPopup({
-          show: true,
-          type: "error",
-          message: "Este UID ya ha sido registrado anteriormente.",
         });
       } else if (response.status === 503) {
         setPopup({
@@ -414,40 +250,17 @@ const RegistrationForm = () => {
           error.message || "Ocurrió un error de red. Intenta nuevamente.",
       });
     } finally {
-      setIsFormCompleted(false);
       setIsLoading(false);
-      setCaptchaError(false);
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (isVerified && !validateForm()) {
-      setIsFormCompleted(false);
-      return;
-    }
-
-    if (!isVerified) {
-      const captchaButton = document.querySelector(
-        ".my-custom-captcha button.bg-blue-600",
-      );
-      if (captchaButton) {
-        captchaButton.click();
-      }
-    }
-
-    if (!validateForm()) {
-      return;
-    }
-    if (isVerified) {
-      setIsFormCompleted(true);
-    }
+    await actualSubmit();
   };
 
   const closePopup = () => {
     setPopup({ show: false, type: "", message: "" });
-    setIsFormCompleted(false);
   };
 
   return (
@@ -490,13 +303,10 @@ const RegistrationForm = () => {
               {popup.type === "success" && (
                 <>
                   <div
-                 
+                    className="popup-success-content"
+
                     style={{
-                      padding: "10px 20px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      marginTop: "100px",
+                      
                     }}
                   >
                     <img
@@ -505,15 +315,25 @@ const RegistrationForm = () => {
                       alt="back"
                       className="registerPage-title"
                     ></img>
-                    <p className="form-group-popUp">
-                      Recibirás un
-                      <span style={{ color: "#FFD600" }}>
+                    <p className="form-group-popUp" style={{ textAlign: "center",  marginTop: "20px" }}>
+                      <span style={{ color: "#C19F33", fontWeight: "bold" }}>¡Gracias por registrarte!</span> <br></br> <br></br>
+                      El
+                      <span style={{ color: "#FFCE34", fontWeight: "bold" }}>
                         {" "}
-                        correo de confirmación{" "}
+                        10 de noviembre{" "}
                       </span>
-                      con los siguientes pasos. Si no lo recibes revisa tu
-                      spam.
+
+                      recibirás un correo para confirmar tu asistencia y participar por uno de los boletos disponibles para la Gran Final de Señal Verdansk. 
+
+
                     </p>
+                    <img
+                      loading="lazy"
+                      src={registerPage_hashtag}
+                      alt="back"
+                      style={{ marginBottom: "20px", height: "60px", marginTop: "20px" }}
+                    ></img>
+
                   </div>
                   <div
                     onClick={() => navigate("/")}
@@ -580,10 +400,10 @@ const RegistrationForm = () => {
 
         <div className="registration-form" onSubmit={handleSubmit}>
           <form onSubmit={handleSubmit}>
-            {/* Full name */}
+            {/* Name */}
             <div className="form-group">
               <label className="inter-font" htmlFor="name">
-                Nombre Completo*
+                Nombre*
               </label>
               <input
                 type="text"
@@ -601,82 +421,99 @@ const RegistrationForm = () => {
               )}
             </div>
 
-            {/* Username */}
+            {/* Last name */}
             <div className="form-group">
-              <label className="inter-font" htmlFor="username">
-                CODM Username*
+              <label className="inter-font" htmlFor="lastName">
+                Apellidos*
               </label>
               <input
                 type="text"
-                id="username"
-                name="username"
-                value={formData.username}
+                id="lastName"
+                name="lastName"
+                value={formData.lastName}
                 onChange={handleChange}
                 placeholder=""
-                className={errors.username ? "error" : ""}
+                className={errors.lastName ? "error" : ""}
+                autoComplete="off"
+                spellCheck="false"
               />
-              {errors.username && (
-                <span className="error-message">{errors.username}</span>
+              {errors.lastName && (
+                <span className="error-message">{errors.lastName}</span>
               )}
             </div>
 
-            {/* UID */}
+            {/* Country */}
             <div className="form-group">
-              <div style={{ display: "flex", flexDirection: "row" }}>
-                <label className="inter-font" htmlFor="uid">
-                  UID*
-                </label>
-              </div>
-
-              <input
-                type="text"
-                id="uid"
-                name="uid"
-                value={formData.uid}
-                onChange={handleChange}
-                placeholder=""
-                className={errors.uid ? "error" : ""}
-              />
-              <p
-                onClick={() => {navigate("/uid"); document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }}
-                className="inter-font"
-                style={{
-                  color: "white",
-                  textDecoration: "underline",
-                  textAlign: "left",
-                  fontSize: "14px",
-                  paddingTop: "10px",
-                }}
-              >
-                ¿Cómo encontrar mi UID?
-              </p>
-              {errors.uid && (
-                <span className="error-message">{errors.uid}</span>
-              )}
-            </div>
-
-            {/* Platform */}
-            <div className="form-group">
-              <label className="inter-font" htmlFor="platform">
-                Plataforma*
+              <label className="inter-font" htmlFor="country">
+                País*
               </label>
               <select
-                id="platform"
-                name="platform"
-                value={formData.platform}
+                id="country"
+                name="country"
+                value={formData.country}
                 onChange={handleChange}
-                className={errors.platform ? "error" : ""}
-                style={{ backgroundImage: `url(${chevron_down})` }}
+                className={errors.country ? "error" : ""}
               >
-                <option value="" style={{ color: "grey" }}>
-                  Selecciona plataforma
-                </option>
-                <option value="ANDROID">Android</option>
-                <option value="IOS">iOS</option>
+                <option value="">Selecciona un país</option>
+                {countries.map((country) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
+                ))}
               </select>
-              {errors.platform && (
-                <span className="error-message">{errors.platform}</span>
+              {errors.country && (
+                <span className="error-message">{errors.country}</span>
               )}
+            </div>
+
+            {/* State (only for México) */}
+            {formData.country === "México" && (
+              <div className="form-group">
+                <label className="inter-font" htmlFor="state">
+                  Estado*
+                </label>
+                <select
+                  id="state"
+                  name="state"
+                  value={formData.state}
+                  onChange={handleChange}
+                  className={errors.state ? "error" : ""}
+                >
+                  <option value="">Selecciona un estado</option>
+                  {mexicoStates.map((state) => (
+                    <option key={state} value={state}>
+                      {state}
+                    </option>
+                  ))}
+                </select>
+                {errors.state && (
+                  <span className="error-message">{errors.state}</span>
+                )}
+              </div>
+            )}
+
+            {/* Ticket type */}
+            <div className="form-group">
+              <label className="inter-font" htmlFor="ticketType">
+                Tipo de pase*
+              </label>
+              <select
+                id="ticketType"
+                name="ticketType"
+                value={formData.ticketType}
+                onChange={handleChange}
+                className={errors.ticketType ? "error" : ""}
+              >
+                <option value="">Selecciona tu tipo de pase</option>
+                <option value="Single">1 - Single Ticket</option>
+                <option value="Double">2 - Pase Doble</option>
+              </select>
+              {errors.ticketType && (
+                <span className="error-message">{errors.ticketType}</span>
+              )}
+              <p className="form-group-text">
+                Si recibes tu boleto por correo, ya tienes tu entrada confirmada al evento.
+              </p>
             </div>
 
             {/* Email */}
@@ -698,93 +535,6 @@ const RegistrationForm = () => {
               )}
             </div>
 
-            {/* Discord */}
-            <div className="form-group">
-              <label className="inter-font" htmlFor="discord">
-                Discord Username (Opcional)
-              </label>
-              <input
-                type="text"
-                id="discord"
-                name="discord"
-                value={formData.discord}
-                onChange={handleChange}
-                placeholder=""
-                className={errors.discord ? "error" : ""}
-              />
-              <p
-                onClick={() => handleVerifyDiscord()}
-                className="inter-font"
-                style={{
-                  color: "white",
-                  textDecoration: "underline",
-                  textAlign: "left",
-                  fontSize: "14px",
-                  paddingTop: "10px",
-                }}
-              >
-                Verificar usuario
-              </p>
-              {errors.discord && (
-                <span className="error-message">{errors.discord}</span>
-              )}
-            </div>
-
-            <p className="form-group-text">
-              ¿No encuentras tu usuario de Discord? Haz clic en Verificar
-              usuario para rellenar el campo automáticamente. Esto no te une al
-              servidor
-            </p>
-
-            {/* Country */}
-            <div className="form-group">
-              <label className="inter-font" htmlFor="country">
-                Selecciona tu País*
-              </label>
-              <select
-                id="country"
-                name="country"
-                value={formData.country}
-                onChange={handleChange}
-                className={errors.country ? "error" : ""}
-                style={{ backgroundImage: `url(${chevron_down})` }}
-              >
-                <option className="inter-font" style={{ color: "grey" }}>
-                  Selecciona país
-                </option>
-                {countries.map((country) => (
-                  <option key={country.value} value={country.value}>
-                    {country.label}
-                  </option>
-                ))}
-              </select>
-              {errors.country && (
-                <span className="error-message">{errors.country}</span>
-              )}
-            </div>
-
-            {/* Age */}
-            <div className="form-group">
-              <label className="inter-font" htmlFor="age">
-                Edad*
-              </label>
-              <input
-                type="number"
-                id="age"
-                name="age"
-                value={formData.age}
-                onChange={handleChange}
-                placeholder=""
-                min="16"
-                max="99"
-                className={errors.age ? "error" : ""}
-                autoComplete="off"
-              />
-              {errors.age && (
-                <span className="error-message">{errors.age}</span>
-              )}
-            </div>
-
             {/* Checkboxes */}
             <div className="checkbox-group">
               <label
@@ -797,12 +547,6 @@ const RegistrationForm = () => {
                   checked={formData.termsAndConditions}
                   onChange={handleChange}
                   className="inputDiamond"
-                                    onClick={() =>
-                    setFormData({
-                      ...formData,
-                      termsAndConditions: !formData.termsAndConditions,
-                    })
-                  }
                 />
                 <span
                   className="checkmark"
@@ -827,21 +571,9 @@ const RegistrationForm = () => {
                     }}
                     style={{ textDecoration: "underline", cursor: "pointer" }}
                   >
-                    Términos y Condiciones del Torneo, 
-                  </span>
-                  {" "}
-                    <span
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      openTerminosPDF2();
-                    }}
-                    style={{ textDecoration: "underline", cursor: "pointer" }}
-                  >
-                     Términos y Condiciones de las Recompensas.
-                  </span>
-                   {" "} y {" "}
- 
+                    Términos y Condiciones del Torneo
+                  </span>{" "}
+                  y las{" "}
                   <span
                     onClick={(e) => {
                       e.preventDefault();
@@ -860,47 +592,7 @@ const RegistrationForm = () => {
                 </span>
               )}
 
-              <label
-                className="checkbox-label"
-                style={{ marginBottom: "10px" }}
-              >
-                <input
-                  type="checkbox"
-                  name="discordDisclousure"
-                  checked={formData.discordDisclousure}
-                  onChange={handleChange}
-                  className="inputDiamond"
-                />
-                <span
-                  className="checkmark"
-                  style={{
-                    marginBottom: "0px",
-                    backgroundImage: `url(${formData.discordDisclousure ? registerPage_check_up : registerPage_check_down})`,
-                  }}
-                  onClick={() =>
-                    setFormData({
-                      ...formData,
-                      discordDisclousure: !formData.discordDisclousure,
-                    })
-                  }
-                ></span>
-                <p className="inputDiamond">
-                  Entiendo que en caso de ser seleccionado para la siguiente fase debo estar en el servidor de Discord para participar en las clasificatorias, de lo contrario perderé mi lugar.
-                </p>
-              </label>
-              {errors.discordDisclousure && (
-                <span className="error-message" style={{ marginBottom: "px" }}>
-                  {errors.discordDisclousure}
-                </span>
-              )}
-
-              {captchaError && (
-                <span className="error-message">
-                  Por favor completa la verificación CAPTCHA
-                </span>
-              )}
-
-              {Object.keys(errors).length > 0 && (
+              {Object.values(errors).some(Boolean) && (
                 <span className="error-message">
                   Por favor completa los campos obligatorios marcados con * para
                   completar tu registro
@@ -910,38 +602,6 @@ const RegistrationForm = () => {
           </form>
 
           <div
-            style={{ display: "flex", justifyContent: "center", width: "100%" }}
-          >
-            <Captcha
-              key={forceReloadCaptcha}
-              type="mixed"
-              className="my-custom-captcha"
-              length={6}
-              onValidate={setIsVerified}
-              showSuccessAnimation
-              enableAudio={false}
-              autoFocus={false}
-              disableSpaceToHear={true}
-              i18n={{
-                securityCheck: "Verificación de seguridad",
-                listenToCaptcha: "Escuchar CAPTCHA",
-                refreshCaptcha: "Actualizar CAPTCHA ",
-                inputPlaceholder: "Ingrese el código",
-                verifyButton: "Verificar",
-                verificationSuccessful: "¡Éxito!",
-                captchaRequired: "",
-                captchaDoesNotMatch: "El CAPTCHA no coincide",
-                error: " Error al cargar el CAPTCHA",
-                pressSpaceToHearCode: "",
-                enterToValidate: "",
-                escToClear: "",
-              }}
-              onError={() => setCaptchaError(true)}
-              onFail={() => setCaptchaError(true)}
-            />
-          </div>
-
-          <button
             disabled={isLoading}
             onClick={handleSubmit}
             style={{
@@ -960,123 +620,11 @@ const RegistrationForm = () => {
               style={{ height: "73px" }}
               alt="Continuar"
             />
-          </button>
+          </div>
 
           <div style={{ minHeight: "30px" }}></div>
         </div>
       </div>
-
-      {isFormCompleted && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div
-            className={`popup-content ${popup.type}`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              loading="lazy"
-              src={registerPage_background_popUp}
-              alt="back"
-              className={
-                "registerPage-background-popUp"
-              }
-            ></img>
-            <div
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            ></div>
-
-            <img
-                      loading="lazy"
-                      src={registerPage_title}
-                      alt="back"
-                      className="registerPage-title"
-                    ></img>
-
-            <div className="form-group-popUp" style={{ marginBottom: "15px", width: "100%" }}>
-              <p
-                style={{
-                  fontWeight: "bold",
-                  marginBottom: "10px",
-                  textAlign: "center",
-                }}
-              >
-                Por favor revisa tu información:
-              </p>
-              <p className="form-group-check">
-                <strong>Nombre Completo:</strong> {formData.name}
-              </p>
-              <p className="form-group-check">
-                <strong>Nombre de usuario:</strong> {formData.username}
-              </p>
-              <p className="form-group-check">
-                <strong>Edad:</strong> {formData.age}
-              </p>
-              <p className="form-group-check">
-                <strong>UID:</strong> {formData.uid}
-              </p>
-              <p className="form-group-check">
-                <strong>Plataforma:</strong> {formData.platform}
-              </p>
-              <p className="form-group-check">
-                <strong>Correo:</strong> {formData.email}
-              </p>
-              <p className="form-group-check">
-                <strong>Discord:</strong> {formData.discord}
-              </p>
-              <p className="form-group-check">
-                <strong>País:</strong>{" "}
-                {countries.find((c) => c.value === formData.country)?.label ||
-                  formData.country}
-              </p>
-            </div>
-
-            <div
-              onClick={closePopup}
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <img
-              onClick={closePopup}
-                loading="lazy"
-                src={registerPage_back_button}
-                className="registerPage-end-button"
-                alt="Cerrar"
-              />
-            </div>
-
-            <div
-              onClick={actualSubmit}
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <img
-                loading="lazy"
-                src={registerPage_next_button}
-                className="registerPage-end-button"
-                alt="Crear"
-              />
-            </div>
-
-            <div
-              className={
-                "popUp_close"
-              }
-              onClick={closePopup}
-            >
-              <img onClick={closePopup} loading="lazy" src={registerPage_close} alt="Cerrar" />
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };

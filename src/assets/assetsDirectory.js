@@ -29,6 +29,7 @@ import Mascots_banner from "./mascots/mascots-banner.png"
 import rulebook from "./mascots/rulebook.png"
 //import Mascots_bckg from "./mascots/Background_Botargas.png"
 
+import registerPage_hashtag from "./registerPage/register-hashtag.png"
 
 import tk_icon from "./footer/tk-icon.png"
 
@@ -214,7 +215,14 @@ import mascots_snacking from "./mascots/mascots-snackin.png"
 import mascots_infinix from "./mascots/mascots-infinix.png"
 import mascots_marco from "./mascots/mascots-marco.png"
 
-import intro_end from "./intro/intro_end.png"
+import grandFinal_title from "./grandFinal/grandFinal_title.png"
+import event_title from "./event/event_final.png"
+
+import grandFinal_bckg from "./grandFinal/grandFinal_bckg.png"
+import grandFinal_black from "./grandFinal/grandFinal_black.png"
+import grandFinal_banner from "./grandFinal/grandFinal_banner.png"
+import grandFinal_subTitle from "./grandFinal/grandFinal_subTitle.png"
+import grandFinal_tickets from "./grandFinal/grandFinal_tickets.png"
 
 const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
 const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
@@ -224,6 +232,9 @@ const mascots_slider_5 = "https://file.verdanskcodm.com/mascots/slider/slider_5.
 const mascots_slider_6 = "https://file.verdanskcodm.com/mascots/slider/slider_6.png"
 const mascots_slider_7 = "https://file.verdanskcodm.com/mascots/slider/slider_7.png"
 const mascots_slider_8 = "https://file.verdanskcodm.com/mascots/slider/slider_8.png"
+
+
+
 
 const calendar = "https://file.verdanskcodm.com/calendar/calendar.png";
 const calendar_bckg = "https://file.verdanskcodm.com/calendar/Background_Calendario.png";
@@ -238,7 +249,9 @@ const Intro_ghost_main = "https://file.verdanskcodm.com/intro/Ghost_Inicio.png";
 const vide_bckg = "https://file.verdanskcodm.com/video/Background_Video.png";
 const Information_bckg = "https://file.verdanskcodm.com/info/Background_señal.png";
 
-const Mascots_bckg = "https://file.verdanskcodm.com/mascots/Background_Botargas1.1.png";
+
+
+const Mascots_bckg = "https://file.verdanskcodm.com/mascots/Background_Botargas.png";
 //const Mascots_banner = "https://verdanskcodm.com/mascots/mascots-banner.png";
 const phase_bckg = "https://file.verdanskcodm.com/phases/Background_5Fases1.1.png";
 const phase_sticker = "https://file.verdanskcodm.com/phases/phases_sticker.png";
@@ -252,7 +265,7 @@ const CreatorsPage_bckg = "https://file.verdanskcodm.com/CreatorsPage/creatorsPa
 const desktop_1 = "https://file.verdanskcodm.com/desktop/desktop-1.3.png";
 const desktop_2 = "https://file.verdanskcodm.com/desktop/desktop-2.png";
 const desktop_3 = "https://file.verdanskcodm.com/desktop/desktop-3.1.png";
-const desktop_4 = "https://file.verdanskcodm.com/desktop/desktop-4.1.png";
+const desktop_4 = "https://file.verdanskcodm.com/desktop/desktop-4.2.png";
 const desktop_5 = "https://file.verdanskcodm.com/desktop/desktop-5.2.png";
 const desktop_5_5 = "https://file.verdanskcodm.com/desktop/desktop-5.5.png";
 const desktop_6 = "https://file.verdanskcodm.com/desktop/desktop-6.1.png";
@@ -278,12 +291,14 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_ghost_1, sticker_ghost_2,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
      sticker_granade_3, Intro_register,
-     sticker_paracaidas_flip_1,
-     uid_step_1, mascots_marco,
-     uid_step_2, mascots_slider_3, 
-     uid_step_3, mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8,
+     sticker_paracaidas_flip_1, registerPage_hashtag,
+     uid_step_1, grandFinal_black, grandFinal_banner, grandFinal_subTitle,
+     uid_step_2, grandFinal_tickets,
+     uid_step_3, grandFinal_title, event_title,
+      mascots_marco,
+     mascots_slider_3,
+     mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8,
      sticker_paracaidasBlanco_f1,
-     intro_end,
      sticker_paracaidasBlanco_flip_f1,
      sticker_paracaidasBlanco_flip_f2,
      registerPage_button, mascots_snacking,
@@ -292,12 +307,12 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      toknow_banner, toknow_banner_2, toknow_button, toknow_title_1, toknow_title_2,
      mascots_slider_1, mascots_slider_2,
      registerPage_title, registerPage_title_completed, registerPage_title_locate, registerPage_accept_button, registerPage_background, registerPage_background_popUp, registerPage_close, registerPage_continue_button, registerPage_create_button, registerPage_join_button, 
-     faqsPage_itemL, video_marco_mobil, video_marco_desktop_left, video_marco_desktop_right, 
+     faqsPage_itemL, video_marco_mobil, video_marco_desktop_left, video_marco_desktop_right,
      sticker_ghost_main_f1, sticker_ghost_main_f2, sticker_ghost_main_f3,
      sticker_paracaidasBlanco_f2, sticker_paracaidas_flip_2, sticker_Disparo_f1, sticker_Disparo_f2, sticker_Disparo_f3,
      sticker_paracaidas_1, sticker_paracaidas_2, registerPage_error,
      sticker_creadores_F1, sticker_creadores_F2, sticker_creadores_F3,
-     registerPage_back_button, registerPage_next_button, toknow_bckg,
+     registerPage_back_button, registerPage_next_button, toknow_bckg, grandFinal_bckg,
      faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, commonCreator, Intro_bckg2, Intro_ghost_main,
      Creador_0, Creador_1, Creador_2, Creador_3, Creador_4, Creador_5, Creador_6, Creador_7, Creador_8, Creador_9, Creador_10,
      Creador_11, Creador_12, Creador_13, Creador_14, Creador_15, Creador_16, Creador_17, Creador_18, Creador_19,
