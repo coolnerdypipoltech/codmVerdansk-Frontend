@@ -57,32 +57,27 @@ const GrandFinal = () => {
                       ></img>
                       <p
                         className="grandfinal-title"
-                        style={{ paddingTop: "10px" }}
+                        style={{ paddingTop: "10px", marginTop: "40px" }}
                       >
                         FINALISTAS
                       </p>
                       <p className="grandfinal-text">
-                        Los jugadores finalistas{" "}
+                        Jugadores{" "}
                         <span className="grandfinal-text-highlight">
-                          se conectarán en línea
+                          compiten en línea
                         </span>{" "}
-                        desde toda <br></br> Latinoamérica para competir en la{" "}
-                        <br></br> Gran Final de Señal Verdansk
+                        desde el resto de Latinoamérica
                       </p>
                       <p className="grandfinal-title">Espectadores</p>
                       <p className="grandfinal-text">
-                        Podrán seguir la competencia de dos maneras:
+                        Vive la final:
                       </p>
                       <p className="grandfinal-text">
                         1.{" "}
-                        <span className="grandfinal-text-highlight" style={{fontWeight: "bold"}}>
-                          Si vives en CDMX
-                        </span>
-                        , podrás asistir a la final en el centro de la ciudad.
+                        CDMX: asiste al evento en Mesones 72
                       </p>
                       <p className="grandfinal-text">
-                        2. <span style={{fontWeight: "bold"}}>Conectándote</span> a través de nuestra transmisión en vivo
-                        desde cualquier lugar:
+                        2. En línea: velo en vivo a través de: 
                       </p>
                     </div>
                   </Reveal>
