@@ -145,7 +145,7 @@
   left: 50.5%;
   transform: translate(-50%, -50%);
   z-index: 10 ;
-
+  
 }
 
 
@@ -189,6 +189,12 @@
   top: 202%;
   transform: translate(-50%, -50%);
   z-index: 15;
+  cursor: pointer;
+}
+
+.grandfinal-tickets-desktop:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .grandfinal-date-desktop{
