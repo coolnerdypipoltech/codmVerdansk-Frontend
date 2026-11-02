@@ -12,7 +12,7 @@ import {
   grandFinal_tickets,
   grandFinal_banner,
   grandFinal_subTitle,
-  grandFinal_black,
+  grandFinal_black_desktop,
   Intro_bckg,
   grandFinal_title,
   Intro_bckg2,
@@ -394,43 +394,13 @@ const Intro = () => {
           <Reveal>
             <img
               loading="lazy"
-              src={grandFinal_black}
+              src={grandFinal_black_desktop}
               alt="Grand Final Tickets"
               className="grandfinal-black-desktop"
             ></img>
           </Reveal>
 
-          <div className="grandfinal-black-container-desktop">
-            <p className="grandfinal-title-desktop" style={{ paddingTop: "10px" }}>
-              FINALISTAS
-            </p>
-            <p className="grandfinal-text-desktop">
-              Jugadores{" "}
-              <span className="grandfinal-text-highlight">
-                compiten en línea
-              </span>{" "}
-              desde el resto de Latinoamérica
-            </p>
-            <p className="grandfinal-title-desktop">Espectadores</p>
-            <p className="grandfinal-text-desktop" style={{ fontWeight: "bold" }}>
-             Vive la final
-            </p>
-            <p className="grandfinal-text-desktop">
-              1. CDMX: asiste al evento en Mesones 72
-            </p>
-            <p className="grandfinal-text-desktop">
-              2. En línea: velo en vivo a través de:
-            </p>
-          </div>
 
-          <Reveal>
-            <img
-              loading="lazy"
-              src={grandFinal_subTitle}
-              alt="Grand Final Title"
-              className="grandfinal-subtitle-desktop"
-            ></img>
-          </Reveal>
 
           <Reveal>
             <img

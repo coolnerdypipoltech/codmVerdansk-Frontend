@@ -38,14 +38,7 @@ const GrandFinal = () => {
             <>
               <div>
                 <div className="grandfinal-content">
-                  <Reveal>
-                    <img
-                      loading="lazy"
-                      src={grandFinal_subTitle}
-                      alt="Grand Final Title"
-                      className="grandfinal-title-img"
-                    ></img>
-                  </Reveal>
+
 
                   <Reveal>
                     <div className="grandfinal-black-container">
@@ -55,30 +48,7 @@ const GrandFinal = () => {
                         alt="Grand Final Tickets"
                         className="grandfinal-black"
                       ></img>
-                      <p
-                        className="grandfinal-title"
-                        style={{ paddingTop: "10px", marginTop: "40px" }}
-                      >
-                        FINALISTAS
-                      </p>
-                      <p className="grandfinal-text">
-                        Jugadores{" "}
-                        <span className="grandfinal-text-highlight">
-                          compiten en línea
-                        </span>{" "}
-                        desde el resto de Latinoamérica
-                      </p>
-                      <p className="grandfinal-title">Espectadores</p>
-                      <p className="grandfinal-text">
-                        Vive la final:
-                      </p>
-                      <p className="grandfinal-text">
-                        1.{" "}
-                        CDMX: asiste al evento en Mesones 72
-                      </p>
-                      <p className="grandfinal-text">
-                        2. En línea: velo en vivo a través de: 
-                      </p>
+                      
                     </div>
                   </Reveal>
 
@@ -165,7 +135,7 @@ const GrandFinal = () => {
         <>
           <div
             className="general-page-desktop"
-            style={{ zIndex: 10, marginTop: "20vh" }}
+            style={{ zIndex: 10, marginTop: "20vh", pointerEvents: "none" }}
           >
 
           </div>

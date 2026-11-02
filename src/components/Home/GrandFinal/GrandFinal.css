@@ -14,15 +14,15 @@
 }
 
 .grandfinal-black{
-  width: 120%;
+  width: 170vw;
   height: auto;
   position: absolute;
-  top: -35%;
-  left: 50%;
+  top: -5%;
+  left: 75%;
   transform: translateX(-50%);
   z-index: 1;
-  max-height: 675px;
-  max-width: 550px;
+  max-height: 705px;
+  max-width: 600px;
 }
 
 .grandfinal-banner{
@@ -173,8 +173,8 @@
 }
 
 .grandfinal-black-desktop{
-  width: 30vw;
-  max-width: 700px;
+  width: 55vw;
+  max-width: 1030px;
   height: auto;
 
   position: absolute;
@@ -230,9 +230,10 @@
   margin-top: 20px;
   position: absolute;
   left: 50%;
-  top: 154%;
+  top: 153%;
   transform: translate(-50%, -50%);
   z-index: 15;
+  cursor: pointer;
 }
 
 .grandfinal-subtitle-desktop{

@@ -220,6 +220,7 @@ import event_title from "./event/event_final.png"
 
 import grandFinal_bckg from "./grandFinal/grandFinal_bckg.png"
 import grandFinal_black from "./grandFinal/grandFinal_black.png"
+import grandFinal_black_desktop from "./grandFinal/grandFinal_black_desktop.png"
 import grandFinal_banner from "./grandFinal/grandFinal_banner.png"
 import grandFinal_subTitle from "./grandFinal/grandFinal_subTitle.png"
 import grandFinal_tickets from "./grandFinal/grandFinal_tickets.png"
@@ -288,7 +289,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      desktop_tile_1, desktop_tile_2, desktop_faq_item, videoMobile, videoDesktop,
      sticker_calendario_f1, sticker_calendario_f2, sticker_web_calendario_f1, sticker_web_calendario_f2, sticker_rayos_f1, sticker_rayos_f2,
      sticker_granade_1, sticker_granade_2, sticker_truck_1, sticker_truck_2, sticker_truck_3, sticker_walkt_1, sticker_walkt_2, 
-     sticker_ghost_1, sticker_ghost_2,
+     sticker_ghost_1, sticker_ghost_2, grandFinal_black_desktop,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
      sticker_granade_3, Intro_register,
      sticker_paracaidas_flip_1, registerPage_hashtag,
