@@ -35,7 +35,7 @@ export const mexicoStates = [
   "Guerrero",
   "Hidalgo",
   "Jalisco",
-  "México",
+  "Estado de México",
   "Michoacán",
   "Morelos",
   "Nayarit",
