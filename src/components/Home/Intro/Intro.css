@@ -43,7 +43,8 @@
     width: auto;
     height: 60px;
     position: relative;
-    z-index: 2; 
+    z-index: 12; 
+    top: 40vh;
 }
 
 .intro-description{
@@ -100,13 +101,50 @@
 .intro-bckg2{
     position: absolute;
     width: 100%;
-    height: 400px;
+    height: 600px;
     top: 60%;
     left: 0;
     z-index: 1;
     object-fit: 100% 100%;
 }
 
+.intro-winner{
+    position: relative;
+    top: 5vh;
+    z-index: 12;
+    height: 140px;
+    width: auto;
+
+}
+
+.intro-winner-text{
+    position: relative;
+    top: 6vh;
+    z-index: 12;
+    color: var(--yellow);
+    font-family: var(--font-oswald);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+
+.intro-winner-text-desktop{
+    position: relative;
+    top: 6vh;
+    z-index: 12;
+    color: var(--yellow);
+    font-family: var(--font-oswald);
+    font-size: var(--text-title-size);
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .intro-ghost-main{
     position: absolute;
@@ -133,12 +171,22 @@
 
 .intro-logo-desktop{
     width: auto;
-    height: 15vw;
+    height: 20vw;
     position: absolute;
     z-index: 2;
-    top: 25%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.intro-winner-desktop{
+    position: absolute;
+    width: auto;
+    height: 15vw;
+    left: 50%;
+    top: 73%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
 }
 
 .intro-banner-desktop{
@@ -215,8 +263,8 @@
     width: auto;
     height: 7vw;
     position: absolute;
-    z-index: 2; 
-    top: 98%;
+    z-index: 12; 
+    top: 105%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

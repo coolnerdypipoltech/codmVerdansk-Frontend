@@ -1,0 +1,92 @@
+.mvp-title{
+    height: 108px;
+    width: auto;
+}
+
+.mvp-text{
+    color:  white;
+    font-family: var(--font-monst);
+    font-size: var(--text-size);
+}
+
+.mvp-banner{
+    height: 440px;
+    width: auto;
+}
+
+.mvp-box{
+    height: 92px;
+    width: auto;
+}
+
+.mvp-text-container{
+    height: 0px;
+}
+
+.mvp-text-box{
+    position: relative;
+    top: -95px;
+    font-size: 24px;
+    font-family: var(--font-oswald);
+    color: var(--yellow);
+}
+
+
+
+.mvp-title-desktop{
+    height: 15vw;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mvp-text-desktop{
+    color:  white;
+    font-family: var(--font-monst);
+    font-size: var(--text-size);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mvp-banner-desktop{
+    height: 25vw;
+    width: auto;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mvp-box-desktop{
+    height: 6vw;
+    width: auto;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.mvp-text-box-desktop{
+    position: absolute;
+    top: 77.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--title-desktop-size);
+    font-family: var(--font-oswald);
+    color: var(--yellow);
+}
+
+.mvp-text-desktop{
+    color:  white;
+    font-family: var(--font-monst);
+    font-size: var(--title-desktop-size);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

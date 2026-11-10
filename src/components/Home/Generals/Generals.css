@@ -1,0 +1,77 @@
+.Generals-title{
+    height: 138px;
+    width: auto;
+}
+
+.generals-text{
+    color: white;
+    font-family: var(--font-monst);
+    font-size: var(--text-size);
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.generals-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.generals-mascot{
+    height: 110px;
+    width: auto;
+}
+
+
+.Generals-title-desktop{
+    height: 15vw;
+    width: auto;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.generals-text-desktop{
+    color: white;
+    font-family: var(--font-monst);
+    font-size: var(--text-size);
+    margin: 10px;
+    margin-bottom: 0px;
+    position: absolute;
+     top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.generals-container-desktop {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: absolute;
+     top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.generals-mascot-desktop{
+    height: 10vw;
+    width: auto;
+    
+}
+
+.mascots-snacking-desktop{
+    height: 4.4vw;
+    width: auto;
+    position: absolute;
+    z-index: 10;
+    top: 85%;
+}

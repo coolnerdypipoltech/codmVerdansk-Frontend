@@ -1,0 +1,121 @@
+.squad-title{
+    height: 153px;
+    width: auto;
+    position: relative;
+    z-index: 12;
+    top: -200px;
+}
+
+.squad-text{
+    font-size: var(--text-size);
+    font-family: var(--font-monst);
+    color: white;
+    margin: 0px;
+    position: relative;
+    top: -180px;
+    z-index: 12;
+}
+
+.squad-winner{
+    height: 210px;
+    width: auto;
+    position: relative;
+    top: -150px;
+    z-index: 12;
+}
+
+.squad-banner{
+    height: 38px;
+    width: auto;
+}
+
+.squad-banner-txt{
+    font-family: var(--font-anton);
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: -75px;
+}
+
+.squad-banner-container{
+    height: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -150px;
+    z-index: 12;
+}
+
+.squad-items-container{
+
+    position: absolute;
+    top: 310px;
+    z-index: 12;
+}
+
+
+
+.squad-title-desktop{
+    height: 15vw;
+    width: auto;
+    position: absolute;
+    z-index: 12;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.squad-text-desktop{
+    font-size: var(--text-desktop-size);
+    font-family: var(--font-monst);
+    color: white;
+    margin: 0px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+}
+
+.squad-winner-desktop{
+    height: 20vw;
+    width: auto;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+}
+
+.squad-banner-desktop{
+    height: 3vw;
+    width: auto;
+    
+}
+
+.squad-banner-txt-desktop {
+    font-family: var(--font-anton);
+    font-size: 2vw;
+    color: white;
+    position: relative;
+    top: -5.5vw;
+}
+
+.squad-banner-container-desktop{
+    height: 40px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+}
+
+.squad-items-container-desktop{
+
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    width: 50%;
+}

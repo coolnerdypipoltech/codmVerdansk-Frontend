@@ -1,0 +1,128 @@
+.brigade-title{
+    height: 167px;
+    width: auto;
+}
+
+.brigade-text{
+    color: white;
+    font-family: var(--font-monst);
+    font-size: var(--text-size);
+    margin: 10px;
+}
+
+.brigade-banner{
+    height: 340px;
+    width: auto;
+}
+
+.brigade-squad-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.brigade-red-container{
+    height: 52px;
+}
+
+.brigade-squad-title{
+    position: relative;
+    color: white;
+    font-family: var(--font-anton);
+    font-size: 32px;
+    z-index: 12;
+    top: -85px;
+}
+
+.brigade-red{
+    height: 52px;
+    width: auto;
+}
+
+
+.brigade-squad-container{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 40px;
+    justify-content: center;
+    gap: 3vw;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 55%;
+    z-index: 12;
+
+}
+
+
+.brigade-title-desktop{
+    height: 15vw;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brigade-text-desktop{
+    color: white;
+    font-family: var(--font-monst);
+    font-size: var(--text-desktop-size);
+    margin: 10px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brigade-banner-desktop{
+    height: 18vw;
+
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.brigade-banner-desktop2{
+    height: 18vw;
+
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.brigade-squad-group-desktop{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 20px;
+}
+
+
+.brigade-red-container-desktop{
+    height: 5vw;
+}
+
+.brigade-squad-title-desktop{
+    position: relative;
+    color: white;
+    font-family: var(--font-anton);
+    font-size: clamp(22px, 2.2vw, 44px);
+    z-index: 12;
+    top: clamp(-110px, -5.9vw, -60px);
+    left:10%;
+}
+
+.brigade-red-desktop{
+    height: 4vw;
+    position: relative;
+    left: 10%;
+    width: auto;
+}

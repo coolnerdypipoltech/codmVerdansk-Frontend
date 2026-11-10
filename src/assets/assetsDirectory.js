@@ -8,6 +8,7 @@ import NavBar_Logo from "./navbar/VerdanskLogo.png"
 import Intro_date_banner from "./intro/date_banner.png"
 import Intro_ghost from "./intro/background_sticker.png"
 import Intro_hashtag from "./intro/hashtag.png"
+import Intro_winner from "./intro/intro-winner.png"
 import Intro_logo from "./intro/home_logo.png"
 import Intro_banner from "./intro/signal_info.png"
 import Intro_register from "./intro/intro_register.png"
@@ -225,6 +226,30 @@ import grandFinal_banner from "./grandFinal/grandFinal_banner.png"
 import grandFinal_subTitle from "./grandFinal/grandFinal_subTitle.png"
 import grandFinal_tickets from "./grandFinal/grandFinal_tickets.png"
 
+import squad_title from "./squads/squads-title.png"
+import squad_num from "./squads/squads-num.png"
+import squad_text from "./squads/squads-text.png"
+import squad_banner from "./squads/squads-banner.png"
+
+import mvp_title from "./mvp/mvp-title.png"
+import mvp_banner from "./mvp/mvp-banner.png"
+import mvp_title_box from "./mvp/mvp-title-box.png"
+import mvp_banner_desktop from "./mvp/mvp-banner-desktop.png"
+
+import brigade_title from "./brigade/brigade-title.png"
+import brigade_red from "./brigade/brigade-red.png"
+
+import mascots_square_1 from "./mascots/botargas/botarga-1.png"
+import mascots_square_2 from "./mascots/botargas/botarga-2.png"
+import mascots_square_3 from "./mascots/botargas/botarga-3.png"
+import mascots_square_4 from "./mascots/botargas/botarga-4.png"
+import mascots_square_5 from "./mascots/botargas/botarga-5.png"
+import mascots_square_6 from "./mascots/botargas/botarga-6.png"
+import mascots_square_7 from "./mascots/botargas/botarga-7.png"
+import mascots_square_8 from "./mascots/botargas/botarga-8.png"
+
+import squad_winner from "./squads/fotos/Creador-0.png"
+
 const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
 const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
 const mascots_slider_3 = "https://file.verdanskcodm.com/mascots/slider/slider_3.png"
@@ -291,13 +316,18 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_granade_1, sticker_granade_2, sticker_truck_1, sticker_truck_2, sticker_truck_3, sticker_walkt_1, sticker_walkt_2, 
      sticker_ghost_1, sticker_ghost_2, grandFinal_black_desktop,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
-     sticker_granade_3, Intro_register,
+     sticker_granade_3, Intro_register, Intro_winner,
      sticker_paracaidas_flip_1, registerPage_hashtag,
      uid_step_1, grandFinal_black, grandFinal_banner, grandFinal_subTitle,
      uid_step_2, grandFinal_tickets,
      uid_step_3, grandFinal_title, event_title,
-      mascots_marco,
+      mascots_marco, squad_num, squad_text, squad_title, squad_winner, squad_banner,
+      mvp_banner, mvp_title, mvp_title_box,
+      mvp_banner_desktop,
+      brigade_title, brigade_red,
      mascots_slider_3,
+     mascots_square_1, mascots_square_2, mascots_square_3,
+     mascots_square_4, mascots_square_5, mascots_square_6, mascots_square_7, mascots_square_8,
      mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
