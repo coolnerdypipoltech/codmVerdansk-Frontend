@@ -2,10 +2,11 @@ import "./Squads.css";
 
 import {
   calendar_bckg,
-  desktop_7,
+  desktop_bckg_2,
   squad_title,
   squad_winner,
   squad_banner,
+  mobil_bckg2,
 } from "../../../assets/assetsDirectory";
 
 import { useViewport } from "../../../context/ViewportContext";
@@ -31,7 +32,7 @@ const Squads = () => {
             minHeight: "513px",
             marginTop: "240px",
             maxHeight: isMobile ? "950px" : undefined,
-            backgroundImage: bgNear ? `url(${calendar_bckg})` : "none",
+            backgroundImage: bgNear ? `url(${mobil_bckg2})` : "none",
             justifyContent: "flex-start",
           }}
         >
@@ -59,7 +60,7 @@ const Squads = () => {
         <div className="general-page-desktop">
           <img
             loading="lazy"
-            src={desktop_7}
+            src={desktop_bckg_2}
             alt="Calendar Background"
             className="bckg-desktop"
           />

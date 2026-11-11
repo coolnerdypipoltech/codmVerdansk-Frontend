@@ -233,8 +233,15 @@ import squad_banner from "./squads/squads-banner.png"
 
 import mvp_title from "./mvp/mvp-title.png"
 import mvp_banner from "./mvp/mvp-banner.png"
+import mvp_banner_2 from "./mvp/mvp-banner-2.png"
+import mvp_banner_3 from "./mvp/mvp-banner-3.png"
+
+
 import mvp_title_box from "./mvp/mvp-title-box.png"
 import mvp_banner_desktop from "./mvp/mvp-banner-desktop.png"
+import mvp_banner_desktop_2 from "./mvp/mvp-banner-desktop-2.png"
+import mvp_banner_desktop_3 from "./mvp/mvp-banner-desktop-3.png"
+
 
 import brigade_title from "./brigade/brigade-title.png"
 import brigade_red from "./brigade/brigade-red.png"
@@ -248,7 +255,15 @@ import mascots_square_6 from "./mascots/botargas/botarga-6.png"
 import mascots_square_7 from "./mascots/botargas/botarga-7.png"
 import mascots_square_8 from "./mascots/botargas/botarga-8.png"
 
+import desktop_bckg_1 from "./desktop/Background_desktop_1.png"
+import desktop_bckg_2 from "./desktop/Background_desktop_2.png"
+import desktop_bckg_3 from "./desktop/Background_desktop_3.png"
+import desktop_bckg_4 from "./desktop/Background_desktop_4.png"
+import desktop_bckg_5 from "./desktop/Background_desktop_5.png"
+
 import squad_winner from "./squads/fotos/Creador-0.png"
+
+import intro_confidencial from "./intro/intro_confidencial.png"
 
 const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
 const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
@@ -275,7 +290,13 @@ const Intro_ghost_main = "https://file.verdanskcodm.com/intro/Ghost_Inicio.png";
 const vide_bckg = "https://file.verdanskcodm.com/video/Background_Video.png";
 const Information_bckg = "https://file.verdanskcodm.com/info/Background_señal.png";
 
-
+const mobil_bckg = "https://file.verdanskcodm.com/mobil/Background_1.png";
+const mobil_bckg2 = "https://file.verdanskcodm.com/mobil/Background_2.png";
+const mobil_bckg3 = "https://file.verdanskcodm.com/mobil/Background_3.png";
+const mobil_bckg4 = "https://file.verdanskcodm.com/mobil/Background_4.png";
+const mobil_bckg5 = "https://file.verdanskcodm.com/mobil/Background_5.png";
+const mobil_bckg6 = "https://file.verdanskcodm.com/mobil/Background_6.png";
+const mobil_bckg7 = "https://file.verdanskcodm.com/mobil/Background_7.png";
 
 const Mascots_bckg = "https://file.verdanskcodm.com/mascots/Background_Botargas.png";
 //const Mascots_banner = "https://verdanskcodm.com/mascots/mascots-banner.png";
@@ -316,8 +337,12 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_granade_1, sticker_granade_2, sticker_truck_1, sticker_truck_2, sticker_truck_3, sticker_walkt_1, sticker_walkt_2, 
      sticker_ghost_1, sticker_ghost_2, grandFinal_black_desktop,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
+     intro_confidencial,
      sticker_granade_3, Intro_register, Intro_winner,
+     mvp_banner_2, mvp_banner_3, mvp_banner_desktop_2, mvp_banner_desktop_3,
      sticker_paracaidas_flip_1, registerPage_hashtag,
+     desktop_bckg_1, desktop_bckg_2, desktop_bckg_3, desktop_bckg_4, desktop_bckg_5,
+     mobil_bckg, mobil_bckg2, mobil_bckg3, mobil_bckg4, mobil_bckg5, mobil_bckg6, mobil_bckg7,
      uid_step_1, grandFinal_black, grandFinal_banner, grandFinal_subTitle,
      uid_step_2, grandFinal_tickets,
      uid_step_3, grandFinal_title, event_title,

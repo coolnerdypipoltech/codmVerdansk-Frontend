@@ -20,15 +20,17 @@ if(character !== null && character !== undefined){
 return (
 <div className="squadItem-container">
 
-    <div className="squadItem-images" style={{position: "relative", left: "10px"}}>
+    <div className="squadItem-images">
         {characterHelper ? (<><img className="squadItem-character" src={character} alt="num"></img></>) : (<><img src={squad_num} alt="num"></img>
         <p className="squadItem-num">{number}</p></>)}
-        
+
     </div>
 
      <div className="squadItem-images" >
         <img src={squad_text} alt="text" className="squadItem-text-img"></img>
-        <p className="squadItem-text" style={{left: characterHelper && window.innerWidth < 720 && "-77%"}}>{text}</p>
+        <p className="squadItem-text" style={{left: characterHelper && "25%"}}>
+            {text}
+        </p>
     </div>
 
 </div>

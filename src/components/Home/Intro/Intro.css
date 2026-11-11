@@ -42,9 +42,9 @@
 .intro-hashtag {
     width: auto;
     height: 60px;
-    position: relative;
+    position: absolute;
     z-index: 12; 
-    top: 40vh;
+    top: 720px;
 }
 
 .intro-description{
@@ -63,9 +63,9 @@
 .intro-ghost{
     position: absolute;
     width: auto;
-    height: 292px;
-    left: -50px;
-    top: -50px;
+    height: 202px;
+    left: -60px;
+    top: 650px;
     transform: scaleX(-1);
     z-index: 1;
 }
@@ -118,8 +118,8 @@
 }
 
 .intro-winner-text{
-    position: relative;
-    top: 6vh;
+    position: absolute;
+    top: 600px;
     z-index: 12;
     color: var(--yellow);
     font-family: var(--font-oswald);
@@ -156,7 +156,15 @@
     z-index: 0;
 }
 
-
+.intro-confidencial{
+    position: absolute;
+    width: auto;
+    height: 7vw;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
 
 
 .intro-ghost-main-desktop{
@@ -164,7 +172,7 @@
     width: auto;
     height: 40vw;
     left: 82%;
-    top: 53%;
+    top: 46%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
@@ -174,7 +182,7 @@
     height: 20vw;
     position: absolute;
     z-index: 2;
-    top: 37%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -261,10 +269,10 @@
 }
 .intro-hashtag-desktop {
     width: auto;
-    height: 7vw;
+    height: 4.5vw;
     position: absolute;
     z-index: 12; 
-    top: 105%;
+    top: 102%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

@@ -1,7 +1,7 @@
 
 import './Brigade.css';
 
-import {  calendar_bckg, desktop_7, brigade_red, brigade_title, mvp_banner, squad_winner } from '../../../assets/assetsDirectory';
+import {  mobil_bckg4, brigade_red, brigade_title, mvp_banner, squad_winner, desktop_bckg_4 } from '../../../assets/assetsDirectory';
 
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
@@ -26,7 +26,7 @@ const Brigade = () => {
         style={{
           minHeight: "713px",
 
-          backgroundImage: bgNear ? `url(${calendar_bckg})` : "none",
+          backgroundImage: bgNear ? `url(${mobil_bckg4})` : "none",
           justifyContent: 'flex-start'
         }}
       >
@@ -53,7 +53,7 @@ const Brigade = () => {
       <div className="general-page-desktop">
         <img
           loading="lazy"
-          src={desktop_7}
+          src={desktop_bckg_4}
           alt="Calendar Background"
           className="bckg-desktop"
         />

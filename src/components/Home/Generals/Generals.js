@@ -1,7 +1,7 @@
 
 import './Generals.css';
 
-import {  calendar_bckg, desktop_7, Mascots_title, mascots_infinix, mascots_snacking, mascots_square_1, mascots_square_2, mascots_square_3, mascots_square_4, mascots_square_5, mascots_square_6, mascots_square_7, mascots_square_8 } from '../../../assets/assetsDirectory';
+import {  mobil_bckg5, desktop_bckg_5, Mascots_title, mascots_infinix, mascots_snacking, mascots_square_1, mascots_square_2, mascots_square_3, mascots_square_4, mascots_square_5, mascots_square_6, mascots_square_7, mascots_square_8 } from '../../../assets/assetsDirectory';
 
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
@@ -19,8 +19,9 @@ const Generals = () => {
         className="general-page"
         style={{
           minHeight: "713px",
+          top: "-2px",
           maxHeight: isMobile ? "950px" : undefined,
-          backgroundImage: bgNear ? `url(${calendar_bckg})` : "none",
+          backgroundImage: bgNear ? `url(${mobil_bckg5})` : "none",
           justifyContent: 'flex-start'
         }}
       >
@@ -44,7 +45,7 @@ const Generals = () => {
           
           
         </div>
-        <div style={{display: 'flex', flexDirection: "row", height: "50px", marginTop: "20px"}}><Reveal><img loading="lazy" src={mascots_snacking} alt="Mascots Snacking" className="mascots-snacking" /></Reveal>
+        <div style={{display: 'flex', flexDirection: "row", height: "50px", marginTop: "20px", width: "100%", justifyContent: "center"}}><Reveal><img loading="lazy" src={mascots_snacking} alt="Mascots Snacking" className="mascots-snacking" /></Reveal>
         <Reveal><img loading="lazy" src={mascots_infinix} alt="Mascots Infinix" className="mascots-snacking" /></Reveal></div>
         
 
@@ -54,7 +55,7 @@ const Generals = () => {
       <div className="general-page-desktop">
         <img
           loading="lazy"
-          src={desktop_7}
+          src={desktop_bckg_5}
           alt="Calendar Background"
           className="bckg-desktop"
         />

@@ -8,7 +8,7 @@ import {
   Intro_winner,
   Intro_bckg,
   Intro_bckg2,
-  desktop_1,
+  desktop_bckg_1,
   desktop_2,
   sticker_ghost_main_f1,
   sticker_ghost_main_f2,
@@ -24,6 +24,7 @@ import {
   sticker_paracaidas_2,
   sticker_paracaidas_flip_1,
   sticker_paracaidas_flip_2,
+  intro_confidencial,
 } from "../../../assets/assetsDirectory";
 
 import { useViewport } from "../../../context/ViewportContext";
@@ -134,6 +135,19 @@ const Intro = () => {
           </Reveal>
           <></>
 
+          
+                        <FrameAnimation
+                loading="lazy"
+                frames={[
+                  sticker_Disparo_f1,
+                  sticker_Disparo_f2,
+                  sticker_Disparo_f3,
+                ]}
+                alt="Intro Ghost"
+                fps={5}
+                className="intro-ghost"
+              />
+
           <Reveal>
               <img src={Intro_hashtag} alt="hashtag" className="intro-hashtag"></img>
           </Reveal>
@@ -172,11 +186,12 @@ const Intro = () => {
           <img
             loading="eager"
             fetchPriority="high"
-            src={desktop_1}
+            src={desktop_bckg_1}
             alt="Intro Background"
             className="bckg-desktop"
             style={{ marginTop: "70px" }}
           />
+
 
           <FrameAnimation
             loading="lazy"
@@ -214,6 +229,10 @@ const Intro = () => {
               className="intro-sticker-paracaidas"
             />
           </div>
+
+          <Reveal>
+            <img src={intro_confidencial} alt="Confidencial" className="intro-confidencial" />
+          </Reveal>
 
           <div
             className="intro-sticker-paracaidas-container"
@@ -273,8 +292,8 @@ const Intro = () => {
           </Reveal>
 
           <p className="intro-winner-text-desktop">
-            La señal transmite <br></br>
-            los nombres más TOP.
+            <span style={{color: "white"}}>La señal transmite <br></br>
+            los</span> nombres más TOP.
           </p>
 
           <Reveal>

@@ -5,7 +5,6 @@
     height: 40px;
     justify-content: center;
     position: relative;
-    left: 20px;
 }
 
 .squadItem-images{
@@ -13,34 +12,43 @@
     flex-direction: row;
     width: auto;
     height: 40px;
+    position: relative;
 }
 
 .squadItem-num{
-    position: relative;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-family: var(--font-monst);
     font-size: 14px;
-    left: -50%;
-    top: -10%;
-
+    white-space: nowrap;
 }
 
 .squadItem-text{
-   position: relative;
+    position: absolute;
+    top: 0%;
+    left: 18%;
+    transform: translate(-50%, -50%);
     color: var(--yellow);
     font-family: var(--font-oswald);
     font-size: 18px;
-    
-    left: -82%;
-    top: -34%;
+    white-space: nowrap;
 }
 
+.squadItem-text-img{
+    width: auto;
+    height: auto;
+    max-height: 40px;
+    max-width: 60vw;
+}
 
 .squadItem-character{
     width: 40px;
     height: 40px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 5px;
+    margin-left: 0px;
 }
 
 @media (min-width: 720px) {
@@ -55,24 +63,24 @@
 
     .squadItem-text{
         font-size: 1.7vw;
-        top: -30%;
-        left: -90%;
+        left: 20%;
     }
 
     .squadItem-character{
         width: auto;
         height: 4vw;
-        margin-right: 35px;
+        margin-right: 5px;
         margin-left: 0px;
     }
 
     .squadItem-images{
         width: auto;
         height: 4vw;
-        max-width: 15vw;
+        max-width: 20vw;
     }
 
     .squadItem-text-img{
-        max-width: 15vw;
+        max-height: 4vw;
+        max-width: 20vw;
     }
 }
