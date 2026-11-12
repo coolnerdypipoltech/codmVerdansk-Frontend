@@ -21,16 +21,17 @@ return (
 <div className="squadItem-container">
 
     <div className="squadItem-images">
-        {characterHelper ? (<><img className="squadItem-character" src={character} alt="num"></img></>) : (<><img src={squad_num} alt="num"></img>
-        <p className="squadItem-num">{number}</p></>)}
+        {characterHelper ? (<><img className="squadItem-character" src={character} alt="num"></img></>) : (<><img src={squad_num} className="squadItem-character"  alt="num"></img>
+        <div className="squadItem-holder"><p className="squadItem-num">{number}</p></div></>)}
 
     </div>
 
-     <div className="squadItem-images" >
+     <div className="squadItem-images2" >
         <img src={squad_text} alt="text" className="squadItem-text-img"></img>
-        <p className="squadItem-text" style={{left: characterHelper && "25%"}}>
+        <div className="squadItem-holder"><p className="squadItem-text" style={{transform: characterHelper && "translate(20%, -50%)"}}>
             {text}
-        </p>
+        </p></div>
+        
     </div>
 
 </div>

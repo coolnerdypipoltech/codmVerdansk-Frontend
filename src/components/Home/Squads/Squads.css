@@ -12,7 +12,7 @@
     color: white;
     margin: 0px;
     position: relative;
-    top: -180px;
+    top: -190px;
     z-index: 12;
 }
 
@@ -50,16 +50,17 @@
     position: absolute;
     top: 310px;
     z-index: 12;
+    width: 100%;
 }
 
 
 
 .squad-title-desktop{
-    height: 15vw;
+    height: 13vw;
     width: auto;
     position: absolute;
     z-index: 12;
-    top: 25%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -70,7 +71,7 @@
     color: white;
     margin: 0px;
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 12;
@@ -120,5 +121,5 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 13px;
 }

@@ -65,7 +65,7 @@
     width: auto;
     height: 202px;
     left: -60px;
-    top: 650px;
+    top: 680px;
     transform: scaleX(-1);
     z-index: 1;
 }
@@ -110,7 +110,7 @@
 
 .intro-winner{
     position: relative;
-    top: 5vh;
+    top: 13vh;
     z-index: 12;
     height: 140px;
     width: auto;
@@ -123,7 +123,7 @@
     z-index: 12;
     color: var(--yellow);
     font-family: var(--font-oswald);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
@@ -190,7 +190,7 @@
 .intro-winner-desktop{
     position: absolute;
     width: auto;
-    height: 15vw;
+    height: 13vw;
     left: 50%;
     top: 73%;
     transform: translate(-50%, -50%);

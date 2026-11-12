@@ -307,7 +307,7 @@ const Intro = () => {
             src={desktop_2}
             alt="Intro Background 2"
             className="bckg-desktop"
-            style={{ position: "absolute", top: "60%", zIndex: "2" }}
+            style={{ position: "absolute", top: "67%", zIndex: "2", height: "90vh" }}
           />
 
           <Reveal>

@@ -268,6 +268,9 @@ import intro_confidencial from "./intro/intro_confidencial.png"
 import brigade_winner from "./brigade/brigade-winner.png"
 import brigade_winner_2 from "./brigade/brigade-winner-2.png"
 
+import desktop_2 from "./desktop/desktop-2.png"
+
+
 const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
 const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
 const mascots_slider_3 = "https://file.verdanskcodm.com/mascots/slider/slider_3.png"
@@ -313,7 +316,7 @@ const CreatorsPage_bckg = "https://file.verdanskcodm.com/CreatorsPage/creatorsPa
 
 
 const desktop_1 = "https://file.verdanskcodm.com/desktop/desktop-1.3.png";
-const desktop_2 = "https://file.verdanskcodm.com/desktop/desktop-2.png";
+
 const desktop_3 = "https://file.verdanskcodm.com/desktop/desktop-3.1.png";
 const desktop_4 = "https://file.verdanskcodm.com/desktop/desktop-4.2.png";
 const desktop_5 = "https://file.verdanskcodm.com/desktop/desktop-5.2.png";

@@ -29,15 +29,16 @@
     font-size: 24px;
     font-family: var(--font-oswald);
     color: var(--yellow);
+    font-weight: bold;
 }
 
 
 
 .mvp-title-desktop{
-    height: 12vw;
+    height: 11vw;
     width: auto;
     position: absolute;
-    top: 8%;
+    top: 9%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
