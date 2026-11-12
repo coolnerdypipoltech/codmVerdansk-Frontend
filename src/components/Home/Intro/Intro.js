@@ -9,7 +9,7 @@ import {
   fb_icon,
   yt_icon,
   tk_icon,
-  Intro_end,
+  grandFinal_tickets,
   grandFinal_banner,
   grandFinal_subTitle,
   grandFinal_black_desktop,
@@ -32,7 +32,7 @@ import {
   sticker_paracaidas_2,
   sticker_paracaidas_flip_1,
   sticker_paracaidas_flip_2,
-  
+  Intro_register,
 } from "../../../assets/assetsDirectory";
 
 import { useViewport } from "../../../context/ViewportContext";
@@ -414,9 +414,12 @@ const Intro = () => {
           <Reveal>
             <img
               loading="lazy"
-              src={Intro_end}
+              src={grandFinal_tickets}
               alt="Grand Final Title"
               className="grandfinal-tickets-desktop"
+              onClick={() => {
+                navigate("/register"); document.documentElement.scrollTop = 0 ;
+              }}
             ></img>
           </Reveal>
         </div>

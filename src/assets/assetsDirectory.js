@@ -15,8 +15,6 @@ import Intro_register from "./intro/intro_register.png"
 //import Intro_bckg2 from "./intro/Background_Inicio2.png"
 //import Intro_ghost_main from "./intro/Ghost_Inicio.png"
 
-import Intro_end from "./intro/intro_end.png"
-
 import Intro_sticker1 from "./intro/intro_sticker1.png"
 
 //import vide_bckg from "./video/Background_Video.png"
@@ -319,4 +317,4 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, commonCreator, Intro_bckg2, Intro_ghost_main,
      Creador_0, Creador_1, Creador_2, Creador_3, Creador_4, Creador_5, Creador_6, Creador_7, Creador_8, Creador_9, Creador_10,
      Creador_11, Creador_12, Creador_13, Creador_14, Creador_15, Creador_16, Creador_17, Creador_18, Creador_19,
-     Creador_20, Creador_21, Creador_22, Creador_23, Creador_24, Intro_end };
+     Creador_20, Creador_21, Creador_22, Creador_23, Creador_24 };
