@@ -116,14 +116,6 @@ const GrandFinal = () => {
                     ></img>
                   </Reveal>
 
-                  <Reveal>
-                    <img
-                      loading="lazy"
-                      src={Intro_date_banner}
-                      alt="Grand Final Banner"
-                      className="grandfinal-date"
-                    ></img>
-                  </Reveal>
                 </div>
               </div>
             </>
