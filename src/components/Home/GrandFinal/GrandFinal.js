@@ -4,7 +4,7 @@ import {
   desktop_3,
   grandFinal_bckg,
   Intro_date_banner,
-  grandFinal_tickets,
+  Intro_end,
   grandFinal_banner,
   grandFinal_subTitle,
   fb_icon,
@@ -109,11 +109,9 @@ const GrandFinal = () => {
                   <Reveal>
                     <img
                       loading="lazy"
-                      src={grandFinal_tickets}
+                      src={Intro_end}
                       alt="Grand Final Banner"
-                      onClick={() => {
-                        navigate("/register"); document.documentElement.scrollTop = 0 ;
-                      }}
+
                       className="grandfinal-tickets"
                     ></img>
                   </Reveal>
