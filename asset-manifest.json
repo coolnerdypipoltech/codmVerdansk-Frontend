@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/codmVerdansk-Frontend/static/css/main.30f5b084.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.b12d8042.js",
+    "main.css": "/codmVerdansk-Frontend/static/css/main.f3529da7.css",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.e5a4e6da.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
+    "static/media/desktop-2.png": "/codmVerdansk-Frontend/static/media/desktop-2.00d6920a9e57f0a42222.png",
     "static/media/Ghost_F1.png": "/codmVerdansk-Frontend/static/media/Ghost_F1.ebd5ebe3ca433b0793cd.png",
     "static/media/Ghost_F2.png": "/codmVerdansk-Frontend/static/media/Ghost_F2.78b852ab33d10eeb5a8e.png",
     "static/media/Ghost_F3.png": "/codmVerdansk-Frontend/static/media/Ghost_F3.cbc5a3afc44bfef8176c.png",
@@ -59,6 +60,7 @@
     "static/media/Disparo_f1.png": "/codmVerdansk-Frontend/static/media/Disparo_f1.7945fe74bf040f1d7189.png",
     "static/media/Disparo_f3.png": "/codmVerdansk-Frontend/static/media/Disparo_f3.8dd2ae784c858313ba8f.png",
     "static/media/calendario_f2.png": "/codmVerdansk-Frontend/static/media/calendario_f2.57497db833be96f85b88.png",
+    "static/media/intro-winner.png": "/codmVerdansk-Frontend/static/media/intro-winner.fd2a3295c86a0b985217.png",
     "static/media/registerPage-background.png": "/codmVerdansk-Frontend/static/media/registerPage-background.d1baa78c4ed96dec2783.png",
     "static/media/registerPage-background-popUp.png": "/codmVerdansk-Frontend/static/media/registerPage-background-popUp.4a03abc7d4b75e37d963.png",
     "static/media/grandFinal_banner.png": "/codmVerdansk-Frontend/static/media/grandFinal_banner.014cc737d8440b9dcc49.png",
@@ -69,7 +71,6 @@
     "static/media/Creador-8.png": "/codmVerdansk-Frontend/static/media/Creador-8.e29b4ad57eb94a0bff53.png",
     "static/media/Creador-22.png": "/codmVerdansk-Frontend/static/media/Creador-22.d14340fc9d2cddb864d3.png",
     "static/media/Creador-12.png": "/codmVerdansk-Frontend/static/media/Creador-12.ac8fd279ebf44f393f04.png",
-    "static/media/intro-winner.png": "/codmVerdansk-Frontend/static/media/intro-winner.76c967e39dc109134b0f.png",
     "static/media/Creador-9.png": "/codmVerdansk-Frontend/static/media/Creador-9.107929bbd089f48af157.png",
     "static/media/Creador-18.png": "/codmVerdansk-Frontend/static/media/Creador-18.3d05472f7e699f64a446.png",
     "static/media/Creador-2.png": "/codmVerdansk-Frontend/static/media/Creador-2.05f64d5d5f5c4fa424bd.png",
@@ -164,12 +165,12 @@
     "index.html": "/codmVerdansk-Frontend/index.html",
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
     "static/media/chevron-down.svg": "/codmVerdansk-Frontend/static/media/chevron-down.8c4eb837fce7d6d19a3818e889113aa9.svg",
-    "main.30f5b084.css.map": "/codmVerdansk-Frontend/static/css/main.30f5b084.css.map",
-    "main.b12d8042.js.map": "/codmVerdansk-Frontend/static/js/main.b12d8042.js.map",
+    "main.f3529da7.css.map": "/codmVerdansk-Frontend/static/css/main.f3529da7.css.map",
+    "main.e5a4e6da.js.map": "/codmVerdansk-Frontend/static/js/main.e5a4e6da.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30f5b084.css",
-    "static/js/main.b12d8042.js"
+    "static/css/main.f3529da7.css",
+    "static/js/main.e5a4e6da.js"
   ]
 }
