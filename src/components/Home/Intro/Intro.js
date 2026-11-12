@@ -157,8 +157,8 @@ const Intro = () => {
           </Reveal>
           
           <p className="intro-winner-text">
-            La señal transmite <br></br>
-            los nombres más TOP.
+            <span style={{ color: "white" }}>La señal transmite<br></br>
+            los </span>  nombres más TOP.
           </p>
           
           <Reveal>
@@ -314,8 +314,8 @@ const Intro = () => {
             <div
               style={{
                 position: "absolute",
-                left: "85%",
-                top: "90%",
+                left: "58%",
+                top: "105%",
                 height: "300px",
                 width: "1px",
               }}

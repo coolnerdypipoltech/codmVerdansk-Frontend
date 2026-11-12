@@ -13,12 +13,10 @@ const Navbar = () => {
   const location = useLocation();
   const menuOptions = {
     option1: { label: "INICIO", target: "inicio" },
-    option2: { label: "¿QUÉ ES SEÑAL VERDANSK?", target: "informacion" },
-    option3: { label: "4 FASES", target: "fases" },
-    option5: { label: "BOTARGAS", target: "botargas" },
-    option6: { label: "CALENDARIO", target: "calendario" },
-    option7: { label: "LÍDERES DE ESCUADRÓN", target: "creadores" },
-    option8: { label: "PREGUNTAS FRECUENTES", target: "faqs2" }
+    option2: { label: "Squad ganador", target: "squad" },
+    option3: { label: "MVP", target: "mvp" },
+    option5: { label: "Brigada campeona", target: "brigade" },
+    option6: { label: "Líderes de escuadrón", target: "mascots" },
   }
 
   const handleNavigate = (event, target) => {

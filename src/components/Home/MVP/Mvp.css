@@ -34,10 +34,10 @@
 
 
 .mvp-title-desktop{
-    height: 15vw;
+    height: 12vw;
     width: auto;
     position: absolute;
-    top: 5%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -53,10 +53,10 @@
 }
 
 .mvp-banner-desktop{
-    height: 25vw;
+    height: 32vw;
     width: auto;
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -79,12 +79,13 @@
     font-size: var(--title-desktop-size);
     font-family: var(--font-oswald);
     color: var(--yellow);
+    font-weight: bold;
 }
 
 .mvp-text-desktop{
     color:  white;
     font-family: var(--font-monst);
-    font-size: var(--title-desktop-size);
+    font-size: var(--text-desktop-size);
     position: absolute;
     top: 20%;
     left: 50%;

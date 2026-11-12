@@ -265,6 +265,9 @@ import squad_winner from "./squads/fotos/Creador-0.png"
 
 import intro_confidencial from "./intro/intro_confidencial.png"
 
+import brigade_winner from "./brigade/brigade-winner.png"
+import brigade_winner_2 from "./brigade/brigade-winner-2.png"
+
 const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
 const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
 const mascots_slider_3 = "https://file.verdanskcodm.com/mascots/slider/slider_3.png"
@@ -338,6 +341,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_ghost_1, sticker_ghost_2, grandFinal_black_desktop,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
      intro_confidencial,
+     brigade_winner, brigade_winner_2,
      sticker_granade_3, Intro_register, Intro_winner,
      mvp_banner_2, mvp_banner_3, mvp_banner_desktop_2, mvp_banner_desktop_3,
      sticker_paracaidas_flip_1, registerPage_hashtag,

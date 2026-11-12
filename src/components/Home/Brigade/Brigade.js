@@ -1,7 +1,7 @@
 
 import './Brigade.css';
 
-import {  mobil_bckg4, brigade_red, brigade_title, mvp_banner, squad_winner, desktop_bckg_4 } from '../../../assets/assetsDirectory';
+import {  mobil_bckg4, brigade_red, brigade_title, mvp_banner, squad_winner, desktop_bckg_4, brigade_winner, brigade_winner_2 } from '../../../assets/assetsDirectory';
 
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
@@ -32,7 +32,8 @@ const Brigade = () => {
       >
         <img src={brigade_title} alt='title' className='brigade-title'></img>
         <p className='brigade-text'>El bando que dominó la señal.</p>
-        <img src={mvp_banner} alt='title' className='brigade-banner'></img>
+        <img src={brigade_winner} alt='title' className='brigade-banner'></img>
+        <img src={brigade_winner_2} alt='title' className='brigade-banner-2'></img>
         <>
         {winnersSquad.map((items, index) => (
           <div key={items.title} className="brigade-squad-group">
@@ -61,8 +62,8 @@ const Brigade = () => {
 
                 <img src={brigade_title} alt='title' className='brigade-title-desktop'></img>
         <p className='brigade-text-desktop'>El bando que dominó la señal.</p>
-        <img src={mvp_banner} alt='title' className='brigade-banner-desktop'></img>
-        <img src={mvp_banner} alt='title' className='brigade-banner-desktop2'></img>
+        <img src={brigade_winner} alt='title' className='brigade-banner-desktop'></img>
+        <img src={brigade_winner_2} alt='title' className='brigade-banner-desktop2'></img>
         <div className='brigade-squad-container'>
         {winnersSquad.map((items, index) => (
           <div key={items.title} className="brigade-squad-group-desktop">

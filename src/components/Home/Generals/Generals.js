@@ -62,7 +62,7 @@ const Generals = () => {
         
         <img src={Mascots_title} alt='title' className='Generals-title-desktop'></img>
         <p className='generals-text-desktop' style={{ fontWeight: 'bold' }}>¡ESTA VICTORIA TAMBIÉN ES SUYA! </p>
-        <p className='generals-text-desktop' style={{ top: '38%' }}>Gracias a nuestros Generales de <br></br> Brigada por sumarse a la batalla  y <br></br> hacer de <span style={{ fontWeight: 'bold' }}> Señal Verdansk</span>  un evento <br></br> irrepetible con todo el caos de <br></br> Latinoamérica</p>
+        <p className='generals-text-desktop' style={{ top: '36%' }}>Gracias a nuestros Generales de Brigada por sumarse <br></br>  a la batalla y hacer de <span style={{ fontWeight: 'bold' }}> Señal Verdansk</span>  un evento <br></br> irrepetible con todo el caos de Latinoamérica</p>
 
         <div className='generals-container-desktop'>
           <img src={mascots_square_8} alt='mascot' className='generals-mascot-desktop'></img>

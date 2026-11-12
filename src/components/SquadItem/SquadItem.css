@@ -56,9 +56,11 @@
     .squadItem-container{
         width: auto;
         height: 4vw;
+        gap: 15px;
     }
     .squadItem-num{
         font-size: 1.5vw;
+        top: 10%;
     }
 
     .squadItem-text{
