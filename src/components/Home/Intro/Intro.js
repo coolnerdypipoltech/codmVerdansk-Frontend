@@ -159,13 +159,18 @@ const Intro = () => {
             <Counter />
           </Reveal>
 
+          <p className="intro-text-subtitle">
+            APERTURA DE PUERTAS <br></br>
+3:30 PM [UTC-6]
+          </p>
+
           <Reveal>
             <div
               style={{
                 position: "absolute",
                 top: "700px",
                 height: "500px",
-                left: "90%",
+                left: "100%",
                 width: "1px",
               }}
             >
@@ -298,6 +303,21 @@ const Intro = () => {
             Calle de Mesones 72, Centro Histórico, <br></br> Cuauhtémoc, 06080,
             Ciudad de México
           </p>
+
+                    <p
+            className="intro-text-subtitle"
+            style={{
+              position: "absolute",
+              top: "100%",
+              left: "50%",
+              transform: "translateX(-50%)",
+            }}
+          >
+            APERTURA DE PUERTAS 
+3:30 PM [UTC-6]
+          </p>
+
+          
           <Reveal>
             <Counter />
           </Reveal>

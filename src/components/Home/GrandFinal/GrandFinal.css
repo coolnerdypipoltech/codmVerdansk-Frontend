@@ -11,10 +11,11 @@
   rotate: -2deg;
   padding: 0px 20px;
   max-width: 400px;
+  margin-top: 80px;
 }
 
 .grandfinal-black{
-  width: 170vw;
+  width: 150vw;
   height: auto;
   position: absolute;
   top: -5%;
@@ -132,7 +133,7 @@
 .grandfinal-date{
   width: auto;
   height: 63px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .grandfinal-black-container-desktop{
@@ -173,12 +174,12 @@
 }
 
 .grandfinal-black-desktop{
-  width: 55vw;
+  width: 48vw;
   max-width: 1030px;
   height: auto;
 
   position: absolute;
-  top: 95%;
+  top: 108%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -230,7 +231,7 @@
   margin-top: 20px;
   position: absolute;
   left: 50%;
-  top: 153%;
+  top: 155%;
   transform: translate(-50%, -50%);
   z-index: 15;
   cursor: pointer;

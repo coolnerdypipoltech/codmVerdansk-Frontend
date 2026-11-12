@@ -265,7 +265,7 @@ const toknow_bckg = "https://file.verdanskcodm.com/toknow/toknow-background.png"
 const CreatorsPage_bckg = "https://file.verdanskcodm.com/CreatorsPage/creatorsPage_Bckg.png";
 
 
-const desktop_1 = "https://file.verdanskcodm.com/desktop/desktop-1.3.png";
+const desktop_1 = "https://file.verdanskcodm.com/desktop/desktop-1.4.png";
 const desktop_2 = "https://file.verdanskcodm.com/desktop/desktop-2.png";
 const desktop_3 = "https://file.verdanskcodm.com/desktop/desktop-3.1.png";
 const desktop_4 = "https://file.verdanskcodm.com/desktop/desktop-4.2.png";
