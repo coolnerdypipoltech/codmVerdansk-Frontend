@@ -18,7 +18,7 @@ const Generals = () => {
         ref={bgRef}
         className="general-page"
         style={{
-          minHeight: "713px",
+          minHeight: "763px",
           top: "-2px",
           maxHeight: isMobile ? "950px" : undefined,
           backgroundImage: bgNear ? `url(${mobil_bckg5})` : "none",
@@ -52,17 +52,18 @@ const Generals = () => {
       </div>
 
     ) : (
-      <div className="general-page-desktop">
+      <div className="general-page-desktop" >
         <img
           loading="lazy"
           src={desktop_bckg_5}
           alt="Calendar Background"
           className="bckg-desktop"
+          style={{minHeight: "100vh"}}
         />
         
         <img src={Mascots_title} alt='title' className='Generals-title-desktop'></img>
         <p className='generals-text-desktop' style={{ fontWeight: 'bold' }}>¡ESTA VICTORIA TAMBIÉN ES SUYA! </p>
-        <p className='generals-text-desktop' style={{ top: '36%' }}>Gracias a nuestros Generales de Brigada por sumarse <br></br>  a la batalla y hacer de <span style={{ fontWeight: 'bold' }}> Señal Verdansk</span>  un evento <br></br> irrepetible con todo el caos de Latinoamérica</p>
+        <p className='generals-text-desktop' style={{ top: '44%' }}>Gracias a nuestros Generales de Brigada por sumarse <br></br>  a la batalla y hacer de <span style={{ fontWeight: 'bold' }}> Señal Verdansk</span>  un evento <br></br> irrepetible con todo el caos de Latinoamérica</p>
 
         <div className='generals-container-desktop'>
           <img src={mascots_square_8} alt='mascot' className='generals-mascot-desktop'></img>

@@ -1,6 +1,7 @@
 .Generals-title{
     height: 138px;
     width: auto;
+    MARGIN-TOP: 40px;
 }
 
 .generals-text{
@@ -31,7 +32,7 @@
     height: 15vw;
     width: auto;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     font-size: var(--text-desktop-size);
     transform: translate(-50%, -50%);
@@ -45,7 +46,7 @@
     width: 100%;
     margin-bottom: 0px;
     position: absolute;
-     top: 29%;
+     top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -61,7 +62,7 @@
     flex-wrap: wrap;
     margin-top: 20px;
     position: absolute;
-     top: 62%;
+     top: 67%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -77,5 +78,5 @@
     width: auto;
     position: absolute;
     z-index: 10;
-    top: 85%;
+    top: 88%;
 }

@@ -13,10 +13,10 @@ const Navbar = () => {
   const location = useLocation();
   const menuOptions = {
     option1: { label: "INICIO", target: "inicio" },
-    option2: { label: "Squad ganador", target: "squad" },
+    option2: { label: "SQUAD GANADOR", target: "squad" },
     option3: { label: "MVP", target: "mvp" },
-    option5: { label: "Brigada campeona", target: "brigade" },
-    option6: { label: "Líderes de escuadrón", target: "mascots" },
+    option5: { label: "BRIGADA CAMPEONA", target: "brigade" },
+    option6: { label: "LÍDERES DE ESCUADRÓN", target: "mascots" },
   }
 
   const handleNavigate = (event, target) => {
