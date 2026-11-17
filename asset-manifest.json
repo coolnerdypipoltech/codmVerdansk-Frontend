@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/codmVerdansk-Frontend/static/css/main.92044478.css",
-    "main.js": "/codmVerdansk-Frontend/static/js/main.f9aaa72e.js",
+    "main.js": "/codmVerdansk-Frontend/static/js/main.f6ee63ad.js",
     "static/js/453.ae176ed8.chunk.js": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js",
     "static/media/desktop-menu.png": "/codmVerdansk-Frontend/static/media/desktop-menu.d82ec2551eb98cad2d9f.png",
     "static/media/desktop-tile-2.png": "/codmVerdansk-Frontend/static/media/desktop-tile-2.cddc43de21ff9bead81e.png",
@@ -41,7 +41,7 @@
     "static/media/topher.png": "/codmVerdansk-Frontend/static/media/topher.c9519b52b5f1bea359e3.png",
     "static/media/ReglamentoOficial.pdf": "/codmVerdansk-Frontend/static/media/ReglamentoOficial.93ec94bc3b773fc69907.pdf",
     "static/media/mini_Patata_1.png": "/codmVerdansk-Frontend/static/media/mini_Patata_1.74a55dede70861bbff19.png",
-    "static/media/mini_Patata_2.png": "/codmVerdansk-Frontend/static/media/mini_Patata_2.a2fe28cd71092085bef2.png",
+    "static/media/mini_Patata_2.png": "/codmVerdansk-Frontend/static/media/mini_Patata_2.b4164c0344eae58265bd.png",
     "static/media/growan.png": "/codmVerdansk-Frontend/static/media/growan.b4cfba4fc576fdbd4fde.png",
     "static/media/sticker-truck-1.png": "/codmVerdansk-Frontend/static/media/sticker-truck-1.830b02363a5bd50054c8.png",
     "static/media/grandFinal_black_desktop.png": "/codmVerdansk-Frontend/static/media/grandFinal_black_desktop.97a22e331dc8ceb338be.png",
@@ -174,11 +174,11 @@
     "static/media/faqs-arrow.svg": "/codmVerdansk-Frontend/static/media/faqs-arrow.6721c118d264bf9cdf86336a1a323f2d.svg",
     "static/media/chevron-down.svg": "/codmVerdansk-Frontend/static/media/chevron-down.8c4eb837fce7d6d19a3818e889113aa9.svg",
     "main.92044478.css.map": "/codmVerdansk-Frontend/static/css/main.92044478.css.map",
-    "main.f9aaa72e.js.map": "/codmVerdansk-Frontend/static/js/main.f9aaa72e.js.map",
+    "main.f6ee63ad.js.map": "/codmVerdansk-Frontend/static/js/main.f6ee63ad.js.map",
     "453.ae176ed8.chunk.js.map": "/codmVerdansk-Frontend/static/js/453.ae176ed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92044478.css",
-    "static/js/main.f9aaa72e.js"
+    "static/js/main.f6ee63ad.js"
   ]
 }
