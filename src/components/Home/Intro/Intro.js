@@ -2,21 +2,13 @@ import "./Intro.css";
 
 import Reveal from "../../Reveal/Reveal";
 import FrameAnimation from "../../FrameAnimation/FrameAnimation";
-import { trackEvent } from "../../../utils/analytics";
 import {
-  Intro_date_banner,
   Intro_logo,
-  fb_icon,
-  yt_icon,
-  tk_icon,
-  Intro_end,
-  grandFinal_banner,
-  grandFinal_subTitle,
-  grandFinal_black_desktop,
+  Intro_hashtag,
+  Intro_winner,
   Intro_bckg,
-  grandFinal_title,
   Intro_bckg2,
-  desktop_1,
+  desktop_bckg_1,
   desktop_2,
   sticker_ghost_main_f1,
   sticker_ghost_main_f2,
@@ -32,7 +24,7 @@ import {
   sticker_paracaidas_2,
   sticker_paracaidas_flip_1,
   sticker_paracaidas_flip_2,
-  
+  intro_confidencial,
 } from "../../../assets/assetsDirectory";
 
 import { useViewport } from "../../../context/ViewportContext";
@@ -51,7 +43,7 @@ const Intro = () => {
           style={{
             minHeight: "800px",
             maxHeight: "768px",
-            marginTop: "75px",
+            marginTop: "15vw",
             paddingTop: "0px",
             top: "2px",
             justifyContent: "flex-start",
@@ -142,35 +134,40 @@ const Intro = () => {
             />
           </Reveal>
           <></>
+
+          
+                        <FrameAnimation
+                loading="lazy"
+                frames={[
+                  sticker_Disparo_f1,
+                  sticker_Disparo_f2,
+                  sticker_Disparo_f3,
+                ]}
+                alt="Intro Ghost"
+                fps={5}
+                className="intro-ghost"
+              />
+
           <Reveal>
-            <img
-              loading="lazy"
-              src={grandFinal_title}
-              alt="Intro Banner"
-              className="intro-banner"
-            />
-          </Reveal>
-          <p className="intro-text-title">EVENTO PRESENCIAL CDMX</p>
-          <p className="intro-text-subtitle">
-            Calle de Mesones 72, Centro Histórico, <br></br> Cuauhtémoc, 06080,
-            Ciudad de México
-          </p>
-          <Reveal>
-            <Counter />
+              <img src={Intro_hashtag} alt="hashtag" className="intro-hashtag"></img>
           </Reveal>
 
-          <p className="intro-text-subtitle">
-            APERTURA DE PUERTAS <br></br>
-3:30 PM [UTC-6]
+          <Reveal>
+              <img src={Intro_winner} alt="winner" className="intro-winner"></img>
+          </Reveal>
+          
+          <p className="intro-winner-text">
+            <span style={{ color: "white" }}>La señal transmite<br></br>
+            los </span>  nombres más TOP.
           </p>
-
+          
           <Reveal>
             <div
               style={{
                 position: "absolute",
                 top: "700px",
                 height: "500px",
-                left: "100%",
+                left: "90%",
                 width: "1px",
               }}
             >
@@ -189,11 +186,12 @@ const Intro = () => {
           <img
             loading="eager"
             fetchPriority="high"
-            src={desktop_1}
+            src={desktop_bckg_1}
             alt="Intro Background"
             className="bckg-desktop"
             style={{ marginTop: "70px" }}
           />
+
 
           <FrameAnimation
             loading="lazy"
@@ -231,6 +229,10 @@ const Intro = () => {
               className="intro-sticker-paracaidas"
             />
           </div>
+
+          <Reveal>
+            <img src={intro_confidencial} alt="Confidencial" className="intro-confidencial" />
+          </Reveal>
 
           <div
             className="intro-sticker-paracaidas-container"
@@ -274,68 +276,46 @@ const Intro = () => {
           <Reveal>
             <img
               loading="lazy"
-              src={grandFinal_title}
-              alt="Grand Final Title"
-              className="intro-title-desktop"
+              src={Intro_logo}
+              alt="Intro Logo"
+              className="intro-logo-desktop"
             />
           </Reveal>
 
-          <p
-            className="intro-text-title"
-            style={{
-              position: "absolute",
-              top: "70%",
-              left: "50%",
-              transform: "translateX(-50%)",
-            }}
-          >
-            EVENTO PRESENCIAL CDMX
-          </p>
-          <p
-            className="intro-text-subtitle"
-            style={{
-              position: "absolute",
-              top: "77%",
-              left: "50%",
-              transform: "translateX(-50%)",
-            }}
-          >
-            Calle de Mesones 72, Centro Histórico, <br></br> Cuauhtémoc, 06080,
-            Ciudad de México
-          </p>
-
-                    <p
-            className="intro-text-subtitle"
-            style={{
-              position: "absolute",
-              top: "100%",
-              left: "50%",
-              transform: "translateX(-50%)",
-            }}
-          >
-            APERTURA DE PUERTAS 
-3:30 PM [UTC-6]
-          </p>
-
-          
           <Reveal>
-            <Counter />
+            <img
+              loading="lazy"
+              src={Intro_winner}
+              alt="Intro Winner"
+              className="intro-winner-desktop"
+            />
           </Reveal>
+
+          <p className="intro-winner-text-desktop">
+            <span style={{color: "white"}}>La señal transmite <br></br>
+            los</span> nombres más TOP.
+          </p>
+
+          <Reveal>
+              <img src={Intro_hashtag} alt="hashtag" className="intro-hashtag-desktop"></img>
+          </Reveal>
+
+
 
           <img
             loading="lazy"
             src={desktop_2}
             alt="Intro Background 2"
             className="bckg-desktop"
-            style={{ position: "absolute", top: "60%", zIndex: "2" }}
+            style={{ position: "absolute", top: "67%", zIndex: "2", height: "90vh" }}
           />
 
           <Reveal>
             <div
               style={{
                 position: "absolute",
-                left: "85%",
-                top: "90%",
+                left: "58%",
+                top: "105%",
                 height: "300px",
                 width: "1px",
               }}
@@ -366,79 +346,12 @@ const Intro = () => {
             </div>
           </Reveal>
 
-          <Reveal>
-            <div className="footer-icons2-desktop" style={{ zIndex: 3 }}>
-              <img
-                loading="lazy"
-                src={tk_icon}
-                onClick={() => {
-                  window.open(
-                    "https://www.tiktok.com/@callofdutymobile_latam",
-                    "_blank",
-                  );
-                  trackEvent("Social Media", "Click", "TikTok");
-                }}
-                alt="TikTok Icon"
-                className="footer-icon2"
-              />
-
-              <img
-                loading="lazy"
-                src={fb_icon}
-                onClick={() => {
-                  window.open(
-                    "https://www.facebook.com/LATAMCallOfDutyMobile",
-                    "_blank",
-                  );
-                  trackEvent("Social Media", "Click", "Facebook");
-                }}
-                alt="Facebook Icon"
-                className="footer-icon2"
-              />
-              <img
-                loading="lazy"
-                src={yt_icon}
-                onClick={() => {
-                  window.open(
-                    "https://www.youtube.com/@LATAMCallOfDutyMobile",
-                    "_blank",
-                  );
-                  trackEvent("Social Media", "Click", "YouTube");
-                }}
-                alt="YouTube Icon"
-                className="footer-icon2"
-              />
-            </div>
-          </Reveal>
-
-          <Reveal>
-            <img
-              loading="lazy"
-              src={grandFinal_black_desktop}
-              alt="Grand Final Tickets"
-              className="grandfinal-black-desktop"
-            ></img>
-          </Reveal>
 
 
 
-          <Reveal>
-            <img
-              loading="lazy"
-              src={grandFinal_banner}
-              alt="Grand Final Title"
-              className="grandfinal-banner-desktop"
-            ></img>
-          </Reveal>
 
-          <Reveal>
-            <img
-              loading="lazy"
-              src={Intro_end}
-              alt="Grand Final Title"
-              className="grandfinal-tickets-desktop"
-            ></img>
-          </Reveal>
+
+
         </div>
       )}{" "}
     </>

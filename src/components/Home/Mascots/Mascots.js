@@ -159,7 +159,7 @@ const Mascots = () => {
 
        
         <Reveal><div className="mascots-stack-wrapper">{mascotsStack}</div></Reveal>
-        <div style={{display: 'flex', flexDirection: "row"}}><Reveal><img loading="lazy" src={mascots_snacking} alt="Mascots Snacking" className="mascots-snacking" /></Reveal>
+        <div style={{display: 'flex', flexDirection: "row", height: "50px", marginTop: "20px"}}><Reveal><img loading="lazy" src={mascots_snacking} alt="Mascots Snacking" className="mascots-snacking" /></Reveal>
         <Reveal><img loading="lazy" src={mascots_infinix} alt="Mascots Infinix" className="mascots-snacking" /></Reveal></div>
         <Reveal><img loading="lazy" src={rulebook} alt="Rulebook" className="rulebook" onClick={openRulebook} /></Reveal>
       </div>

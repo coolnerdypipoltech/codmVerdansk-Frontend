@@ -8,14 +8,13 @@ import NavBar_Logo from "./navbar/VerdanskLogo.png"
 import Intro_date_banner from "./intro/date_banner.png"
 import Intro_ghost from "./intro/background_sticker.png"
 import Intro_hashtag from "./intro/hashtag.png"
+import Intro_winner from "./intro/intro-winner.png"
 import Intro_logo from "./intro/home_logo.png"
 import Intro_banner from "./intro/signal_info.png"
 import Intro_register from "./intro/intro_register.png"
 //import Intro_bckg from "./intro/Background_Inicio.png"
 //import Intro_bckg2 from "./intro/Background_Inicio2.png"
 //import Intro_ghost_main from "./intro/Ghost_Inicio.png"
-
-import Intro_end from "./intro/intro_end.png"
 
 import Intro_sticker1 from "./intro/intro_sticker1.png"
 
@@ -227,6 +226,63 @@ import grandFinal_banner from "./grandFinal/grandFinal_banner.png"
 import grandFinal_subTitle from "./grandFinal/grandFinal_subTitle.png"
 import grandFinal_tickets from "./grandFinal/grandFinal_tickets.png"
 
+import squad_title from "./squads/squads-title.png"
+import squad_num from "./squads/squads-num.png"
+import squad_text from "./squads/squads-text.png"
+import squad_banner from "./squads/squads-banner.png"
+
+import mvp_title from "./mvp/mvp-title.png"
+import mvp_banner from "./mvp/mvp-banner.png"
+import mvp_banner_2 from "./mvp/mvp-banner-2.png"
+import mvp_banner_3 from "./mvp/mvp-banner-3.png"
+
+
+import mvp_title_box from "./mvp/mvp-title-box.png"
+import mvp_banner_desktop from "./mvp/mvp-banner-desktop.png"
+import mvp_banner_desktop_2 from "./mvp/mvp-banner-desktop-2.png"
+import mvp_banner_desktop_3 from "./mvp/mvp-banner-desktop-3.png"
+
+
+import brigade_title from "./brigade/brigade-title.png"
+import brigade_red from "./brigade/brigade-red.png"
+
+import mascots_square_1 from "./mascots/botargas/botarga-1.png"
+import mascots_square_2 from "./mascots/botargas/botarga-2.png"
+import mascots_square_3 from "./mascots/botargas/botarga-3.png"
+import mascots_square_4 from "./mascots/botargas/botarga-4.png"
+import mascots_square_5 from "./mascots/botargas/botarga-5.png"
+import mascots_square_6 from "./mascots/botargas/botarga-6.png"
+import mascots_square_7 from "./mascots/botargas/botarga-7.png"
+import mascots_square_8 from "./mascots/botargas/botarga-8.png"
+
+import desktop_bckg_1 from "./desktop/Background_desktop_1.png"
+import desktop_bckg_2 from "./desktop/Background_desktop_2.png"
+import desktop_bckg_3 from "./desktop/Background_desktop_3.png"
+import desktop_bckg_4 from "./desktop/Background_desktop_4.png"
+import desktop_bckg_5 from "./desktop/Background_desktop_5.png"
+
+import squad_winner from "./squads/fotos/mini_Patata_1.png"
+import squad_winner2 from "./squads/fotos/mini_Patata_2.png"
+
+
+
+import growan from "./squads/fotos/growan.png"
+import jacquez from "./squads/fotos/jacquez.png"
+import sheik from "./squads/fotos/sheik.png"
+import topher from "./squads/fotos/topher.png"
+
+
+import intro_confidencial from "./intro/intro_confidencial.png"
+
+import brigade_winner from "./brigade/brigade-winner.png"
+import brigade_winner2 from "./brigade/brigade-winner2.png"
+import brigade_winner3 from "./brigade/brigade-winner3.png"
+
+import brigade_winner_2 from "./brigade/brigade-winner-2.png"
+
+import desktop_2 from "./desktop/desktop-2.png"
+
+
 const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
 const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
 const mascots_slider_3 = "https://file.verdanskcodm.com/mascots/slider/slider_3.png"
@@ -252,7 +308,13 @@ const Intro_ghost_main = "https://file.verdanskcodm.com/intro/Ghost_Inicio.png";
 const vide_bckg = "https://file.verdanskcodm.com/video/Background_Video.png";
 const Information_bckg = "https://file.verdanskcodm.com/info/Background_señal.png";
 
-
+const mobil_bckg = "https://file.verdanskcodm.com/mobil/Background_1.png";
+const mobil_bckg2 = "https://file.verdanskcodm.com/mobil/Background_2.png";
+const mobil_bckg3 = "https://file.verdanskcodm.com/mobil/Background_3.png";
+const mobil_bckg4 = "https://file.verdanskcodm.com/mobil/Background_4.png";
+const mobil_bckg5 = "https://file.verdanskcodm.com/mobil/Background_5.png";
+const mobil_bckg6 = "https://file.verdanskcodm.com/mobil/Background_6.png";
+const mobil_bckg7 = "https://file.verdanskcodm.com/mobil/Background_7.png";
 
 const Mascots_bckg = "https://file.verdanskcodm.com/mascots/Background_Botargas.png";
 //const Mascots_banner = "https://verdanskcodm.com/mascots/mascots-banner.png";
@@ -265,8 +327,8 @@ const toknow_bckg = "https://file.verdanskcodm.com/toknow/toknow-background.png"
 const CreatorsPage_bckg = "https://file.verdanskcodm.com/CreatorsPage/creatorsPage_Bckg.png";
 
 
-const desktop_1 = "https://file.verdanskcodm.com/desktop/desktop-1.4.png";
-const desktop_2 = "https://file.verdanskcodm.com/desktop/desktop-2.png";
+const desktop_1 = "https://file.verdanskcodm.com/desktop/desktop-1.3.png";
+
 const desktop_3 = "https://file.verdanskcodm.com/desktop/desktop-3.1.png";
 const desktop_4 = "https://file.verdanskcodm.com/desktop/desktop-4.2.png";
 const desktop_5 = "https://file.verdanskcodm.com/desktop/desktop-5.2.png";
@@ -283,6 +345,7 @@ const videoDesktop = "https://file.verdanskcodm.com/videos/SV_LOGO_Loop_Aweb.mp4
 
 export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM, commonWallpaperD, Intro_date_banner, desktop_calendar, desktop_ghost_banner, desktop_info,
     desktop_1, desktop_2, desktop_3, desktop_4, desktop_5, desktop_6, desktop_7, desktop_8, desktop_9, tk_icon,
+    growan, sheik, jacquez, topher, squad_winner2,
     Intro_ghost, Intro_hashtag, Intro_logo, Intro_banner, Intro_bckg, Intro_sticker1, vide_bckg, Information_banner, Information_bckg, Mascots_title, Mascots_banner, 
     creators_banner, creators_button, creators_title, creators_bckg, faqs_banner, faqs_button, faqs_title, faqs_bckg,
     rulebook, Mascots_bckg, calendar, EventButton, calendar_bckg, desktop_menu,
@@ -293,13 +356,23 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_granade_1, sticker_granade_2, sticker_truck_1, sticker_truck_2, sticker_truck_3, sticker_walkt_1, sticker_walkt_2, 
      sticker_ghost_1, sticker_ghost_2, grandFinal_black_desktop,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
-     sticker_granade_3, Intro_register,
+     intro_confidencial,
+     brigade_winner, brigade_winner_2, brigade_winner2, brigade_winner3,
+     sticker_granade_3, Intro_register, Intro_winner,
+     mvp_banner_2, mvp_banner_3, mvp_banner_desktop_2, mvp_banner_desktop_3,
      sticker_paracaidas_flip_1, registerPage_hashtag,
+     desktop_bckg_1, desktop_bckg_2, desktop_bckg_3, desktop_bckg_4, desktop_bckg_5,
+     mobil_bckg, mobil_bckg2, mobil_bckg3, mobil_bckg4, mobil_bckg5, mobil_bckg6, mobil_bckg7,
      uid_step_1, grandFinal_black, grandFinal_banner, grandFinal_subTitle,
      uid_step_2, grandFinal_tickets,
      uid_step_3, grandFinal_title, event_title,
-      mascots_marco,
+      mascots_marco, squad_num, squad_text, squad_title, squad_winner, squad_banner,
+      mvp_banner, mvp_title, mvp_title_box,
+      mvp_banner_desktop,
+      brigade_title, brigade_red,
      mascots_slider_3,
+     mascots_square_1, mascots_square_2, mascots_square_3,
+     mascots_square_4, mascots_square_5, mascots_square_6, mascots_square_7, mascots_square_8,
      mascots_slider_4, mascots_slider_5, mascots_slider_6, mascots_slider_7, mascots_slider_8,
      sticker_paracaidasBlanco_f1,
      sticker_paracaidasBlanco_flip_f1,
@@ -319,4 +392,4 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      faqs_arrow, faqsPage_item, faqsPage_num, faqsPage_title, Information_ghost, Information_granade, commonCreator, Intro_bckg2, Intro_ghost_main,
      Creador_0, Creador_1, Creador_2, Creador_3, Creador_4, Creador_5, Creador_6, Creador_7, Creador_8, Creador_9, Creador_10,
      Creador_11, Creador_12, Creador_13, Creador_14, Creador_15, Creador_16, Creador_17, Creador_18, Creador_19,
-     Creador_20, Creador_21, Creador_22, Creador_23, Creador_24, Intro_end };
+     Creador_20, Creador_21, Creador_22, Creador_23, Creador_24 };

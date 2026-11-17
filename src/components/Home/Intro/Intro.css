@@ -42,8 +42,9 @@
 .intro-hashtag {
     width: auto;
     height: 60px;
-    position: relative;
-    z-index: 2; 
+    position: absolute;
+    z-index: 12; 
+    top: 720px;
 }
 
 .intro-description{
@@ -62,9 +63,9 @@
 .intro-ghost{
     position: absolute;
     width: auto;
-    height: 292px;
-    left: -50px;
-    top: -50px;
+    height: 202px;
+    left: -60px;
+    top: 680px;
     transform: scaleX(-1);
     z-index: 1;
 }
@@ -100,13 +101,50 @@
 .intro-bckg2{
     position: absolute;
     width: 100%;
-    height: 400px;
+    height: 600px;
     top: 60%;
     left: 0;
     z-index: 1;
     object-fit: 100% 100%;
 }
 
+.intro-winner{
+    position: relative;
+    top: 13vh;
+    z-index: 12;
+    height: 140px;
+    width: auto;
+
+}
+
+.intro-winner-text{
+    position: absolute;
+    top: 600px;
+    z-index: 12;
+    color: var(--yellow);
+    font-family: var(--font-oswald);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+
+.intro-winner-text-desktop{
+    position: relative;
+    top: 6vh;
+    z-index: 12;
+    color: var(--yellow);
+    font-family: var(--font-oswald);
+    font-size: var(--title-desktop-size);
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .intro-ghost-main{
     position: absolute;
@@ -118,7 +156,15 @@
     z-index: 0;
 }
 
-
+.intro-confidencial{
+    position: absolute;
+    width: auto;
+    height: 7vw;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
 
 
 .intro-ghost-main-desktop{
@@ -126,19 +172,29 @@
     width: auto;
     height: 40vw;
     left: 82%;
-    top: 53%;
+    top: 46%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 .intro-logo-desktop{
     width: auto;
-    height: 15vw;
+    height: 20vw;
     position: absolute;
     z-index: 2;
-    top: 25%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.intro-winner-desktop{
+    position: absolute;
+    width: auto;
+    height: 13vw;
+    left: 50%;
+    top: 73%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
 }
 
 .intro-banner-desktop{
@@ -213,16 +269,16 @@
 }
 .intro-hashtag-desktop {
     width: auto;
-    height: 7vw;
+    height: 4.5vw;
     position: absolute;
-    z-index: 2; 
-    top: 98%;
+    z-index: 12; 
+    top: 102%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .intro-sticker1-desktop {
     width: auto;
-    height: 15vw;
+    height: 17vw;
     position: absolute;
     z-index: 2;
     top: 10%;
@@ -248,7 +304,8 @@
     top: 90%;
     height: 200px;
     width: 20px;
-    left: 5%;
+    left: 42%;
+    transform: scaleX(-1);
 }
 
 
@@ -257,7 +314,7 @@
     width: auto;
     height: 10vw;
     z-index: 2;
-    top: 35%;
+    top: 33%;
     left: 11%;
     transform: translate(0%, -50%);
 
