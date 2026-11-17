@@ -49,6 +49,8 @@
     font-family: var(--font-oswald);
     font-size: 18px;
     white-space: nowrap;
+    min-width: 70px;
+    text-align: left;
 }
 
 .squadItem-text-img{
@@ -77,19 +79,21 @@
     .squadItem-num{
         font-size: 26px;
         top: 10%;
-        transform: translate(50%, -50%);
+        transform: translate(60%, -40%);
         min-width: 32px;
     }
 
     .squadItem-text{
         font-size: 26px;
         left: 20%;
-        transform: translate(30%, -60%);
+        transform: translate(30%, -52%);
+        min-width: 92px;
+        text-align: left;
     }
 
     .squadItem-character{
-        width: 54px;
-        height: 54px;
+        width: 62px;
+        height: 62px;
         margin-right: 15px;
         margin-left: 0px;
         position: relative;
@@ -99,13 +103,14 @@
     .squadItem-images{
         width: auto;
         height: 54px;
-        max-width: 20vw;
+        max-width: 15vw;
         
     }
 
     .squadItem-text-img{
-        max-width: 20vw;
-        max-height: 20vw;
+        max-width: 15vw;
+        height: 60px;
+        max-height: 15vw;
     }
 }
 
@@ -120,7 +125,7 @@
 
 
     .squadItem-text-img{
-        max-width: 20vw;
+        max-width: 15vw;
 
     }
 }

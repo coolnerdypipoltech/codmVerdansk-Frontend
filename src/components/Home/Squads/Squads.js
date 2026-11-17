@@ -6,12 +6,13 @@ import {
   squad_title,
   squad_winner,
   squad_banner,
+  squad_winner2,
   mobil_bckg2,
 } from "../../../assets/assetsDirectory";
 
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
-
+import FrameAnimation from "../../FrameAnimation/FrameAnimation"
 import SquadItem from "../../SquadItem/SquadItem";
 
 import useNearViewport from "../../../hooks/useNearViewport";
@@ -20,7 +21,7 @@ const Squads = () => {
   const { isMobile } = useViewport();
   const [bgRef, bgNear] = useNearViewport();
 
-  const winners = ["users1", "users2", "users3", "users4"];
+  const winners = ["Talento", "iKeegangg", "Syn vzink", "F 1"];
 
   return (
     <>
@@ -41,10 +42,13 @@ const Squads = () => {
             Convirtieron cada partida <br></br>
             en territorio propio.
           </p>
-          <img src={squad_winner} alt="winner" className="squad-winner"></img>
+          <FrameAnimation loading="lazy"
+              alt="Winner"
+              fps={3}
+              frames={[squad_winner, squad_winner2]} className="squad-winner"></FrameAnimation>
           <div className="squad-banner-container">
             <img src={squad_banner} alt="winner" className="squad-banner"></img>
-            <p className="squad-banner-txt">CREADOR 01</p>
+            <p className="squad-banner-txt">PaTaTa</p>
           </div>
           <div className="squad-items-container">
             {winners.map((winner, index) => (
@@ -70,10 +74,11 @@ const Squads = () => {
             Convirtieron cada partida <br></br>
             en territorio propio.
           </p>
-          <img src={squad_winner} alt="winner" className="squad-winner-desktop"></img>
+          <FrameAnimation fps={3}
+              frames={[squad_winner, squad_winner2]}  alt="winner" className="squad-winner-desktop"></FrameAnimation>
           <div className="squad-banner-container-desktop">
             <img src={squad_banner} alt="winner" className="squad-banner-desktop"></img>
-            <p className="squad-banner-txt-desktop">CREADOR 01</p>
+            <p className="squad-banner-txt-desktop">PaTaTa</p>
           </div>
           <div className="squad-items-container-desktop">
             {winners.map((winner, index) => (

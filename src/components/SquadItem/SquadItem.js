@@ -28,7 +28,7 @@ return (
 
      <div className="squadItem-images2" >
         <img src={squad_text} alt="text" className="squadItem-text-img"></img>
-        <div className="squadItem-holder"><p className="squadItem-text" style={{transform: characterHelper && "translate(20%, -50%)"}}>
+        <div className="squadItem-holder"><p className="squadItem-text" style={{transform: characterHelper && "translate(30%, -50%)"}}>
             {text}
         </p></div>
         

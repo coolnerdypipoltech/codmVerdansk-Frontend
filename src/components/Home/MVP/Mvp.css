@@ -26,10 +26,11 @@
 .mvp-text-box{
     position: relative;
     top: -95px;
-    font-size: 24px;
+    font-size: 26px;
     font-family: var(--font-oswald);
     color: var(--yellow);
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 
@@ -81,6 +82,7 @@
     font-family: var(--font-oswald);
     color: var(--yellow);
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .mvp-text-desktop{

@@ -1,7 +1,7 @@
 
 import './Brigade.css';
 
-import {  mobil_bckg4, brigade_red, brigade_title, mvp_banner, squad_winner, desktop_bckg_4, brigade_winner, brigade_winner_2 } from '../../../assets/assetsDirectory';
+import {  mobil_bckg4, brigade_red, brigade_title, brigade_winner2, brigade_winner3, desktop_bckg_4, brigade_winner, brigade_winner_2, sheik, jacquez, growan, topher } from '../../../assets/assetsDirectory';
 
 import { useViewport } from "../../../context/ViewportContext";
 import Reveal from "../../Reveal/Reveal";
@@ -9,13 +9,16 @@ import Reveal from "../../Reveal/Reveal";
 import SquadItem from '../../SquadItem/SquadItem';
 
 import useNearViewport from "../../../hooks/useNearViewport";
+import FrameAnimation from '../../FrameAnimation/FrameAnimation';
 
 const Brigade = () => {
   const { isMobile } = useViewport();
   const [bgRef, bgNear] = useNearViewport();
 
-  const winnersSquad = [{title: "SQUAD 1", winners: ["users1", "users2", "users3", "users4"], influencer: {text: "something", img: squad_winner}},
-{title: "SQUAD 2", winners: ["users1", "users2", "users3", "users4"], influencer: {text: "something", img: squad_winner}}, {title: "SQUAD 3", winners: ["users1", "users2", "users3", "users4"], influencer: {text: "something", img: squad_winner}}
+  const winnersSquad = [{title: "SQUAD 1", winners: ["JuanchoZz", "M~Marcus", "Pingueta", "TPSToÑo"], influencer: {text: "Growan", img: growan}},  
+{title: "SQUAD 2", winners: ["Mufasacod", "Isurino", "HYoneiker", "Dolphin"], influencer: {text: "xSheik", img: sheik}}, 
+{title: "SQUAD 3", winners: ["Dekiriku", "dekenza", "Milan", "AoirizUS"], influencer: {text: "Jacquez", img: jacquez} }, 
+{title: "SQUAD 4", winners: ["Koreoиova", "Sr.Mxra", "Goat.Werty", "BlackKaiser"], influencer: {text: "Topher", img: topher}}, 
 ]
 
   return (
@@ -24,7 +27,7 @@ const Brigade = () => {
         ref={bgRef}
         className="general-page"
         style={{
-          minHeight: "713px",
+          minHeight: "893px",
 
           backgroundImage: bgNear ? `url(${mobil_bckg4})` : "none",
           justifyContent: 'flex-start'
@@ -32,9 +35,10 @@ const Brigade = () => {
       >
         <img src={brigade_title} alt='title' className='brigade-title'></img>
         <p className='brigade-text'>El bando que dominó la señal.</p>
-        <img src={brigade_winner} alt='title' className='brigade-banner'></img>
+        <FrameAnimation fps={4}  frames={[brigade_winner, brigade_winner2, brigade_winner3]} alt='title' className='brigade-banner'></FrameAnimation>
         <img src={brigade_winner_2} alt='title' className='brigade-banner-2'></img>
         <>
+        <div style={{minHeight: "100px"}}></div>
         {winnersSquad.map((items, index) => (
           <div key={items.title} className="brigade-squad-group">
            <div className='brigade-red-container'>
@@ -57,12 +61,13 @@ const Brigade = () => {
           src={desktop_bckg_4}
           alt="Calendar Background"
           className="bckg-desktop"
+          
         />
         
 
                 <img src={brigade_title} alt='title' className='brigade-title-desktop'></img>
         <p className='brigade-text-desktop'>El bando que dominó la señal.</p>
-        <img src={brigade_winner} alt='title' className='brigade-banner-desktop'></img>
+        <FrameAnimation fps={4}  frames={[brigade_winner, brigade_winner2, brigade_winner3]} alt='title' className='brigade-banner-desktop'></FrameAnimation>
         <img src={brigade_winner_2} alt='title' className='brigade-banner-desktop2'></img>
         <div className='brigade-squad-container'>
         {winnersSquad.map((items, index) => (

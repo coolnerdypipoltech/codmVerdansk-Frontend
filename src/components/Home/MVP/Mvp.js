@@ -17,7 +17,6 @@ const Mvp = () => {
   const { isMobile } = useViewport();
   const [bgRef, bgNear] = useNearViewport();
 
-  const winners = ["users1", "users2", "users3", "users4"]
 
   return (
     <>{isMobile ? (
@@ -37,7 +36,7 @@ const Mvp = () => {
         <FrameAnimation frames={[mvp_banner, mvp_banner_2, mvp_banner_3]} fps={4} alt='winner' className='mvp-banner'></FrameAnimation>
         <img src={mvp_title_box} alt='winner' className='mvp-box'></img>
         <div className='mvp-text-container'>
-          <p className='mvp-text-box'>Winner 01</p>
+          <p className='mvp-text-box'>Panchita</p>
         </div>
 
 
@@ -56,7 +55,7 @@ const Mvp = () => {
 
         <FrameAnimation frames={[mvp_banner_desktop, mvp_banner_desktop_2, mvp_banner_desktop_3]} fps={4} alt='winner' className='mvp-banner-desktop'></FrameAnimation>
         <img src={mvp_title_box} alt='winner' className='mvp-box-desktop'></img>
-        <p className='mvp-text-box-desktop'>Winner 01</p>
+        <p className='mvp-text-box-desktop'>Panchita</p>
 
 
       </div>

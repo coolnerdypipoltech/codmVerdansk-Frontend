@@ -261,11 +261,23 @@ import desktop_bckg_3 from "./desktop/Background_desktop_3.png"
 import desktop_bckg_4 from "./desktop/Background_desktop_4.png"
 import desktop_bckg_5 from "./desktop/Background_desktop_5.png"
 
-import squad_winner from "./squads/fotos/Creador-0.png"
+import squad_winner from "./squads/fotos/mini_Patata_1.png"
+import squad_winner2 from "./squads/fotos/mini_Patata_2.png"
+
+
+
+import growan from "./squads/fotos/growan.png"
+import jacquez from "./squads/fotos/jacquez.png"
+import sheik from "./squads/fotos/sheik.png"
+import topher from "./squads/fotos/topher.png"
+
 
 import intro_confidencial from "./intro/intro_confidencial.png"
 
 import brigade_winner from "./brigade/brigade-winner.png"
+import brigade_winner2 from "./brigade/brigade-winner2.png"
+import brigade_winner3 from "./brigade/brigade-winner3.png"
+
 import brigade_winner_2 from "./brigade/brigade-winner-2.png"
 
 import desktop_2 from "./desktop/desktop-2.png"
@@ -333,6 +345,7 @@ const videoDesktop = "https://file.verdanskcodm.com/videos/SV_LOGO_Loop_Aweb.mp4
 
 export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM, commonWallpaperD, Intro_date_banner, desktop_calendar, desktop_ghost_banner, desktop_info,
     desktop_1, desktop_2, desktop_3, desktop_4, desktop_5, desktop_6, desktop_7, desktop_8, desktop_9, tk_icon,
+    growan, sheik, jacquez, topher, squad_winner2,
     Intro_ghost, Intro_hashtag, Intro_logo, Intro_banner, Intro_bckg, Intro_sticker1, vide_bckg, Information_banner, Information_bckg, Mascots_title, Mascots_banner, 
     creators_banner, creators_button, creators_title, creators_bckg, faqs_banner, faqs_button, faqs_title, faqs_bckg,
     rulebook, Mascots_bckg, calendar, EventButton, calendar_bckg, desktop_menu,
@@ -344,7 +357,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_ghost_1, sticker_ghost_2, grandFinal_black_desktop,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
      intro_confidencial,
-     brigade_winner, brigade_winner_2,
+     brigade_winner, brigade_winner_2, brigade_winner2, brigade_winner3,
      sticker_granade_3, Intro_register, Intro_winner,
      mvp_banner_2, mvp_banner_3, mvp_banner_desktop_2, mvp_banner_desktop_3,
      sticker_paracaidas_flip_1, registerPage_hashtag,
