@@ -281,7 +281,8 @@ import brigade_winner3 from "./brigade/brigade-winner3.png"
 import brigade_winner_2 from "./brigade/brigade-winner-2.png"
 
 import desktop_2 from "./desktop/desktop-2.png"
-
+import videoMarcoMobil from "./intro/video_mobil.png"
+import videoMarcoDesktop from "./intro/video_desktop.png"
 
 const mascots_slider_1 = "https://file.verdanskcodm.com/mascots/slider/slider_1.png"
 const mascots_slider_2 = "https://file.verdanskcodm.com/mascots/slider/slider_2.png"
@@ -343,6 +344,8 @@ const desktop_calendar = "https://file.verdanskcodm.com/desktop/desktop-calendar
 const videoMobile = "https://file.verdanskcodm.com/videos/SV_LOGO_Loop_A.mp4";
 const videoDesktop = "https://file.verdanskcodm.com/videos/SV_LOGO_Loop_Aweb.mp4";
 
+
+
 export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM, commonWallpaperD, Intro_date_banner, desktop_calendar, desktop_ghost_banner, desktop_info,
     desktop_1, desktop_2, desktop_3, desktop_4, desktop_5, desktop_6, desktop_7, desktop_8, desktop_9, tk_icon,
     growan, sheik, jacquez, topher, squad_winner2,
@@ -357,6 +360,7 @@ export { NavBar_Header, NavBar_Menu, NavBar_Logo, NavBar_bckg, commonWallpaperM,
      sticker_ghost_1, sticker_ghost_2, grandFinal_black_desktop,
      sticker_ghost_F1, sticker_ghost_F2, sticker_ghost_F3,
      intro_confidencial,
+     videoMarcoDesktop, videoMarcoMobil,
      brigade_winner, brigade_winner_2, brigade_winner2, brigade_winner3,
      sticker_granade_3, Intro_register, Intro_winner,
      mvp_banner_2, mvp_banner_3, mvp_banner_desktop_2, mvp_banner_desktop_3,

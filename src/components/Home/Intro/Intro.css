@@ -44,7 +44,7 @@
     height: 60px;
     position: absolute;
     z-index: 12; 
-    top: 720px;
+    top: 680px;
 }
 
 .intro-description{
@@ -64,9 +64,8 @@
     position: absolute;
     width: auto;
     height: 202px;
-    left: -60px;
-    top: 680px;
-    transform: scaleX(-1);
+    left: -20px;
+    top: 770px;
     z-index: 1;
 }
 
@@ -119,7 +118,7 @@
 
 .intro-winner-text{
     position: absolute;
-    top: 600px;
+    top: 980px;
     z-index: 12;
     color: var(--yellow);
     font-family: var(--font-oswald);
@@ -136,12 +135,12 @@
     z-index: 12;
     color: var(--yellow);
     font-family: var(--font-oswald);
-    font-size: var(--title-desktop-size);
+    font-size: var(--text-desktop-size);
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
     position: absolute;
-    top: 88%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -170,9 +169,9 @@
 .intro-ghost-main-desktop{
     position: absolute;
     width: auto;
-    height: 40vw;
-    left: 82%;
-    top: 46%;
+    height: 35vw;
+    left: 85%;
+    top: 48%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
@@ -192,7 +191,7 @@
     width: auto;
     height: 13vw;
     left: 50%;
-    top: 73%;
+    top: 113%;
     transform: translate(-50%, -50%);
     z-index: 12;
 }
@@ -272,13 +271,13 @@
     height: 4.5vw;
     position: absolute;
     z-index: 12; 
-    top: 102%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .intro-sticker1-desktop {
     width: auto;
-    height: 17vw;
+    height: 13vw;
     position: absolute;
     z-index: 2;
     top: 10%;
@@ -289,7 +288,7 @@
 .intro-ghost-desktop {
     position: absolute;
     width: auto;
-    height: 29vw;
+    height: 23vw;
     left: 0%;
     top: 0%;
     transform: scaleX(-1);
@@ -301,7 +300,7 @@
     width: auto;
     height: 29vw;
     z-index: 2;
-    top: 90%;
+    top: 93%;
     height: 200px;
     width: 20px;
     left: 42%;
@@ -419,3 +418,37 @@
     z-index: 12;
 }
 
+.intro-video-marco{
+    position: absolute;
+    width: auto;
+    height: 580px;
+    top: 60px;
+    z-index: 200;
+    pointer-events: none;
+}
+
+.intro-video-marco2{
+    position: absolute;
+    width: auto;
+    height: 500px;
+    top: 70px;
+    z-index: 190;
+}
+
+.intro-marco-desktop{
+    position: absolute;
+    width: auto;
+    margin-top: 5%;
+    height: 42vw;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.intro-marco-desktop2{
+    position: absolute;
+    width: auto;
+    margin-top: 0%;
+    height: calc(35vw + 15px);
+    z-index: 99;
+    margin-right: 5px;
+}

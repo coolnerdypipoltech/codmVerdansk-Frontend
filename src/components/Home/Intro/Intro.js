@@ -10,21 +10,17 @@ import {
   Intro_bckg2,
   desktop_bckg_1,
   desktop_2,
-  sticker_ghost_main_f1,
-  sticker_ghost_main_f2,
-  sticker_ghost_main_f3,
   sticker_Disparo_f1,
   sticker_Disparo_f2,
   sticker_Disparo_f3,
   sticker_walkt_1,
   sticker_walkt_2,
-  sticker_rayos_f1,
-  sticker_rayos_f2,
-  sticker_paracaidas_1,
-  sticker_paracaidas_2,
-  sticker_paracaidas_flip_1,
-  sticker_paracaidas_flip_2,
   intro_confidencial,
+  sticker_ghost_main_f1,
+  sticker_ghost_main_f2,
+  sticker_ghost_main_f3,
+  videoMarcoDesktop,
+  videoMarcoMobil
 } from "../../../assets/assetsDirectory";
 
 import { useViewport } from "../../../context/ViewportContext";
@@ -58,50 +54,8 @@ const Intro = () => {
               className="intro-bckg"
             />
           </Reveal>
-          <FrameAnimation
-            loading="lazy"
-            frames={[sticker_rayos_f1, sticker_rayos_f2]}
-            alt="Intro Sticker 2"
-            fps={3}
-            className="intro-sticker2"
-          ></FrameAnimation>
-          <div
-            className="intro-sticker-paracaidas-container"
-            style={{
-              top: "10%",
-              left: "19%",
-              height: "10vw",
-              animation: "fall-fade2 7s linear infinite",
-              animationDelay: "3s",
-              zIndex: 0,
-            }}
-          >
-            <FrameAnimation
-              loading="lazy"
-              frames={[sticker_paracaidas_1, sticker_paracaidas_2]}
-              alt="Intro Sticker Paracaidas"
-              fps={2}
-              className="intro-sticker-paracaidas"
-            />
-          </div>
-          <div
-            className="intro-sticker-paracaidas-container"
-            style={{
-              top: "5%",
-              left: "73%",
-              height: "15vw",
-              animationDelay: "3s",
-              zIndex: 0,
-            }}
-          >
-            <FrameAnimation
-              loading="lazy"
-              frames={[sticker_paracaidas_flip_1, sticker_paracaidas_flip_2]}
-              alt="Intro Sticker Paracaidas"
-              fps={2}
-              className="intro-sticker-paracaidas"
-            />
-          </div>
+          
+
           <Reveal>
             <img
               loading="lazy"
@@ -110,29 +64,8 @@ const Intro = () => {
               className="intro-bckg2"
             />
           </Reveal>
-          <Reveal>
-            <div className="intro-ghost-main">
-              <FrameAnimation
-                loading="lazy"
-                frames={[
-                  sticker_ghost_main_f1,
-                  sticker_ghost_main_f2,
-                  sticker_ghost_main_f3,
-                ]}
-                alt="Intro Ghost Main"
-                fps={2}
-                className="intro-ghost-main"
-              />
-            </div>
-          </Reveal>
-          <Reveal>
-            <img
-              loading="lazy"
-              src={Intro_logo}
-              alt="Intro Logo"
-              className="intro-logo"
-            />
-          </Reveal>
+
+
           <></>
 
           
@@ -153,8 +86,12 @@ const Intro = () => {
           </Reveal>
 
           <Reveal>
-              <img src={Intro_winner} alt="winner" className="intro-winner"></img>
+              <img src={videoMarcoMobil} alt="hashtag" className="intro-video-marco"></img>
+              
           </Reveal>
+
+          <video controls muted autoPlay src="https://file.verdanskcodm.com/videos/9X16_MASTER_SENAL%20VERDANSK_AFTERMOVIE.mp4" className="intro-video-marco2"></video>
+
           
           <p className="intro-winner-text">
             <span style={{ color: "white" }}>La señal transmite<br></br>
@@ -165,9 +102,9 @@ const Intro = () => {
             <div
               style={{
                 position: "absolute",
-                top: "700px",
+                top: "780px",
                 height: "500px",
-                left: "90%",
+                left: "86%",
                 width: "1px",
               }}
             >
@@ -192,63 +129,19 @@ const Intro = () => {
             style={{ marginTop: "70px" }}
           />
 
-
-          <FrameAnimation
-            loading="lazy"
-            frames={[sticker_rayos_f1, sticker_rayos_f2]}
-            alt="Intro Sticker 2"
-            fps={3}
-            className="intro-sticker2-desktop"
-          ></FrameAnimation>
-
-          <div
-            className="intro-sticker-paracaidas-container"
-            style={{
-              top: "25%",
-              left: "19%",
-              height: "3vw",
-              animation: "fall-fade2 7s linear infinite",
-              animationDelay: "3s",
-            }}
-          >
-            <FrameAnimation
-              loading="lazy"
-              frames={[sticker_paracaidas_1, sticker_paracaidas_2]}
-              alt="Intro Sticker Paracaidas"
-              fps={2}
-              className="intro-sticker-paracaidas"
-            />
-          </div>
-
-          <div className="intro-sticker-paracaidas-container">
-            <FrameAnimation
-              loading="lazy"
-              frames={[sticker_paracaidas_flip_1, sticker_paracaidas_flip_2]}
-              alt="Intro Sticker Paracaidas"
-              fps={2}
-              className="intro-sticker-paracaidas"
-            />
-          </div>
-
           <Reveal>
-            <img src={intro_confidencial} alt="Confidencial" className="intro-confidencial" />
+            <img loading="lazy"
+              src={videoMarcoDesktop}
+              alt="Intro Winner"
+              className="intro-marco-desktop">
+            
+            </img>
           </Reveal>
 
-          <div
-            className="intro-sticker-paracaidas-container"
-            style={{ top: "25%", left: "37%", animationDelay: "2s" }}
-          >
-            <FrameAnimation
-              loading="lazy"
-              frames={[sticker_paracaidas_1, sticker_paracaidas_2]}
-              alt="Intro Sticker Paracaidas"
-              fps={2}
-              className="intro-sticker-paracaidas"
-            />
-          </div>
+            <video controls muted autoPlay src="https://file.verdanskcodm.com/videos/16X9_MASTER_SENAL%20VERDANSK_AFTERMOVIE.mp4" className="intro-marco-desktop2"></video>
 
-          <Reveal>
-            {" "}
+          
+                    <Reveal>
             <div className="intro-ghost-main-desktop">
               <FrameAnimation
                 loading="lazy"
@@ -257,29 +150,11 @@ const Intro = () => {
                   sticker_ghost_main_f2,
                   sticker_ghost_main_f3,
                 ]}
-                fps={2}
                 alt="Intro Ghost Main"
+                fps={2}
                 className="intro-ghost-main-desktop"
               />
             </div>
-          </Reveal>
-
-          <Reveal>
-            <img
-              loading="lazy"
-              src={Intro_logo}
-              alt="Intro Logo"
-              className="intro-logo-desktop"
-            />
-          </Reveal>
-
-          <Reveal>
-            <img
-              loading="lazy"
-              src={Intro_logo}
-              alt="Intro Logo"
-              className="intro-logo-desktop"
-            />
           </Reveal>
 
           <Reveal>
@@ -299,6 +174,7 @@ const Intro = () => {
           <Reveal>
               <img src={Intro_hashtag} alt="hashtag" className="intro-hashtag-desktop"></img>
           </Reveal>
+
 
 
 

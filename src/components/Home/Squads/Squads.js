@@ -7,6 +7,7 @@ import {
   squad_winner,
   squad_banner,
   squad_winner2,
+  Intro_winner,
   mobil_bckg2,
 } from "../../../assets/assetsDirectory";
 
@@ -30,14 +31,16 @@ const Squads = () => {
           ref={bgRef}
           className="general-page"
           style={{
-            minHeight: "513px",
+            minHeight: "713px",
             marginTop: "240px",
             maxHeight: isMobile ? "950px" : undefined,
             backgroundImage: bgNear ? `url(${mobil_bckg2})` : "none",
             justifyContent: "flex-start",
           }}
         >
-          <img src={squad_title} alt="title" className="squad-title"></img>
+          <img src={Intro_winner} alt="title" className="squad-title"></img>
+
+          <img src={squad_title} alt="title" className="squad-title2"></img>
           <p className="squad-text">
             Convirtieron cada partida <br></br>
             en territorio propio.
@@ -67,6 +70,7 @@ const Squads = () => {
             src={desktop_bckg_2}
             alt="Calendar Background"
             className="bckg-desktop"
+            style={{minHeight: "70vw"}}
           />
 
           <img src={squad_title} alt="title" className="squad-title-desktop"></img>
